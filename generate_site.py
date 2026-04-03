@@ -1,0 +1,1223 @@
+#!/usr/bin/env python3
+"""
+FixFeetFast.com - Site Generator
+Generates static HTML pages from foot health discussion data
+"""
+
+import json
+import os
+from pathlib import Path
+from datetime import datetime
+from collections import defaultdict
+from urllib.parse import quote
+
+# Configuration
+SITE_URL = "https://fixfeetfast.com"
+SITE_NAME = "FixFeetFast.com"
+SITE_TAGLINE = "Real foot health answers from real people"
+SITE_DESCRIPTION = "Find real experiences and advice about foot conditions, surgery recovery, and treatments from people who've been through it."
+SITE_COPYRIGHT = "Built for people seeking real foot health experiences."
+
+OUTPUT_DIR = Path(__file__).parent / "site"
+
+# Color scheme
+COLORS = {
+    "primary": "#0d9488",
+    "primary-dark": "#0f766e",
+    "primary-light": "#ccfbf1",
+    "success": "#059669",
+    "gray-light": "#f3f4f6",
+    "gray": "#6b7280",
+    "gray-dark": "#1f2937",
+}
+
+# Niche definitions - Topics for the site
+NICHE_MAP = {
+    "bunion-surgery-recovery": {
+        "title": "Bunion Surgery Recovery",
+        "keywords": ["bunion surgery", "bunion recovery", "bunionectomy", "post-op bunion"],
+        "description": "Recovery timeline, experiences, and tips after bunion surgery",
+    },
+    "minimally-invasive-bunion-surgery": {
+        "title": "Minimally Invasive Bunion Surgery (MIS)",
+        "keywords": ["mis", "minimally invasive", "mis bunion", "keyhole bunion"],
+        "description": "Minimally invasive approaches to bunion correction",
+    },
+    "lapiplasty-surgery": {
+        "title": "Lapiplasty 3D Bunion Surgery",
+        "keywords": ["lapiplasty", "3d bunion", "lapiplasty procedure"],
+        "description": "Lapiplasty 3D procedure experiences and recovery",
+    },
+    "hammer-toe-surgery": {
+        "title": "Hammer Toe Surgery & Correction",
+        "keywords": ["hammer toe", "hammertoe", "toe fusion", "claw toe", "mallet toe"],
+        "description": "Hammer toe surgery options and recovery experiences",
+    },
+    "bunion-surgery-swelling": {
+        "title": "Post-Surgery Swelling & Inflammation",
+        "keywords": ["swelling", "inflammation", "edema", "swollen foot", "swollen toe"],
+        "description": "Managing swelling and inflammation after foot surgery",
+    },
+    "post-surgery-shoes": {
+        "title": "Best Shoes After Foot Surgery",
+        "keywords": ["shoes", "sneakers", "trainers", "footwear", "orthofeet", "hoka", "new balance", "skechers", "wide shoes"],
+        "description": "Footwear recommendations for post-surgery comfort and recovery",
+    },
+    "bunion-surgery-pain": {
+        "title": "Pain Management After Foot Surgery",
+        "keywords": ["pain", "pain management", "nerve pain", "throbbing", "aching"],
+        "description": "Pain management strategies and experiences post-surgery",
+    },
+    "walking-after-surgery": {
+        "title": "Walking & Weight Bearing After Surgery",
+        "keywords": ["walking", "weight bearing", "non weight bearing", "nwb", "crutches", "knee scooter", "boot", "cast"],
+        "description": "Walking progression and weight bearing recommendations",
+    },
+    "scarf-akin-osteotomy": {
+        "title": "Scarf & Akin Osteotomy",
+        "keywords": ["scarf", "akin", "scarf akin", "osteotomy", "chevron"],
+        "description": "Scarf and Akin osteotomy surgical techniques and recovery",
+    },
+    "bunion-surgery-complications": {
+        "title": "Surgery Complications & Wound Healing",
+        "keywords": ["infection", "wound", "complication", "hardware", "screw", "pin", "scar", "keloid"],
+        "description": "Complications, wound healing, and scar management",
+    },
+    "physical-therapy-foot": {
+        "title": "Physical Therapy & Foot Exercises",
+        "keywords": ["physical therapy", "pt", "exercises", "stretching", "range of motion", "rom", "rehab"],
+        "description": "Physical therapy, exercises, and rehabilitation strategies",
+    },
+    "toe-spacers-orthotics": {
+        "title": "Toe Spacers, Orthotics & Braces",
+        "keywords": ["toe spacer", "toe separator", "orthotic", "insole", "bunion corrector", "splint", "brace"],
+        "description": "Orthotics, braces, and toe spacers for foot health",
+    },
+    "flat-feet-arch-support": {
+        "title": "Flat Feet & Arch Support",
+        "keywords": ["flat feet", "flat foot", "arch", "arch support", "fallen arch", "pronation", "overpronation"],
+        "description": "Flat feet, arch support, and pronation management",
+    },
+    "plantar-fasciitis": {
+        "title": "Plantar Fasciitis Treatment",
+        "keywords": ["plantar fasciitis", "heel pain", "heel spur", "plantar", "fascia"],
+        "description": "Plantar fasciitis treatments and heel pain relief",
+    },
+    "toenail-fungus": {
+        "title": "Toenail Fungus Treatment",
+        "keywords": ["toenail fungus", "fungal nail", "onychomycosis", "fungus", "antifungal", "terbinafine", "lamisil"],
+        "description": "Toenail fungus treatments and prevention",
+    },
+}
+
+def load_posts(filepath):
+    """Load posts from JSON file"""
+    if not os.path.exists(filepath):
+        return []
+    with open(filepath, 'r') as f:
+        return json.load(f)
+
+def ensure_output_dir():
+    """Create output directory structure"""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    (OUTPUT_DIR / "about").mkdir(exist_ok=True)
+
+def get_css():
+    """Return complete CSS for all pages"""
+    return f"""* {{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}}
+
+:root {{
+  --primary: {COLORS['primary']};
+  --primary-dark: {COLORS['primary-dark']};
+  --primary-light: {COLORS['primary-light']};
+  --success: {COLORS['success']};
+  --gray-light: {COLORS['gray-light']};
+  --gray: {COLORS['gray']};
+  --gray-dark: {COLORS['gray-dark']};
+}}
+
+html {{
+  scroll-behavior: smooth;
+}}
+
+body {{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--gray-dark);
+  background-color: #fff;
+}}
+
+a {{
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}}
+
+a:hover {{
+  color: var(--primary-dark);
+  text-decoration: underline;
+}}
+
+/* Layout */
+.container {{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}}
+
+header {{
+  background: white;
+  border-bottom: 1px solid var(--gray-light);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}}
+
+nav {{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}}
+
+.logo {{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}}
+
+.logo span {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  font-weight: 700;
+  color: var(--primary);
+}}
+
+nav ul {{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}}
+
+nav a {{
+  font-weight: 500;
+  color: var(--gray-dark);
+}}
+
+nav a:hover {{
+  color: var(--primary);
+  text-decoration: none;
+}}
+
+footer {{
+  background: var(--gray-light);
+  border-top: 1px solid #e5e7eb;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}}
+
+footer .container {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}}
+
+footer h3 {{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--gray-dark);
+}}
+
+footer ul {{
+  list-style: none;
+}}
+
+footer li {{
+  margin-bottom: 0.5rem;
+}}
+
+footer a {{
+  color: var(--gray);
+  font-size: 0.9rem;
+}}
+
+.copyright {{
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}}
+
+/* Hero */
+.hero {{
+  background: linear-gradient(135deg, var(--primary-light) 0%, rgba(13, 148, 136, 0.05) 100%);
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}}
+
+.hero h1 {{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+  line-height: 1.2;
+}}
+
+.hero p {{
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}}
+
+.hero .tagline {{
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1rem;
+}}
+
+/* Breadcrumb */
+.breadcrumb {{
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}}
+
+.breadcrumb a {{
+  color: var(--primary);
+}}
+
+.breadcrumb span {{
+  margin: 0 0.5rem;
+}}
+
+/* Grid */
+.grid {{
+  display: grid;
+  gap: 2rem;
+}}
+
+.grid-2 {{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}}
+
+.grid-3 {{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}}
+
+.grid-4 {{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}}
+
+/* Cards */
+.card {{
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}}
+
+.card:hover {{
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.1);
+}}
+
+.card h3 {{
+  margin-bottom: 0.5rem;
+  color: var(--gray-dark);
+}}
+
+.card p {{
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}}
+
+.card .stats {{
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+}}
+
+.stat {{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}}
+
+/* Badges */
+.badge {{
+  display: inline-block;
+  background: var(--gray-light);
+  color: var(--gray-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}}
+
+.badge.product {{
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}}
+
+.badge.treatment {{
+  background: #fef3c7;
+  color: #92400e;
+}}
+
+.badge.surgery {{
+  background: #dbeafe;
+  color: #1e40af;
+}}
+
+/* Section */
+section {{
+  margin-bottom: 4rem;
+}}
+
+section h2 {{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--gray-dark);
+}}
+
+/* Discussion Card */
+.discussion {{
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}}
+
+.discussion-header {{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}}
+
+.discussion-meta {{
+  font-size: 0.85rem;
+  color: var(--gray);
+}}
+
+.discussion-title {{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gray-dark);
+  margin-bottom: 0.5rem;
+}}
+
+.discussion-body {{
+  color: var(--gray-dark);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}}
+
+.discussion-badges {{
+  margin-bottom: 1rem;
+}}
+
+.discussion-comments {{
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-light);
+}}
+
+.comment {{
+  background: var(--gray-light);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}}
+
+.comment-text {{
+  color: var(--gray-dark);
+  margin-bottom: 0.5rem;
+}}
+
+.comment-meta {{
+  font-size: 0.8rem;
+  color: var(--gray);
+}}
+
+/* Stats */
+.stats-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}}
+
+.stat-box {{
+  padding: 2rem 1rem;
+  background: var(--gray-light);
+  border-radius: 8px;
+}}
+
+.stat-number {{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}}
+
+.stat-label {{
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-top: 0.5rem;
+}}
+
+/* How It Works */
+.how-it-works {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}}
+
+.step {{
+  text-align: center;
+}}
+
+.step-number {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}}
+
+.step h3 {{
+  margin-bottom: 0.5rem;
+  color: var(--gray-dark);
+}}
+
+.step p {{
+  color: var(--gray);
+  font-size: 0.95rem;
+}}
+
+/* FAQ */
+.faq-item {{
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}}
+
+.faq-question {{
+  padding: 1.5rem;
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  color: var(--gray-dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  transition: background 0.2s;
+}}
+
+.faq-question:hover {{
+  background: var(--gray-light);
+}}
+
+.faq-question::after {{
+  content: '▼';
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}}
+
+.faq-item.active .faq-question {{
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}}
+
+.faq-item.active .faq-question::after {{
+  transform: rotate(180deg);
+}}
+
+.faq-answer {{
+  padding: 1.5rem;
+  background: var(--gray-light);
+  display: none;
+  color: var(--gray-dark);
+  line-height: 1.7;
+}}
+
+.faq-item.active .faq-answer {{
+  display: block;
+}}
+
+/* Responsive */
+@media (max-width: 768px) {{
+  nav {{
+    flex-direction: column;
+    gap: 1rem;
+  }}
+
+  nav ul {{
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }}
+
+  .hero h1 {{
+    font-size: 1.8rem;
+  }}
+
+  .grid-2, .grid-3, .grid-4 {{
+    grid-template-columns: 1fr;
+  }}
+
+  .hero {{
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }}
+
+  section {{
+    margin-bottom: 2rem;
+  }}
+
+  section h2 {{
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }}
+
+  footer .container {{
+    grid-template-columns: 1fr;
+  }}
+}}
+"""
+
+def get_page_header(title, description=""):
+    """HTML header template"""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | {SITE_NAME}</title>
+  <meta name="description" content="{description or SITE_DESCRIPTION}">
+  <meta name="theme-color" content="{COLORS['primary']}">
+  <link rel="canonical" href="{SITE_URL}">
+  <style>
+{get_css()}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <span>F</span>
+        <a href="/">{SITE_NAME}</a>
+      </div>
+      <ul>
+        <li><a href="/">Browse Topics</a></li>
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+"""
+
+def get_page_footer():
+    """HTML footer template"""
+    return f"""
+  <footer>
+    <div class="container">
+      <div>
+        <h3>{SITE_NAME}</h3>
+        <p>{SITE_TAGLINE}</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="/robots.txt">Robots.txt</a></li>
+          <li><a href="/llms.txt">LLMs.txt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <p>{SITE_COPYRIGHT}</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {{
+      btn.addEventListener('click', () => {{
+        btn.parentElement.classList.toggle('active');
+      }});
+    }});
+  </script>
+</body>
+</html>
+"""
+
+def generate_homepage(posts):
+    """Generate index.html"""
+
+    # Calculate statistics
+    total_discussions = len(posts)
+    total_comments = sum(len(p.get('comments', [])) for p in posts)
+
+    # Collect all mentioned products and count them
+    product_counts = defaultdict(int)
+    for post in posts:
+        if products := post.get('products_mentioned'):
+            for product in products.split(','):
+                product = product.strip()
+                if product:
+                    product_counts[product] += 1
+
+    # Count posts per niche
+    niche_counts = defaultdict(int)
+    for post in posts:
+        if conditions := post.get('conditions_mentioned'):
+            conditions_lower = conditions.lower()
+            # Find matching niche based on keywords
+            for niche_id, niche_data in NICHE_MAP.items():
+                for keyword in niche_data['keywords']:
+                    if keyword.lower() in conditions_lower:
+                        niche_counts[niche_id] += 1
+                        break
+
+    top_products = sorted(product_counts.items(), key=lambda x: x[1], reverse=True)[:8]
+
+    html = get_page_header(SITE_NAME, SITE_DESCRIPTION)
+
+    html += f"""
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>🦶 {SITE_NAME}</h1>
+        <p class="tagline">{SITE_TAGLINE}</p>
+        <p>{SITE_DESCRIPTION}</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Community Insights</h2>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">{total_discussions:,}</div>
+          <div class="stat-label">Discussions</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">{total_comments:,}</div>
+          <div class="stat-label">Comments</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">{len(NICHE_MAP)}</div>
+          <div class="stat-label">Topics</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">{len(product_counts)}</div>
+          <div class="stat-label">Products</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Browse Topics</h2>
+      <div class="grid grid-3">
+"""
+
+    for niche_id, niche_data in NICHE_MAP.items():
+        count = niche_counts.get(niche_id, 0)
+        html += f"""        <a href="/{niche_id}/" class="card">
+          <h3>{niche_data['title']}</h3>
+          <p>{niche_data['description']}</p>
+          <div class="stats">
+            <span class="stat">💬 {count} discussions</span>
+          </div>
+        </a>
+"""
+
+    html += """      </div>
+    </section>
+"""
+
+    if top_products:
+        html += f"""
+    <section class="container">
+      <h2>Top Mentioned Products</h2>
+      <div class="grid grid-4">
+"""
+        for product, count in top_products:
+            html += f"""        <div class="card">
+          <h3>{product}</h3>
+          <p>Mentioned in {count} discussions</p>
+        </div>
+"""
+        html += """      </div>
+    </section>
+"""
+
+    html += f"""
+    <section class="container" id="how-it-works">
+      <h2>How It Works</h2>
+      <div class="how-it-works">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Real Experiences</h3>
+          <p>Content comes from real people sharing their foot health journeys in support groups</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Browse Topics</h3>
+          <p>Find discussions organized by condition, procedure, and treatment type</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Learn & Discover</h3>
+          <p>See what treatments and products people are actually using and recommending</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Ask Your Doctor</h3>
+          <p>Use insights to ask informed questions with your healthcare provider</p>
+        </div>
+      </div>
+    </section>
+  </main>
+"""
+
+    html += get_page_footer()
+    return html
+
+def generate_topic_page(niche_id, niche_data, posts):
+    """Generate individual topic page"""
+
+    # Filter posts for this niche
+    topic_posts = []
+    for post in posts:
+        if conditions := post.get('conditions_mentioned'):
+            conditions_lower = conditions.lower()
+            # Check if any keyword matches the conditions
+            for keyword in niche_data['keywords']:
+                if keyword.lower() in conditions_lower:
+                    topic_posts.append(post)
+                    break
+
+    # Aggregate data
+    treatment_mentions = defaultdict(int)
+    product_mentions = defaultdict(int)
+    surgery_mentions = defaultdict(int)
+    total_comments = 0
+
+    for post in topic_posts:
+        total_comments += len(post.get('comments', []))
+
+        if treatments := post.get('treatments_mentioned'):
+            for treatment in treatments.split(','):
+                treatment = treatment.strip()
+                if treatment:
+                    treatment_mentions[treatment] += 1
+
+        if products := post.get('products_mentioned'):
+            for product in products.split(','):
+                product = product.strip()
+                if product:
+                    product_mentions[product] += 1
+
+        if surgeries := post.get('surgery_types_mentioned'):
+            for surgery in surgeries.split(','):
+                surgery = surgery.strip()
+                if surgery:
+                    surgery_mentions[surgery] += 1
+
+        for comment in post.get('comments', []):
+            if products := comment.get('products_mentioned'):
+                for product in products.split(','):
+                    product = product.strip()
+                    if product:
+                        product_mentions[product] += 1
+
+    description = f"{len(topic_posts)} real discussions about {niche_data['title'].lower()}"
+
+    html = get_page_header(niche_data['title'], description)
+
+    html += f"""
+  <main>
+    <section class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> <span>›</span> {niche_data['title']}
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <h1>{niche_data['title']}</h1>
+        <p>{niche_data['description']}</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Community Insights</h2>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">{len(topic_posts)}</div>
+          <div class="stat-label">Discussions</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">{total_comments}</div>
+          <div class="stat-label">Comments</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">{len(product_mentions)}</div>
+          <div class="stat-label">Products Mentioned</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">{len(treatment_mentions)}</div>
+          <div class="stat-label">Treatments</div>
+        </div>
+      </div>
+    </section>
+"""
+
+    # Top mentioned sections
+    if product_mentions:
+        top_products = sorted(product_mentions.items(), key=lambda x: x[1], reverse=True)[:6]
+        html += f"""
+    <section class="container">
+      <h2>Popular Products</h2>
+      <div class="grid grid-3">
+"""
+        for product, count in top_products:
+            html += f"""        <div class="card">
+          <h3>{product}</h3>
+          <p class="stat">Mentioned {count} times</p>
+        </div>
+"""
+        html += """      </div>
+    </section>
+"""
+
+    if treatment_mentions:
+        top_treatments = sorted(treatment_mentions.items(), key=lambda x: x[1], reverse=True)[:4]
+        html += f"""
+    <section class="container">
+      <h2>Common Treatments</h2>
+      <div style="display: grid; gap: 1rem;">
+"""
+        for treatment, count in top_treatments:
+            html += f"""        <div class="card">
+          <h3>{treatment}</h3>
+          <p class="stat">Mentioned {count} times in discussions</p>
+        </div>
+"""
+        html += """      </div>
+    </section>
+"""
+
+    # Discussions section
+    if topic_posts:
+        html += f"""
+    <section class="container">
+      <h2>Real Discussions</h2>
+"""
+
+        for post in topic_posts[:20]:  # Limit to 20 per page
+            html += f"""      <div class="discussion">
+        <div class="discussion-header">
+          <div>
+            <div class="discussion-meta">From {post.get('source_group', 'Community')}</div>
+            <div class="discussion-title">{post.get('title', 'Discussion')}</div>
+          </div>
+        </div>
+        <div class="discussion-body">{post.get('body', '')[:400]}...</div>
+        <div class="discussion-badges">
+"""
+
+            # Add product badges
+            if products := post.get('products_mentioned'):
+                for product in products.split(',')[:3]:
+                    product = product.strip()
+                    if product:
+                        html += f'          <span class="badge product">{product}</span>\n'
+
+            # Add treatment badges
+            if treatments := post.get('treatments_mentioned'):
+                for treatment in treatments.split(',')[:3]:
+                    treatment = treatment.strip()
+                    if treatment:
+                        html += f'          <span class="badge treatment">{treatment}</span>\n'
+
+            # Add surgery badges
+            if surgeries := post.get('surgery_types_mentioned'):
+                for surgery in surgeries.split(',')[:2]:
+                    surgery = surgery.strip()
+                    if surgery:
+                        html += f'          <span class="badge surgery">{surgery}</span>\n'
+
+            html += """        </div>
+"""
+
+            # Comments
+            if post.get('comments'):
+                html += """        <div class="discussion-comments">
+          <strong>Comments:</strong>
+"""
+                for comment in post.get('comments', [])[:3]:
+                    html += f"""          <div class="comment">
+            <div class="comment-text">{comment.get('comment_text', '')[:200]}...</div>
+            <div class="comment-meta">Community member</div>
+          </div>
+"""
+                if len(post.get('comments', [])) > 3:
+                    html += f"""          <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">+{len(post.get('comments', [])) - 3} more comments</p>
+"""
+                html += """        </div>
+"""
+
+            html += """      </div>
+"""
+
+        html += """    </section>
+"""
+
+    # FAQ Section
+    faqs = generate_faqs(niche_data['title'])
+    if faqs:
+        html += f"""
+    <section class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div>
+"""
+        for question, answer in faqs:
+            html += f"""        <div class="faq-item">
+          <button class="faq-question">{question}</button>
+          <div class="faq-answer">{answer}</div>
+        </div>
+"""
+        html += """      </div>
+    </section>
+"""
+
+    html += """  </main>
+"""
+    html += get_page_footer()
+    return html
+
+def generate_faqs(topic_title):
+    """Generate FAQ content for a topic"""
+    topic_lower = topic_title.lower()
+
+    # Template FAQs
+    if 'recovery' in topic_lower or 'surgery' in topic_lower:
+        return [
+            (f"What is {topic_title} recovery like?",
+             "Recovery experiences vary by individual and surgical technique. Most people report gradual improvement over weeks to months. Many community members share their timelines and recovery tips online."),
+            (f"How long does {topic_title} take to heal?",
+             "Healing timelines typically range from 6 weeks to several months depending on the procedure and individual factors. Full recovery may take even longer for some individuals. Your surgeon can provide specific recovery estimates."),
+            (f"What treatments help with {topic_title}?",
+             "Treatment approaches vary by condition and severity. Common treatments mentioned in communities include physical therapy, pain management, ice therapy, compression, and specialized footwear. Discuss options with your healthcare provider."),
+            (f"What products do people recommend for {topic_title}?",
+             "Community members frequently recommend products like specialized shoes, compression socks, insoles, and therapeutic devices. Product recommendations should be discussed with your healthcare provider to ensure they're appropriate for your situation."),
+        ]
+    elif 'shoe' in topic_lower or 'footwear' in topic_lower:
+        return [
+            ("What shoes are best after foot surgery?",
+             "Comfort and support are key. Many people recommend wide shoes, breathable materials, and styles with good arch support. Popular brands mentioned include Hoka, Orthofeet, New Balance, and Skechers. Consult your surgeon for specific recommendations."),
+            ("How soon can I wear regular shoes?",
+             "This depends on your specific surgery and healing progress. Most surgeons recommend waiting several weeks to months. Follow your surgeon's guidance on when to transition footwear."),
+            ("Should I buy shoes with insoles or orthotics?",
+             "Many people find custom or over-the-counter insoles helpful for comfort and support. Discuss orthotic needs with your doctor or a podiatrist."),
+        ]
+    else:
+        return [
+            (f"What should I know about {topic_title}?",
+             "The community shares diverse experiences about this topic. Reading real experiences can help you understand what to expect and what questions to ask your healthcare provider."),
+            (f"Who should consider {topic_title}?",
+             "This is a personal decision best made with your healthcare provider. Community experiences can inform your conversations with your doctor."),
+        ]
+
+def generate_about_page():
+    """Generate about/index.html"""
+    html = get_page_header("About FixFeetFast", "Learn about FixFeetFast.com and how we source content")
+
+    html += f"""
+  <main>
+    <section class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> <span>›</span> About
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <h1>About {SITE_NAME}</h1>
+        <p>{SITE_TAGLINE}</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+        <h2>Our Mission</h2>
+        <p>{SITE_DESCRIPTION}</p>
+
+        <h2 style="margin-top: 2rem;">How It Works</h2>
+        <p>{SITE_NAME} aggregates real experiences and discussions from foot health support communities. We organize this content by condition and treatment type to help people understand what others have experienced and what treatments are being used.</p>
+
+        <h2 style="margin-top: 2rem;">About Our Content</h2>
+        <p>All content on {SITE_NAME} comes from real people sharing their experiences in foot health support groups and online communities. These are first-hand accounts of surgeries, recovery, treatments, and product recommendations from people who have lived through these experiences.</p>
+
+        <h2 style="margin-top: 2rem;">Important Disclaimer</h2>
+        <p><strong>This site does not provide medical advice.</strong> The content here represents personal experiences and should not be substituted for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider before making any medical decisions.</p>
+
+        <p style="margin-top: 1rem;">Every person's situation is unique. What worked for one person may not work for you. Your doctor or podiatrist is the best source for medical advice tailored to your specific condition.</p>
+
+        <h2 style="margin-top: 2rem;">How to Use This Site</h2>
+        <ul style="margin-left: 2rem; margin-top: 1rem;">
+          <li>Browse topics to explore common foot conditions and treatments</li>
+          <li>Read real experiences to understand what others have gone through</li>
+          <li>Note products, treatments, and strategies that people mention</li>
+          <li>Use these insights to ask informed questions with your healthcare provider</li>
+          <li>Make decisions with your doctor, not based solely on what you read here</li>
+        </ul>
+
+        <h2 style="margin-top: 2rem;">Contact & Attribution</h2>
+        <p>Content is sourced from public discussions in foot health support communities. We appreciate the people sharing their experiences to help others.</p>
+      </div>
+    </section>
+  </main>
+"""
+
+    html += get_page_footer()
+    return html
+
+def generate_sitemap(niche_ids):
+    """Generate sitemap.xml"""
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+
+    # Homepage
+    xml += f'  <url>\n    <loc>{SITE_URL}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n'
+
+    # Topic pages
+    for niche_id in niche_ids:
+        xml += f'  <url>\n    <loc>{SITE_URL}/{niche_id}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+
+    # About page
+    xml += f'  <url>\n    <loc>{SITE_URL}/about/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.5</priority>\n  </url>\n'
+
+    xml += '</urlset>\n'
+    return xml
+
+def generate_robots_txt():
+    """Generate robots.txt"""
+    return f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+"""
+
+def generate_llms_txt():
+    """Generate llms.txt"""
+    return f"""{SITE_NAME}
+
+Description: {SITE_DESCRIPTION}
+
+Categories: Health, Medical Information, Support Community Content
+
+Privacy Policy: {SITE_URL}/privacy
+Terms of Service: {SITE_URL}/terms
+About: {SITE_URL}/about/
+"""
+
+def main():
+    """Main generation function"""
+    print(f"Generating {SITE_NAME}...")
+
+    # Load posts
+    posts_file = Path(__file__).parent / "posts.json"
+    posts = load_posts(str(posts_file))
+    print(f"Loaded {len(posts)} posts")
+
+    # Create output directories
+    ensure_output_dir()
+
+    # Generate homepage
+    print("Generating homepage...")
+    index_html = generate_homepage(posts)
+    (OUTPUT_DIR / "index.html").write_text(index_html)
+
+    # Generate topic pages
+    print(f"Generating {len(NICHE_MAP)} topic pages...")
+    for niche_id, niche_data in NICHE_MAP.items():
+        topic_html = generate_topic_page(niche_id, niche_data, posts)
+        niche_dir = OUTPUT_DIR / niche_id
+        niche_dir.mkdir(exist_ok=True)
+        (niche_dir / "index.html").write_text(topic_html)
+
+    # Generate about page
+    print("Generating about page...")
+    about_html = generate_about_page()
+    (OUTPUT_DIR / "about" / "index.html").write_text(about_html)
+
+    # Generate sitemap
+    print("Generating sitemap...")
+    sitemap_xml = generate_sitemap(NICHE_MAP.keys())
+    (OUTPUT_DIR / "sitemap.xml").write_text(sitemap_xml)
+
+    # Generate robots.txt
+    print("Generating robots.txt...")
+    robots = generate_robots_txt()
+    (OUTPUT_DIR / "robots.txt").write_text(robots)
+
+    # Generate llms.txt
+    print("Generating llms.txt...")
+    llms = generate_llms_txt()
+    (OUTPUT_DIR / "llms.txt").write_text(llms)
+
+    print(f"\n✓ Site generated successfully!")
+    print(f"Output directory: {OUTPUT_DIR}")
+    print(f"Pages generated: 1 homepage + {len(NICHE_MAP)} topic pages + 1 about page")
+    print(f"Total posts indexed: {len(posts)}")
+
+if __name__ == "__main__":
+    main()

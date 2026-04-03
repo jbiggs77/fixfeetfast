@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "body": "Had my bunion surgery 2 weeks ago and the recovery has been tough but doable. Ice, elevation, and pain meds are my best friends right now. My surgeon said I should be walking normally in about 8 weeks total.",
+    "title": "2 weeks post-op bunion surgery",
+    "source_group": "Bunion Surgery Support Group",
+    "conditions_mentioned": "bunion",
+    "treatments_mentioned": "ice, elevation, pain management",
+    "products_mentioned": "compression sock, cushioned slippers",
+    "surgery_types_mentioned": "traditional bunionectomy",
+    "comments": [
+      {
+        "comment_text": "I wore Hoka shoes during my recovery and they were a lifesaver",
+        "conditions_mentioned": "",
+        "treatments_mentioned": "",
+        "products_mentioned": "Hoka"
+      },
+      {
+        "comment_text": "The swelling took forever to go down for me. Physical therapy really helped though.",
+        "conditions_mentioned": "swelling",
+        "treatments_mentioned": "physical therapy",
+        "products_mentioned": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "body": "Just had Lapiplasty done last month. Less pain than traditional bunion surgery and recovery seems to be going faster. Really happy with my surgeon's recommendation on this approach.",
+    "title": "One month into Lapiplasty recovery",
+    "source_group": "Foot Surgery Recovery",
+    "conditions_mentioned": "bunion",
+    "treatments_mentioned": "rest, PT",
+    "products_mentioned": "Orthofeet shoes, compression sleeve",
+    "surgery_types_mentioned": "Lapiplasty",
+    "comments": [
+      {
+        "comment_text": "The 3D approach really does make a difference. I could put weight on my foot earlier than my friend who had traditional surgery.",
+        "conditions_mentioned": "",
+        "treatments_mentioned": "weight bearing",
+        "products_mentioned": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "body": "Hammer toe fusion surgery was last month. The toe mobility is returning slowly but I'm having some nerve pain still. Has anyone else experienced this?",
+    "title": "Hammer toe post-fusion pain",
+    "source_group": "Foot Health Community",
+    "conditions_mentioned": "hammer toe",
+    "treatments_mentioned": "pain management, rest",
+    "products_mentioned": "New Balance wide shoes",
+    "surgery_types_mentioned": "toe fusion",
+    "comments": [
+      {
+        "comment_text": "Nerve pain is normal after toe surgery. Mine took 3 months to settle down. Don't worry too much.",
+        "conditions_mentioned": "nerve pain",
+        "treatments_mentioned": "time",
+        "products_mentioned": ""
+      }
+    ]
+  }
+]
