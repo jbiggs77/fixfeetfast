@@ -490,6 +490,37 @@ section {{
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
 }}
 
+.discussion-images {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}}
+
+.discussion-images img {{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}}
+
+.discussion-images img:hover {{
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}}
+
+.discussion-images.single img {{
+  max-width: 400px;
+  height: 280px;
+}}
+
+.discussion-images.gallery {{
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}}
+
 .discussion-header {{
   margin-bottom: 1rem;
 }}
@@ -764,6 +795,16 @@ section {{
 
   .card {{
     padding: 1rem;
+  }}
+
+  .discussion-images {{
+    grid-template-columns: 1fr;
+  }}
+
+  .discussion-images.single img,
+  .discussion-images img {{
+    max-width: 100%;
+    height: 180px;
   }}
 
   .discussion {{
@@ -1139,7 +1180,17 @@ def generate_topic_page(niche_id, niche_data, posts):
           <div class="discussion-meta">From {post.get('source_group', 'Community')}</div>
           <div class="discussion-title">{post.get('title', 'Discussion')}</div>
         </div>
-        <div class="discussion-body">{post.get('body', '')[:400]}...</div>
+"""
+            # Add images if available
+            images = post.get('images', [])
+            if images:
+                img_class = 'single' if len(images) == 1 else 'gallery'
+                html += f'        <div class="discussion-images {img_class}">\n'
+                for img_path in images[:4]:  # Max 4 images per post
+                    html += f'          <img src="/{img_path}" alt="Community photo" loading="lazy">\n'
+                html += '        </div>\n'
+
+            html += f"""        <div class="discussion-body">{post.get('body', '')[:400]}...</div>
         <div class="discussion-badges">
 """
 
