@@ -1820,7 +1820,7 @@ def generate_topic_page(niche_id, niche_data, posts):
         html += """    </section>
 """
 
-    html += """
+    html += f"""
     <section class="container">
       <h2>Community Insights</h2>
       <div class="stats-grid">
