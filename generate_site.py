@@ -20,15 +20,19 @@ SITE_COPYRIGHT = "Built for people seeking real foot health experiences."
 
 OUTPUT_DIR = Path(__file__).parent / "site"
 
-# Color scheme
+# Color scheme - WebMD inspired
 COLORS = {
-    "primary": "#0d9488",
-    "primary-dark": "#0f766e",
-    "primary-light": "#ccfbf1",
-    "success": "#059669",
-    "gray-light": "#f3f4f6",
-    "gray": "#6b7280",
-    "gray-dark": "#1f2937",
+    "primary": "#1a237e",          # Deep navy
+    "primary-light": "#3f51b5",    # Medium blue
+    "accent": "#2196f3",           # Bright blue
+    "accent-light": "#bbdefb",     # Light blue
+    "success": "#4caf50",          # Medical green
+    "warning": "#ff9800",          # Orange
+    "background": "#ffffff",        # White
+    "bg-light": "#f5f5f5",         # Very light gray
+    "text-primary": "#212121",     # Dark charcoal
+    "text-secondary": "#666666",   # Medium gray
+    "border": "#e0e0e0",           # Light border
 }
 
 # Niche definitions - Topics for the site
@@ -132,12 +136,16 @@ def get_css():
 
 :root {{
   --primary: {COLORS['primary']};
-  --primary-dark: {COLORS['primary-dark']};
   --primary-light: {COLORS['primary-light']};
+  --accent: {COLORS['accent']};
+  --accent-light: {COLORS['accent-light']};
   --success: {COLORS['success']};
-  --gray-light: {COLORS['gray-light']};
-  --gray: {COLORS['gray']};
-  --gray-dark: {COLORS['gray-dark']};
+  --warning: {COLORS['warning']};
+  --background: {COLORS['background']};
+  --bg-light: {COLORS['bg-light']};
+  --text-primary: {COLORS['text-primary']};
+  --text-secondary: {COLORS['text-secondary']};
+  --border: {COLORS['border']};
 }}
 
 html {{
@@ -145,37 +153,101 @@ html {{
 }}
 
 body {{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
-  color: var(--gray-dark);
-  background-color: #fff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: 16px;
 }}
 
 a {{
-  color: var(--primary);
+  color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
 }}
 
 a:hover {{
-  color: var(--primary-dark);
+  color: var(--primary);
   text-decoration: underline;
+}}
+
+h1, h2, h3, h4, h5, h6 {{
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+}}
+
+h1 {{
+  font-size: 2.25rem;
+  font-weight: 700;
+}}
+
+h2 {{
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}}
+
+h3 {{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}}
+
+/* Medical Disclaimer Banner */
+.medical-disclaimer {{
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}}
+
+.medical-disclaimer-icon {{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 14px;
+}}
+
+.medical-disclaimer p {{
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin: 0;
+  display: inline;
 }}
 
 /* Layout */
 .container {{
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }}
 
+/* Header/Navigation */
 header {{
-  background: white;
-  border-bottom: 1px solid var(--gray-light);
+  background: var(--primary);
+  color: white;
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}}
+
+header a {{
+  color: white;
+}}
+
+header a:hover {{
+  color: var(--accent-light);
+  text-decoration: none;
 }}
 
 nav {{
@@ -189,10 +261,9 @@ nav {{
 .logo {{
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-dark);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }}
 
 .logo span {{
@@ -201,10 +272,10 @@ nav {{
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: var(--primary-light);
+  background: var(--accent);
   border-radius: 50%;
   font-weight: 700;
-  color: var(--primary);
+  color: white;
 }}
 
 nav ul {{
@@ -216,31 +287,33 @@ nav ul {{
 
 nav a {{
   font-weight: 500;
-  color: var(--gray-dark);
+  font-size: 0.95rem;
 }}
 
-nav a:hover {{
-  color: var(--primary);
-  text-decoration: none;
-}}
-
+/* Footer */
 footer {{
-  background: var(--gray-light);
-  border-top: 1px solid #e5e7eb;
-  padding: 3rem 0;
+  background: var(--primary);
+  color: white;
+  padding: 3rem 0 2rem;
   margin-top: 4rem;
 }}
 
 footer .container {{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }}
 
 footer h3 {{
   font-size: 1rem;
-  margin-bottom: 1rem;
-  color: var(--gray-dark);
+  margin-bottom: 1.5rem;
+  color: white;
+}}
+
+footer p {{
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }}
 
 footer ul {{
@@ -248,59 +321,64 @@ footer ul {{
 }}
 
 footer li {{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }}
 
 footer a {{
-  color: var(--gray);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
+}}
+
+footer a:hover {{
+  color: white;
+  text-decoration: none;
 }}
 
 .copyright {{
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 2rem;
   padding-top: 2rem;
   text-align: center;
-  color: var(--gray);
-  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
 }}
 
-/* Hero */
+/* Hero Section */
 .hero {{
-  background: linear-gradient(135deg, var(--primary-light) 0%, rgba(13, 148, 136, 0.05) 100%);
-  padding: 4rem 0;
+  background: var(--background);
+  padding: 3rem 0;
   margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
 }}
 
 .hero h1 {{
-  font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--primary-dark);
-  line-height: 1.2;
+  color: var(--primary);
 }}
 
 .hero p {{
   font-size: 1.1rem;
-  color: var(--gray);
+  color: var(--text-secondary);
   margin-bottom: 1rem;
-  line-height: 1.7;
+  max-width: 700px;
 }}
 
 .hero .tagline {{
   font-weight: 600;
-  color: var(--primary);
+  color: var(--accent);
   font-size: 1rem;
 }}
 
 /* Breadcrumb */
 .breadcrumb {{
   font-size: 0.9rem;
-  color: var(--gray);
-  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
 }}
 
 .breadcrumb a {{
-  color: var(--primary);
+  color: var(--accent);
 }}
 
 .breadcrumb span {{
@@ -310,7 +388,7 @@ footer a {{
 /* Grid */
 .grid {{
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
 }}
 
 .grid-2 {{
@@ -318,7 +396,7 @@ footer a {{
 }}
 
 .grid-3 {{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }}
 
 .grid-4 {{
@@ -327,34 +405,35 @@ footer a {{
 
 /* Cards */
 .card {{
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
   padding: 1.5rem;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
+  display: block;
 }}
 
 .card:hover {{
-  border-color: var(--primary);
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.1);
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
 }}
 
 .card h3 {{
-  margin-bottom: 0.5rem;
-  color: var(--gray-dark);
+  color: var(--primary);
+  margin-bottom: 0.75rem;
 }}
 
 .card p {{
-  color: var(--gray);
+  color: var(--text-secondary);
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }}
 
 .card .stats {{
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 0.85rem;
-  color: var(--gray);
+  color: var(--text-secondary);
 }}
 
 .stat {{
@@ -363,75 +442,75 @@ footer a {{
   gap: 0.3rem;
 }}
 
-/* Badges */
+/* Badges/Pills */
 .badge {{
   display: inline-block;
-  background: var(--gray-light);
-  color: var(--gray-dark);
-  padding: 0.25rem 0.75rem;
+  padding: 0.35rem 0.85rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  background: var(--bg-light);
+  color: var(--text-primary);
 }}
 
 .badge.product {{
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--accent-light);
+  color: var(--primary);
 }}
 
 .badge.treatment {{
-  background: #fef3c7;
-  color: #92400e;
+  background: #c8e6c9;
+  color: #1b5e20;
 }}
 
 .badge.surgery {{
-  background: #dbeafe;
-  color: #1e40af;
+  background: #f8bbd0;
+  color: #880e4f;
 }}
 
 /* Section */
 section {{
-  margin-bottom: 4rem;
-}}
-
-section h2 {{
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: var(--gray-dark);
+  margin-bottom: 3rem;
 }}
 
 /* Discussion Card */
 .discussion {{
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+}}
+
+.discussion:hover {{
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
 }}
 
 .discussion-header {{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 1rem;
 }}
 
 .discussion-meta {{
-  font-size: 0.85rem;
-  color: var(--gray);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
 }}
 
 .discussion-title {{
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  color: var(--gray-dark);
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }}
 
 .discussion-body {{
-  color: var(--gray-dark);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   line-height: 1.7;
 }}
@@ -443,52 +522,79 @@ section h2 {{
 .discussion-comments {{
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--gray-light);
+  border-top: 1px solid var(--border);
+}}
+
+.discussion-comments strong {{
+  color: var(--primary);
 }}
 
 .comment {{
-  background: var(--gray-light);
+  background: var(--bg-light);
   padding: 1rem;
-  border-radius: 6px;
+  border-radius: 4px;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  border-left: 3px solid var(--accent);
 }}
 
 .comment-text {{
-  color: var(--gray-dark);
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
+  line-height: 1.6;
 }}
 
 .comment-meta {{
   font-size: 0.8rem;
-  color: var(--gray);
+  color: var(--text-secondary);
+}}
+
+/* Info Box */
+.info-box {{
+  background: var(--bg-light);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}}
+
+.info-box h3 {{
+  color: var(--primary);
+  margin-top: 0;
+}}
+
+.info-box p {{
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
 }}
 
 /* Stats */
 .stats-grid {{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
   margin-bottom: 3rem;
-  text-align: center;
 }}
 
 .stat-box {{
-  padding: 2rem 1rem;
-  background: var(--gray-light);
-  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  text-align: center;
 }}
 
 .stat-number {{
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--accent);
 }}
 
 .stat-label {{
   font-size: 0.9rem;
-  color: var(--gray);
+  color: var(--text-secondary);
   margin-top: 0.5rem;
+  font-weight: 500;
 }}
 
 /* How It Works */
@@ -508,73 +614,76 @@ section h2 {{
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: var(--primary-light);
-  color: var(--primary);
+  background: var(--accent);
+  color: white;
   border-radius: 50%;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }}
 
 .step h3 {{
-  margin-bottom: 0.5rem;
-  color: var(--gray-dark);
+  color: var(--primary);
+  margin-bottom: 0.75rem;
 }}
 
 .step p {{
-  color: var(--gray);
+  color: var(--text-secondary);
   font-size: 0.95rem;
+  line-height: 1.6;
 }}
 
-/* FAQ */
+/* FAQ - Accordion Style */
 .faq-item {{
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
   margin-bottom: 1rem;
   overflow: hidden;
 }}
 
 .faq-question {{
-  padding: 1.5rem;
-  background: white;
+  padding: 1.25rem 1.5rem;
+  background: var(--background);
   border: none;
   width: 100%;
   text-align: left;
   font-weight: 600;
-  color: var(--gray-dark);
+  color: var(--primary);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  transition: background 0.2s;
+  transition: background 0.2s ease;
 }}
 
 .faq-question:hover {{
-  background: var(--gray-light);
+  background: var(--bg-light);
 }}
 
 .faq-question::after {{
-  content: '▼';
-  font-size: 0.8rem;
-  transition: transform 0.3s;
+  content: '+';
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
 }}
 
 .faq-item.active .faq-question {{
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--bg-light);
+  border-bottom: 1px solid var(--border);
 }}
 
 .faq-item.active .faq-question::after {{
-  transform: rotate(180deg);
+  content: '−';
 }}
 
 .faq-answer {{
   padding: 1.5rem;
-  background: var(--gray-light);
+  background: var(--bg-light);
   display: none;
-  color: var(--gray-dark);
+  color: var(--text-secondary);
   line-height: 1.7;
 }}
 
@@ -586,39 +695,87 @@ section h2 {{
 @media (max-width: 768px) {{
   nav {{
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }}
 
   nav ul {{
     flex-direction: column;
+    gap: 0.75rem;
+  }}
+
+  .container {{
+    padding: 0 16px;
+  }}
+
+  h1 {{
+    font-size: 1.75rem;
+  }}
+
+  h2 {{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }}
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {{
+    grid-template-columns: 1fr;
+  }}
+
+  .stats-grid {{
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    width: 100%;
   }}
 
-  .hero h1 {{
-    font-size: 1.8rem;
+  .how-it-works {{
+    grid-template-columns: 1fr;
+  }}
+}}
+
+@media (max-width: 480px) {{
+  header {{
+    padding: 0.75rem 0;
   }}
 
-  .grid-2, .grid-3, .grid-4 {{
+  nav {{
+    gap: 1rem;
+  }}
+
+  .logo {{
+    font-size: 1.25rem;
+  }}
+
+  nav ul {{
+    gap: 0.5rem;
+  }}
+
+  nav a {{
+    font-size: 0.85rem;
+  }}
+
+  h1 {{
+    font-size: 1.5rem;
+  }}
+
+  h2 {{
+    font-size: 1.25rem;
+  }}
+
+  .card {{
+    padding: 1rem;
+  }}
+
+  .discussion {{
+    padding: 1rem;
+  }}
+
+  .stats-grid {{
     grid-template-columns: 1fr;
   }}
 
-  .hero {{
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-  }}
-
-  section {{
-    margin-bottom: 2rem;
-  }}
-
-  section h2 {{
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-  }}
-
-  footer .container {{
-    grid-template-columns: 1fr;
+  .stat-number {{
+    font-size: 1.75rem;
   }}
 }}
 """
@@ -634,6 +791,7 @@ def get_page_header(title, description=""):
   <meta name="description" content="{description or SITE_DESCRIPTION}">
   <meta name="theme-color" content="{COLORS['primary']}">
   <link rel="canonical" href="{SITE_URL}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
 {get_css()}
   </style>
@@ -646,12 +804,19 @@ def get_page_header(title, description=""):
         <a href="/">{SITE_NAME}</a>
       </div>
       <ul>
-        <li><a href="/">Browse Topics</a></li>
+        <li><a href="/">Topics</a></li>
         <li><a href="/#how-it-works">How It Works</a></li>
         <li><a href="/about/">About</a></li>
       </ul>
     </nav>
   </header>
+
+  <div class="container">
+    <div class="medical-disclaimer">
+      <span class="medical-disclaimer-icon">i</span>
+      <p><strong>Community Information:</strong> This site contains personal experiences and discussions, not medical advice. Always consult a healthcare provider before making medical decisions.</p>
+    </div>
+  </div>
 """
 
 def get_page_footer():
@@ -733,8 +898,8 @@ def generate_homepage(posts):
   <main>
     <section class="hero">
       <div class="container">
-        <h1>🦶 {SITE_NAME}</h1>
-        <p class="tagline">{SITE_TAGLINE}</p>
+        <h1>{SITE_NAME}</h1>
+        <p>{SITE_TAGLINE}</p>
         <p>{SITE_DESCRIPTION}</p>
       </div>
     </section>
@@ -762,7 +927,7 @@ def generate_homepage(posts):
     </section>
 
     <section class="container">
-      <h2>Browse Topics</h2>
+      <h2>Explore Foot Health Topics</h2>
       <div class="grid grid-3">
 """
 
@@ -897,6 +1062,13 @@ def generate_topic_page(niche_id, niche_data, posts):
     </section>
 
     <section class="container">
+      <div class="info-box">
+        <h3>Topic Overview</h3>
+        <p><strong>{len(topic_posts)}</strong> discussions | <strong>{total_comments}</strong> community replies | Based on real experiences</p>
+      </div>
+    </section>
+
+    <section class="container">
       <h2>Community Insights</h2>
       <div class="stats-grid">
         <div class="stat-box">
@@ -958,16 +1130,14 @@ def generate_topic_page(niche_id, niche_data, posts):
     if topic_posts:
         html += f"""
     <section class="container">
-      <h2>Real Discussions</h2>
+      <h2>What People Are Saying</h2>
 """
 
         for post in topic_posts[:20]:  # Limit to 20 per page
             html += f"""      <div class="discussion">
         <div class="discussion-header">
-          <div>
-            <div class="discussion-meta">From {post.get('source_group', 'Community')}</div>
-            <div class="discussion-title">{post.get('title', 'Discussion')}</div>
-          </div>
+          <div class="discussion-meta">From {post.get('source_group', 'Community')}</div>
+          <div class="discussion-title">{post.get('title', 'Discussion')}</div>
         </div>
         <div class="discussion-body">{post.get('body', '')[:400]}...</div>
         <div class="discussion-badges">
@@ -1009,7 +1179,7 @@ def generate_topic_page(niche_id, niche_data, posts):
           </div>
 """
                 if len(post.get('comments', [])) > 3:
-                    html += f"""          <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">+{len(post.get('comments', [])) - 3} more comments</p>
+                    html += f"""          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">+{len(post.get('comments', [])) - 3} more comments</p>
 """
                 html += """        </div>
 """
@@ -1096,7 +1266,7 @@ def generate_about_page():
     </section>
 
     <section class="container">
-      <div class="card" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
         <h2>Our Mission</h2>
         <p>{SITE_DESCRIPTION}</p>
 
@@ -1112,7 +1282,7 @@ def generate_about_page():
         <p style="margin-top: 1rem;">Every person's situation is unique. What worked for one person may not work for you. Your doctor or podiatrist is the best source for medical advice tailored to your specific condition.</p>
 
         <h2 style="margin-top: 2rem;">How to Use This Site</h2>
-        <ul style="margin-left: 2rem; margin-top: 1rem;">
+        <ul style="margin-left: 2rem; margin-top: 1rem; color: var(--text-secondary);">
           <li>Browse topics to explore common foot conditions and treatments</li>
           <li>Read real experiences to understand what others have gone through</li>
           <li>Note products, treatments, and strategies that people mention</li>
@@ -1200,24 +1370,21 @@ def main():
     (OUTPUT_DIR / "about" / "index.html").write_text(about_html)
 
     # Generate sitemap
-    print("Generating sitemap...")
+    print("Generating sitemap.xml...")
     sitemap_xml = generate_sitemap(NICHE_MAP.keys())
     (OUTPUT_DIR / "sitemap.xml").write_text(sitemap_xml)
 
     # Generate robots.txt
     print("Generating robots.txt...")
-    robots = generate_robots_txt()
-    (OUTPUT_DIR / "robots.txt").write_text(robots)
+    robots_txt = generate_robots_txt()
+    (OUTPUT_DIR / "robots.txt").write_text(robots_txt)
 
     # Generate llms.txt
     print("Generating llms.txt...")
-    llms = generate_llms_txt()
-    (OUTPUT_DIR / "llms.txt").write_text(llms)
+    llms_txt = generate_llms_txt()
+    (OUTPUT_DIR / "llms.txt").write_text(llms_txt)
 
-    print(f"\n✓ Site generated successfully!")
-    print(f"Output directory: {OUTPUT_DIR}")
-    print(f"Pages generated: 1 homepage + {len(NICHE_MAP)} topic pages + 1 about page")
-    print(f"Total posts indexed: {len(posts)}")
+    print(f"Done! Generated site at {OUTPUT_DIR}")
 
 if __name__ == "__main__":
     main()
