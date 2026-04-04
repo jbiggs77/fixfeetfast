@@ -10,7 +10,8 @@
     "surgery_types_mentioned": "Lapiplasty",
     "treatments_mentioned": "surgery",
     "products_mentioned": "knee scooter",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "surgery_types_mentioned": "Lapiplasty, arthrodesis",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "surgery_types_mentioned": "Lapiplasty",
     "treatments_mentioned": "surgery",
     "products_mentioned": "boot",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
     "surgery_types_mentioned": "Lapiplasty",
     "treatments_mentioned": "surgery, wound healing",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
     "surgery_types_mentioned": "scarf akin, osteotomy",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
     "surgery_types_mentioned": "scarf akin",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 7,
@@ -88,7 +94,8 @@
     "surgery_types_mentioned": "scarf akin, osteotomy",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 8,
@@ -101,7 +108,8 @@
     "surgery_types_mentioned": "arthrodesis",
     "treatments_mentioned": "surgery, elevation, icing",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 9,
@@ -114,7 +122,8 @@
     "surgery_types_mentioned": "osteotomy",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 10,
@@ -127,7 +136,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "surgery, elevation, icing",
     "products_mentioned": "boot",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 11,
@@ -140,7 +150,8 @@
     "surgery_types_mentioned": "osteotomy",
     "treatments_mentioned": "surgery",
     "products_mentioned": "boot",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 12,
@@ -153,7 +164,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "shockwave therapy",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 13,
@@ -166,7 +178,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "shockwave therapy",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 14,
@@ -179,7 +192,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "night splint, shockwave therapy, orthotics, stretching, massage, icing",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 15,
@@ -192,7 +206,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "massage, custom orthotics, stretching",
     "products_mentioned": "Theragun",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 16,
@@ -205,7 +220,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "cortisone, steroid injection",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 17,
@@ -218,7 +234,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "cortisone, steroid injection",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 18,
@@ -231,7 +248,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "cortisone, steroid injection",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 19,
@@ -244,7 +262,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "cortisone, steroid injection",
     "products_mentioned": "boot",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 20,
@@ -257,7 +276,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "cortisone, steroid injection",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 21,
@@ -270,7 +290,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 22,
@@ -283,7 +304,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "tea tree oil, laser therapy, terbinafine",
     "products_mentioned": "Lamisil",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 23,
@@ -296,7 +318,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 24,
@@ -309,7 +332,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 25,
@@ -322,7 +346,8 @@
     "surgery_types_mentioned": "minimally invasive, Lapiplasty",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 26,
@@ -335,7 +360,8 @@
     "surgery_types_mentioned": "minimally invasive",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 27,
@@ -348,7 +374,8 @@
     "surgery_types_mentioned": "minimally invasive",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 28,
@@ -361,7 +388,8 @@
     "surgery_types_mentioned": "minimally invasive",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 29,
@@ -374,7 +402,8 @@
     "surgery_types_mentioned": "minimally invasive",
     "treatments_mentioned": "surgery",
     "products_mentioned": "surgical shoe",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 30,
@@ -387,7 +416,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 31,
@@ -400,7 +430,8 @@
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery, icing",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 32,
@@ -413,7 +444,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 33,
@@ -426,7 +458,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "surgery",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 34,
@@ -439,7 +472,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 35,
@@ -452,7 +486,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "physical therapy",
     "products_mentioned": "Hoka",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 36,
@@ -465,7 +500,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 37,
@@ -478,7 +514,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "physical therapy",
     "products_mentioned": "Hoka, toe spacer",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 38,
@@ -491,7 +528,8 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "orthotics",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
   },
   {
     "id": 39,
@@ -504,6 +542,682 @@
     "surgery_types_mentioned": "",
     "treatments_mentioned": "",
     "products_mentioned": "",
-    "comments": []
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 40,
+    "body": "I had lapiplasty and akin osteotomy on 1/15 of this year. These were taken at my 6 week appointment. My great toe looks raised and almost rotated towards my pinky. Anybody else's X-rays look similar? Maybe it improved over time and didn't impact you in the long run?",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "Lapiplasty, osteotomy, akin",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 41,
+    "body": "Had my one week follow up today! The left is the x-ray of my foot before the surgery and the right is the x-ray of it after! My surgery was on 2/23/26. I had lapiplasty, with a donor bone graft. So far recovery is going better than I anticipated. The nerve block wore off the day after surgery and the pain was horrible. Before it wore off, I felt no pain at all. I am taking journavx, hydrocodone/acetaminophen for pain. I started the journavx the day of my surgery, but held off on the hydrocodone/acetaminophen until the pain started. Once the pain started, the hydrocodone was able to significantly reduce it. My doctor gave me the go ahead to take two of the hydrocodone at first, since the one I took wasn't helping. He also said I could take it every 4 hours, instead of 6. This was absolutely needed for the first few days, as the pain would start coming back badly after 4 hours. I have began weaning off of the hydrocodone, while continuing the journavx and acetaminophen. I am getting to where the pain isn't returning as quickly/badly. It has been 9 hours since I last took hydrocodone, and it still isn't hurting me! I had the splint removed today, and was given a boot to wear! So now I'm able to wear my foot icepack, which feels soooo good! I'm also working on moving my ankle and toes up and down. I'm continuing to elevate my foot as much as possible, and using a knee scooter to get around. I also have knee pads that I wear that help when I have to get down on the ground with my son. Hoping for fast healing and progress!",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "Lapiplasty",
+    "treatments_mentioned": "surgery, icing, nerve block, bone graft",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 42,
+    "body": "I am 4 weeks + 1 day PO. I had lapiplasty on NYE. Today i graduated to a boot. I feel great so far. And am excited to get moving again. The hardest part of all this for me has been being entirely dependent. My husband has been AMAZING. I am hoping to get in a tennis shoe in two weeks. I have included pics for you. I followed my docs instructions and took the pain meds. I am in MO, USA.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "Lapiplasty",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 43,
+    "body": "Hi! I recently joined this group to receive advice on a lapiplasty performed on my left foot where it appears I have a non-union and an abscess (sinus tunnel) that has formed over the Treace hardware that was used. Quick background. I am physically fit and mid-50s in age. I am not a smoker. I do cardio sports to stay in shape - primarily Cycling and Running. I believe I have good circulation in my feet. I had an issue with a Morton's neuroma where my toes would go numb.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "neuroma",
+    "surgery_types_mentioned": "Lapiplasty",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 44,
+    "body": "Had bunion surgery July 25, 2025. Had major swelling and dr said 'are you sure you aren't allergic to absorbable surtures?' But did nothing. At all check ups, doctor said everything was 'normal', the pain, the swelling, the funny feeling. Walking is still painful (7 out of 10) Foot is still slightly swollen and feels like there is a very tight band around my foot. Edit - when my foot has no pressure, my big toe touches my second toe.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "bunion",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 45,
+    "body": "4 weeks post op right foot - lapidus procedure. Before and now photo - recovery going well - no weight bearing yet but pleased with how it looks and hardly any swelling and no pain. That will probably come when I start to weight bear.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "lapidus",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 46,
+    "body": "ETA: Finally home from the hospital. I am allergic to anti-inflammatory drugs so my surgeon wrapped it loose to allow for swelling and I was given an extra nerve block that will hopefully last for 48 hours. Happy healing everyone! About a year ago I had lapidus and a tendon release for hammertoe on my second toe. Recovery was long and frustrating, but smooth, and I am back to normal. Tomorrow I will say good-bye to my little friend on my right foot. I am definitely not excited about going through recovery again.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "hammer toe",
+    "surgery_types_mentioned": "lapidus",
+    "treatments_mentioned": "nerve block",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 47,
+    "body": "If I can offer one crucial bit of advice for surgery recovery after anesthesia: Fibre. Water. Laxatives. If you know, you know.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "",
+    "comments": [
+      "I learned the hard way, 9 days was not fun.",
+      "I learned the hard way. This problem as well as not being prepared for nausea were the worst part of the first week."
+    ],
+    "images": []
+  },
+  {
+    "id": 48,
+    "body": "New to post. Need help for ugly hammer toe!!!!",
+    "author": null,
+    "url": null,
+    "source_group": "Forefoot Forum",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "hammer toe",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 49,
+    "body": "I just went to a podiatrist and he said I have calcification around the heel spur. I'm in so much pain. I am doing the frozen water bottle rolling, tennis ball rolling, the stretches in the AM & throughout the day and nothing seems to be easing it. The doctor wants me to have physical therapy for 3 months and if that doesn't work, he would give me a shot of Cortisone. I may be able to get a shot through a different doctor. Has that helped anyone?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "heel spur",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "physical therapy, cortisone, rolling",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 50,
+    "body": "Heel Spurs. They are not the cause of your pain when it comes to PF. Over 15% of the world's population have a heel spur. Most of these people don't even realise they have one. And only discover it when they have a X-Ray for PF.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "heel spur",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 51,
+    "body": "I've had plantar fasciitis and a heel spur for 10 months despite steroid injections, B12 injections, and shockwave therapy. I still can't go back to the gym or Zumba and it's very frustrating. Has anyone tried plantar fascia embolization or PFE?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "heel spur",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "shockwave therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 52,
+    "body": "My PF caused a heel bone spur, any suggestions for home remedies or anything else that helps with the bone spur? Thanks",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "bone spur",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 53,
+    "body": "I used to have intense pain in my heels, I have very large heel spurs, I had massive amounts of tearing to my PF muscle and I had a trapped Baxtor nerve. I had surgery for a Tarsal tunnel release and partial plantar fascia release- I had both done at the same time in Nov. Ive had a major set back as my foot got infected, however day by day, its getting better, still extremely tender and only put pressure on my foot for a certain amount of time, but its so much better than before the surgery. Its a long process, but so far, its been worth it. Pic of incision is in the comments. Feel free to ask any questions.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "tarsal tunnel release, plantar fascia release",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 54,
+    "body": "Hi all. I was prescribed Terbinafine after other home treatments were unsuccessful. After a few days of treatment My throat became sore, not realising it could possibly be the Terbinafine I took some antihistamines thinking it may have been after cutting my grass for the first time this year. During the 3rd week on Terbinafine I developed ulcers on my tongue, throat and what felt in my upper lungs felt inflamed, like a burning sensation.",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "terbinafine",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 55,
+    "body": "Has anyone ever used the tanning bed at least twice/week while taking Terbinafine/Lamisil? I was prescribed this medication (I've taken it before but can't remember if I was tanning at the time or not) and I want to keep tanning. I'm getting my graduation pictures (for my doctorate) done in a few weeks and want to be tan, then I graduate May 9th. I want to continue tanning at least until then, so I was wondering if I should take it and keep tanning.",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "terbinafine",
+    "products_mentioned": "Lamisil",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 56,
+    "body": "Does this look like new, clean growth? I've been on ciclopirox lacquer for almost 4 months. I was also on terbinafine but had to stop that a month in due to an allergic reaction. I THINK this is clean outgrowth but I don't want to get my hopes up. Out of the 4 that are infected, this is the only one showing improvement.",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "terbinafine, ciclopirox",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 57,
+    "body": "So this is pretty representative of how my toenail fungus stays with over the counter stuff. I did two months of terbinafine a month ago then stopped because life stuff and now I have to do my final month. I really hope the yellow corners go away. Should I cut them off even though I'd have to cut my nail deep in the corners instead of straight across? Ignore the white in the crease of the left pic, I just buffed them to keep them extra thin since I do topical stuff too.",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "terbinafine",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 58,
+    "body": "Would applying Terbinafine cream be any good, as well as taking the oral medication?",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "terbinafine",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 59,
+    "body": "Almost fully recovered thanks to my night splint. Next up: 10 day trip to Paris this summer. I have very flat feet, so a little lift in my shoes works wonders. Experienced flat footers weigh in!!!! What sandal would you recommend for flat feet and somewhat stylish.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "flat feet",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "night splint",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 60,
+    "body": "Is night splint a big help for you guys? Planning to buy those.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "night splint",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 61,
+    "body": "While a night splint does seem to help, it's bulky and uncomfortable. My sheets are loose, but my feet are pointed down while I sleep and that seems to aggravate BOTH calves. Are y'all using anything while you sleep that keeps your feet more towards 90 degrees?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "night splint",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 62,
+    "body": "I've been using a night splint, just wondering if anyone else has used one and do they help.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "night splint",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 63,
+    "body": "My PT recommended a night splint sock but I couldn't find one that would fit me.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "physical therapy, night splint",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 64,
+    "body": "Shoes or slippers?! I was fitted for Hoka Clifton at running shop. I wore these on Sunday, but shoes seems pretty snug on surgical foot. Foot was too swollen for any shoes my mid-morning on Monday so I bought extra large mens slippers. Should I buy a size up for my surgical foot in the Bondi's and wear two different sizes?!",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "Hoka",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 65,
+    "body": "I bought Hoka x-wide Clifton from running store after surgery. Are these wide toe box enough?",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "Hoka",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 66,
+    "body": "Hi all I'm 15 months post op where I had my toe fused. I have been wearing Hoka Bondi shoes since I started walking. I have recently started wearing thongs again. I'm wearing Archies thongs and not finding them good. Any recommendations on comfortable thongs would be appreciated. Or even a slide on shoe that you've found to be comfy to walk in after toe fusion. Thanks in advance.",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "toe fusion",
+    "treatments_mentioned": "",
+    "products_mentioned": "Hoka, Archies",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 67,
+    "body": "I think I may need to order 100 pairs of these Hoka sneakers! I feel like I'm walking on cloud without inserts and I also am able to walk without a limp like I was able to before my surgery! Thanks mom!",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "Hoka",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 68,
+    "body": "Apparently, I have a few things going on here: 1. Bunion - had it for years but became more pronounced this year where you can see it poking out a little in my Hoka's. 2. Hallux Limitus- stiff big toe & starting to lean inward. 3. Lateral deviation of the sesamoid bone positioning. X-ray showed the one was on the right of my big toe metatarsal instead of underneath it where it should be. I believe this is what's causing me the most pain walking. I've been having trouble walking correctly where I can't push off the ball of my foot and put pressure on my toes and noticing my walking stance is now leaning towards the outside of my right foot. Noticing pain in my hips and lower back too, so I think this could be a domino effect. I've been limited to only wearing my Hoka's even to work bc other shoes just hurt. Upon the doctor telling me I could get a Cortizone shot there's really nothing else I can do because I have orthotics already, I brought up surgery (she did not) & she said she can fix this with surgery. My gut is telling me to go for it now that my deductible has been met and get it over with, but not sure if I need to research this doctor more and even how to do that. I like her but she's no frills, gets you in & out, and her last Google reviews are from 2017 and prior. Any advice is welcome. Should I bother getting a second opinion?",
+    "author": null,
+    "url": null,
+    "source_group": "bunion surgery / foot surgery support group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "bunion, hallux limitus, sesamoiditis",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery, cortisone",
+    "products_mentioned": "Hoka",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 69,
+    "body": "I read different posts about people experiences with PRP. It seems doctors follow different ways of doing it. Mine said it will be similar to the cortisone injection. He does the first shot of Lidocaine and then cortisone shot. I can tolerate those shots. Mine are injected in the side of my foot. Not the heal. I see it mentioned about a nerve blocker on this site. Not sure what that is. Has anyone had this done in a similar way?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "cortisone, PRP",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 70,
+    "body": "Custom or ready made Amazon Orthotics? Which is better? Share your experiences. For me it's a transitioning issue.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 71,
+    "body": "PF diagnosed in 2015. Custom orthotics + PT off/on for a year. 2016 PF partial rupture in right foot. Boot for 3 months. 2017 - 8k spent in PT, shockwave, acupuncture. No improvements. 2018 PF partial tare in the left foot. Boot for 2 months until I could tolerate the pain without. Half a dozen orthotics over the years. Various trials and doses of cortisone injections every 3 months from 2019-2024.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "physical therapy, cortisone, shockwave therapy, acupuncture",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 72,
+    "body": "Does anyone have pain that moves around? Every time I wear a different shoe even if it's with my same custom orthotics the pain moves to different areas. Also, has anyone had custom orthotics that made their feet worse? I am wondering if I should try again with my custom orthotics.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 73,
+    "body": "Has anyone had luck with custom orthotics such as StrideSoles or Upstep? They're so expensive, I don't want to spend the money unless they actually work.",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "StrideSoles, Upstep",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 74,
+    "body": "When you buy new shoes to help with PF, do you still use inserts or custom orthotics in the new shoes?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 75,
+    "body": "Hi. I had fungal nails for years then laser therapy cleared it up over 2yrs ago. They recovered well. But I'm now experiencing chronic oncholysis resulting in toenails being really damaged. I don't have any debris etc to indicate fungus has returned & I treated for a while but stopped as I felt it wasn't helping. I think my toes got worse after a 3 week period of nail polish 4 months ago but now they just seem to have deteriorated. Any ideas what other conditions would more likely cause this?",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "toenail fungus, oncholysis",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "laser therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 76,
+    "body": "I'm seeing a podiatrist in a few weeks who has a foot aesthetics practice. From what I can tell from reviews, her patients have had success with laser. All of my online research looks like lasers for fungus are 50/50. Anyone here had any luck with lasers? Two rounds of terbinafine did nothing for me.",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "laser therapy, terbinafine",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 77,
+    "body": "Has any one tried laser treatment? If so, what was your outcome?",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "laser therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 78,
+    "body": "How much cost is laser treatment and how many times do u need for moderate to severe infection basically on all toes?",
+    "author": null,
+    "url": null,
+    "source_group": "Toenail Fungus Support & Management",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "laser therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 79,
+    "body": "Question for the group: I've been wanting to try shockwave therapy and understand it gets expensive. I am therefore considering buying my own machine. Has anyone made the switch from clinic treatments to a home device? I'm curious if the 'home version' is powerful enough to actually work. Any brand recommendations?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "shockwave therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 80,
+    "body": "Has anyone used Shockwave therapy?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "shockwave therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 81,
+    "body": "I am undergoing shockwave therapy, and it has been painful for me. After the third session, I had to go out for three consecutive days, and I experienced pain in my leg. One of those days, I wore a compression sock that I had just bought, but it turned out to be tighter than needed, which caused congestion and increased pain. My doctor prescribed anti-inflammatory medications. Is what happened concerning? And should I stop the shockwave therapy sessions?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "shockwave therapy, compression",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 82,
+    "body": "Talk to me about Shockwave therapy. Does it actually work? What is the success rate? Has anyone had any success getting it covered by insurance? EDIT: Has anyone done it with success after having PF for several years and being post OP about 7 month of the plantar fasciotomy with extreme swelling and scar tissue accompanied with pain from the surgery and had positive results?",
+    "author": null,
+    "url": null,
+    "source_group": "Plantar Fasciitis Talk and Tips Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery, shockwave therapy",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 83,
+    "body": "Recently I noticed big toes were leading to second toes, it was more obvious for left toe. Sometimes I feel needles on the big toes. So I went to see a GP. He said he wouldn't refer me to specialist unless I have eg hammer toes or deformed bones, and also my needle sensation is not happening all the time. He only asked me to continue wearing toe spacers and do a blood test. Now I feel helpless coz it seems he can't refer me to a foot doctor yet. Was this also how your GP advise you?",
+    "author": null,
+    "url": null,
+    "source_group": "Bunion Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 84,
+    "body": "I got wide toe box sneakers. Does anyone have suggestions for comfortable toe separators or toe socks I can wear with them? I wear the pictured separator socks to bed. I know I can't correct my bunions these ways, but I'm hoping to stop the progression. Of course our cat got in the way of my picture, but I figured I won't redo it. I know many people like cat and dog pictures (like me).",
+    "author": null,
+    "url": null,
+    "source_group": "Bunion Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 85,
+    "body": "With the discomfort of toes touching one another, anyone is able to wear toe spacer the whole day when moving about?",
+    "author": null,
+    "url": null,
+    "source_group": "Bunion Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "toe spacers",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 86,
+    "body": "Has anyone in the U.K. found toe spacers that can be used all the time comfortably? I splashed out on correct toes and they have damaged the skin and were very painful to walk in. (Rubbing the skin). I'm athletic and want to run in spacers.",
+    "author": null,
+    "url": null,
+    "source_group": "Bunion Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "",
+    "products_mentioned": "Correct Toes",
+    "comments": [],
+    "images": []
+  },
+  {
+    "id": 87,
+    "body": "My foot is still slightly swollen but I'm noticing my second toe slightly shifts left touching my big toe. My doctor said the big toe is straight but I'm annoyed how close together my toes still are. What do y'all think? Am I overreacting? I'm happy I'm not in pain as I was in so much pain prior to surgery but I think now I'm obsessed with how it looks. I have been wearing a spacer and still do 24/7. I added my before photo at the end.",
+    "author": null,
+    "url": null,
+    "source_group": "Bunion Support Group",
+    "date_captured": "2026-04-04",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "products_mentioned": "",
+    "comments": [],
+    "images": []
   }
 ]
