@@ -47,6 +47,9 @@ Aids: Knee scooter, surgical boot, ice pack, compression socks, toe spacers
 ## Content Sources
 Real patient discussions from foot health support communities. Organized by condition and treatment type.
 
+## Individual Discussion Pages
+Each topic page contains links to individual discussion pages available at /[topic]/[discussion-slug]/. These dedicated pages show the full post content, all images, all comments, and related discussions from the same topic.
+
 ## Contact
 Website: https://fixfeetfast.com
 About: https://fixfeetfast.com/about/

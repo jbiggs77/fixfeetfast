@@ -271,6 +271,143 @@ def load_posts(filepath):
     with open(filepath, 'r') as f:
         return json.load(f)
 
+def slugify(text, post_id):
+    """Generate URL-friendly slug from post body text"""
+    import re
+
+    # Take first ~60 chars of text
+    text = text[:60] if text else ""
+
+    # Lowercase and strip non-alphanumeric (keep spaces)
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s]', '', text)
+
+    # Replace spaces with hyphens
+    text = re.sub(r'\s+', '-', text)
+
+    # Remove consecutive hyphens
+    text = re.sub(r'-+', '-', text)
+
+    # Trim hyphens from ends
+    text = text.strip('-')
+
+    # If slug is empty or very short, use fallback
+    if not text or len(text) < 3:
+        return f"discussion-{post_id}"
+
+    return text
+
+# Internal linking map: phrase -> (url, display_text)
+LINK_MAP = None
+
+def build_link_map():
+    """Build a map of phrases to internal links from NICHE_MAP"""
+    global LINK_MAP
+    if LINK_MAP is not None:
+        return LINK_MAP
+
+    import re
+    LINK_MAP = {}
+
+    # Map common phrases to their topic pages
+    phrase_map = {
+        # Bunion surgery recovery
+        "bunion surgery recovery": "/bunion-surgery-recovery/",
+        "bunion recovery": "/bunion-surgery-recovery/",
+        "bunionectomy recovery": "/bunion-surgery-recovery/",
+        # MIS
+        "minimally invasive surgery": "/minimally-invasive-bunion-surgery/",
+        "minimally invasive bunion": "/minimally-invasive-bunion-surgery/",
+        "MIS bunion": "/minimally-invasive-bunion-surgery/",
+        "MICA": "/minimally-invasive-bunion-surgery/",
+        # Lapiplasty
+        "Lapiplasty": "/lapiplasty-surgery/",
+        "lapiplasty": "/lapiplasty-surgery/",
+        "3D bunion correction": "/lapiplasty-surgery/",
+        # Hammer toe
+        "hammer toe surgery": "/hammer-toe-surgery/",
+        "hammer toe": "/hammer-toe-surgery/",
+        "hammertoe": "/hammer-toe-surgery/",
+        # Swelling
+        "post-surgery swelling": "/bunion-surgery-swelling/",
+        "swelling after surgery": "/bunion-surgery-swelling/",
+        # Shoes
+        "post-surgery shoes": "/post-surgery-shoes/",
+        "shoes after surgery": "/post-surgery-shoes/",
+        "surgical shoes": "/post-surgery-shoes/",
+        # Pain
+        "bunion surgery pain": "/bunion-surgery-pain/",
+        "post-surgery pain": "/bunion-surgery-pain/",
+        "pain after surgery": "/bunion-surgery-pain/",
+        # Walking
+        "walking after surgery": "/walking-after-surgery/",
+        "weight bearing": "/walking-after-surgery/",
+        "non-weight bearing": "/walking-after-surgery/",
+        # Scarf Akin
+        "Scarf and Akin": "/scarf-akin-osteotomy/",
+        "scarf osteotomy": "/scarf-akin-osteotomy/",
+        "Scarf Akin": "/scarf-akin-osteotomy/",
+        # Complications
+        "surgery complications": "/bunion-surgery-complications/",
+        "wound dehiscing": "/bunion-surgery-complications/",
+        "surgical complications": "/bunion-surgery-complications/",
+        # Physical therapy
+        "physical therapy": "/physical-therapy-foot/",
+        "PT exercises": "/physical-therapy-foot/",
+        # Toe spacers
+        "toe spacers": "/toe-spacers-orthotics/",
+        "orthotics": "/toe-spacers-orthotics/",
+        "bunion corrector": "/toe-spacers-orthotics/",
+        # Flat feet
+        "flat feet": "/flat-feet-arch-support/",
+        "fallen arches": "/flat-feet-arch-support/",
+        "arch support": "/flat-feet-arch-support/",
+        # Plantar fasciitis
+        "plantar fasciitis": "/plantar-fasciitis/",
+        "heel pain": "/plantar-fasciitis/",
+        "plantar fascia": "/plantar-fasciitis/",
+        # Toenail fungus
+        "toenail fungus": "/toenail-fungus/",
+        "nail fungus": "/toenail-fungus/",
+        "onychomycosis": "/toenail-fungus/",
+    }
+
+    # Sort by phrase length descending so longer phrases match first
+    LINK_MAP = dict(sorted(phrase_map.items(), key=lambda x: len(x[0]), reverse=True))
+    return LINK_MAP
+
+def auto_link_text(text, current_page_url=None, max_links=5):
+    """Add internal links to text for matching phrases.
+
+    Args:
+        text: The text to add links to
+        current_page_url: URL of the current page (don't link to self)
+        max_links: Maximum number of links to add (avoid over-linking)
+    """
+    import re
+    link_map = build_link_map()
+
+    links_added = 0
+    linked_urls = set()  # Don't link to the same URL twice
+
+    for phrase, url in link_map.items():
+        if links_added >= max_links:
+            break
+        if current_page_url and url.rstrip('/') in current_page_url:
+            continue  # Don't link to current page
+        if url in linked_urls:
+            continue  # Already linked to this URL
+
+        # Case-insensitive match, only first occurrence, whole word boundary
+        pattern = re.compile(r'(?<![<\w/])(' + re.escape(phrase) + r')(?![>\w])', re.IGNORECASE)
+        if pattern.search(text):
+            replacement = f'<a href="{url}" class="auto-link">\\1</a>'
+            text = pattern.sub(replacement, text, count=1)
+            links_added += 1
+            linked_urls.add(url)
+
+    return text
+
 def ensure_output_dir():
     """Create output directory structure"""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -1060,6 +1197,92 @@ section {{
     grid-template-columns: 1fr;
   }}
 }}
+
+/* Individual Post Page */
+.post-full-body {{
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  white-space: pre-line;
+}}
+.post-meta-bar {{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}}
+.post-comments-section {{
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}}
+.post-comments-section h2 {{
+  margin-bottom: 1rem;
+}}
+.post-comment-card {{
+  background: var(--bg-light);
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}}
+.back-link {{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}}
+.back-link:hover {{
+  text-decoration: underline;
+}}
+.auto-link {{
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+}}
+.auto-link:hover {{
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  background: rgba(33, 150, 243, 0.05);
+}}
+.related-discussions {{
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}}
+.related-discussions h2 {{
+  margin-bottom: 1rem;
+}}
+.related-discussion-card {{
+  display: block;
+  padding: 1rem 1.25rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: background 0.2s;
+}}
+.related-discussion-card:hover {{
+  background: var(--accent-light);
+}}
+.related-discussion-card h3 {{
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}}
+.related-discussion-card p {{
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}}
 """
 
 def get_page_header(title, description="", niche_id=None, niche_data=None):
@@ -1185,6 +1408,151 @@ def get_page_footer():
 </body>
 </html>
 """
+
+def generate_post_page(post, niche_id, niche_data, all_posts):
+    """Generate individual post page"""
+
+    # Generate title and slug from post body
+    post_body_raw = post.get('body', '')
+    post_title = post_body_raw[:60].rstrip('.,!?;:') if post_body_raw else "Discussion"
+    post_slug = slugify(post_body_raw, post.get('id', 'unknown'))
+
+    # Auto-link text for internal linking
+    current_url = f"/{niche_id}/{post_slug}/"
+    post_body = auto_link_text(post_body_raw, current_page_url=current_url, max_links=5)
+
+    # Generate meta description (first 155 chars, from raw text)
+    meta_description = post_body_raw[:155].replace('"', '').replace("'", "")
+
+    # Create breadcrumb title
+    topic_title = niche_data.get('title', 'Topic')
+
+    html = get_page_header(post_title, meta_description, niche_id, niche_data)
+
+    # Breadcrumbs
+    html += f"""
+  <main>
+    <section class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> <span>›</span> <a href="/{niche_id}/">{topic_title}</a> <span>›</span> {post_title[:50]}...
+      </div>
+    </section>
+
+    <section class="container">
+      <article>
+        <h1>{post_title}</h1>
+
+        <div class="post-meta-bar">
+          <span>From {post.get('source_group', 'Community')}</span>
+        </div>
+
+        <div class="post-full-body">{post_body}</div>
+"""
+
+    # Images
+    images = post.get('images', [])
+    if images:
+        img_class = 'single' if len(images) == 1 else 'gallery'
+        html += f'        <div class="discussion-images {img_class}">\n'
+        for img_path in images:
+            html += f'          <img src="/{img_path}" alt="Community photo" loading="lazy">\n'
+        html += '        </div>\n'
+
+    # Badges
+    html += """        <div class="discussion-badges">
+"""
+    if products := post.get('products_mentioned'):
+        for product in products.split(','):
+            product = product.strip()
+            if product:
+                html += f'          <span class="badge product">{product}</span>\n'
+
+    if treatments := post.get('treatments_mentioned'):
+        for treatment in treatments.split(','):
+            treatment = treatment.strip()
+            if treatment:
+                html += f'          <span class="badge treatment">{treatment}</span>\n'
+
+    if surgeries := post.get('surgery_types_mentioned'):
+        for surgery in surgeries.split(','):
+            surgery = surgery.strip()
+            if surgery:
+                html += f'          <span class="badge surgery">{surgery}</span>\n'
+
+    html += """        </div>
+"""
+
+    # Comments section
+    comments = post.get('comments', [])
+    if comments:
+        html += f"""
+        <div class="post-comments-section">
+          <h2>Comments ({len(comments)})</h2>
+"""
+        for comment in comments:
+            html += f"""          <div class="post-comment-card">
+            <div class="comment-text">{comment.get('comment_text', '')}</div>
+            <div class="comment-meta">Community member</div>
+          </div>
+"""
+        html += """        </div>
+"""
+
+    # Back link
+    html += f"""
+        <a href="/{niche_id}/" class="back-link">← Back to {topic_title}</a>
+"""
+
+    # Related discussions section
+    # Find other posts from the same topic
+    related_posts = []
+    for other_post in all_posts:
+        if other_post.get('id') == post.get('id'):
+            continue
+        if conditions := other_post.get('conditions_mentioned'):
+            conditions_lower = conditions.lower()
+            for keyword in niche_data['keywords']:
+                if keyword.lower() in conditions_lower:
+                    related_posts.append(other_post)
+                    break
+
+    if related_posts:
+        html += f"""
+        <div class="related-discussions">
+          <h2>Related Discussions</h2>
+"""
+        for related_post in related_posts[:4]:
+            related_body = related_post.get('body', '')[:75]
+            related_slug = slugify(related_body, related_post.get('id', 'unknown'))
+            related_title = related_body[:50]
+            html += f"""          <a href="/{niche_id}/{related_slug}/" class="related-discussion-card">
+            <h3>{related_title}...</h3>
+            <p>From {related_post.get('source_group', 'Community')}</p>
+          </a>
+"""
+        html += """        </div>
+"""
+
+    html += """      </article>
+    </section>
+  </main>
+"""
+
+    # Schema.org DiscussionForumPosting
+    discussion_schema = {
+        "@context": "https://schema.org",
+        "@type": "DiscussionForumPosting",
+        "headline": post_title,
+        "text": post_body_raw,
+        "url": f"{SITE_URL}/{niche_id}/{post_slug}/",
+        "dateModified": datetime.now().strftime("%Y-%m-%d"),
+        "author": {"@type": "Person", "name": "Community Member"},
+        "discussionUrl": f"{SITE_URL}/{niche_id}/{post_slug}/",
+    }
+    html += f'  <script type="application/ld+json">\n{json.dumps(discussion_schema)}\n  </script>\n'
+
+    html += get_page_footer()
+    return html
 
 def generate_homepage(posts):
     """Generate index.html"""
@@ -1519,6 +1887,9 @@ def generate_topic_page(niche_id, niche_data, posts):
 """
 
         for post in topic_posts[:20]:  # Limit to 20 per page
+            post_body_raw = post.get('body', '')
+            post_slug = slugify(post_body_raw, post.get('id', 'unknown'))
+            post_preview = auto_link_text(post_body_raw[:200], current_page_url=f"/{niche_id}/", max_links=2)
             html += f"""      <div class="discussion">
         <div class="discussion-header">
           <div class="discussion-meta">From {post.get('source_group', 'Community')}</div>
@@ -1534,7 +1905,7 @@ def generate_topic_page(niche_id, niche_data, posts):
                     html += f'          <img src="/{img_path}" alt="Community photo" loading="lazy">\n'
                 html += '        </div>\n'
 
-            html += f"""        <div class="discussion-body">{post.get('body', '')[:400]}...</div>
+            html += f"""        <div class="discussion-body">{post_preview}...</div>
         <div class="discussion-badges">
 """
 
@@ -1559,7 +1930,8 @@ def generate_topic_page(niche_id, niche_data, posts):
                     if surgery:
                         html += f'          <span class="badge surgery">{surgery}</span>\n'
 
-            html += """        </div>
+            html += f"""          <a href="/{niche_id}/{post_slug}/" style="color: var(--accent); text-decoration: none; font-weight: 500;">Read full discussion →</a>
+        </div>
 """
 
             # Comments
@@ -1713,7 +2085,7 @@ def generate_about_page():
     html += get_page_footer()
     return html
 
-def generate_sitemap(niche_ids):
+def generate_sitemap(niche_ids, posts):
     """Generate sitemap.xml"""
     today = datetime.now().strftime("%Y-%m-%d")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1725,6 +2097,25 @@ def generate_sitemap(niche_ids):
     # Topic pages
     for niche_id in niche_ids:
         xml += f'  <url>\n    <loc>{SITE_URL}/{niche_id}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+
+    # Individual post pages
+    for niche_id, niche_data in NICHE_MAP.items():
+        # Filter posts for this niche
+        topic_posts = []
+        for post in posts:
+            if conditions := post.get('conditions_mentioned'):
+                conditions_lower = conditions.lower()
+                # Check if any keyword matches the conditions
+                for keyword in niche_data['keywords']:
+                    if keyword.lower() in conditions_lower:
+                        topic_posts.append(post)
+                        break
+
+        # Add post URLs to sitemap
+        for post in topic_posts:
+            post_body = post.get('body', '')
+            post_slug = slugify(post_body, post.get('id', 'unknown'))
+            xml += f'  <url>\n    <loc>{SITE_URL}/{niche_id}/{post_slug}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n'
 
     # About page
     xml += f'  <url>\n    <loc>{SITE_URL}/about/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.5</priority>\n  </url>\n'
@@ -1802,6 +2193,9 @@ Aids: Knee scooter, surgical boot, ice pack, compression socks, toe spacers
 ## Content Sources
 Real patient discussions from foot health support communities. Organized by condition and treatment type.
 
+## Individual Discussion Pages
+Each topic page contains links to individual discussion pages available at /[topic]/[discussion-slug]/. These dedicated pages show the full post content, all images, all comments, and related discussions from the same topic.
+
 ## Contact
 Website: {SITE_URL}
 About: {SITE_URL}/about/
@@ -1832,6 +2226,33 @@ def main():
         niche_dir.mkdir(exist_ok=True)
         (niche_dir / "index.html").write_text(topic_html)
 
+    # Generate individual post pages
+    print("Generating individual post pages...")
+    post_page_count = 0
+    for niche_id, niche_data in NICHE_MAP.items():
+        # Filter posts for this niche
+        topic_posts = []
+        for post in posts:
+            if conditions := post.get('conditions_mentioned'):
+                conditions_lower = conditions.lower()
+                # Check if any keyword matches the conditions
+                for keyword in niche_data['keywords']:
+                    if keyword.lower() in conditions_lower:
+                        topic_posts.append(post)
+                        break
+
+        # Generate a page for each post in this niche
+        for post in topic_posts:
+            post_body = post.get('body', '')
+            post_slug = slugify(post_body, post.get('id', 'unknown'))
+            post_html = generate_post_page(post, niche_id, niche_data, posts)
+            post_dir = OUTPUT_DIR / niche_id / post_slug
+            post_dir.mkdir(parents=True, exist_ok=True)
+            (post_dir / "index.html").write_text(post_html)
+            post_page_count += 1
+
+    print(f"Generated {post_page_count} individual post pages")
+
     # Generate about page
     print("Generating about page...")
     about_html = generate_about_page()
@@ -1839,7 +2260,7 @@ def main():
 
     # Generate sitemap
     print("Generating sitemap.xml...")
-    sitemap_xml = generate_sitemap(NICHE_MAP.keys())
+    sitemap_xml = generate_sitemap(NICHE_MAP.keys(), posts)
     (OUTPUT_DIR / "sitemap.xml").write_text(sitemap_xml)
 
     # Generate robots.txt
