@@ -41,76 +41,226 @@ NICHE_MAP = {
         "title": "Bunion Surgery Recovery",
         "keywords": ["bunion surgery", "bunion recovery", "bunionectomy", "post-op bunion"],
         "description": "Recovery timeline, experiences, and tips after bunion surgery",
+        "meta_title": "Bunion Surgery Recovery: Timeline, Tips & Real Experiences",
+        "meta_description": "Real bunion surgery recovery experiences from patients. Week-by-week timeline, swelling tips, when to walk, and what to expect after bunionectomy.",
+        "intro_content": "Bunion surgery recovery varies significantly depending on the procedure performed, but most patients can expect a recovery period of 6 to 12 weeks before returning to normal activities. The first two weeks are typically the most challenging, with significant swelling, limited mobility, and the need to keep the foot elevated as much as possible.\n\nBased on experiences shared by thousands of patients in foot surgery support communities, the recovery timeline often looks different from what surgeons initially describe. Many patients report that swelling can persist for 3 to 6 months — or even up to a year — after surgery. Understanding what's normal and hearing from others who've been through it can help set realistic expectations.\n\nBelow you'll find real discussions from people at various stages of bunion surgery recovery, sharing what worked for them, what surprised them, and advice they wish they'd known before surgery.",
+        "related": ["bunion-surgery-swelling", "walking-after-surgery", "post-surgery-shoes", "bunion-surgery-pain"],
+        "faqs": [
+            {"q": "How long does it take to fully recover from bunion surgery?", "a": "Full recovery from bunion surgery typically takes 3 to 6 months, though some patients report residual swelling for up to a year. Most people can return to desk work in 2-4 weeks, drive after 6-8 weeks, and resume exercise around 3-4 months. Recovery varies based on the procedure — MIS and Lapiplasty may have different timelines than traditional osteotomy."},
+            {"q": "What is the fastest way to recover from bunion surgery?", "a": "The most commonly recommended recovery tips include: keeping the foot elevated above heart level for the first 2 weeks, icing regularly to manage swelling, following your surgeon's weight-bearing instructions exactly, starting physical therapy when cleared, and wearing supportive shoes during the transition period. Many patients also emphasize the importance of patience — rushing recovery often leads to setbacks."},
+            {"q": "When can I walk normally after bunion surgery?", "a": "Most patients begin partial weight bearing in a surgical boot 2-6 weeks after surgery, depending on the procedure. Walking in regular shoes typically starts around 6-8 weeks, though a normal gait pattern may take 3-4 months to fully return. Many patients report that their walking improved gradually over several months."},
+            {"q": "Is bunion surgery worth it?", "a": "Most patients who share their experiences report that bunion surgery was worth it, despite the challenging recovery period. Common sentiments include wishing they'd done it sooner, being surprised by how long recovery takes, but ultimately being happy with the results once fully healed. The decision depends on your pain level, activity limitations, and willingness to commit to the recovery process."},
+        ],
     },
     "minimally-invasive-bunion-surgery": {
         "title": "Minimally Invasive Bunion Surgery (MIS)",
         "keywords": ["mis", "minimally invasive", "mis bunion", "keyhole bunion"],
         "description": "Minimally invasive approaches to bunion correction",
+        "meta_title": "MIS Bunion Surgery: Recovery, Results & Patient Experiences",
+        "meta_description": "Real patient experiences with minimally invasive bunion surgery (MIS). Recovery times, scarring, results, and comparisons with traditional bunion surgery.",
+        "intro_content": "Minimally invasive bunion surgery (MIS) uses small incisions and specialized instruments to correct bunion deformities without the large incisions of traditional surgery. Procedures like percutaneous chevron Akin (PECA) and MICA have gained popularity for potentially faster recovery and less scarring.\n\nPatients frequently discuss the pros and cons of MIS versus traditional open surgery. While MIS often results in smaller scars and may allow earlier weight bearing, it's not suitable for all bunion severities. Surgeon experience with the technique is considered crucial for good outcomes.\n\nHere are real discussions from patients who've had minimally invasive bunion surgery, sharing their recovery experiences, results, and advice.",
+        "related": ["bunion-surgery-recovery", "lapiplasty-surgery", "scarf-akin-osteotomy", "walking-after-surgery"],
+        "faqs": [
+            {"q": "What is minimally invasive bunion surgery?", "a": "Minimally invasive bunion surgery (MIS) corrects bunions through small incisions (typically 3-5mm) rather than the larger cuts used in traditional surgery. The surgeon uses specialized tools guided by X-ray imaging. Common MIS techniques include percutaneous chevron Akin (PECA) and MICA procedures."},
+            {"q": "Is MIS bunion surgery better than traditional surgery?", "a": "MIS bunion surgery offers potential advantages including smaller scars, less soft tissue damage, and possibly faster early recovery. However, it may not be suitable for severe bunions and requires a surgeon experienced in the technique. Outcomes depend heavily on the surgeon's skill and the severity of the bunion."},
+            {"q": "How long is recovery from minimally invasive bunion surgery?", "a": "Many MIS patients report being able to bear weight in a surgical shoe within days of surgery, compared to weeks with traditional approaches. However, full recovery still takes 3-6 months. Swelling timelines are similar to traditional surgery."},
+            {"q": "What are the risks of MIS bunion surgery?", "a": "Risks include under-correction of the bunion, over-correction, fracture, nerve damage, and the possibility of needing revision surgery. Because the surgeon works through small incisions with limited visibility, the technique demands significant surgical experience."},
+        ],
     },
     "lapiplasty-surgery": {
         "title": "Lapiplasty 3D Bunion Surgery",
         "keywords": ["lapiplasty", "3d bunion", "lapiplasty procedure"],
         "description": "Lapiplasty 3D procedure experiences and recovery",
+        "meta_title": "Lapiplasty 3D Bunion Surgery: Cost, Recovery & Reviews",
+        "meta_description": "Real patient reviews of Lapiplasty 3D bunion correction. Recovery timeline, costs, pros and cons, and how it compares to traditional bunion surgery.",
+        "intro_content": "Lapiplasty is a patented 3D bunion correction procedure that addresses the root cause of bunions by correcting the metatarsal bone in three dimensions, rather than just shaving the bump. The procedure uses titanium plates to stabilize the correction, which proponents say reduces the chance of bunion recurrence.\n\nThe procedure has generated significant discussion among patients, with strong opinions on both sides. Supporters cite the three-dimensional correction and low recurrence rate, while others note the higher cost and the presence of permanent hardware.\n\nBelow are real patient experiences with Lapiplasty, including recovery timelines, results, and honest assessments of the procedure.",
+        "related": ["bunion-surgery-recovery", "minimally-invasive-bunion-surgery", "walking-after-surgery", "bunion-surgery-complications"],
+        "faqs": [
+            {"q": "How much does Lapiplasty surgery cost?", "a": "Lapiplasty typically costs between $5,000 and $15,000 depending on location, surgeon, and insurance coverage. Many insurance plans cover the procedure when medically necessary. Out-of-pocket costs vary widely based on your plan's deductible and copay structure."},
+            {"q": "What is the recovery time for Lapiplasty?", "a": "Lapiplasty patients are often allowed to bear weight in a boot within a few days of surgery, which is faster than some traditional procedures. Most patients transition to regular shoes around 6-8 weeks. Full recovery with return to all activities typically takes 3-4 months."},
+            {"q": "Is Lapiplasty better than regular bunion surgery?", "a": "Lapiplasty addresses the bunion in three dimensions, which may reduce recurrence rates compared to 2D corrections. However, it involves permanent titanium plates, is more expensive, and not all surgeons are trained in the technique. The best procedure depends on your specific bunion anatomy."},
+            {"q": "Can Lapiplasty bunions come back?", "a": "Lapiplasty claims a lower recurrence rate than traditional 2D corrections because it addresses the root cause of the bunion. However, no surgery guarantees permanent correction. Factors like genetics, footwear choices, and biomechanics can influence long-term results."},
+        ],
     },
     "hammer-toe-surgery": {
         "title": "Hammer Toe Surgery & Correction",
         "keywords": ["hammer toe", "hammertoe", "toe fusion", "claw toe", "mallet toe"],
         "description": "Hammer toe surgery options and recovery experiences",
+        "meta_title": "Hammer Toe Surgery: Recovery, Types & Patient Experiences",
+        "meta_description": "Real hammer toe surgery experiences. Recovery timeline, toe fusion vs. arthroplasty, pain management, and what to expect after hammer toe correction.",
+        "intro_content": "Hammer toe surgery corrects toes that have become bent or curled due to muscle imbalance, arthritis, or ill-fitting shoes. The most common procedures are arthroplasty (removing part of the joint) and arthrodesis (fusing the joint), often performed alongside bunion surgery.\n\nPatients frequently discuss the differences between flexible and rigid hammer toe corrections, the use of pins or screws, and the recovery experience. Many are surprised that hammer toe recovery can be more uncomfortable than bunion surgery recovery.\n\nHere are real patient discussions about hammer toe surgery, including recovery experiences, outcomes, and practical advice.",
+        "related": ["bunion-surgery-recovery", "post-surgery-shoes", "walking-after-surgery", "physical-therapy-foot"],
+        "faqs": [
+            {"q": "How long does hammer toe surgery recovery take?", "a": "Recovery from hammer toe surgery typically takes 4-6 weeks for initial healing and 3-4 months for full recovery. If a pin was used, it's usually removed after 3-4 weeks. Swelling can persist for several months. Many patients have hammer toe surgery combined with bunion surgery, which extends the overall recovery."},
+            {"q": "Is hammer toe surgery painful?", "a": "Most patients report moderate pain for the first 1-2 weeks after surgery, managed with prescribed pain medication. Many patients say the post-surgical discomfort is manageable but that the toe stiffness during recovery is more bothersome than the pain itself."},
+            {"q": "Can hammer toes come back after surgery?", "a": "Hammer toes can recur after surgery, particularly if the underlying cause (such as muscle imbalance or footwear habits) isn't addressed. Arthrodesis (fusion) has a lower recurrence rate than arthroplasty. Wearing proper footwear and doing toe exercises can help prevent recurrence."},
+            {"q": "What shoes should I wear after hammer toe surgery?", "a": "Post-surgery footwear progression typically goes: surgical shoe for 2-4 weeks, then a wide athletic shoe with a roomy toe box. Brands frequently recommended by patients include Hoka, New Balance (wide), and Skechers with extra-wide options. Avoid narrow or pointed shoes."},
+        ],
     },
     "bunion-surgery-swelling": {
         "title": "Post-Surgery Swelling & Inflammation",
         "keywords": ["swelling", "inflammation", "edema", "swollen foot", "swollen toe"],
         "description": "Managing swelling and inflammation after foot surgery",
+        "meta_title": "Swelling After Bunion Surgery: How Long & How to Reduce It",
+        "meta_description": "How long does swelling last after bunion surgery? Real patient experiences with post-surgical swelling, proven reduction tips, and when to worry.",
+        "intro_content": "Swelling after bunion surgery is one of the most common concerns patients face during recovery. While surgeons typically mention 6-8 weeks of swelling, the reality shared by thousands of patients is that swelling often persists for 3 to 6 months — and sometimes up to a full year.\n\nThe degree of swelling varies throughout the day, typically worsening in the evening and after activity. Temperature, humidity, and how long you've been on your feet all affect swelling levels. Many patients find this ongoing swelling to be the most frustrating aspect of recovery.\n\nBelow are real discussions from patients sharing their swelling timelines, what helped reduce it, and when they finally felt their foot was back to normal.",
+        "related": ["bunion-surgery-recovery", "bunion-surgery-pain", "walking-after-surgery", "physical-therapy-foot"],
+        "faqs": [
+            {"q": "How long does swelling last after bunion surgery?", "a": "Based on patient experiences, mild to moderate swelling commonly lasts 3-6 months after bunion surgery, with some patients reporting swelling up to a year. The most significant swelling occurs in the first 2-4 weeks. Swelling that worsens suddenly or is accompanied by redness and heat should be reported to your surgeon."},
+            {"q": "How do I reduce swelling after bunion surgery?", "a": "The most effective strategies include: elevation (keeping the foot above heart level), icing for 20 minutes at a time, compression socks when approved by your surgeon, gentle ankle pumps and toe exercises, and limiting time on your feet. Many patients find that swelling gets worse later in the day."},
+            {"q": "Is it normal for my foot to still be swollen months after surgery?", "a": "Yes, this is very common. Many patients report that their foot is still somewhat swollen at 3, 6, or even 12 months after surgery. The swelling typically decreases gradually. However, sudden increases in swelling, especially with redness or warmth, should be evaluated by your surgeon."},
+            {"q": "When can I wear normal shoes after bunion surgery if my foot is still swollen?", "a": "Many patients transition to regular shoes around 6-12 weeks post-surgery, but may need wider sizes initially due to swelling. Adjustable shoes, wide-width options, and shoes with removable insoles are popular choices during this transition period."},
+        ],
     },
     "post-surgery-shoes": {
         "title": "Best Shoes After Foot Surgery",
         "keywords": ["shoes", "sneakers", "trainers", "footwear", "orthofeet", "hoka", "new balance", "skechers", "wide shoes"],
         "description": "Footwear recommendations for post-surgery comfort and recovery",
+        "meta_title": "Best Shoes After Bunion Surgery: Top Picks from Patients",
+        "meta_description": "Patient-recommended shoes after bunion surgery. Best brands, styles, and tips for finding comfortable footwear during foot surgery recovery.",
+        "intro_content": "Finding the right shoes after foot surgery is one of the most discussed topics in recovery communities. The transition from a surgical boot to regular footwear is a significant milestone, but many patients struggle to find shoes that accommodate post-surgical swelling and changed foot shape.\n\nBrands like Hoka, New Balance, Skechers, and Orthofeet are frequently recommended by patients for their wide toe boxes, cushioning, and adjustability. Many patients find they need to go up half a size or switch to wide-width shoes, at least temporarily.\n\nHere are real recommendations from people who've been through foot surgery recovery, sharing which shoes worked for them and which to avoid.",
+        "related": ["bunion-surgery-recovery", "bunion-surgery-swelling", "walking-after-surgery", "toe-spacers-orthotics"],
+        "faqs": [
+            {"q": "What are the best shoes to wear after bunion surgery?", "a": "The most frequently recommended shoes by bunion surgery patients include: Hoka Bondi (for maximum cushion), New Balance 928 or 990 (wide options), Skechers D'Lites or Go Walk (affordable comfort), Orthofeet (designed for foot conditions), and Brooks Ghost or Adrenaline. Look for wide toe boxes, good arch support, and removable insoles."},
+            {"q": "When can I wear regular shoes after bunion surgery?", "a": "Most patients transition to regular shoes between 6-12 weeks after surgery, depending on swelling and their surgeon's guidance. Many patients find they initially need shoes that are half a size larger or in wide width. Velcro closures and slip-ons are popular early on."},
+            {"q": "Should I get wide shoes after bunion surgery?", "a": "Many patients find they need wide-width shoes during the first few months after surgery due to swelling. Some patients permanently switch to wider shoes for comfort, while others return to their normal width once swelling resolves. Having both wide and regular-width options available is practical."},
+            {"q": "Are Hokas good after bunion surgery?", "a": "Hokas are one of the most frequently recommended shoe brands among bunion surgery patients. The Bondi and Clifton models are particularly popular for their maximum cushioning, rocker sole (which reduces pressure on the forefoot), and wider toe box. Many patients find Hokas comfortable even with post-surgical swelling."},
+        ],
     },
     "bunion-surgery-pain": {
         "title": "Pain Management After Foot Surgery",
         "keywords": ["pain", "pain management", "nerve pain", "throbbing", "aching"],
         "description": "Pain management strategies and experiences post-surgery",
+        "meta_title": "Pain After Bunion Surgery: What's Normal & How to Manage It",
+        "meta_description": "Real experiences with pain after bunion surgery. What's normal, pain management strategies, nerve pain, and when to contact your surgeon.",
+        "intro_content": "Pain management is a top concern for anyone considering or recovering from bunion surgery. While modern surgical techniques have improved, pain during recovery is inevitable — the question is what level of pain is normal and how best to manage it.\n\nPatients report that the first 3-5 days after surgery tend to be the most painful, with pain typically becoming manageable within 1-2 weeks. However, some patients experience nerve-related pain, burning, or tingling that can last longer and requires different management approaches.\n\nBelow are real discussions about post-surgical pain, what worked for pain management, and when patients knew something wasn't right.",
+        "related": ["bunion-surgery-recovery", "bunion-surgery-swelling", "bunion-surgery-complications", "physical-therapy-foot"],
+        "faqs": [
+            {"q": "How painful is bunion surgery recovery?", "a": "Most patients describe the first 3-5 days as the most painful, with pain typically rated 5-7 out of 10. Pain usually becomes manageable with over-the-counter medication within 1-2 weeks. Keeping the foot elevated and icing consistently are the most effective non-medication pain management strategies."},
+            {"q": "What helps with pain after bunion surgery?", "a": "The most effective pain management approaches include: keeping the foot elevated above heart level, icing for 20 minutes every 2 hours, taking prescribed medications on schedule (not waiting for pain to build), nerve blocks during surgery for the first 24-48 hours, and gentle movement when cleared by your surgeon."},
+            {"q": "Is nerve pain normal after bunion surgery?", "a": "Some degree of nerve irritation is common after bunion surgery, presenting as tingling, numbness, or burning sensations. This usually resolves within weeks to months. Persistent nerve pain beyond 3 months should be discussed with your surgeon, as it may require medication like gabapentin or further evaluation."},
+            {"q": "How long does pain last after bunion surgery?", "a": "Acute surgical pain typically resolves within 2-3 weeks. Mild aching and discomfort with activity can persist for 2-3 months. Most patients report being pain-free or significantly improved by 4-6 months post-surgery, though this varies by procedure and individual."},
+        ],
     },
     "walking-after-surgery": {
         "title": "Walking & Weight Bearing After Surgery",
         "keywords": ["walking", "weight bearing", "non weight bearing", "nwb", "crutches", "knee scooter", "boot", "cast"],
         "description": "Walking progression and weight bearing recommendations",
+        "meta_title": "Walking After Bunion Surgery: When & How to Start Again",
+        "meta_description": "When can you walk after bunion surgery? Real patient timelines for weight bearing, transitioning from boot to shoes, and returning to normal walking.",
+        "intro_content": "The return to walking is one of the most anticipated milestones in foot surgery recovery. Weight-bearing timelines vary significantly based on the surgical procedure — some MIS and Lapiplasty patients can bear weight in a boot within days, while traditional osteotomy patients may be non-weight-bearing for 4-6 weeks.\n\nPatients consistently report that the transition from non-weight-bearing to full walking is more gradual than expected. Learning to walk normally again takes practice, and many patients benefit from physical therapy to restore a normal gait pattern.\n\nHere are real experiences from patients at different stages of their walking recovery, including tips for mobility aids, boot walking, and transitioning to regular shoes.",
+        "related": ["bunion-surgery-recovery", "post-surgery-shoes", "physical-therapy-foot", "bunion-surgery-swelling"],
+        "faqs": [
+            {"q": "When can I walk after bunion surgery?", "a": "Walking timelines depend on the procedure: MIS patients may walk in a surgical shoe within days, Lapiplasty patients often bear weight in a boot within 1-2 weeks, and traditional osteotomy patients may be non-weight-bearing for 4-6 weeks. Your surgeon's specific protocol takes priority over general guidelines."},
+            {"q": "How long do you use a knee scooter after bunion surgery?", "a": "Knee scooters are typically used during the non-weight-bearing phase, which ranges from a few days to 6 weeks depending on the procedure. Most patients transition from a knee scooter to a surgical boot, then to regular shoes. Many patients recommend renting rather than buying a knee scooter."},
+            {"q": "When can I drive after bunion surgery?", "a": "If surgery was on the left foot and you drive an automatic, you may be able to drive within 1-2 weeks. Right foot surgery typically requires waiting 6-8 weeks or until you can safely perform an emergency stop. Always confirm with your surgeon before driving."},
+            {"q": "How do I walk normally again after bunion surgery?", "a": "Restoring a normal gait takes time and often benefits from physical therapy. Key steps include: practicing heel-to-toe walking, strengthening exercises for the foot and ankle, stretching the calf and Achilles tendon, and gradually increasing walking distance. Most patients report their gait feels normal by 3-4 months."},
+        ],
     },
     "scarf-akin-osteotomy": {
         "title": "Scarf & Akin Osteotomy",
         "keywords": ["scarf", "akin", "scarf akin", "osteotomy", "chevron"],
         "description": "Scarf and Akin osteotomy surgical techniques and recovery",
+        "meta_title": "Scarf & Akin Osteotomy: Recovery & Patient Experiences",
+        "meta_description": "Real patient experiences with Scarf and Akin osteotomy bunion surgery. Recovery timeline, results, and why surgeons choose this technique.",
+        "intro_content": "Scarf and Akin osteotomy is a traditional open surgical technique for bunion correction that has been used successfully for decades. The Scarf procedure corrects the angle of the metatarsal bone, while the Akin procedure addresses the phalanx alignment, often used together for moderate to severe bunions.\n\nThis well-established technique has strong long-term outcome data and is the gold standard that newer procedures are often compared against. While recovery may be longer than MIS approaches, many surgeons prefer Scarf and Akin for moderate to severe deformities due to proven effectiveness.\n\nHere are real patient discussions about Scarf and Akin recovery, outcomes, and experiences compared to other surgical options.",
+        "related": ["bunion-surgery-recovery", "minimally-invasive-bunion-surgery", "walking-after-surgery", "bunion-surgery-pain"],
+        "faqs": [
+            {"q": "What is Scarf and Akin osteotomy?", "a": "Scarf and Akin osteotomy is a traditional bunion surgery combining two techniques: the Scarf procedure repositions the metatarsal bone, and the Akin procedure corrects the orientation of the proximal phalanx. Together, they correct moderate to severe bunions with proven long-term stability."},
+            {"q": "How long is recovery from Scarf and Akin surgery?", "a": "Most patients are non-weight-bearing for 2-4 weeks, then progress to weight bearing in a boot for 2-4 weeks. Full recovery typically takes 3-6 months. This longer initial recovery period is offset by the strong long-term stability of the procedure."},
+            {"q": "What is the recurrence rate for Scarf and Akin?", "a": "Scarf and Akin has one of the lowest recurrence rates of any bunion surgery, typically under 10% with proper technique. The durability of this procedure is one reason surgeons continue to use it despite newer options being available."},
+            {"q": "Does Scarf and Akin surgery leave a scar?", "a": "Yes, Scarf and Akin is an open procedure that requires an incision on the top of the foot, typically resulting in a scar about 2-3 inches long. Over time, most patients report the scar fades significantly and becomes less noticeable."},
+        ],
     },
     "bunion-surgery-complications": {
         "title": "Surgery Complications & Wound Healing",
         "keywords": ["infection", "wound", "complication", "hardware", "screw", "pin", "scar", "keloid"],
         "description": "Complications, wound healing, and scar management",
+        "meta_title": "Bunion Surgery Complications: Infection, Hardware & Scars",
+        "meta_description": "Real patient experiences with bunion surgery complications. When complications occur, warning signs, infection prevention, and scar management.",
+        "intro_content": "While bunion surgery is generally safe, complications can occur. The most common include infection, delayed wound healing, nerve irritation, and hardware-related issues. Understanding what constitutes a normal healing response versus a problem requiring medical attention is crucial for patients.\n\nPatients frequently discuss their experiences with complications, what caught them off guard, and how they were managed. Many complications are treatable and don't affect the final surgical outcome, but awareness is important for early identification.\n\nHere are real discussions from patients who experienced complications or unexpected healing issues, sharing what they learned and how they handled them.",
+        "related": ["bunion-surgery-recovery", "bunion-surgery-pain", "bunion-surgery-swelling", "physical-therapy-foot"],
+        "faqs": [
+            {"q": "What are common complications after bunion surgery?", "a": "Common complications include: infection (1-5% of cases), delayed wound healing, nerve irritation or numbness, hardware issues (plates or screws loosening), stiffness, recurrence of the bunion, and complex regional pain syndrome (CRPS). Most complications are treatable when caught early."},
+            {"q": "How do I know if I have an infection after bunion surgery?", "a": "Signs of infection include: increasing redness, warmth, or swelling beyond the first few weeks; drainage from the incision (especially if foul-smelling or discolored); fever; increased pain that doesn't improve with medication; and cellulitis spreading up the foot or leg. Contact your surgeon immediately if you notice these signs."},
+            {"q": "Can I get my hardware removed after bunion surgery?", "a": "Hardware removal is sometimes possible and sometimes necessary, depending on the type of surgery and any complications. Some hardware is removed routinely (like temporary pins), while other hardware is meant to be permanent. Discuss hardware removal options with your surgeon before surgery."},
+            {"q": "How can I minimize scarring after bunion surgery?", "a": "Minimize scarring by: keeping the incision clean and dry, following dressing changes carefully, avoiding sun exposure to the scar, using scar creams or silicone sheets after clearance from your surgeon, and avoiding smoking (which impairs healing). Most surgical scars significantly fade over 12-18 months."},
+        ],
     },
     "physical-therapy-foot": {
         "title": "Physical Therapy & Foot Exercises",
         "keywords": ["physical therapy", "pt", "exercises", "stretching", "range of motion", "rom", "rehab"],
         "description": "Physical therapy, exercises, and rehabilitation strategies",
+        "meta_title": "Physical Therapy After Bunion Surgery: Exercises & Recovery",
+        "meta_description": "Post-surgery foot exercises and physical therapy. When to start PT, best exercises for recovery, and how PT speeds up your return to normal.",
+        "intro_content": "Physical therapy is often the key to a successful recovery from bunion surgery. Starting at the right time with appropriate exercises helps restore strength, flexibility, and normal gait patterns while preventing stiffness and complications.\n\nPatients report widely varying experiences with physical therapy — some find it transformational, while others initially resist it. The timing and intensity of PT should match the healing phase of surgery. Beginning too early can impede healing, while delaying it can lead to stiffness and slower recovery.\n\nHere are real patient experiences with physical therapy, including when they started, which exercises they found most helpful, and how PT changed their recovery.",
+        "related": ["bunion-surgery-recovery", "walking-after-surgery", "bunion-surgery-pain", "bunion-surgery-swelling"],
+        "faqs": [
+            {"q": "When should I start physical therapy after bunion surgery?", "a": "Most surgeons recommend starting physical therapy 3-4 weeks after surgery, once initial wound healing has progressed. However, gentle range-of-motion exercises may be encouraged even before formal PT. Always follow your surgeon's specific protocol before starting PT."},
+            {"q": "What exercises help recover faster from bunion surgery?", "a": "Common PT exercises include: toe flexion and extension, ankle pumps, gentle calf stretches, toe spreads using a towel, walking progressions, balance exercises, and intrinsic foot muscle strengthening. The specific exercises depend on the recovery phase and your surgeon's recommendations."},
+            {"q": "How long does physical therapy last after bunion surgery?", "a": "Most patients do PT for 4-8 weeks, with 2-3 sessions per week. However, the full recovery period is longer, and self-directed exercises should continue for several months. Some patients benefit from longer PT if they have stiffness or balance issues."},
+            {"q": "Do I need to do exercises at home after physical therapy?", "a": "Yes. Home exercise compliance is crucial for optimal recovery. Most PTs provide a home exercise program that should be done daily or several times per week. Consistent home exercises often determine the difference between good and excellent outcomes."},
+        ],
     },
     "toe-spacers-orthotics": {
         "title": "Toe Spacers, Orthotics & Braces",
         "keywords": ["toe spacer", "toe separator", "orthotic", "insole", "bunion corrector", "splint", "brace"],
         "description": "Orthotics, braces, and toe spacers for foot health",
+        "meta_title": "Toe Spacers & Orthotics: Do They Work? Patient Reviews",
+        "meta_description": "Do toe spacers and bunion correctors work? Real patient reviews of orthotics, insoles, braces, and other non-surgical foot solutions.",
+        "intro_content": "Toe spacers, orthotics, and bunion correctors represent non-surgical approaches to managing foot conditions. These conservative treatments can help reduce pain, prevent progression, and improve comfort, though they don't permanently correct bunions or other deformities.\n\nPatients report highly variable results with these products, with some finding significant relief and others seeing minimal benefit. Success often depends on consistency of use, proper fitting, and realistic expectations about what these devices can achieve.\n\nHere are real patient experiences with various orthotics and toe spacers, including which products they found helpful and honest assessments of effectiveness.",
+        "related": ["bunion-surgery-recovery", "post-surgery-shoes", "flat-feet-arch-support", "plantar-fasciitis"],
+        "faqs": [
+            {"q": "Do toe spacers really work for bunions?", "a": "Toe spacers can reduce pain and prevent bunion progression when used consistently, but they don't permanently correct bunions. Most effective for mild bunions or pain prevention. Results vary — some patients swear by them, while others find minimal benefit. Best combined with proper footwear."},
+            {"q": "What's the difference between orthotics and insoles?", "a": "Insoles are flat shoe inserts providing cushioning or arch support. Orthotics are custom-molded devices designed specifically for your foot mechanics and biomechanics. Custom orthotics cost more but are more targeted; over-the-counter insoles are more affordable and work for many people."},
+            {"q": "Can bunion correctors prevent the need for surgery?", "a": "Bunion correctors can help manage symptoms and slow progression, particularly for mild bunions. However, they cannot reverse a bunion that's already developed. Whether they prevent future surgery depends on the bunion severity, genetics, and how diligently you use them."},
+            {"q": "What's the best brace for plantar fasciitis?", "a": "Night splints that keep the calf stretched are effective for many people. Plantar fascia-specific wraps and compression sleeves provide daytime support. Over-the-counter options work for mild cases; severe cases may benefit from custom bracing. Success varies, so trying different options is often necessary."},
+        ],
     },
     "flat-feet-arch-support": {
         "title": "Flat Feet & Arch Support",
         "keywords": ["flat feet", "flat foot", "arch", "arch support", "fallen arch", "pronation", "overpronation"],
         "description": "Flat feet, arch support, and pronation management",
+        "meta_title": "Flat Feet & Arch Support: Solutions & Patient Experiences",
+        "meta_description": "Real solutions for flat feet and fallen arches. Best arch support options, exercises, shoes, and when to see a specialist.",
+        "intro_content": "Flat feet or fallen arches affect many people, causing pain, fatigue, and alignment issues. While some people have no symptoms, others experience significant discomfort that impacts daily activities. Treatment ranges from simple shoe choices to custom orthotics and physical therapy.\n\nPatients frequently discuss the relationship between flat feet and other conditions like plantar fasciitis, bunions, and knee pain. Many find that addressing pronation and arch support has ripple effects throughout their lower body biomechanics.\n\nHere are real patient experiences with flat feet, including solutions they've tried, which approaches worked, and advice for managing this common condition.",
+        "related": ["post-surgery-shoes", "toe-spacers-orthotics", "plantar-fasciitis", "physical-therapy-foot"],
+        "faqs": [
+            {"q": "What causes flat feet?", "a": "Flat feet can be congenital (you're born with them), or develop over time due to weakened arch muscles, tendon damage, overpronation, arthritis, or injury. Age, weight, and pregnancy can contribute to arch collapse. Some people with flat feet have no symptoms, while others have significant pain."},
+            {"q": "Do flat feet need to be treated?", "a": "Not all flat feet require treatment. If you have no pain or functional limitations, treatment may not be necessary. However, if flat feet cause pain, fatigue, or contribute to other conditions, treatment options include proper footwear, arch support, stretching, strengthening exercises, and custom orthotics."},
+            {"q": "What's the best arch support for flat feet?", "a": "Options range from over-the-counter insoles and orthofeet-style shoes to custom orthotics. Most people benefit from a combination of supportive shoes and orthotics. The best choice depends on your specific needs, biomechanics, and budget. Many people benefit from trying different options to find what works."},
+            {"q": "Can you fix flat feet with exercises?", "a": "Strengthening exercises can help manage flat feet and slow progression, particularly if combined with proper footwear. Key exercises include arch strengthening, calf stretches, toe scrunches with a towel, and balance exercises. Exercises work best when combined with proper support and footwear."},
+        ],
     },
     "plantar-fasciitis": {
         "title": "Plantar Fasciitis Treatment",
         "keywords": ["plantar fasciitis", "heel pain", "heel spur", "plantar", "fascia"],
         "description": "Plantar fasciitis treatments and heel pain relief",
+        "meta_title": "Plantar Fasciitis Treatment: What Really Works & Healing",
+        "meta_description": "Real plantar fasciitis treatment experiences. What works, recovery timeline, prevention tips, and when to see a specialist.",
+        "intro_content": "Plantar fasciitis is one of the most common causes of heel pain, affecting millions of people. The condition involves inflammation or irritation of the plantar fascia, a thick band of tissue running along the bottom of the foot. Treatment focuses on reducing strain, promoting healing, and preventing recurrence.\n\nPatients report that plantar fasciitis can be remarkably persistent but also highly responsive to consistent treatment. Most people find relief through conservative approaches like stretching, footwear changes, and orthotics, though recovery timelines vary significantly.\n\nHere are real patient experiences with plantar fasciitis treatment, including which approaches provided relief, how long recovery took, and strategies to prevent recurrence.",
+        "related": ["post-surgery-shoes", "toe-spacers-orthotics", "flat-feet-arch-support", "physical-therapy-foot"],
+        "faqs": [
+            {"q": "How long does it take to recover from plantar fasciitis?", "a": "Most people see improvement within 4-6 weeks with consistent treatment. However, full recovery can take 3-12 months or longer for stubborn cases. The key is consistency — those who stick with stretching and orthotics typically recover faster than those who are inconsistent."},
+            {"q": "What's the fastest way to heal plantar fasciitis?", "a": "The most effective combined approach includes: stretching the calf and plantar fascia multiple times daily (especially before getting out of bed), ice massage, proper footwear with arch support, night splints, and anti-inflammatory measures like ibuprofen when appropriate. Physical therapy can accelerate healing for many people."},
+            {"q": "Can plantar fasciitis return after healing?", "a": "Yes, plantar fasciitis commonly returns if you stop the stretches and proper footwear that helped you heal. Prevention strategies include: maintaining flexibility, wearing supportive shoes, avoiding high-impact activities on hard surfaces, managing weight, and doing maintenance stretches even after pain resolves."},
+            {"q": "When should I see a doctor for plantar fasciitis?", "a": "See a doctor if: pain doesn't improve after 2 weeks of conservative treatment, pain significantly interferes with daily activities, or you have signs of other conditions. Doctors may recommend custom orthotics, physical therapy, steroid injections, or other treatments if conservative approaches don't work."},
+        ],
     },
     "toenail-fungus": {
         "title": "Toenail Fungus Treatment",
         "keywords": ["toenail fungus", "fungal nail", "onychomycosis", "fungus", "antifungal", "terbinafine", "lamisil"],
         "description": "Toenail fungus treatments and prevention",
+        "meta_title": "Toenail Fungus Treatment: What Works & Success Rates",
+        "meta_description": "Real toenail fungus treatments that work. Oral medications, topicals, laser therapy, and what to expect from each approach.",
+        "intro_content": "Toenail fungus (onychomycosis) is a persistent infection that affects nail appearance, thickness, and health. Treatment options range from topical creams to oral medications to laser therapy, each with different success rates and timelines. Choosing the right treatment depends on severity, infection type, and individual factors.\n\nPatients report that fungal nails can be frustratingly slow to treat, requiring months of consistent treatment for visible improvement. Success rates vary significantly between approaches, and recurrence is common if prevention strategies aren't maintained.\n\nHere are real patient experiences with different toenail fungus treatments, including what worked, how long treatment takes, and strategies to prevent reinfection.",
+        "related": ["post-surgery-shoes", "physical-therapy-foot", "flat-feet-arch-support", "toe-spacers-orthotics"],
+        "faqs": [
+            {"q": "How long does it take to cure toenail fungus?", "a": "Treatment timelines vary significantly: topical treatments take 6-12 months, oral medications (like terbinafine) typically take 3-6 months, and laser therapy shows results over several months with multiple treatments. Even after treatment ends, it can take 6-12 months for a clear nail to fully grow in."},
+            {"q": "What's the most effective toenail fungus treatment?", "a": "Oral antifungals like terbinafine have the highest success rates (70-80%), though they have potential side effects. Topical treatments work for mild cases but have lower success rates. Laser therapy shows promise but results vary. The best choice depends on infection severity and individual factors — discuss options with a doctor."},
+            {"q": "Can I prevent toenail fungus from coming back?", "a": "Prevention strategies include: keeping feet dry, wearing breathable shoes, using antifungal powder in shoes, trimming nails short, avoiding pedicures at unsanitized salons, using public showers with flip-flops, and treating athlete's foot promptly (which can lead to nail fungus). Recurrence rates are 10-15% with treatment."},
+            {"q": "Are home remedies effective for toenail fungus?", "a": "Home remedies like vinegar, tea tree oil, and hydrogen peroxide have limited scientific evidence. While some people report improvement, success rates are much lower than medical treatments. Home remedies may work for very early or mild infections but are less reliable for established fungal nails."},
+        ],
     },
 }
 
@@ -819,10 +969,143 @@ section {{
     font-size: 1.75rem;
   }}
 }}
+
+/* Intro Content Section */
+.intro-content {{
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}}
+
+.intro-content p {{
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}}
+
+/* FAQ Section */
+.faq-section {{
+  margin: 3rem auto;
+  max-width: 800px;
+}}
+
+.faq-item {{
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+}}
+
+.faq-item:last-child {{
+  border-bottom: none;
+}}
+
+.faq-question {{
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}}
+
+.faq-answer p {{
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}}
+
+/* Related Topics Section */
+.related-topics {{
+  margin: 3rem auto;
+  max-width: 800px;
+}}
+
+.related-grid {{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}}
+
+.related-card {{
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.2s;
+}}
+
+.related-card:hover {{
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(33,150,243,0.1);
+  text-decoration: none;
+}}
+
+.related-card h3 {{
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}}
+
+.related-card p {{
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}}
+
+@media (max-width: 768px) {{
+  .related-grid {{
+    grid-template-columns: 1fr;
+  }}
+}}
 """
 
-def get_page_header(title, description=""):
-    """HTML header template"""
+def get_page_header(title, description="", niche_id=None, niche_data=None):
+    """HTML header template with schema.org markup"""
+    canonical_url = f"{SITE_URL}/{niche_id}/" if niche_id else SITE_URL
+
+    schema_scripts = ""
+    if niche_id and niche_data:
+        # Article schema
+        article_schema = {
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            "headline": title,
+            "description": description,
+            "url": canonical_url,
+            "dateModified": datetime.now().strftime("%Y-%m-%d"),
+            "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
+            "about": {"@type": "MedicalCondition", "name": niche_data.get('title', '')},
+            "audience": {"@type": "PeopleAudience", "audienceType": "Patients"},
+        }
+        schema_scripts += f'  <script type="application/ld+json">\n{json.dumps(article_schema)}\n  </script>\n'
+
+        # FAQ schema
+        if faqs := niche_data.get('faqs', []):
+            faq_schema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {"@type": "Question", "name": faq["q"], "acceptedAnswer": {"@type": "Answer", "text": faq["a"]}}
+                    for faq in faqs
+                ]
+            }
+            schema_scripts += f'  <script type="application/ld+json">\n{json.dumps(faq_schema)}\n  </script>\n'
+
+        # Breadcrumb schema
+        breadcrumb_schema = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE_URL}/"},
+                {"@type": "ListItem", "position": 2, "name": "Topics", "item": f"{SITE_URL}/#topics"},
+                {"@type": "ListItem", "position": 3, "name": niche_data.get('title', '')}
+            ]
+        }
+        schema_scripts += f'  <script type="application/ld+json">\n{json.dumps(breadcrumb_schema)}\n  </script>\n'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -831,12 +1114,12 @@ def get_page_header(title, description=""):
   <title>{title} | {SITE_NAME}</title>
   <meta name="description" content="{description or SITE_DESCRIPTION}">
   <meta name="theme-color" content="{COLORS['primary']}">
-  <link rel="canonical" href="{SITE_URL}">
+  <link rel="canonical" href="{canonical_url}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
 {get_css()}
   </style>
-</head>
+{schema_scripts}</head>
 <body>
   <header>
     <nav class="container">
@@ -933,7 +1216,54 @@ def generate_homepage(posts):
 
     top_products = sorted(product_counts.items(), key=lambda x: x[1], reverse=True)[:8]
 
-    html = get_page_header(SITE_NAME, SITE_DESCRIPTION)
+    # Create homepage schema
+    website_schema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": SITE_NAME,
+        "url": SITE_URL,
+        "description": SITE_DESCRIPTION,
+        "publisher": {"@type": "Organization", "name": SITE_NAME}
+    }
+    schema_scripts = f'  <script type="application/ld+json">\n{json.dumps(website_schema)}\n  </script>\n'
+
+    # Get base page header then add schema
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{SITE_NAME} | {SITE_NAME}</title>
+  <meta name="description" content="{SITE_DESCRIPTION}">
+  <meta name="theme-color" content="{COLORS['primary']}">
+  <link rel="canonical" href="{SITE_URL}/">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+{get_css()}
+  </style>
+{schema_scripts}</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <span>F</span>
+        <a href="/">{SITE_NAME}</a>
+      </div>
+      <ul>
+        <li><a href="/">Topics</a></li>
+        <li><a href="/#how-it-works">How It Works</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="medical-disclaimer">
+      <span class="medical-disclaimer-icon">i</span>
+      <p><strong>Community Information:</strong> This site contains personal experiences and discussions, not medical advice. Always consult a healthcare provider before making medical decisions.</p>
+    </div>
+  </div>
+"""
 
     html += f"""
   <main>
@@ -1083,9 +1413,9 @@ def generate_topic_page(niche_id, niche_data, posts):
                     if product:
                         product_mentions[product] += 1
 
-    description = f"{len(topic_posts)} real discussions about {niche_data['title'].lower()}"
+    description = niche_data.get('meta_description', f"{len(topic_posts)} real discussions about {niche_data['title'].lower()}")
 
-    html = get_page_header(niche_data['title'], description)
+    html = get_page_header(niche_data.get('meta_title', niche_data['title']), description, niche_id, niche_data)
 
     html += f"""
   <main>
@@ -1108,7 +1438,21 @@ def generate_topic_page(niche_id, niche_data, posts):
         <p><strong>{len(topic_posts)}</strong> discussions | <strong>{total_comments}</strong> community replies | Based on real experiences</p>
       </div>
     </section>
+"""
 
+    # Intro content section
+    if intro_content := niche_data.get('intro_content'):
+        paragraphs = intro_content.split('\n')
+        html += f"""
+    <section class="container intro-content">
+"""
+        for para in paragraphs:
+            if para.strip():
+                html += f'      <p>{para.strip()}</p>\n'
+        html += """    </section>
+"""
+
+    html += """
     <section class="container">
       <h2>Community Insights</h2>
       <div class="stats-grid">
@@ -1242,18 +1586,36 @@ def generate_topic_page(niche_id, niche_data, posts):
 """
 
     # FAQ Section
-    faqs = generate_faqs(niche_data['title'])
+    faqs = niche_data.get('faqs', [])
     if faqs:
         html += f"""
-    <section class="container">
+    <section class="container faq-section">
       <h2>Frequently Asked Questions</h2>
-      <div>
 """
-        for question, answer in faqs:
-            html += f"""        <div class="faq-item">
-          <button class="faq-question">{question}</button>
-          <div class="faq-answer">{answer}</div>
-        </div>
+        for faq in faqs:
+            html += f"""      <div class="faq-item">
+        <h3 class="faq-question">{faq['q']}</h3>
+        <div class="faq-answer"><p>{faq['a']}</p></div>
+      </div>
+"""
+        html += """    </section>
+"""
+
+    # Related Topics Section
+    related_slugs = niche_data.get('related', [])
+    if related_slugs:
+        html += f"""
+    <section class="container related-topics">
+      <h2>Related Topics</h2>
+      <div class="related-grid">
+"""
+        for related_slug in related_slugs:
+            if related_slug in NICHE_MAP:
+                related_niche = NICHE_MAP[related_slug]
+                html += f"""        <a href="/{related_slug}/" class="related-card">
+          <h3>{related_niche['title']}</h3>
+          <p>{related_niche['description']}</p>
+        </a>
 """
         html += """      </div>
     </section>
@@ -1353,18 +1715,19 @@ def generate_about_page():
 
 def generate_sitemap(niche_ids):
     """Generate sitemap.xml"""
+    today = datetime.now().strftime("%Y-%m-%d")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 
     # Homepage
-    xml += f'  <url>\n    <loc>{SITE_URL}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n'
+    xml += f'  <url>\n    <loc>{SITE_URL}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n'
 
     # Topic pages
     for niche_id in niche_ids:
-        xml += f'  <url>\n    <loc>{SITE_URL}/{niche_id}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+        xml += f'  <url>\n    <loc>{SITE_URL}/{niche_id}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
 
     # About page
-    xml += f'  <url>\n    <loc>{SITE_URL}/about/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.5</priority>\n  </url>\n'
+    xml += f'  <url>\n    <loc>{SITE_URL}/about/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.5</priority>\n  </url>\n'
 
     xml += '</urlset>\n'
     return xml
@@ -1374,19 +1737,73 @@ def generate_robots_txt():
     return f"""User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: {SITE_URL}/sitemap.xml
 """
 
 def generate_llms_txt():
     """Generate llms.txt"""
-    return f"""{SITE_NAME}
+    topics_list = ""
+    total_posts = 0
+    for niche_id, niche_data in NICHE_MAP.items():
+        topics_list += f"- [{niche_data['title']}]({SITE_URL}/{niche_id}/): {niche_data['description']}\n"
 
-Description: {SITE_DESCRIPTION}
+    return f"""# {SITE_NAME}
 
-Categories: Health, Medical Information, Support Community Content
+> Real foot health answers from real people. Community-sourced experiences about foot conditions, surgery recovery, and treatments.
 
-Privacy Policy: {SITE_URL}/privacy
-Terms of Service: {SITE_URL}/terms
+## About This Site
+{SITE_NAME} aggregates real patient experiences and discussions from foot health support communities. Content is organized by condition and treatment type to help people understand what others have experienced. This is community discussion content, not medical advice.
+
+## Topics Covered
+{topics_list}
+
+## Key Information
+
+### Bunion Surgery Recovery
+Typical recovery: 6-12 weeks to normal activities, 3-6 months for swelling to resolve, up to 1 year for full healing.
+
+### Surgery Types
+- MIS (Minimally Invasive Surgery): Small incisions, potentially faster early recovery
+- Lapiplasty: 3D correction with titanium plates, addresses root cause
+- Scarf & Akin Osteotomy: Traditional open procedure, well-established technique
+- Hammer Toe Correction: Arthroplasty or arthrodesis
+
+### Common Recovery Products
+Shoes: Hoka, New Balance, Skechers, Orthofeet, Brooks
+Aids: Knee scooter, surgical boot, ice pack, compression socks, toe spacers
+
+## Other Conditions
+- Plantar Fasciitis: Heel pain treatment and prevention
+- Flat Feet & Arch Support: Arch support solutions and exercises
+- Toenail Fungus: Treatment options and success rates
+- Toe Spacers & Orthotics: Non-surgical foot solutions
+
+## Content Sources
+Real patient discussions from foot health support communities. Organized by condition and treatment type.
+
+## Contact
+Website: {SITE_URL}
 About: {SITE_URL}/about/
 """
 

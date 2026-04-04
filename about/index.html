@@ -371,6 +371,37 @@ section {
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
 }
 
+.discussion-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.discussion-images img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.discussion-images.single img {
+  max-width: 400px;
+  height: 280px;
+}
+
+.discussion-images.gallery {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
 .discussion-header {
   margin-bottom: 1rem;
 }
@@ -647,6 +678,16 @@ section {
     padding: 1rem;
   }
 
+  .discussion-images {
+    grid-template-columns: 1fr;
+  }
+
+  .discussion-images.single img,
+  .discussion-images img {
+    max-width: 100%;
+    height: 180px;
+  }
+
   .discussion {
     padding: 1rem;
   }
@@ -657,6 +698,97 @@ section {
 
   .stat-number {
     font-size: 1.75rem;
+  }
+}
+
+/* Intro Content Section */
+.intro-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.intro-content p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.faq-answer p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Related Topics Section */
+.related-topics {
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.related-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.related-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(33,150,243,0.1);
+  text-decoration: none;
+}
+
+.related-card h3 {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .related-grid {
+    grid-template-columns: 1fr;
   }
 }
 
