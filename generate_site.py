@@ -35,6 +35,25 @@ COLORS = {
     "border": "#e0e0e0",           # Light border
 }
 
+# Topic visual identity - icons and gradient colors for each topic
+TOPIC_VISUALS = {
+    "bunion-surgery-recovery": {"icon": "🦶", "gradient": "linear-gradient(135deg, #1a237e 0%, #3f51b5 100%)", "accent": "#3f51b5"},
+    "minimally-invasive-bunion-surgery": {"icon": "🔬", "gradient": "linear-gradient(135deg, #0d47a1 0%, #2196f3 100%)", "accent": "#2196f3"},
+    "lapiplasty-surgery": {"icon": "⚕️", "gradient": "linear-gradient(135deg, #1b5e20 0%, #4caf50 100%)", "accent": "#4caf50"},
+    "hammer-toe-surgery": {"icon": "🔨", "gradient": "linear-gradient(135deg, #4a148c 0%, #9c27b0 100%)", "accent": "#9c27b0"},
+    "bunion-surgery-swelling": {"icon": "❄️", "gradient": "linear-gradient(135deg, #006064 0%, #00bcd4 100%)", "accent": "#00bcd4"},
+    "post-surgery-shoes": {"icon": "👟", "gradient": "linear-gradient(135deg, #e65100 0%, #ff9800 100%)", "accent": "#ff9800"},
+    "bunion-surgery-pain": {"icon": "💊", "gradient": "linear-gradient(135deg, #b71c1c 0%, #ef5350 100%)", "accent": "#ef5350"},
+    "walking-after-surgery": {"icon": "🚶", "gradient": "linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%)", "accent": "#66bb6a"},
+    "scarf-akin-osteotomy": {"icon": "🏥", "gradient": "linear-gradient(135deg, #283593 0%, #5c6bc0 100%)", "accent": "#5c6bc0"},
+    "bunion-surgery-complications": {"icon": "⚠️", "gradient": "linear-gradient(135deg, #880e4f 0%, #e91e63 100%)", "accent": "#e91e63"},
+    "physical-therapy-foot": {"icon": "🏋️", "gradient": "linear-gradient(135deg, #00695c 0%, #26a69a 100%)", "accent": "#26a69a"},
+    "toe-spacers-orthotics": {"icon": "🦿", "gradient": "linear-gradient(135deg, #4e342e 0%, #8d6e63 100%)", "accent": "#8d6e63"},
+    "flat-feet-arch-support": {"icon": "🧱", "gradient": "linear-gradient(135deg, #37474f 0%, #78909c 100%)", "accent": "#78909c"},
+    "plantar-fasciitis": {"icon": "🦶", "gradient": "linear-gradient(135deg, #bf360c 0%, #ff7043 100%)", "accent": "#ff7043"},
+    "toenail-fungus": {"icon": "💅", "gradient": "linear-gradient(135deg, #33691e 0%, #8bc34a 100%)", "accent": "#8bc34a"},
+}
+
 # Niche definitions - Topics for the site
 NICHE_MAP = {
     "bunion-surgery-recovery": {
@@ -654,6 +673,120 @@ footer a:hover {{
   font-weight: 600;
   color: var(--accent);
   font-size: 1rem;
+}}
+
+/* Topic Hero (colored gradient) */
+.topic-hero {{
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}}
+
+.topic-hero::before {{
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}}
+
+.topic-hero .container {{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}}
+
+.topic-hero-icon {{
+  font-size: 3.5rem;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}}
+
+.topic-hero-text h1 {{
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}}
+
+.topic-hero-text p {{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  margin: 0;
+  max-width: 600px;
+}}
+
+/* Topic Cards on Homepage */
+.topic-card {{
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}}
+
+.topic-card:hover {{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-color: var(--accent);
+}}
+
+.topic-card-header {{
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 80px;
+}}
+
+.topic-card-icon {{
+  font-size: 2rem;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}}
+
+.topic-card-header h3 {{
+  color: white;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}}
+
+.topic-card-body {{
+  padding: 1rem 1.5rem 1.5rem;
+  flex: 1;
+}}
+
+.topic-card-body p {{
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}}
+
+.topic-card-body .stats {{
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
 }}
 
 /* Breadcrumb */
@@ -1635,11 +1768,11 @@ def generate_homepage(posts):
 
     html += f"""
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>{SITE_NAME}</h1>
-        <p>{SITE_TAGLINE}</p>
-        <p>{SITE_DESCRIPTION}</p>
+    <section class="topic-hero" style="background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #2196f3 100%);">
+      <div class="container" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+        <h1 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">{SITE_NAME}</h1>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.3rem; margin: 0; font-weight: 500;">{SITE_TAGLINE}</p>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; margin: 0; max-width: 650px;">{SITE_DESCRIPTION}</p>
       </div>
     </section>
 
@@ -1672,11 +1805,15 @@ def generate_homepage(posts):
 
     for niche_id, niche_data in NICHE_MAP.items():
         count = niche_counts.get(niche_id, 0)
-        html += f"""        <a href="/{niche_id}/" class="card">
-          <h3>{niche_data['title']}</h3>
-          <p>{niche_data['description']}</p>
-          <div class="stats">
-            <span class="stat">💬 {count} discussions</span>
+        visuals = TOPIC_VISUALS.get(niche_id, {"icon": "📋", "gradient": "linear-gradient(135deg, #1a237e, #3f51b5)", "accent": "#3f51b5"})
+        html += f"""        <a href="/{niche_id}/" class="topic-card">
+          <div class="topic-card-header" style="background: {visuals['gradient']};">
+            <div class="topic-card-icon">{visuals['icon']}</div>
+            <h3>{niche_data['title']}</h3>
+          </div>
+          <div class="topic-card-body">
+            <p>{niche_data['description']}</p>
+            <div class="stats">💬 {count} discussions</div>
           </div>
         </a>
 """
@@ -1785,6 +1922,7 @@ def generate_topic_page(niche_id, niche_data, posts):
 
     html = get_page_header(niche_data.get('meta_title', niche_data['title']), description, niche_id, niche_data)
 
+    visuals = TOPIC_VISUALS.get(niche_id, {"icon": "📋", "gradient": "linear-gradient(135deg, #1a237e, #3f51b5)", "accent": "#3f51b5"})
     html += f"""
   <main>
     <section class="container">
@@ -1793,10 +1931,13 @@ def generate_topic_page(niche_id, niche_data, posts):
       </div>
     </section>
 
-    <section class="hero">
+    <section class="topic-hero" style="background: {visuals['gradient']};">
       <div class="container">
-        <h1>{niche_data['title']}</h1>
-        <p>{niche_data['description']}</p>
+        <div class="topic-hero-icon">{visuals['icon']}</div>
+        <div class="topic-hero-text">
+          <h1>{niche_data['title']}</h1>
+          <p>{niche_data['description']}</p>
+        </div>
       </div>
     </section>
 
