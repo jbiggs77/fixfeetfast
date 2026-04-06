@@ -1768,12 +1768,8 @@ def generate_homepage(posts):
 
     html += f"""
   <main>
-    <section class="topic-hero" style="background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #2196f3 100%);">
-      <div class="container" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
-        <h1 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">{SITE_NAME}</h1>
-        <p style="color: rgba(255,255,255,0.95); font-size: 1.3rem; margin: 0; font-weight: 500;">{SITE_TAGLINE}</p>
-        <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; margin: 0; max-width: 650px;">{SITE_DESCRIPTION}</p>
-      </div>
+    <section class="container" style="margin-bottom: 1rem;">
+      <img src="/images/topics/homepage-hero.jpg" alt="{SITE_NAME} - {SITE_TAGLINE}" style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 8px; display: block;">
     </section>
 
     <section class="container">
@@ -1931,13 +1927,11 @@ def generate_topic_page(niche_id, niche_data, posts):
       </div>
     </section>
 
-    <section class="topic-hero" style="background: {visuals['gradient']};">
-      <div class="container">
-        <div class="topic-hero-icon">{visuals['icon']}</div>
-        <div class="topic-hero-text">
-          <h1>{niche_data['title']}</h1>
-          <p>{niche_data['description']}</p>
-        </div>
+    <section class="container" style="margin-bottom: 2rem;">
+      <img src="/images/topics/{niche_id}.jpg" alt="{niche_data['title']}" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; display: block;">
+      <div style="margin-top: 1.5rem;">
+        <h1 style="color: var(--primary); margin-bottom: 0.5rem;">{niche_data['title']}</h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem;">{niche_data['description']}</p>
       </div>
     </section>
 
@@ -2413,6 +2407,16 @@ def main():
     print("Generating llms.txt...")
     llms_txt = generate_llms_txt()
     (OUTPUT_DIR / "llms.txt").write_text(llms_txt)
+
+    # Copy images to output
+    import shutil
+    src_images = Path(__file__).parent / "images"
+    if src_images.exists():
+        dst_images = OUTPUT_DIR / "images"
+        if dst_images.exists():
+            shutil.rmtree(dst_images)
+        shutil.copytree(src_images, dst_images)
+        print(f"Copied images to {dst_images}")
 
     print(f"Done! Generated site at {OUTPUT_DIR}")
 
