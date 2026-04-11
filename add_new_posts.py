@@ -1,519 +1,195 @@
 import json
+from datetime import date
 
-# Load existing posts
 with open('posts.json', 'r') as f:
-    existing = json.load(f)
+    existing_posts = json.load(f)
 
-print(f"Existing posts: {len(existing)}")
-max_id = max(p['id'] for p in existing)
-
-# Build dedup set from first 80 chars lowercased stripped
 existing_keys = set()
-for p in existing:
+for p in existing_posts:
     key = p['body'][:80].lower().strip()
     existing_keys.add(key)
 
-# All conditions to detect
-CONDITIONS = {
-    'bunion': ['bunion'],
-    'hammer toe': ['hammer toe', 'hammertoe'],
-    'hallux valgus': ['hallux valgus'],
-    'hallux limitus': ['hallux limitus'],
-    'hallux rigidus': ['hallux rigidus'],
-    "tailor's bunion": ["tailor's bunion", 'bunionette', 'tailors bunion'],
-    'plantar fasciitis': ['plantar fasciitis', 'plantar fascitis', 'pf pain'],
-    'heel spur': ['heel spur', 'heal spur'],
-    'flat feet': ['flat feet', 'fallen arch'],
-    'toenail fungus': ['toenail fungus', 'fungal nail', 'nail fungus'],
-    'ingrown toenail': ['ingrown toenail', 'ingrown nail'],
-    'metatarsalgia': ['metatarsalgia', 'metatarsal pain'],
-    'neuroma': ['neuroma', "morton's neuroma"],
-    'sesamoiditis': ['sesamoiditis', 'sesamoid'],
-    'gout': ['gout'],
-    'arthritis': ['arthritis'],
-    'bone spur': ['bone spur'],
-    'neuropathy': ['neuropathy', 'nerve pain'],
-    'tendonitis': ['tendonitis', 'tendinitis'],
-}
+next_id = max(p['id'] for p in existing_posts) + 1
+today = date.today().isoformat()
 
-SURGERY_TYPES = {
-    'MIS': ['mis ', 'minimally invasive'],
-    'Lapiplasty': ['lapiplasty', 'lapidus'],
-    'scarf akin': ['scarf', 'akin osteotomy'],
-    'osteotomy': ['osteotomy'],
-    'bunionectomy': ['bunionectomy'],
-    'toe fusion': ['toe fusion', 'mtp fusion', 'joint fusion'],
-    'arthroplasty': ['arthroplasty'],
-    'arthrodesis': ['arthrodesis'],
-    'cheilectomy': ['cheilectomy'],
-    'MICA': ['mica'],
-}
+def detect_conditions(text):
+    t = text.lower()
+    cond_map = {
+        'bunion': 'bunion', 'hammer toe': 'hammer toe', 'hammertoe': 'hammer toe',
+        'hallux valgus': 'hallux valgus', 'hallux limitus': 'hallux limitus',
+        'hallux rigidus': 'hallux rigidus', "tailor's bunion": "tailor's bunion",
+        'bunionette': 'bunionette', 'plantar fasciitis': 'plantar fasciitis',
+        'heel spur': 'heel spur', 'flat feet': 'flat feet', 'flat foot': 'flat feet',
+        'toenail fungus': 'toenail fungus', 'fungal nail': 'toenail fungus',
+        'ingrown toenail': 'ingrown toenail', 'ingrown': 'ingrown toenail',
+        'metatarsalgia': 'metatarsalgia', 'neuroma': 'neuroma',
+        "morton's neuroma": 'neuroma', 'morton neuroma': 'neuroma',
+        'sesamoiditis': 'sesamoiditis', 'gout': 'gout', 'arthritis': 'arthritis',
+        'bone spur': 'bone spur', 'neuropathy': 'neuropathy', 'edema': 'edema',
+        'tendonitis': 'tendonitis', 'plantar plate': 'plantar plate tear',
+    }
+    found = set()
+    results = []
+    for keyword, condition in cond_map.items():
+        if keyword in t and condition not in found:
+            found.add(condition)
+            results.append(condition)
+    return ', '.join(results) if results else ''
 
-PRODUCTS = {
-    'Hoka': ['hoka'],
-    'Brooks': ['brooks'],
-    'Oofos': ['oofos'],
-    'Crocs': ['crocs'],
-    'Birkenstock': ['birkenstock'],
-    'New Balance': ['new balance'],
-    'Skechers': ['skechers'],
-    'Nike': ['nike'],
-    'Orthofeet': ['orthofeet'],
-    'Vicks': ['vicks'],
-    'Lamisil': ['lamisil'],
-    'Jublia': ['jublia'],
-    'Correct Toes': ['correct toes'],
-    "Dr. Scholl's": ["dr. scholl"],
-    'Superfeet': ['superfeet'],
-    'Powerstep': ['powerstep'],
-    'Voltaren': ['voltaren'],
-    'Biofreeze': ['biofreeze'],
-    'Theragun': ['theragun'],
-    'Betadine': ['betadine'],
-    'Kerasal': ['kerasal'],
-    'KT Tape': ['kt tape'],
-}
+def detect_surgery(text):
+    t = text.lower()
+    surg_map = {
+        'minimally invasive': 'MIS', 'minimal invasive': 'MIS', 'mis ': 'MIS',
+        'lapiplasty': 'Lapiplasty', 'scarf': 'scarf akin', 'akin': 'scarf akin',
+        'osteotomy': 'osteotomy', 'chevron': 'chevron', 'austin': 'Austin',
+        'arthroplasty': 'arthroplasty', 'arthrodesis': 'arthrodesis',
+        'bunionectomy': 'bunionectomy', 'toe fusion': 'toe fusion',
+        'fusion': 'toe fusion', 'mica': 'MICA', 'percutaneous': 'percutaneous',
+        'cheilectomy': 'cheilectomy',
+    }
+    found = set()
+    results = []
+    for keyword, surgery in surg_map.items():
+        if keyword in t and surgery not in found:
+            found.add(surgery)
+            results.append(surgery)
+    return ', '.join(results) if results else ''
 
-TREATMENTS = {
-    'surgery': ['surgery', 'operation', 'procedure'],
-    'physical therapy': ['physical therapy', ' pt '],
-    'cortisone': ['cortisone', 'steroid injection', 'cortizone'],
-    'orthotics': ['orthotic', 'insole', 'arch support'],
-    'taping': ['taping'],
-    'icing': ['icing', 'ice pack', 'icepack'],
-    'elevation': ['elevat'],
-    'stretching': ['stretch'],
-    'massage': ['massage'],
-    'shockwave therapy': ['shockwave', 'softwave'],
-    'laser therapy': ['laser'],
-    'anti-inflammatory': ['anti-inflammatory', 'ibuprofen', 'advil'],
-    'terbinafine': ['terbinafine'],
-    'tea tree oil': ['tea tree'],
-    'night splint': ['night splint'],
-    'custom orthotics': ['custom orthotic'],
-    'acupuncture': ['acupuncture'],
-}
+def detect_treatments(text):
+    t = text.lower()
+    treat_map = {
+        'surgery': 'surgery', 'physical therapy': 'physical therapy', 'physio': 'physical therapy',
+        'cortisone': 'cortisone', 'steroid injection': 'steroid injection',
+        'orthotic': 'orthotics', 'taping': 'taping', 'icing': 'icing', 'ice ': 'icing',
+        'elevation': 'elevation', 'elevat': 'elevation', 'stretching': 'stretching',
+        'stretch': 'stretching', 'massage': 'massage', 'acupuncture': 'acupuncture',
+        'shockwave': 'shockwave therapy', 'laser': 'laser therapy',
+        'anti-inflammatory': 'anti-inflammatory', 'ibuprofen': 'ibuprofen',
+        'night splint': 'night splint', 'rolling': 'rolling',
+        'arch support': 'arch support', 'antibiot': 'antibiotics',
+        'anti fungal': 'antifungal', 'antifungal': 'antifungal',
+        'soaking': 'soaking',
+    }
+    found = set()
+    results = []
+    for keyword, treatment in treat_map.items():
+        if keyword in t and treatment not in found:
+            found.add(treatment)
+            results.append(treatment)
+    return ', '.join(results) if results else ''
 
-def detect(text, mapping):
-    text_lower = text.lower()
-    found = []
-    for name, keywords in mapping.items():
-        for kw in keywords:
-            if kw in text_lower:
-                found.append(name)
-                break
-    return found
+def detect_products(text):
+    t = text.lower()
+    prod_map = {
+        'hoka': 'Hoka', 'orthofeet': 'Orthofeet', 'new balance': 'New Balance',
+        'skechers': 'Skechers', 'brooks': 'Brooks', 'nike': 'Nike',
+        'birkenstock': 'Birkenstock', 'vionic': 'Vionic', 'oofos': 'Oofos',
+        'crocs': 'Crocs', 'correct toes': 'Correct Toes',
+        'kerasal': 'Kerasal', 'kuru': 'Kuru', 'knee scooter': 'knee scooter',
+    }
+    found = set()
+    results = []
+    for keyword, product in prod_map.items():
+        if keyword in t and product not in found:
+            found.add(product)
+            results.append(product)
+    return ', '.join(results) if results else ''
 
-# New posts captured from Facebook
-new_raw_posts = [
-    # === BUNION SURGERY GROUP - Feed ===
-    {
-        "body": "Having this surgery is 100% an exhausting recovering and then all of the sudden one day it gets better. I'm 6 months out and zero pain, totally happy with the results and I could care less that I have a scar. It's way better than having my bunion. Also, I deliver mail - im on my feet for long hours every day and I still have zero pain. BUT one thing I do want to mention to this group is I have Federal Blue Cross Blue Shield. I usually have $300-500 copays for surgeries (like when I had my hysterectomy). For this surgery I have a $5000 copay!!!! Why? Because for implants I have a 30% deductible. I never knew, never had an implant before - my point is, some hospitals will let u know your costs up front. Mine did not. I just assumed it would be my typical copay. I definitely was not expecting a titanium bolt to cost my insurance $40,000 and my copay to be $5,000. It would have been more but I met my out of pocket max for the year. So, I healed great from my foot surgery and extremely happy with everything except for my huge bill.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": ["How long till you were pain free I am 12 weeks and walking in shoe shoes my foot hurts on the inside and arch I have supports the doc gave me but the more I walk the worse it gets. I keep seeing that one day I will turn a corner but hopping it is soon.", "Wow that's crazy. Insurance is ridiculous sometimes. Mine has a clause that out patient surgery regardless of implants is covered 100% I just had to pay the Dr copay of 20% billed charges. Max out of pocket is $1000."]
-    },
-    # === LAPIPLASTY RECOVERY SEARCH ===
-    {
-        "body": "Had my one week follow up today! The left is the x-ray of my foot before the surgery and the right is the x-ray of it after! My surgery was on 2/23/26. I had lapiplasty, with a donor bone graft. So far recovery is going better than I anticipated. The nerve block wore off the day after surgery and the pain was horrible. Before it wore off, I felt no pain at all. I am taking journavx, hydrocodone/acetaminophen for pain. I started the journavx the day of my surgery, but held off on the hydrocodone/acetaminophen until the pain started. Once the pain started, the hydrocodone was able to significantly reduce it. My doctor gave me the go ahead to take two of the hydrocodone at first, since the one I took wasn't helping. He also said I could take it every 4 hours, instead of 6. This was absolutely needed for the first few days, as the pain would start coming back badly after 4 hours. I have began weaning off of the hydrocodone, while continuing the journavx and acetaminophen. I am getting to where the pain isn't returning as quickly/badly. It has been 9 hours since I last took hydrocodone, and it still isn't hurting me! I had the splint removed today, and was given a boot to wear! So now I'm able to wear my foot icepack, which feels soooo good! I'm also working on moving my ankle and toes up and down. I'm continuing to elevate my foot as much as possible, and using a knee scooter to get around. I also have knee pads that I wear that help when I have to get down on the ground with my son. Hoping for fast healing and progress!",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Has anyone had Lapiplasty without fusion? My doctor offered this option because I'm worried about toe mobility after surgery and the long recovery time. He said it's possible, but it would require a larger incision and more stitches since he needs better visibility of the area during the procedure.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Hi, my daughter (almost 15) had lapiplasty on Friday. One of the best and most experienced podiatrists in New England. He said everything went well, no issues. But When Block wore off on Saturday the pain got worse and worse until it was Unbearable. Pain meds were completely ineffective. We went to ER and were admitted to pediatrics. Morphine drip, loosening of bandaging and she's now back to Tylenol, advil & oxy rotation and her pain is down from 10 to 2. We were under the impression that this was the least invasive & painful, and most effective long term solution but now I'm having regrets and worried about all of the horror stories I'm reading about. Seems like 90% of the people who have reported their experiences have regrets, long and painful recovery full of setbacks. She's supposed to go back to school in a boot on Dec 2 but from what I've read, that seems far fetched. Did we make a mistake? I feel like we should have left well enough alone. UPDATE: Monday 11/24 She's feeling much better after 24 hours in the hospital which included a morphine drip and cuts in the bandage to loosen certain areas that were too tight. That got pain under control. We met with the surgeon this morning and he did a bandage re-wrap with light pressure and said everything looked as it should. Her pain now is minimal, she hasn't even mentioned it all day & she took her first shower since Thursday. We're much more hopeful and optimistic than we were when I posted this.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Had my lapiplasty at 1:30 today. Any recovery tips?",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    # === HALLUX RIGIDUS SEARCH ===
-    {
-        "body": "Has Anyone had a hemi implant? The doctor wants to put one in my big toe. I'm scared. The big toe hurts and I guess because of the pain I'm transferring my weight to the metatarsal area which is actually where most of my pain is. The 2nd metatarsal. I want to be able to bend my toe, but I have a lot of arthritis in the toe. Will they clean it out?",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Hi everyone. I joined this group a couple of weeks ago because I was convinced I had a bunion. I saw the podiatrist today and it turns out I have bad arthritis in my big toe - hallux rigidus. She said I could be conservative and wear a certain kind of shoe or she could shave the bone down. I was told I would be able to drive in 2 weeks. I'm pretty sick of the big bump on the top of my foot and my foot swelling everytime I wear an enclosed shoe.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "I had a first MTP (metatarsophalangeal) joint fusion to permanently join the bones of the big toe, typically for severe arthritis (hallux rigidus) or sometimes severe bunions on Dec 19 still on scooter and boot no weight. This recovery is far worse than rotator cuff surgery i had 10 years ago. Is it because i'm older (70).",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "I've been diagnosed with Hallux Rigidus in my right big toe, and while I'm no foot doctor, it sure seems like minimally invasive surgery would be the better route, but I can't seem to find anyone in the Southeast who actually does these regularly. Any ideas would be greatly appreciated!",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Apparently, I have a few things going on here: 1. Bunion - had it for years but became more pronounced this year where you can see it poking out a little in my Hoka's. 2. Hallux Limitus- stiff big toe & starting to lean inward. 3. Lateral deviation of the sesamoid bone positioning. X-ray showed the one was on the right of my big toe metatarsal instead of underneath it where it should be. I believe this is what's causing me the most pain walking. I've been having trouble walking correctly where I can't push off the ball of my foot and put pressure on my toes and noticing my walking stance is now leaning towards the outside of my right foot. Noticing pain in my hips and lower back too, so I think this could be a domino effect. I've been limited to only wearing my Hoka's even to work bc other shoes just hurt. Upon the doctor telling me I could get a Cortizone shot there's really nothing else I can do because I have orthotics already, I brought up surgery (she did not) & she said she can fix this with surgery. My gut is telling me to go for it now that my deductible has been met and get it over with, but not sure if I need to research this doctor more and even how to do that. I like her but she's no frills, gets you in & out, and her last Google reviews are from 2017 and prior. Any advice is welcome. Should I bother getting a second opinion?",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    # === PF GROUP - Recovery Stretching ===
-    {
-        "body": "I'd like to share a couple things I do that have helped my pain go from a 4 to a 1, on a scale of 1-5. I'm sure they're unconventional, but they've worked for me. I was dx'd with PF on 1/27 by a podiatrist. She gave me some stretches to do and sent me on my way with an appointment in 4 weeks if the pain hadn't been reduced by 50%. I canceled my appointment. I started with the daily stretching, then added a balance board after doing research online.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "I AM BEYOND GRATEFUL!!! MY GOAL FOR THE PAST 3 YEARS WAS TO WAKE UP AND FORGET I HAD FEET AND THEY WOULD DO THEIR JOB WITHOUT PAIN...THIS IS WHAT WORKED FOR ME. I started this journey (from HELL) almost 3 years ago-I am 56 years old and was very active when I got PF.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    # === TOENAIL FUNGUS - Terbinafine ===
-    {
-        "body": "Hi all. I was prescribed Terbinafine after other home treatments were unsuccessful. After a few days of treatment My throat became sore, not realising it could possibly be the Terbinafine I took some antihistamines thinking it may have been after cutting my grass for the first time this year.. during the 3rd week on Terbinafine I developed ulcers on my tongue, throat and what felt in my upper lungs felt inflamed, like a burning sensation.",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "So I've been on oral terbinafine for a bit over a month (no side effects, I was nervous). My big toenails are just slightly yellow at the tips in the corners but I've had the infection for a long time, I just use lots of topicals to keep it at bay. So they aren't a very extreme case. I want to try for a last baby once I'm done with the three month course of medicine, which means I really need to make sure the medicine works.",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Would applying Terbinafine cream be any good, as well as taking the oral medication?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Fellow sufferers! I have a plan. The problem is getting the medication to the fungus. So - I've bought an inexpensive nail drill and filed my nails down as much as I dare (although I might get braver). I crushed up 2 terbinafine tablets & put them into an old over-the-counter nail treatment bottle that I had in the house, with water. My nails look better already. Wish me luck!",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Has anyone had a severe reaction to terbinafine?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "I was on Terbinafine for 7 months last year and my toenails cleared up beautifully. After stopping meds it rapidly came back. Now back on around 2 of Terbinafine since 3 months: no difference or improvement at all.",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    # === FOREFOOT FORUM - Hammer Toe ===
-    {
-        "body": "Surgery on rt foot for Tailor's bunion and hammer toe (4th) on Tuesday. Nervous but excited to FINALLY deal with this after a lifetime of pain that has gotten worse in recent years.",
-        "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
-        "comments": []
-    },
-    {
-        "body": "I'm 14 weeks post op bunionectomy, hammer toe. I'm still having difficulty walking without a walker or cane, but yesterday I walked much more than usual and today my foot is painful and swollen more than usual. I also put a very uncomfortable ice pack on my foot yesterday and feel I applied it too tight so maybe it's that causing pain. Anyone have these issues.",
-        "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
-        "comments": []
-    },
-    {
-        "body": "Has anyone heard of a dr fixing a hammer toe in the office?",
-        "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
-        "comments": []
-    },
-    {
-        "body": "Hello! I'm trying to decide between surgical options or no surgery. I'm 57 years old and have lots of travel and other plans for being active. Problem: painful toes (15+ years) and metatarsal ball of foot (since last fall). Cause of pain: 1) toes stepping on the bottoms of their neighboring toes causing painful sores and 2) prominent metatarsals taking too much impact, leading to stress fractures.",
-        "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
-        "comments": []
-    },
-    # === PF GROUP - Night Splint ===
-    {
-        "body": "I've already try this Night Splint Foot but nothing is happen. My Plantar Fasciitis is still more pain. What can I do?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Tonight will be the 3rd night using this splint. So far it's been a game changer for relieving those excruciating first morning steps. Still have a bit of pain but I was pleasantly surprised when I didn't have to hold on to the wall or furniture to get to the bathroom. Wasn't even limping.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "I was very bad for 2 years, using the night splint I immediately recovered! I'm doing now this exercises daily.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Plantar Fasciitis sufferer here! It was recommended I get a night splint. I ordered one but it doesn't work as intended. Can anyone recommend a night brace that worked for them?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Has anyone tried acupuncture or night splints for pf pain. I've just bought some arch support shoes from amazon so hope they also help.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    # === TOENAIL FUNGUS - Tea Tree / Vicks ===
-    {
-        "body": "I'm not sure what's more annoying......when someone says Try Vicks or when someone says I bathe my feet 3 times a day and use an electric nail file each week I also buy anti fungal washing powder and wash all my socks and towels separately, and change the bed sheets every night. Every morning and night I put tea tree oil on my toes mixed with antifungal cream, then apply vicks on top and hold it down with a plaster and wear cotton socks.",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "My nail finally fell (almost completely) off. What should I use on the nail bed so the fungus wont come back? I have some Ciclopirox solution but should I try Vicks or tea tree oil instead? Or just leave it?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "After trying iodine, tea tree oil, niacinamide, Vicks vapor rub, cloves, peroxide, vinegar, OTC creams/nail repair, emuaidMax (metallic silver), Listerine... I found a cure on accident.",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Has Vicks worked for anyone?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "I've read that Teatree oil and Vicks is good for toenail fungus. How about if I open a capsule of liposomal vitamin C and add a drop of Teatree oil?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    # === CORTISONE INJECTION SEARCH ===
-    {
-        "body": "I had MIS surgery 2 years ago and I still have nerve pain. My doctor suggested a cortisone injection but I'm reluctant to do that. I've had them in my knees and ankle with little to no improvement. The slightest pressure is painful. Thoughts? Thanks.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Update from X-ray: Severe pain and swelling bunion 2nd, 3rd, 4th hammertoe deformities. Off for a cortisone injection tomorrow, and then the waiting game on when I'll get an appointment at the hospital for surgery.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Ok, I'm new here in SC. I've been living off of cortisone shots in my feet every 4 yrs. I have had 2 foot surgeries in the past for heal spurs, and a damaged nerve back when I was 30. I'm 53 now and bunions are my problem. I also have a fracture on the knuckle under my big toenail on my left foot. The left foot bunion with that fracture hurts beyond explaining. The tailor bunion on my right foot hurts beyond explaining. I am a waitress. The shots usually last 4 years and I do not want another surgery.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "I've had multiple surgeries on my left foot, a bunionectomy, 1st MTP fusion and sesamoid removal. I don't have much fat padding on the bottom of my foot. I saw a podiatrist who wants to give me a cortisone injection since I'm still having pain on the ball of my foot. I'm leery to get a cortisone shot since I don't have much padding now, does anyone have any recommendations?",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Hi I'm having a steroid cortisone injection tomorrow on my 2nd TMTJ due to pain caused by arthritis. Surgeon not interested in touching the bunion yet. He said if the injection doesn't work he would consider a two procedures in one operation - fusion of TMTJ and bunion removal at same time. Has anyone else been treated like this - I'm NHS UK patient? Seems to me like they're addressing the symptom and not the cause.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    # === HOKA SHOES - Bunion Support Group ===
-    {
-        "body": "What are your thoughts? Haven't had surgery just yet as it's my last option. Went to physical therapy and therapist recommended the HOKA shoes and Bunion Relief & Toe Corrector. What are your thoughts? I really don't want to have to get surgery.",
-        "source_group": "Bunion Support Group",
-        "comments": []
-    },
-    {
-        "body": "Hi there, which of the following trainer brands are recommended for good support for arches, bunions, and various tendinitis of the foot? Birkenstocks, On, Hoka, Alta?",
-        "source_group": "Bunion Support Group",
-        "comments": []
-    },
-    {
-        "body": "Hi Guys, which HOKA trainers do you recommend? I havent had surgery yet but have been refered. I need some trainers for the coming cold season.",
-        "source_group": "Bunion Support Group",
-        "comments": []
-    },
-    {
-        "body": "New journey for me. This group has been so helpful with finding new shoes. Brooks Ghost 16 wide and Oofos slides are working out great. I am still trying to decide if I like the Hoka Bondi variety. The orthotic insole project has been interesting too. I am now on a quest for dressy sandals and low heels for work meetings and upcoming holiday gatherings. I have a high arch, so good support is much needed. Any suggestions would be appreciated. Thank you!",
-        "source_group": "Bunion Support Group",
-        "comments": []
-    },
-    # === SHOCKWAVE THERAPY - PF Group ===
-    {
-        "body": "For people who have tried softwave/shockwave therapy for plantar fasciitis how many treatments did you do?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Advice needed. I had shockwave treatment last week and everything was fine. I was actually starting to feel better! I had my second treatment this Thursday and it hurt more during treatment and now my calf muscle is so tight I can barely walk. Is this the norm? I've tried the massage gun to make it less tight but so far it's not worked. Now dreading next week's treatment!",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Question for the group: I've been wanting to try shockwave therapy and understand it gets expensive. I am therefore considering buying my own machine. Has anyone made the switch from clinic treatments to a home device? I'm curious if the home version is powerful enough to actually work. Any brand recommendations?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Has anyone used Shockwave therapy?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "I am undergoing shockwave therapy, and it has been painful for me. After the third session, I had to go out for three consecutive days, and I experienced pain in my leg. One of those days, I wore a compression sock that I had just bought, but it turned out to be tighter than needed, which caused congestion and increased pain. My doctor prescribed anti-inflammatory medications. Is what happened concerning? And should I stop the shockwave therapy sessions?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    # === MIS BUNION - Swelling Recovery ===
-    {
-        "body": "I'm 4 and a half months into my surgery, and my foot is still super sensitive even when I take a shower and the water hits my foot. Is this normal? I have my husband run my foot to try and stop it from freaking out but I haven't been able to take my ace bandage off when it's in a shoe.. swelling still comes and goes especially with the heat I try icing behind the knee I try keeping myself cool, but it swells to an uncomfortable level.",
-        "source_group": "Minimally invasive bunion surgery",
-        "comments": []
-    },
-    {
-        "body": "I had surgery on January 9th. MIS and hammertoe correction. My outside ankle really is swollen and hurting a lot. Has anyone else noticed this at all?",
-        "source_group": "Minimally invasive bunion surgery",
-        "comments": []
-    },
-    {
-        "body": "UK here. 3rd week post double foot op. You all seem to know what was done to your feet. I am waiting until 6 week check to hear what actually happened in the surgery. Have to say as a person who has had many operations this operation has thrown me. Patience is needed. Question. My big toe sticks up like a thumb, still very swollen and it feels like I can feel the screws. I was told to wait for the swelling to go down. Struggle to sleep as it's very uncomfortable and annoying. Maybe it's just the swelling. It's on the ball of the foot under the big toe. Anyone else feel this sensation?",
-        "source_group": "Minimally invasive bunion surgery",
-        "comments": []
-    },
-    {
-        "body": "Thanks for the add! Here are pics of my progress so far. Pics of hardware before and after and 2 week and 4 week progress. How long do you feel the stiffness inside your foot? My dr said to expect swelling for up to 6 months.",
-        "source_group": "Minimally invasive bunion surgery",
-        "comments": []
-    },
-    {
-        "body": "Okay I'm on here a lot but I've never had this type of surgery I am having issues with the swelling. It has gone down because I can tell you exactly where my screws are because it hurts a bit when something touches it and it's still swollen there. Should I be worried? It isn't horrid pain feels like a pinch then after awhile it goes away. Its a little shiny but it's like I am starting to get feeling back in my foot and it freaks me out.",
-        "source_group": "Minimally invasive bunion surgery",
-        "comments": []
-    },
-    # === SCARF AKIN SEARCH ===
-    {
-        "body": "Finally scheduled surgery for my r-foot at my appt this morning. It's scheduled for June 3rd! It'll be with the same podiatrist from last year! Procedure will be Scarf Bunionectomy w/Reese OR Akin Osteotomy, nerve block injection and w/MAC anesthesia. Looking forward to a successful procedure, zero complications, an uneventful yet positive recovery journey, pt and no longer suffering from bunion pain.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Hi all, I hope you are doing well. 8 months PO. My issues were: hallux valgus deformity, Hammering of the lesser toes, bunionette deformities and gastroc-soleus equinus. No TMJ joint hypermobility.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "My surgery is 12/26, and I am terrified. I am having nightmares and waking up way too early with anxiety over it. My procedures are: Right foot: 1. Lapidus bunionectomy. 2. Akin osteotomy. 3. Tailor's bunionectomy. This is what my foot currently looks like. The surgeon said he will take a wedge out of my big toe to align it. Will this make my second toe in next to my big toe significantly longer than my big toe with a wedge missing? I was excited for it to be straighter.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "For those who had right foot lapidus akin bunionectomy, when did you start driving again?",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    {
-        "body": "Has this happened to anyone...I had SCARF and Akin osteotomy end of July and I still have been having pain and swelling of that foot. 6-weeks post x-ray showed non-union of the Akin osteotomy and seem like it's still non-union to this day. Found out I'm 7 weeks pregnant and during my last appointment, my surgeon does not want to do anything for now and maybe wait next year after I have given birth for the hardware removal.",
-        "source_group": "bunion surgery / foot surgery support group",
-        "comments": []
-    },
-    # === TOENAIL FUNGUS - Laser ===
-    {
-        "body": "I'm seeing a podiatrist in a few weeks who has a foot aesthetics practice. From what I can tell from reviews, her patients have had success with laser. All of my online research looks like lasers for fungus are 50/50. Anyone here had any luck with lasers? Two rounds of terbinafine did nothing for me.",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Has anyone tried laser treatment? If so, what was your outcome?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "How much does laser treatment cost and how many times do you need for moderate to severe infection basically on all toes?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Has anyone had success with professional Lazer treatment and ointment?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    {
-        "body": "Has anyone had success with lasers? If so what type of laser, how often did you have to do it, and how long did it take to see results?",
-        "source_group": "Toenail Fungus Support & Management",
-        "comments": []
-    },
-    # === PF GROUP - Hoka/Shoes ===
-    {
-        "body": "Which shoe works best for you? I've tried Hoka & Brooks and both sent me into a flair up. My crocs are literally the only thing I can tolerate right now.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Which Hoka shoe is best?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "I need suggestions on winter boots! I currently wear my hoka recovery slides indoors and my brooks glycerin shoes outdoors but I live in Canada and my feet are cold and wet. I am looking for suggestions on SHORT winter boots that will provide the same amount of support as my current shoes. I will add here that orthotics didn't work for me so if that's your suggestion, please keep scrolling.",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "Brooks Ariel or Hoka Bondi? My doc said Ariel but I don't like available color options so wondering if Hoka Bondi is good motion control too?",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
-    {
-        "body": "I've tried Hoka Bondi 9, Brooks Adrenaline GTS and Hoka Arahi 9. No good. Foot still hurting. Any recommendations for a shoe or inserts.. etc? TIA",
-        "source_group": "Plantar Fasciitis Talk and Tips Support Group",
-        "comments": []
-    },
+new_posts_raw = [
+    {"body": "Good morning, new to the group. My x-rays showed my right bunion to be severe and arthritic, plus I have flat feet. The Dr. recommends bunion fusion surgery. I am a 66 yr old female. Has anyone had this surgery, and how was the recovery, the results afterward?", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Those of you with hypermobile feet, pretty severe bunions as well as flat feet - which procedure did you go with? I have seen two different doctors. Both with great reviews. One recommends Lapiplasty and the other recommends a traditional approach with scarf and Akin osteotomy. I'm torn on what to do.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Has anyone had a big bunion fixed and fusion for flat feet? I'm looking into options and want to hear from people who've had both addressed at the same time.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Has anyone had surgery to fix a bunion and flat feet? I just had my first consultation. I didn't get good vibes from my doctor. He was very eager to say surgery for this and surgery for that, like it was so simple. He suggested bunion correction, flat feet correction, and lengthening my calves. Anyone have this or have any advice?", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Positive story so far. Had lapiplasty in January of this year on the right foot. Not gonna lie it was living hell the first few days. But my bones fused in record time and its been pretty seamless since. Still some swelling and tenderness but every day is a little better. Had MIS surgery today on my left foot. So far its been painless! He numbed the foot but no nerve block. He doesn't like doing them, thinks it causes nerve damage. Will be partial weight bearing tomorrow as tolerated. So far I'm glad I did both feet and hope to be walking without bunion pain soon!", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Hey yall! I am having the lapiplasty operation on my left foot this June! I had the Austin procedure done to my right foot in 2022. It was a long hard recovery. But the pain was manageable. Just took a long time for my foot to look normal nevertheless, it changed my life for the better! And it's time to do the left! I am in pain all day everyday! I am wondering if anyone has had the two separate procedures on their feet?", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Recovery update after my June 2025 bunion repair - Lapiplasty with correction of the bunion with Calcaneal Bone Graft and lesser toe corrections. Non-weight bearing for 4 weeks to walking in boot for 4 weeks. Then transitioned to a tennis shoe for 12 weeks of physical therapy and returned to work in October on modified duty. After returning, I started having pain under the outside of my ankle toward pinkie toe.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Good Morning! I will be having Lapiplasty procedure done on April 8th. I know how some feel about this procedure, but my DR and I have agreed this is best for me. My question, what is something that you wish you did before your surgery or bought to help with recovery?", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Hi has anyone tried softwave for Morton neuroma? I've been dealing with this pain for months and looking for alternatives to surgery.", "source_group": "Forefoot forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes"},
+    {"body": "I'm trying to decide between surgical options or no surgery. I'm 57 years old and have lots of travel and other plans for being active. Problem: painful toes for 15+ years and metatarsal ball of foot pain since last fall. Cause of pain: toes stepping on the bottoms of their neighboring toes causing painful sores and prominent metatarsals taking too much impact, leading to stress fractures.", "source_group": "Forefoot forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes"},
+    {"body": "I'm hoping for some advice. I live in the UK and I hurt my foot at the beginning of June. The pain is around the ball of my foot, it feels like there is a lump there and it's painful to walk on. I have been to my GP, who thinks it may be a Morton's neuroma and has referred me to hand and foot surgery. I'm not convinced as it is now making my second toe stick up and there is generalised swelling in the area.", "source_group": "Forefoot forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes"},
+    {"body": "Is Plantar calcaneal spur the same thing as plantar fasciitis? That's what my X-ray said and I have my dr appointment in May. I'm confused about the difference and what treatment to expect.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Plantar fasciitis with multiple treatments for 15 years. Just got steroid injections. It cleared the pain up all except for where my heel spur is in my left foot. The insoles make me feel the best, but depending on what shoe I'm wearing, my feet either slide to the outside where I start getting pains. So I tried Kuru. With these shoes every step gives me pain in my heel spur.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "I do feel a bit uneasy. Had TenJet surgery in December after injections and boot and all that jazz to try to heal my PF. Still had more pain weeks after procedure. Doctor ordered another MRI and PF got worse, is now tearing off the heel bone on the inside and lateral side plus tendinitis of the tibia tendon and heel spurs. Podiatrist recommended releasing the fascia as we have been at this for 2 years now with no progress.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Anyone else only have pain in their heel? Not even the bottom of my heel, it's the sides. Hurts when I squeeze them from the sides and when I walk. Anything you find that helps with this?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "I had my first shockwave treatment on my left heel but it didn't hurt at all. I was under the impression that shockwave hurts. Has anyone else had it not hurt? Even my podiatrist was surprised. Has shockwave helped cure your PF?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Can you walk in these type of night splints? I have to get up to use the rest room, but most, you get up and walk on them they fall or lose the secureness of them. I know you can walk on a boot, so are these kind the same concept?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "I have had heel spurs with plantar fasciitis under both feet for 20 months now. I have tried a night splint, 8 shockwave treatments, 5 osteopath visits, orthopedic insoles, stretching and strengthening exercises including with a ball, cooling, and massage devices. Nothing helps; I am at my wit's end. Do you have any tips? I am a young woman of 29.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Almost fully recovered thanks to my night splint. Next up: 10 day trip to Paris this summer. I have very flat feet, so a little lift in my shoes works wonders. Experienced flat footers weigh in! What sandal would you recommend for flat feet and somewhat stylish?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Is night splint a big help for you guys? Planning to buy those. I've been dealing with plantar fasciitis for several months and trying to find what actually works.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "While a night splint does seem to help, it's bulky and uncomfortable. My sheets are loose, but my feet are pointed down while I sleep and that seems to aggravate BOTH calves. Are y'all using anything while you sleep that keeps your feet more towards 90 degrees?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Fungus is different for every person. Had another doctors appointment yesterday. Had a really good chat with him about this. He told me toenail fungus is different for all of us which is why there isn't a 100 percent cure or product out there to offer from any medical professional.", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "I have fought and learned to live with toenail fungus for 15 years. If it's easy enough to contract it at the gym or the pool, why haven't my husband or kids caught it? Is this the case with any of you?", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "Podiatrist appointment today. Not ingrown. He said it was curved though and cut it down. Not throbbing now, so we will see. When he cut it, most of the fungus is gone. The other toe still has some fungus though. I'm still using anti fungal and soaking. So hoping maybe I got it early enough.", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "I keep reading having an unhealthy diet gives you toenail fungus! As a former professional footballer for 22 years I have had the best dietician, personal trainers fitness programmes. I maintained very good fitness all my life and a healthy balanced diet. I have never had any toenail issues until 15 years ago after my career. I shared changing rooms with many other team mates including showers.", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "Does anyone here who has toenail fungus also have OCD contamination? I think I do and the two of these conditions together have been very rough on me. Anyone else? Any tips on how you mentally deal with possibly having these conditions together?", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "I have done 3 cortisone injections in each heel. We are now talking surgery vs shockwave therapy. The shockwave therapy they offer is 750 dollars upfront to go once a week for 5 weeks for one foot. Has anyone done the once a week for 5 weeks for the shockwave therapy? Any relief?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "When cortisone finally stopped working I went with the next best thing. Had my first shockwave treatment today. He said I will probably need 4-5 treatments. If it doesn't work I can opt for plasma injections or surgery. He has much better success with immature plasma extracted from umbilical cords. One day at a time.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "I received a cortisone shot this past Thursday and not seeing any results! My foot hurts so bad to walk and even burns on the back of my upper heel. Any thoughts to my next step? I've even been doing my stretches.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Been offered cortisone or shockwave? I've had plantar fasciitis for nearly 1 year and getting worse. What's best in your experience?", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "Just got first cortisone shot for PF. Anyone have luck with that? Hoping this gives me some relief after months of dealing with the pain.", "source_group": "Plantar Fasciitis Talk and Tips Support Group"},
+    {"body": "I transitioned into shoes last Thursday and I went and bought 8.5 mens wide Hoka Bondi 9. The women's Hoka shoe at the store don't have a wide. I feel so good in the men's wide. This week marks 10 weeks post op. I'm now walking around 8-10k steps most days. I continue to elevate my foot and ice it anytime I'm sitting down.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Any ladies out there looking for sandals should check these two out, one high end price and one is low end. Hoka Infini Hike TC and Whitin Hiking Sandal. Both have been very comfortable since transitioning from having to wear a carbon fiber insole. They also are fully adjustable and allow for my swelling that I am still experiencing.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Shoes or slippers? I was fitted for Hoka Clifton at running shop. I wore these on Sunday, but shoes seem pretty snug on surgical foot. Foot was too swollen for any shoes by mid-morning on Monday so I bought extra large mens slippers. Should I buy a size up for my surgical foot?", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "7 days post washing my foot. I can see it healing. Thank you bunion family for encouraging to wash. Someone said washing will help with healing. I've been using antibacterial soap. Currently 8 weeks post op. Hopefully I can drive soon. What sneakers are better Hoka or Brooks?", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Sandal suggestions? I will be post op a year in June. Just got home from Spring Break and couldn't wear my pre surgery sandals. They hurt my foot. I hate socks and shoes in the summer. I need to find something comfortable to wear.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Anyone with a current bunion have pain and tenderness on the top center of the foot with the bunion? Swelling at end of day as well. Looking to hear if this is common.", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "Here is my journey with having both pinky toes fixed for hammertoes. 4 weeks post op and I am cleared for regular shoes. Still a little painful from the incision area while in shoes but still went to a wide width while I heal up. Dr says they can be swollen for months.", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "I'm 4 and a half months into my surgery, and my foot is still super sensitive even when I take a shower and the water hits my foot. Is this normal? Swelling still comes and goes especially with the heat. I try icing behind the knee and keeping myself cool, but it swells to an uncomfortable level.", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "I am 6 weeks post op from MIS on left foot. No pins or screws. Cleared to get into regular shoes and cleared for most types of exercise. First 4 weeks I was in a boot, then went to oversized shoes wearing a brace on the toe. Very little swelling, minimal pain. All recoveries are different but that's my story.", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "I had surgery on January 9th. MIS and hammertoe correction. My outside ankle really is swollen and hurting a lot. Has anyone else noticed this at all?", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "Thanks for the add! Here are pics of my progress so far. Pictures of hardware before and after and 2 week and 4 week progress. How long do you feel the stiffness inside your foot? My dr said to expect swelling for up to 6 months.", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "So good and bad. I went to the Dr today cause my left toe next to my pinky feels like someone is squeezing it. Sometimes real painful, sometimes not. I got an ingrown toenail! And of course that toe has fungus on it. Referral to podiatrist, just have to wait a couple weeks. My PCP gave me antibiotics and told me to soak it too.", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "I had a partial ingrown toenail removed earlier today. I did not know it could possibly involve chemicals. I'm breastfeeding and am worried they used Phenol. Is there any way to tell?", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "It gives me a giggle to know I have fungus at 25. I've had it for 2 years now with nothing helping or curing it. I just recently used some kerasal to make my nail mushy to get rid of the icky under the nail plate. I have tried multiple different things including medication from doctors, nail polish type things, oils, creams. I think I might schedule an appointment with the podiatrist to get my toenail removed.", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "Has anyone had all their toe nails removed with the nail bed before? I would like some photos once all healed. I am looking to get this done as I have tried everything including the tablets 3 times and they come back worse each time.", "source_group": "Toenail Fungus Support & Management"},
+    {"body": "I come from a long line of people with big bunions. Both my mother and grandmother had much worse bunions than I do. Mine were exacerbated by surgery to remove tophi from many gout episodes 2.5 years ago. I've lost weight and taken meds to further shrink remaining tophi. I have a hard time with most shoes but have learned to manage by wearing zero drop shoes with a wide toe box.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Hi everyone! Will be having surgery on Thursday for bunion and hammertoe. Also they will be taking a bit of bone from my heel to fill a negative space where gout has eroded the bone. I wasn't worried until I began researching. Now I'm a bit terrified.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "Hi! I am six weeks post op and I have been walking in recovery shoe. I have been given the go ahead to walk without it. Please give me your advice about footwear, techniques, physiotherapy, anything.", "source_group": "Bunion Support Group"},
+    {"body": "I'm just feeling really defeated with my recovery at the moment. My physio even said to me in our session yesterday, what happened to me was not normal and shouldn't have happened, that my case is complex and very unfortunate. It's really frustrating that I had to suffer so much more because of a negligent doctor.", "source_group": "Bunion Support Group"},
+    {"body": "Update - I sent the picture to my foot doctor today and received a phone call back. He says it looks fine. I appreciate everyone's input. And I wish all of us a speedy full recovery! I had bunion surgery 18 days ago. I was told to take a shower today. I still can't put weight on that foot.", "source_group": "Bunion Support Group"},
+    {"body": "Good afternoon all. I'm just wondering who in their 70s has had the big toe broken and plated bunion operation and hammer toe fixed. My bunions are severe but don't hurt anymore but the hammer toe now crossing over the big toe is painful. I also have osteoarthritis. Was wanting feedback on those older who've had the operation and recovery.", "source_group": "Bunion Support Group"},
+    {"body": "How's your back, neck and mind after surgery and during recovery? I'm scared of the whole process. Been to my first consultation today. Was diagnosed with a mild bunion but looks like its getting worse daily. Scared of surgery as I also have no job at the moment and need to save up for recovery. I'm only 36 but also have no support group.", "source_group": "Bunion Support Group"},
+    {"body": "For my friends in UK. My bunions are pretty bad and operating is for medical reasons. Has anyone had minimal invasive surgery and were you happy with it? Looking for UK experiences.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "5 weeks post OP. Minimal invasive surgery. Bunionectomy, silver bunionectomy, McBride soft tissue procedures as well as Akin osteotomy. 5th metatarsal Weil osteotomy and claw toe correction splinted with K wire. First picture in the morning after elevating. Second picture swollen foot after walking less than 20 metres.", "source_group": "Minimally invasive bunion surgery"},
+    {"body": "5 years post surgery. Does anyone have insight for surgery several years out? I've been relatively pain free after all the recovery. However recently, almost 5 years post surgery, I'm having significant pain and discomfort. Also having a hard time finding comfortable shoes for not just the bunion area, but my entire footbed and arch.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "6 weeks post op. I was wondering if others experience more swelling when they first get up in the morning rather than after being up and walking around? Maybe its the blood moving that helps? My first few steps in the morning always make me feel like I've taken a step back in my recovery.", "source_group": "bunion surgery / foot surgery support group"},
+    {"body": "How do you keep your toenails healthy while treating fungus? I've been trying various products and want to make sure I'm not damaging the nail further in the process.", "source_group": "Toenail Fungus Support & Management"},
 ]
 
-# Deduplicate and add new posts
-new_count = 0
-for raw in new_raw_posts:
-    key = raw['body'][:80].lower().strip()
+added = 0
+for post in new_posts_raw:
+    key = post['body'][:80].lower().strip()
     if key in existing_keys:
         continue
-    existing_keys.add(key)
-    max_id += 1
-    new_count += 1
-    
-    body = raw['body']
-    full_text = body + ' ' + ' '.join(raw.get('comments', []))
-    
-    post = {
-        "id": max_id,
-        "body": body,
+    new_post = {
+        "id": next_id,
+        "body": post['body'],
         "author": None,
         "url": None,
-        "source_group": raw['source_group'],
-        "conditions": detect(full_text, CONDITIONS),
-        "surgery_types": detect(full_text, SURGERY_TYPES),
-        "products": detect(full_text, PRODUCTS),
-        "treatments": detect(full_text, TREATMENTS),
-        "images": [],
-        "comments": raw.get('comments', [])
+        "source_group": post['source_group'],
+        "date_captured": today,
+        "conditions_mentioned": detect_conditions(post['body']),
+        "surgery_types_mentioned": detect_surgery(post['body']),
+        "treatments_mentioned": detect_treatments(post['body']),
+        "products_mentioned": detect_products(post['body']),
+        "comments": [],
+        "images": []
     }
-    existing.append(post)
+    existing_posts.append(new_post)
+    existing_keys.add(key)
+    next_id += 1
+    added += 1
 
-print(f"New posts added: {new_count}")
-print(f"Total posts now: {len(existing)}")
-
-# Save
 with open('posts.json', 'w') as f:
-    json.dump(existing, f, indent=2)
+    json.dump(existing_posts, f, indent=2)
 
-print("posts.json updated successfully")
+print(f"Added {added} new posts. Total: {len(existing_posts)}")
 
-# Print topic breakdown
 from collections import Counter
-conds = Counter()
-for p in existing:
-    for c in p.get('conditions', []):
-        conds[c] += 1
-print("\nTopic breakdown:")
-for c, n in conds.most_common():
-    print(f"  {c}: {n}")
-
-# Print surgery types
-surgs = Counter()
-for p in existing:
-    for s in p.get('surgery_types', []):
-        surgs[s] += 1
-print("\nSurgery types:")
-for s, n in surgs.most_common():
-    print(f"  {s}: {n}")
-
-# Print products
-prods = Counter()
-for p in existing:
-    for pr in p.get('products', []):
-        prods[pr] += 1
-print("\nProducts mentioned:")
-for pr, n in prods.most_common():
-    print(f"  {pr}: {n}")
+conditions = Counter()
+for p in existing_posts:
+    for c in [x.strip() for x in p.get('conditions_mentioned', '').split(',') if x.strip()]:
+        conditions[c] += 1
+print("\nCondition breakdown:")
+for k, v in conditions.most_common():
+    print(f"  {k}: {v}")
