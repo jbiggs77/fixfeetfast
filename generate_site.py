@@ -1425,13 +1425,15 @@ def get_page_header(title, description="", niche_id=None, niche_data=None):
     schema_scripts = ""
     if niche_id and niche_data:
         # Article schema
+        page_date_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+00:00")
         article_schema = {
             "@context": "https://schema.org",
             "@type": "MedicalWebPage",
             "headline": title,
             "description": description,
             "url": canonical_url,
-            "dateModified": datetime.now().strftime("%Y-%m-%d"),
+            "datePublished": "2026-04-03T00:00:00+00:00",
+            "dateModified": page_date_iso,
             "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
             "about": {"@type": "MedicalCondition", "name": niche_data.get('title', '')},
             "audience": {"@type": "PeopleAudience", "audienceType": "Patients"},
@@ -1672,14 +1674,21 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
 """
 
     # Schema.org DiscussionForumPosting
+    post_date = post.get('date_captured', datetime.now().strftime("%Y-%m-%d"))
+    post_date_iso = f"{post_date}T00:00:00+00:00"
     discussion_schema = {
         "@context": "https://schema.org",
         "@type": "DiscussionForumPosting",
         "headline": post_title,
         "text": post_body_raw,
         "url": f"{SITE_URL}/{niche_id}/{post_slug}/",
-        "dateModified": datetime.now().strftime("%Y-%m-%d"),
-        "author": {"@type": "Person", "name": "Community Member"},
+        "datePublished": post_date_iso,
+        "dateModified": post_date_iso,
+        "author": {
+            "@type": "Person",
+            "name": "Community Member",
+            "url": f"{SITE_URL}/about/"
+        },
         "discussionUrl": f"{SITE_URL}/{niche_id}/{post_slug}/",
     }
     html += f'  <script type="application/ld+json">\n{json.dumps(discussion_schema)}\n  </script>\n'
