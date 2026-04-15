@@ -1402,6 +1402,7 @@ section {{
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }}
 .related-discussion-card:hover {{
   background: var(--accent-light);
@@ -1415,6 +1416,165 @@ section {{
   font-size: 0.85rem;
   color: var(--text-secondary);
   margin: 0;
+}}
+.related-meta {{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}}
+.cross-topic-section {{
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}}
+.cross-topic-section h2 {{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}}
+.related-discussion-card.cross-topic {{
+  border-left-color: var(--primary);
+}}
+.cross-topic-badge {{
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}}
+.explore-topics {{
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}}
+.explore-topics h2 {{
+  margin-bottom: 1rem;
+}}
+.explore-topics-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}}
+.explore-topic-card {{
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}}
+.explore-topic-card:hover {{
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}}
+.explore-topic-header {{
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}}
+.explore-topic-icon {{
+  font-size: 1.2rem;
+}}
+.explore-topic-card p {{
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}}
+.explore-topic-count {{
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}}
+.community-synthesis {{
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}}
+.community-synthesis h2 {{
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}}
+.community-synthesis p {{
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}}
+.synthesis-highlights {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}}
+.synthesis-highlight {{
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}}
+.synthesis-highlight strong {{
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}}
+.synthesis-highlight span {{
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}}
+.key-takeaways {{
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}}
+.key-takeaways h3 {{
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}}
+.key-takeaways ul {{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}}
+.key-takeaways li {{
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}}
+.key-takeaways li::before {{
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}}
+@media (max-width: 768px) {{
+  .explore-topics-grid {{
+    grid-template-columns: 1fr;
+  }}
+  .synthesis-highlights {{
+    grid-template-columns: 1fr;
+  }}
 }}
 """
 
@@ -1638,8 +1798,7 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
         <a href="/{niche_id}/" class="back-link">← Back to {topic_title}</a>
 """
 
-    # Related discussions section
-    # Find other posts from the same topic
+    # Related discussions section (same topic)
     related_posts = []
     for other_post in all_posts:
         if other_post.get('id') == post.get('id'):
@@ -1656,16 +1815,116 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
         <div class="related-discussions">
           <h2>Related Discussions</h2>
 """
-        for related_post in related_posts[:4]:
-            related_body = related_post.get('body', '')[:75]
+        for related_post in related_posts[:6]:
+            related_body = related_post.get('body', '')
             related_slug = slugify(related_body, related_post.get('id', 'unknown'))
-            related_title = related_body[:50]
+            related_title = related_body[:60].rstrip('.,!?;:')
+            # Count comments for social proof
+            comment_count = len(related_post.get('comments', []))
+            comment_text = f"{comment_count} comment{'s' if comment_count != 1 else ''}" if comment_count else "Share your experience"
             html += f"""          <a href="/{niche_id}/{related_slug}/" class="related-discussion-card">
             <h3>{related_title}...</h3>
-            <p>From {related_post.get('source_group', 'Community')}</p>
+            <div class="related-meta">
+              <span>From {related_post.get('source_group', 'Community')}</span>
+              <span>{comment_text}</span>
+            </div>
           </a>
 """
         html += """        </div>
+"""
+
+    # Cross-topic related discussions (from other topics that share conditions/treatments)
+    post_conditions = set()
+    if cond_str := post.get('conditions_mentioned'):
+        post_conditions = {c.strip().lower() for c in cond_str.split(',')}
+    post_treatments = set()
+    if treat_str := post.get('treatments_mentioned'):
+        post_treatments = {t.strip().lower() for t in treat_str.split(',')}
+    post_products = set()
+    if prod_str := post.get('products_mentioned'):
+        post_products = {p.strip().lower() for p in prod_str.split(',')}
+
+    cross_topic_posts = []
+    for other_post in all_posts:
+        if other_post.get('id') == post.get('id'):
+            continue
+        # Skip posts already in same-topic related
+        if other_post in related_posts[:6]:
+            continue
+        # Check for overlap in conditions, treatments, or products
+        other_conds = set()
+        if c := other_post.get('conditions_mentioned'):
+            other_conds = {x.strip().lower() for x in c.split(',')}
+        other_treats = set()
+        if t := other_post.get('treatments_mentioned'):
+            other_treats = {x.strip().lower() for x in t.split(',')}
+        other_prods = set()
+        if p := other_post.get('products_mentioned'):
+            other_prods = {x.strip().lower() for x in p.split(',')}
+
+        overlap = len(post_conditions & other_conds) + len(post_treatments & other_treats) + len(post_products & other_prods)
+        if overlap >= 2:
+            # Find which topic this post belongs to
+            for other_niche_id, other_niche_data in NICHE_MAP.items():
+                if other_niche_id == niche_id:
+                    continue
+                for kw in other_niche_data['keywords']:
+                    if kw.lower() in (other_conds | other_treats):
+                        cross_topic_posts.append((other_post, other_niche_id, other_niche_data, overlap))
+                        break
+                else:
+                    continue
+                break
+
+        if len(cross_topic_posts) >= 4:
+            break
+
+    # Sort by overlap score
+    cross_topic_posts.sort(key=lambda x: x[3], reverse=True)
+
+    if cross_topic_posts:
+        html += """
+        <div class="cross-topic-section">
+          <h2>From Other Topics You May Find Helpful</h2>
+"""
+        for cross_post, cross_niche_id, cross_niche_data, _ in cross_topic_posts[:4]:
+            cross_body = cross_post.get('body', '')
+            cross_slug = slugify(cross_body, cross_post.get('id', 'unknown'))
+            cross_title = cross_body[:60].rstrip('.,!?;:')
+            cross_topic_title = cross_niche_data.get('title', '')
+            html += f"""          <a href="/{cross_niche_id}/{cross_slug}/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">{cross_topic_title}</span>
+            <h3>{cross_title}...</h3>
+          </a>
+"""
+        html += """        </div>
+"""
+
+    # Explore Related Topics (links to other topic pages)
+    related_topic_slugs = niche_data.get('related', [])
+    if related_topic_slugs:
+        html += """
+        <div class="explore-topics">
+          <h2>Explore Related Topics</h2>
+          <div class="explore-topics-grid">
+"""
+        for rel_slug in related_topic_slugs:
+            if rel_slug in NICHE_MAP:
+                rel_data = NICHE_MAP[rel_slug]
+                rel_visuals = TOPIC_VISUALS.get(rel_slug, {"icon": "📋", "gradient": "linear-gradient(135deg, #1a237e, #3f51b5)"})
+                # Count posts in this topic
+                rel_count = sum(1 for p in all_posts if p.get('conditions_mentioned') and any(kw.lower() in p['conditions_mentioned'].lower() for kw in rel_data['keywords']))
+                html += f"""            <a href="/{rel_slug}/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: {rel_visuals['gradient']};">
+                <span class="explore-topic-icon">{rel_visuals['icon']}</span>
+                <strong>{rel_data['title']}</strong>
+              </div>
+              <p>{rel_data['description']}</p>
+              <span class="explore-topic-count">{rel_count} discussions →</span>
+            </a>
+"""
+        html += """          </div>
+        </div>
 """
 
     html += """      </article>
@@ -1962,6 +2221,78 @@ def generate_topic_page(niche_id, niche_data, posts):
             if para.strip():
                 html += f'      <p>{para.strip()}</p>\n'
         html += """    </section>
+"""
+
+    # Generate community synthesis (data-driven editorial summary)
+    if topic_posts:
+        top_treatments_list = sorted(treatment_mentions.items(), key=lambda x: x[1], reverse=True)
+        top_products_list = sorted(product_mentions.items(), key=lambda x: x[1], reverse=True)
+        top_surgeries_list = sorted(surgery_mentions.items(), key=lambda x: x[1], reverse=True)
+
+        html += f"""
+    <section class="container">
+      <div class="community-synthesis">
+        <h2>What {len(topic_posts)} Real Patients Report About {niche_data['title']}</h2>
+        <p>Based on {len(topic_posts)} discussions and {total_comments} comments from foot health communities, here's what patients are actually experiencing and recommending.</p>
+"""
+        # Build highlight cards from the data
+        highlights = []
+        if top_treatments_list:
+            top_t = [t[0] for t in top_treatments_list[:3]]
+            highlights.append(("Most Discussed Treatments", ", ".join(top_t)))
+        if top_products_list:
+            top_p = [p[0] for p in top_products_list[:3]]
+            highlights.append(("Top Products Mentioned", ", ".join(top_p)))
+        if top_surgeries_list:
+            top_s = [s[0] for s in top_surgeries_list[:3]]
+            highlights.append(("Surgery Types Discussed", ", ".join(top_s)))
+        if total_comments:
+            avg_engagement = round(total_comments / len(topic_posts), 1)
+            highlights.append(("Avg. Replies Per Discussion", f"{avg_engagement} comments"))
+
+        if highlights:
+            html += """        <div class="synthesis-highlights">
+"""
+            for label, value in highlights:
+                html += f"""          <div class="synthesis-highlight">
+            <strong>{label}</strong>
+            <span>{value}</span>
+          </div>
+"""
+            html += """        </div>
+"""
+        html += """      </div>
+    </section>
+"""
+
+        # Key takeaways box
+        takeaways = []
+        if top_treatments_list:
+            takeaways.append(f"The most commonly discussed treatment is <strong>{top_treatments_list[0][0]}</strong>, mentioned in {top_treatments_list[0][1]} discussions")
+        if top_products_list:
+            takeaways.append(f"<strong>{top_products_list[0][0]}</strong> is the most frequently mentioned product by community members")
+        if len(topic_posts) >= 5:
+            # Check how many posts have comments (indicates engagement)
+            posts_with_comments = sum(1 for p in topic_posts if p.get('comments'))
+            if posts_with_comments:
+                takeaways.append(f"{posts_with_comments} out of {len(topic_posts)} discussions received community replies with additional advice")
+        if top_surgeries_list:
+            takeaways.append(f"<strong>{top_surgeries_list[0][0]}</strong> is the most discussed surgical procedure in this category")
+        if len(top_treatments_list) >= 2:
+            takeaways.append(f"Patients frequently discuss both <strong>{top_treatments_list[0][0]}</strong> and <strong>{top_treatments_list[1][0]}</strong> as part of their treatment approach")
+
+        if takeaways:
+            html += """
+    <section class="container">
+      <div class="key-takeaways">
+        <h3>Key Takeaways from the Community</h3>
+        <ul>
+"""
+            for takeaway in takeaways[:5]:
+                html += f"          <li>{takeaway}</li>\n"
+            html += """        </ul>
+      </div>
+    </section>
 """
 
     html += f"""

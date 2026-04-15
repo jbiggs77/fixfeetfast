@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Bunion Surgery Recovery: Timeline, Tips & Real Experiences", "description": "Real bunion surgery recovery experiences from patients. Week-by-week timeline, swelling tips, when to walk, and what to expect after bunionectomy.", "url": "https://fixfeetfast.com/bunion-surgery-recovery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Bunion Surgery Recovery"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Bunion Surgery Recovery: Timeline, Tips & Real Experiences", "description": "Real bunion surgery recovery experiences from patients. Week-by-week timeline, swelling tips, when to walk, and what to expect after bunionectomy.", "url": "https://fixfeetfast.com/bunion-surgery-recovery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Bunion Surgery Recovery"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does it take to fully recover from bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Full recovery from bunion surgery typically takes 3 to 6 months, though some patients report residual swelling for up to a year. Most people can return to desk work in 2-4 weeks, drive after 6-8 weeks, and resume exercise around 3-4 months. Recovery varies based on the procedure \u2014 MIS and Lapiplasty may have different timelines than traditional osteotomy."}}, {"@type": "Question", "name": "What is the fastest way to recover from bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "The most commonly recommended recovery tips include: keeping the foot elevated above heart level for the first 2 weeks, icing regularly to manage swelling, following your surgeon's weight-bearing instructions exactly, starting physical therapy when cleared, and wearing supportive shoes during the transition period. Many patients also emphasize the importance of patience \u2014 rushing recovery often leads to setbacks."}}, {"@type": "Question", "name": "When can I walk normally after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Most patients begin partial weight bearing in a surgical boot 2-6 weeks after surgery, depending on the procedure. Walking in regular shoes typically starts around 6-8 weeks, though a normal gait pattern may take 3-4 months to fully return. Many patients report that their walking improved gradually over several months."}}, {"@type": "Question", "name": "Is bunion surgery worth it?", "acceptedAnswer": {"@type": "Answer", "text": "Most patients who share their experiences report that bunion surgery was worth it, despite the challenging recovery period. Common sentiments include wishing they'd done it sooner, being surprised by how long recovery takes, but ultimately being happy with the results once fully healed. The decision depends on your pain level, activity limitations, and willingness to commit to the recovery process."}}]}
@@ -1051,6 +1211,39 @@ section {
       <p>Bunion surgery recovery varies significantly depending on the procedure performed, but most patients can expect a recovery period of 6 to 12 weeks before returning to normal activities. The first two weeks are typically the most challenging, with significant swelling, limited mobility, and the need to keep the foot elevated as much as possible.</p>
       <p>Based on experiences shared by thousands of patients in foot surgery support communities, the recovery timeline often looks different from what surgeons initially describe. Many patients report that swelling can persist for 3 to 6 months — or even up to a year — after surgery. Understanding what's normal and hearing from others who've been through it can help set realistic expectations.</p>
       <p>Below you'll find real discussions from people at various stages of bunion surgery recovery, sharing what worked for them, what surprised them, and advice they wish they'd known before surgery.</p>
+    </section>
+
+    <section class="container">
+      <div class="community-synthesis">
+        <h2>What 14 Real Patients Report About Bunion Surgery Recovery</h2>
+        <p>Based on 14 discussions and 0 comments from foot health communities, here's what patients are actually experiencing and recommending.</p>
+        <div class="synthesis-highlights">
+          <div class="synthesis-highlight">
+            <strong>Most Discussed Treatments</strong>
+            <span>surgery, icing, elevation</span>
+          </div>
+          <div class="synthesis-highlight">
+            <strong>Top Products Mentioned</strong>
+            <span>boot, surgical shoe, Hoka</span>
+          </div>
+          <div class="synthesis-highlight">
+            <strong>Surgery Types Discussed</strong>
+            <span>Lapiplasty, minimally invasive, arthrodesis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="key-takeaways">
+        <h3>Key Takeaways from the Community</h3>
+        <ul>
+          <li>The most commonly discussed treatment is <strong>surgery</strong>, mentioned in 12 discussions</li>
+          <li><strong>boot</strong> is the most frequently mentioned product by community members</li>
+          <li><strong>Lapiplasty</strong> is the most discussed surgical procedure in this category</li>
+          <li>Patients frequently discuss both <strong>surgery</strong> and <strong>icing</strong> as part of their treatment approach</li>
+        </ul>
+      </div>
     </section>
 
     <section class="container">

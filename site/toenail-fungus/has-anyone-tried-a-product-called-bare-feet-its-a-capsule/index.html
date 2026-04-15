@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Has anyone tried a product called Bare Feet? It's a capsule ", "description": "Has anyone tried a product called Bare Feet? Its a capsule and advertised and talked about by a Pharmacist named Lisa. Claims it cures the Fungus, not jus", "url": "https://fixfeetfast.com/toenail-fungus/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Toenail Fungus Treatment"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Has anyone tried a product called Bare Feet? It's a capsule ", "description": "Has anyone tried a product called Bare Feet? Its a capsule and advertised and talked about by a Pharmacist named Lisa. Claims it cures the Fungus, not jus", "url": "https://fixfeetfast.com/toenail-fungus/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:14+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Toenail Fungus Treatment"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does it take to cure toenail fungus?", "acceptedAnswer": {"@type": "Answer", "text": "Treatment timelines vary significantly: topical treatments take 6-12 months, oral medications (like terbinafine) typically take 3-6 months, and laser therapy shows results over several months with multiple treatments. Even after treatment ends, it can take 6-12 months for a clear nail to fully grow in."}}, {"@type": "Question", "name": "What's the most effective toenail fungus treatment?", "acceptedAnswer": {"@type": "Answer", "text": "Oral antifungals like terbinafine have the highest success rates (70-80%), though they have potential side effects. Topical treatments work for mild cases but have lower success rates. Laser therapy shows promise but results vary. The best choice depends on infection severity and individual factors \u2014 discuss options with a doctor."}}, {"@type": "Question", "name": "Can I prevent toenail fungus from coming back?", "acceptedAnswer": {"@type": "Answer", "text": "Prevention strategies include: keeping feet dry, wearing breathable shoes, using antifungal powder in shoes, trimming nails short, avoiding pedicures at unsanitized salons, using public showers with flip-flops, and treating athlete's foot promptly (which can lead to nail fungus). Recurrence rates are 10-15% with treatment."}}, {"@type": "Question", "name": "Are home remedies effective for toenail fungus?", "acceptedAnswer": {"@type": "Answer", "text": "Home remedies like vinegar, tea tree oil, and hydrogen peroxide have limited scientific evidence. While some people report improvement, success rates are much lower than medical treatments. Home remedies may work for very early or mild infections but are less reliable for established fungal nails."}}]}
@@ -1049,21 +1209,85 @@ section {
         <div class="related-discussions">
           <h2>Related Discussions</h2>
           <a href="/toenail-fungus/has-anyone-here-ever-dealt-with-toenail-nail-fungus-what-tr/" class="related-discussion-card">
-            <h3>Has anyone here ever dealt with toenail nail fungu...</h3>
-            <p>From Toenail Fungus Support & Management</p>
+            <h3>Has anyone here ever dealt with toenail nail fungus? What tr...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/toenail-fungus/ive-battled-with-my-toenail-fungus-for-20-years-trying-var/" class="related-discussion-card">
-            <h3>I've battled with my toenail fungus for 20 years, ...</h3>
-            <p>From Toenail Fungus Support & Management</p>
+            <h3>I've battled with my toenail fungus for 20 years, trying var...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/toenail-fungus/is-castor-oil-any-good-for-toenail-fungus-just-rubbing-it-i/" class="related-discussion-card">
-            <h3>Is castor oil any good for toenail fungus. Just ru...</h3>
-            <p>From Toenail Fungus Support & Management</p>
+            <h3>Is castor oil any good for toenail fungus. Just rubbing it i...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/toenail-fungus/how-long-did-it-take-you-to-finally-seek-treatment-for-toena/" class="related-discussion-card">
-            <h3>How long did it take you to finally seek treatment...</h3>
-            <p>From Toenail Fungus Support & Management</p>
+            <h3>How long did it take you to finally seek treatment for toena...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
           </a>
+          <a href="/toenail-fungus/what-do-the-ladies-wear-on-their-feet-in-the-summertime-bes/" class="related-discussion-card">
+            <h3>What do the ladies wear on their feet in the summertime? Bes...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+          <a href="/toenail-fungus/so-this-is-pretty-representative-of-how-my-toenail-fungus-st/" class="related-discussion-card">
+            <h3>So this is pretty representative of how my toenail fungus st...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="explore-topics">
+          <h2>Explore Related Topics</h2>
+          <div class="explore-topics-grid">
+            <a href="/post-surgery-shoes/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #e65100 0%, #ff9800 100%);">
+                <span class="explore-topic-icon">👟</span>
+                <strong>Best Shoes After Foot Surgery</strong>
+              </div>
+              <p>Footwear recommendations for post-surgery comfort and recovery</p>
+              <span class="explore-topic-count">7 discussions →</span>
+            </a>
+            <a href="/physical-therapy-foot/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #00695c 0%, #26a69a 100%);">
+                <span class="explore-topic-icon">🏋️</span>
+                <strong>Physical Therapy & Foot Exercises</strong>
+              </div>
+              <p>Physical therapy, exercises, and rehabilitation strategies</p>
+              <span class="explore-topic-count">7 discussions →</span>
+            </a>
+            <a href="/flat-feet-arch-support/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #37474f 0%, #78909c 100%);">
+                <span class="explore-topic-icon">🧱</span>
+                <strong>Flat Feet & Arch Support</strong>
+              </div>
+              <p>Flat feet, arch support, and pronation management</p>
+              <span class="explore-topic-count">5 discussions →</span>
+            </a>
+            <a href="/toe-spacers-orthotics/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #4e342e 0%, #8d6e63 100%);">
+                <span class="explore-topic-icon">🦿</span>
+                <strong>Toe Spacers, Orthotics & Braces</strong>
+              </div>
+              <p>Orthotics, braces, and toe spacers for foot health</p>
+              <span class="explore-topic-count">4 discussions →</span>
+            </a>
+          </div>
         </div>
       </article>
     </section>

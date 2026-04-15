@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Anyone have experience with your surgical wound dehiscing? I", "description": "Anyone have experience with your surgical wound dehiscing? Im 7 weeks out from lapiplasty and this spot on the main incision just will not heal. Im doing", "url": "https://fixfeetfast.com/lapiplasty-surgery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Lapiplasty 3D Bunion Surgery"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Anyone have experience with your surgical wound dehiscing? I", "description": "Anyone have experience with your surgical wound dehiscing? Im 7 weeks out from lapiplasty and this spot on the main incision just will not heal. Im doing", "url": "https://fixfeetfast.com/lapiplasty-surgery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Lapiplasty 3D Bunion Surgery"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does Lapiplasty surgery cost?", "acceptedAnswer": {"@type": "Answer", "text": "Lapiplasty typically costs between $5,000 and $15,000 depending on location, surgeon, and insurance coverage. Many insurance plans cover the procedure when medically necessary. Out-of-pocket costs vary widely based on your plan's deductible and copay structure."}}, {"@type": "Question", "name": "What is the recovery time for Lapiplasty?", "acceptedAnswer": {"@type": "Answer", "text": "Lapiplasty patients are often allowed to bear weight in a boot within a few days of surgery, which is faster than some traditional procedures. Most patients transition to regular shoes around 6-8 weeks. Full recovery with return to all activities typically takes 3-4 months."}}, {"@type": "Question", "name": "Is Lapiplasty better than regular bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Lapiplasty addresses the bunion in three dimensions, which may reduce recurrence rates compared to 2D corrections. However, it involves permanent titanium plates, is more expensive, and not all surgeons are trained in the technique. The best procedure depends on your specific bunion anatomy."}}, {"@type": "Question", "name": "Can Lapiplasty bunions come back?", "acceptedAnswer": {"@type": "Answer", "text": "Lapiplasty claims a lower recurrence rate than traditional 2D corrections because it addresses the root cause of the bunion. However, no surgery guarantees permanent correction. Factors like genetics, footwear choices, and biomechanics can influence long-term results."}}]}
@@ -1052,21 +1212,91 @@ section {
         <div class="related-discussions">
           <h2>Related Discussions</h2>
           <a href="/lapiplasty-surgery/i-had-surgery-lapiplasty-n-hammer-toe-on-march-28-2026-i/" class="related-discussion-card">
-            <h3>I had surgery (lapiplasty n hammer toe) on March 2...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>I had surgery (lapiplasty n hammer toe) on March 28, 2026. I...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/lapiplasty-surgery/based-on-experiences-for-folks-who-have-had-bunion-surgeries/" class="related-discussion-card">
-            <h3>Based on experiences for folks who have had bunion...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>Based on experiences for folks who have had bunion surgeries...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/lapiplasty-surgery/i-am-19-days-post-op-of-3d-lapidus-lapiplasty-on-my-right-fo/" class="related-discussion-card">
-            <h3>I am 19 days post op of 3D Lapidus Lapiplasty on m...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>I am 19 days post op of 3D Lapidus Lapiplasty on my right fo...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/lapiplasty-surgery/this-whole-time-i-misunderstood-and-thought-i-was-getting-la/" class="related-discussion-card">
-            <h3>This whole time I misunderstood and thought I was ...</h3>
-            <p>From Minimally invasive bunion surgery</p>
+            <h3>This whole time I misunderstood and thought I was getting la...</h3>
+            <div class="related-meta">
+              <span>From Minimally invasive bunion surgery</span>
+              <span>Share your experience</span>
+            </div>
           </a>
+        </div>
+
+        <div class="cross-topic-section">
+          <h2>From Other Topics You May Find Helpful</h2>
+          <a href="/scarf-akin-osteotomy/round-2-for-me-earlier-today-right-foot-akin-scarf-osteot/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Scarf & Akin Osteotomy</span>
+            <h3>Round 2 for me earlier today. Right foot akin & scarf osteot...</h3>
+          </a>
+          <a href="/bunion-surgery-recovery/tip-that-helped-my-postbunion-surgery-swelling-and-toe-pres/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>Tip That Helped My Post-Bunion Surgery Swelling and Toe Pres...</h3>
+          </a>
+          <a href="/scarf-akin-osteotomy/its-worth-it-in-the-end-i-had-scarf-akin-weil-osteotomie/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Scarf & Akin Osteotomy</span>
+            <h3>It's worth it in the end. I had scarf, akin, weil osteotomie...</h3>
+          </a>
+          <a href="/scarf-akin-osteotomy/bilateral-scarfakin-surgery-booked-for-the-9th-of-feb-i/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Scarf & Akin Osteotomy</span>
+            <h3>Bilateral scarf/akin surgery booked for the 9th of feb.... I...</h3>
+          </a>
+        </div>
+
+        <div class="explore-topics">
+          <h2>Explore Related Topics</h2>
+          <div class="explore-topics-grid">
+            <a href="/bunion-surgery-recovery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%);">
+                <span class="explore-topic-icon">🦶</span>
+                <strong>Bunion Surgery Recovery</strong>
+              </div>
+              <p>Recovery timeline, experiences, and tips after bunion surgery</p>
+              <span class="explore-topic-count">14 discussions →</span>
+            </a>
+            <a href="/minimally-invasive-bunion-surgery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #0d47a1 0%, #2196f3 100%);">
+                <span class="explore-topic-icon">🔬</span>
+                <strong>Minimally Invasive Bunion Surgery (MIS)</strong>
+              </div>
+              <p>Minimally invasive approaches to bunion correction</p>
+              <span class="explore-topic-count">6 discussions →</span>
+            </a>
+            <a href="/walking-after-surgery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);">
+                <span class="explore-topic-icon">🚶</span>
+                <strong>Walking & Weight Bearing After Surgery</strong>
+              </div>
+              <p>Walking progression and weight bearing recommendations</p>
+              <span class="explore-topic-count">8 discussions →</span>
+            </a>
+            <a href="/bunion-surgery-complications/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #880e4f 0%, #e91e63 100%);">
+                <span class="explore-topic-icon">⚠️</span>
+                <strong>Surgery Complications & Wound Healing</strong>
+              </div>
+              <p>Complications, wound healing, and scar management</p>
+              <span class="explore-topic-count">8 discussions →</span>
+            </a>
+          </div>
         </div>
       </article>
     </section>

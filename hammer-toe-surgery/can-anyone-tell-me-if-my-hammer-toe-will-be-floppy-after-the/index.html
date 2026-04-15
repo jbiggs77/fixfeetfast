@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Can anyone tell me if my hammer toe will be floppy after the", "description": "Can anyone tell me if my hammer toe will be floppy after the tendon is released?", "url": "https://fixfeetfast.com/hammer-toe-surgery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Hammer Toe Surgery & Correction"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Can anyone tell me if my hammer toe will be floppy after the", "description": "Can anyone tell me if my hammer toe will be floppy after the tendon is released?", "url": "https://fixfeetfast.com/hammer-toe-surgery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Hammer Toe Surgery & Correction"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does hammer toe surgery recovery take?", "acceptedAnswer": {"@type": "Answer", "text": "Recovery from hammer toe surgery typically takes 4-6 weeks for initial healing and 3-4 months for full recovery. If a pin was used, it's usually removed after 3-4 weeks. Swelling can persist for several months. Many patients have hammer toe surgery combined with bunion surgery, which extends the overall recovery."}}, {"@type": "Question", "name": "Is hammer toe surgery painful?", "acceptedAnswer": {"@type": "Answer", "text": "Most patients report moderate pain for the first 1-2 weeks after surgery, managed with prescribed pain medication. Many patients say the post-surgical discomfort is manageable but that the toe stiffness during recovery is more bothersome than the pain itself."}}, {"@type": "Question", "name": "Can hammer toes come back after surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Hammer toes can recur after surgery, particularly if the underlying cause (such as muscle imbalance or footwear habits) isn't addressed. Arthrodesis (fusion) has a lower recurrence rate than arthroplasty. Wearing proper footwear and doing toe exercises can help prevent recurrence."}}, {"@type": "Question", "name": "What shoes should I wear after hammer toe surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Post-surgery footwear progression typically goes: surgical shoe for 2-4 weeks, then a wide athletic shoe with a roomy toe box. Brands frequently recommended by patients include Hoka, New Balance (wide), and Skechers with extra-wide options. Avoid narrow or pointed shoes."}}]}
@@ -1049,21 +1209,85 @@ section {
         <div class="related-discussions">
           <h2>Related Discussions</h2>
           <a href="/hammer-toe-surgery/i-had-surgery-lapiplasty-n-hammer-toe-on-march-28-2026-i/" class="related-discussion-card">
-            <h3>I had surgery (lapiplasty n hammer toe) on March 2...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>I had surgery (lapiplasty n hammer toe) on March 28, 2026. I...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/hammer-toe-surgery/tip-that-helped-my-postbunion-surgery-swelling-and-toe-pres/" class="related-discussion-card">
-            <h3>Tip That Helped My Post-Bunion Surgery Swelling an...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>Tip That Helped My Post-Bunion Surgery Swelling and Toe Pres...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/hammer-toe-surgery/surgery-on-rt-foot-for-tailors-bunion-and-hammer-toe-4th/" class="related-discussion-card">
-            <h3>Surgery on rt foot for Tailor's bunion and hammer ...</h3>
-            <p>From Forefoot Forum</p>
+            <h3>Surgery on rt foot for Tailor's bunion and hammer toe (4th) ...</h3>
+            <div class="related-meta">
+              <span>From Forefoot Forum</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/hammer-toe-surgery/im-14-weeks-post-op-bunionectomy-hammer-toe-im-still-hav/" class="related-discussion-card">
-            <h3>I'm 14 weeks post op bunionectomy, hammer toe. I'm...</h3>
-            <p>From Forefoot Forum</p>
+            <h3>I'm 14 weeks post op bunionectomy, hammer toe. I'm still hav...</h3>
+            <div class="related-meta">
+              <span>From Forefoot Forum</span>
+              <span>Share your experience</span>
+            </div>
           </a>
+          <a href="/hammer-toe-surgery/does-anyone-have-recommendations-for-a-slipper-or-recovery-s/" class="related-discussion-card">
+            <h3>Does anyone have recommendations for a slipper or recovery s...</h3>
+            <div class="related-meta">
+              <span>From Forefoot Forum</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+          <a href="/hammer-toe-surgery/hello-im-trying-to-decide-between-surgical-options-or-no-s/" class="related-discussion-card">
+            <h3>Hello! I'm trying to decide between surgical options or no s...</h3>
+            <div class="related-meta">
+              <span>From Forefoot Forum</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="explore-topics">
+          <h2>Explore Related Topics</h2>
+          <div class="explore-topics-grid">
+            <a href="/bunion-surgery-recovery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%);">
+                <span class="explore-topic-icon">🦶</span>
+                <strong>Bunion Surgery Recovery</strong>
+              </div>
+              <p>Recovery timeline, experiences, and tips after bunion surgery</p>
+              <span class="explore-topic-count">14 discussions →</span>
+            </a>
+            <a href="/post-surgery-shoes/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #e65100 0%, #ff9800 100%);">
+                <span class="explore-topic-icon">👟</span>
+                <strong>Best Shoes After Foot Surgery</strong>
+              </div>
+              <p>Footwear recommendations for post-surgery comfort and recovery</p>
+              <span class="explore-topic-count">7 discussions →</span>
+            </a>
+            <a href="/walking-after-surgery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);">
+                <span class="explore-topic-icon">🚶</span>
+                <strong>Walking & Weight Bearing After Surgery</strong>
+              </div>
+              <p>Walking progression and weight bearing recommendations</p>
+              <span class="explore-topic-count">8 discussions →</span>
+            </a>
+            <a href="/physical-therapy-foot/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #00695c 0%, #26a69a 100%);">
+                <span class="explore-topic-icon">🏋️</span>
+                <strong>Physical Therapy & Foot Exercises</strong>
+              </div>
+              <p>Physical therapy, exercises, and rehabilitation strategies</p>
+              <span class="explore-topic-count">7 discussions →</span>
+            </a>
+          </div>
         </div>
       </article>
     </section>

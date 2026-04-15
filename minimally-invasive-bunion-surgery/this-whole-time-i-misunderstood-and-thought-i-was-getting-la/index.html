@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "This whole time I misunderstood and thought I was getting la", "description": "This whole time I misunderstood and thought I was getting lapiplasty till I spoke with the doctors office and they told me the name of my procedure is Righ", "url": "https://fixfeetfast.com/minimally-invasive-bunion-surgery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Minimally Invasive Bunion Surgery (MIS)"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "This whole time I misunderstood and thought I was getting la", "description": "This whole time I misunderstood and thought I was getting lapiplasty till I spoke with the doctors office and they told me the name of my procedure is Righ", "url": "https://fixfeetfast.com/minimally-invasive-bunion-surgery/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Minimally Invasive Bunion Surgery (MIS)"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is minimally invasive bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Minimally invasive bunion surgery (MIS) corrects bunions through small incisions (typically 3-5mm) rather than the larger cuts used in traditional surgery. The surgeon uses specialized tools guided by X-ray imaging. Common MIS techniques include percutaneous chevron Akin (PECA) and MICA procedures."}}, {"@type": "Question", "name": "Is MIS bunion surgery better than traditional surgery?", "acceptedAnswer": {"@type": "Answer", "text": "MIS bunion surgery offers potential advantages including smaller scars, less soft tissue damage, and possibly faster early recovery. However, it may not be suitable for severe bunions and requires a surgeon experienced in the technique. Outcomes depend heavily on the surgeon's skill and the severity of the bunion."}}, {"@type": "Question", "name": "How long is recovery from minimally invasive bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Many MIS patients report being able to bear weight in a surgical shoe within days of surgery, compared to weeks with traditional approaches. However, full recovery still takes 3-6 months. Swelling timelines are similar to traditional surgery."}}, {"@type": "Question", "name": "What are the risks of MIS bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Risks include under-correction of the bunion, over-correction, fracture, nerve damage, and the possibility of needing revision surgery. Because the surgeon works through small incisions with limited visibility, the technique demands significant surgical experience."}}]}
@@ -1052,21 +1212,98 @@ section {
         <div class="related-discussions">
           <h2>Related Discussions</h2>
           <a href="/minimally-invasive-bunion-surgery/ive-battled-with-my-toenail-fungus-for-20-years-trying-var/" class="related-discussion-card">
-            <h3>I've battled with my toenail fungus for 20 years, ...</h3>
-            <p>From Toenail Fungus Support & Management</p>
+            <h3>I've battled with my toenail fungus for 20 years, trying var...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/minimally-invasive-bunion-surgery/has-anyone-had-the-bunionplasty-360-its-a-relatively-new-p/" class="related-discussion-card">
-            <h3>Has anyone had the bunionplasty 360? It's a relati...</h3>
-            <p>From Minimally invasive bunion surgery</p>
+            <h3>Has anyone had the bunionplasty 360? It's a relatively new p...</h3>
+            <div class="related-meta">
+              <span>From Minimally invasive bunion surgery</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/minimally-invasive-bunion-surgery/i-have-a-surgeon-who-recommends-and-does-herself-minimally/" class="related-discussion-card">
-            <h3>I have a surgeon who recommends, and does herself,...</h3>
-            <p>From Minimally invasive bunion surgery</p>
+            <h3>I have a surgeon who recommends, and does herself, minimally...</h3>
+            <div class="related-meta">
+              <span>From Minimally invasive bunion surgery</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/minimally-invasive-bunion-surgery/im-a-healthy-70-yr-old-facing-arthrex-minimally-invasive-s/" class="related-discussion-card">
-            <h3>I'm a healthy 70 yr. old facing Arthrex minimally ...</h3>
-            <p>From Minimally invasive bunion surgery</p>
+            <h3>I'm a healthy 70 yr. old facing Arthrex minimally invasive s...</h3>
+            <div class="related-meta">
+              <span>From Minimally invasive bunion surgery</span>
+              <span>Share your experience</span>
+            </div>
           </a>
+          <a href="/minimally-invasive-bunion-surgery/friendly-reminder-from-someone-who-learned-the-hard-way-if/" class="related-discussion-card">
+            <h3>Friendly reminder from someone who learned the hard way. If ...</h3>
+            <div class="related-meta">
+              <span>From Minimally invasive bunion surgery</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="cross-topic-section">
+          <h2>From Other Topics You May Find Helpful</h2>
+          <a href="/bunion-surgery-recovery/based-on-experiences-for-folks-who-have-had-bunion-surgeries/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>Based on experiences for folks who have had bunion surgeries...</h3>
+          </a>
+          <a href="/lapiplasty-surgery/i-had-surgery-lapiplasty-n-hammer-toe-on-march-28-2026-i/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Lapiplasty 3D Bunion Surgery</span>
+            <h3>I had surgery (lapiplasty n hammer toe) on March 28, 2026. I...</h3>
+          </a>
+          <a href="/bunion-surgery-recovery/i-am-19-days-post-op-of-3d-lapidus-lapiplasty-on-my-right-fo/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>I am 19 days post op of 3D Lapidus Lapiplasty on my right fo...</h3>
+          </a>
+          <a href="/bunion-surgery-recovery/anyone-have-experience-with-your-surgical-wound-dehiscing-i/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>Anyone have experience with your surgical wound dehiscing? I...</h3>
+          </a>
+        </div>
+
+        <div class="explore-topics">
+          <h2>Explore Related Topics</h2>
+          <div class="explore-topics-grid">
+            <a href="/bunion-surgery-recovery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%);">
+                <span class="explore-topic-icon">🦶</span>
+                <strong>Bunion Surgery Recovery</strong>
+              </div>
+              <p>Recovery timeline, experiences, and tips after bunion surgery</p>
+              <span class="explore-topic-count">14 discussions →</span>
+            </a>
+            <a href="/lapiplasty-surgery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #1b5e20 0%, #4caf50 100%);">
+                <span class="explore-topic-icon">⚕️</span>
+                <strong>Lapiplasty 3D Bunion Surgery</strong>
+              </div>
+              <p>Lapiplasty 3D procedure experiences and recovery</p>
+              <span class="explore-topic-count">5 discussions →</span>
+            </a>
+            <a href="/scarf-akin-osteotomy/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #283593 0%, #5c6bc0 100%);">
+                <span class="explore-topic-icon">🏥</span>
+                <strong>Scarf & Akin Osteotomy</strong>
+              </div>
+              <p>Scarf and Akin osteotomy surgical techniques and recovery</p>
+              <span class="explore-topic-count">7 discussions →</span>
+            </a>
+            <a href="/walking-after-surgery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);">
+                <span class="explore-topic-icon">🚶</span>
+                <strong>Walking & Weight Bearing After Surgery</strong>
+              </div>
+              <p>Walking progression and weight bearing recommendations</p>
+              <span class="explore-topic-count">8 discussions →</span>
+            </a>
+          </div>
         </div>
       </article>
     </section>

@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Pain After Bunion Surgery: What's Normal & How to Manage It", "description": "Real experiences with pain after bunion surgery. What's normal, pain management strategies, nerve pain, and when to contact your surgeon.", "url": "https://fixfeetfast.com/bunion-surgery-pain/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Pain Management After Foot Surgery"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Pain After Bunion Surgery: What's Normal & How to Manage It", "description": "Real experiences with pain after bunion surgery. What's normal, pain management strategies, nerve pain, and when to contact your surgeon.", "url": "https://fixfeetfast.com/bunion-surgery-pain/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Pain Management After Foot Surgery"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How painful is bunion surgery recovery?", "acceptedAnswer": {"@type": "Answer", "text": "Most patients describe the first 3-5 days as the most painful, with pain typically rated 5-7 out of 10. Pain usually becomes manageable with over-the-counter medication within 1-2 weeks. Keeping the foot elevated and icing consistently are the most effective non-medication pain management strategies."}}, {"@type": "Question", "name": "What helps with pain after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "The most effective pain management approaches include: keeping the foot elevated above heart level, icing for 20 minutes every 2 hours, taking prescribed medications on schedule (not waiting for pain to build), nerve blocks during surgery for the first 24-48 hours, and gentle movement when cleared by your surgeon."}}, {"@type": "Question", "name": "Is nerve pain normal after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Some degree of nerve irritation is common after bunion surgery, presenting as tingling, numbness, or burning sensations. This usually resolves within weeks to months. Persistent nerve pain beyond 3 months should be discussed with your surgeon, as it may require medication like gabapentin or further evaluation."}}, {"@type": "Question", "name": "How long does pain last after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Acute surgical pain typically resolves within 2-3 weeks. Mild aching and discomfort with activity can persist for 2-3 months. Most patients report being pain-free or significantly improved by 4-6 months post-surgery, though this varies by procedure and individual."}}]}
@@ -1051,6 +1211,39 @@ section {
       <p>Pain management is a top concern for anyone considering or recovering from bunion surgery. While modern surgical techniques have improved, pain during recovery is inevitable — the question is what level of pain is normal and how best to manage it.</p>
       <p>Patients report that the first 3-5 days after surgery tend to be the most painful, with pain typically becoming manageable within 1-2 weeks. However, some patients experience nerve-related pain, burning, or tingling that can last longer and requires different management approaches.</p>
       <p>Below are real discussions about post-surgical pain, what worked for pain management, and when patients knew something wasn't right.</p>
+    </section>
+
+    <section class="container">
+      <div class="community-synthesis">
+        <h2>What 9 Real Patients Report About Pain Management After Foot Surgery</h2>
+        <p>Based on 9 discussions and 0 comments from foot health communities, here's what patients are actually experiencing and recommending.</p>
+        <div class="synthesis-highlights">
+          <div class="synthesis-highlight">
+            <strong>Most Discussed Treatments</strong>
+            <span>surgery, icing, elevation</span>
+          </div>
+          <div class="synthesis-highlight">
+            <strong>Top Products Mentioned</strong>
+            <span>knee scooter, boot, surgical shoe</span>
+          </div>
+          <div class="synthesis-highlight">
+            <strong>Surgery Types Discussed</strong>
+            <span>Lapiplasty, arthrodesis, osteotomy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="key-takeaways">
+        <h3>Key Takeaways from the Community</h3>
+        <ul>
+          <li>The most commonly discussed treatment is <strong>surgery</strong>, mentioned in 8 discussions</li>
+          <li><strong>knee scooter</strong> is the most frequently mentioned product by community members</li>
+          <li><strong>Lapiplasty</strong> is the most discussed surgical procedure in this category</li>
+          <li>Patients frequently discuss both <strong>surgery</strong> and <strong>icing</strong> as part of their treatment approach</li>
+        </ul>
+      </div>
     </section>
 
     <section class="container">

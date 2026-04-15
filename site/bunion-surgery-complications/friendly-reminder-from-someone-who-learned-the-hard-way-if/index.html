@@ -977,6 +977,7 @@ section {
   text-decoration: none;
   color: var(--text-primary);
   transition: background 0.2s;
+  border-left: 3px solid var(--accent);
 }
 .related-discussion-card:hover {
   background: var(--accent-light);
@@ -991,10 +992,169 @@ section {
   color: var(--text-secondary);
   margin: 0;
 }
+.related-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+.cross-topic-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.cross-topic-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.related-discussion-card.cross-topic {
+  border-left-color: var(--primary);
+}
+.cross-topic-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.explore-topics {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+.explore-topics h2 {
+  margin-bottom: 1rem;
+}
+.explore-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.explore-topic-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.explore-topic-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.explore-topic-header {
+  padding: 0.75rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.explore-topic-icon {
+  font-size: 1.2rem;
+}
+.explore-topic-card p {
+  padding: 0.75rem 1rem 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.explore-topic-count {
+  display: block;
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+.community-synthesis {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d0e3f0;
+}
+.community-synthesis h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.community-synthesis p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.synthesis-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.synthesis-highlight {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.synthesis-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+.synthesis-highlight span {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.key-takeaways {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.key-takeaways h3 {
+  color: #e65100;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.key-takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-takeaways li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+.key-takeaways li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .explore-topics-grid {
+    grid-template-columns: 1fr;
+  }
+  .synthesis-highlights {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
   <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Friendly reminder from someone who learned the hard way. If ", "description": "Friendly reminder from someone who learned the hard way. If youre scheduled for (or recovering from) minimally invasive bunion surgery, please dont rush ", "url": "https://fixfeetfast.com/bunion-surgery-complications/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-14T11:43:13+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Surgery Complications & Wound Healing"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
+{"@context": "https://schema.org", "@type": "MedicalWebPage", "headline": "Friendly reminder from someone who learned the hard way. If ", "description": "Friendly reminder from someone who learned the hard way. If youre scheduled for (or recovering from) minimally invasive bunion surgery, please dont rush ", "url": "https://fixfeetfast.com/bunion-surgery-complications/", "datePublished": "2026-04-03T00:00:00+00:00", "dateModified": "2026-04-15T11:23:14+00:00", "publisher": {"@type": "Organization", "name": "FixFeetFast.com", "url": "https://fixfeetfast.com"}, "about": {"@type": "MedicalCondition", "name": "Surgery Complications & Wound Healing"}, "audience": {"@type": "PeopleAudience", "audienceType": "Patients"}}
   </script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are common complications after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Common complications include: infection (1-5% of cases), delayed wound healing, nerve irritation or numbness, hardware issues (plates or screws loosening), stiffness, recurrence of the bunion, and complex regional pain syndrome (CRPS). Most complications are treatable when caught early."}}, {"@type": "Question", "name": "How do I know if I have an infection after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Signs of infection include: increasing redness, warmth, or swelling beyond the first few weeks; drainage from the incision (especially if foul-smelling or discolored); fever; increased pain that doesn't improve with medication; and cellulitis spreading up the foot or leg. Contact your surgeon immediately if you notice these signs."}}, {"@type": "Question", "name": "Can I get my hardware removed after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Hardware removal is sometimes possible and sometimes necessary, depending on the type of surgery and any complications. Some hardware is removed routinely (like temporary pins), while other hardware is meant to be permanent. Discuss hardware removal options with your surgeon before surgery."}}, {"@type": "Question", "name": "How can I minimize scarring after bunion surgery?", "acceptedAnswer": {"@type": "Answer", "text": "Minimize scarring by: keeping the incision clean and dry, following dressing changes carefully, avoiding sun exposure to the scar, using scar creams or silicone sheets after clearance from your surgeon, and avoiding smoking (which impairs healing). Most surgical scars significantly fade over 12-18 months."}}]}
@@ -1052,21 +1212,105 @@ section {
         <div class="related-discussions">
           <h2>Related Discussions</h2>
           <a href="/bunion-surgery-complications/anyone-have-experience-with-your-surgical-wound-dehiscing-i/" class="related-discussion-card">
-            <h3>Anyone have experience with your surgical wound de...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>Anyone have experience with your surgical wound dehiscing? I...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/bunion-surgery-complications/its-worth-it-in-the-end-i-had-scarf-akin-weil-osteotomie/" class="related-discussion-card">
-            <h3>It's worth it in the end. I had scarf, akin, weil ...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>It's worth it in the end. I had scarf, akin, weil osteotomie...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/bunion-surgery-complications/bilateral-scarfakin-surgery-booked-for-the-9th-of-feb-i/" class="related-discussion-card">
-            <h3>Bilateral scarf/akin surgery booked for the 9th of...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>Bilateral scarf/akin surgery booked for the 9th of feb.... I...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
           <a href="/bunion-surgery-complications/round-2-for-me-earlier-today-right-foot-akin-scarf-osteot/" class="related-discussion-card">
-            <h3>Round 2 for me earlier today. Right foot akin & sc...</h3>
-            <p>From bunion surgery / foot surgery support group</p>
+            <h3>Round 2 for me earlier today. Right foot akin & scarf osteot...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
           </a>
+          <a href="/bunion-surgery-complications/has-anyone-had-a-hardware-removal-and-if-so-how-did-you-find/" class="related-discussion-card">
+            <h3>Has anyone had a hardware removal and if so how did you find...</h3>
+            <div class="related-meta">
+              <span>From bunion surgery / foot surgery support group</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+          <a href="/bunion-surgery-complications/ive-battled-with-my-toenail-fungus-for-20-years-trying-var/" class="related-discussion-card">
+            <h3>I've battled with my toenail fungus for 20 years, trying var...</h3>
+            <div class="related-meta">
+              <span>From Toenail Fungus Support & Management</span>
+              <span>Share your experience</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="cross-topic-section">
+          <h2>From Other Topics You May Find Helpful</h2>
+          <a href="/bunion-surgery-recovery/tip-that-helped-my-postbunion-surgery-swelling-and-toe-pres/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>Tip That Helped My Post-Bunion Surgery Swelling and Toe Pres...</h3>
+          </a>
+          <a href="/lapiplasty-surgery/i-had-surgery-lapiplasty-n-hammer-toe-on-march-28-2026-i/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Lapiplasty 3D Bunion Surgery</span>
+            <h3>I had surgery (lapiplasty n hammer toe) on March 28, 2026. I...</h3>
+          </a>
+          <a href="/bunion-surgery-recovery/i-am-19-days-post-op-of-3d-lapidus-lapiplasty-on-my-right-fo/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>I am 19 days post op of 3D Lapidus Lapiplasty on my right fo...</h3>
+          </a>
+          <a href="/bunion-surgery-recovery/based-on-experiences-for-folks-who-have-had-bunion-surgeries/" class="related-discussion-card cross-topic">
+            <span class="cross-topic-badge">Bunion Surgery Recovery</span>
+            <h3>Based on experiences for folks who have had bunion surgeries...</h3>
+          </a>
+        </div>
+
+        <div class="explore-topics">
+          <h2>Explore Related Topics</h2>
+          <div class="explore-topics-grid">
+            <a href="/bunion-surgery-recovery/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%);">
+                <span class="explore-topic-icon">🦶</span>
+                <strong>Bunion Surgery Recovery</strong>
+              </div>
+              <p>Recovery timeline, experiences, and tips after bunion surgery</p>
+              <span class="explore-topic-count">14 discussions →</span>
+            </a>
+            <a href="/bunion-surgery-pain/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #b71c1c 0%, #ef5350 100%);">
+                <span class="explore-topic-icon">💊</span>
+                <strong>Pain Management After Foot Surgery</strong>
+              </div>
+              <p>Pain management strategies and experiences post-surgery</p>
+              <span class="explore-topic-count">9 discussions →</span>
+            </a>
+            <a href="/bunion-surgery-swelling/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #006064 0%, #00bcd4 100%);">
+                <span class="explore-topic-icon">❄️</span>
+                <strong>Post-Surgery Swelling & Inflammation</strong>
+              </div>
+              <p>Managing swelling and inflammation after foot surgery</p>
+              <span class="explore-topic-count">6 discussions →</span>
+            </a>
+            <a href="/physical-therapy-foot/" class="explore-topic-card">
+              <div class="explore-topic-header" style="background: linear-gradient(135deg, #00695c 0%, #26a69a 100%);">
+                <span class="explore-topic-icon">🏋️</span>
+                <strong>Physical Therapy & Foot Exercises</strong>
+              </div>
+              <p>Physical therapy, exercises, and rehabilitation strategies</p>
+              <span class="explore-topic-count">7 discussions →</span>
+            </a>
+          </div>
         </div>
       </article>
     </section>
