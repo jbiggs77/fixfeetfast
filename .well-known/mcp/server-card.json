@@ -1,0 +1,26 @@
+{
+  "serverInfo": {
+    "name": "FixFeetFast.com",
+    "version": "1.0.0",
+    "description": "Foot health community discussions - real patient experiences about bunion surgery, plantar fasciitis, toenail fungus, and 12 more conditions"
+  },
+  "capabilities": {
+    "resources": true,
+    "tools": false,
+    "prompts": false
+  },
+  "resources": [
+    {
+      "name": "llms-txt",
+      "description": "Site overview and topic index in markdown format",
+      "uri": "https://fixfeetfast.com/llms.txt",
+      "mimeType": "text/markdown"
+    },
+    {
+      "name": "sitemap",
+      "description": "Complete sitemap of all pages including individual discussion posts",
+      "uri": "https://fixfeetfast.com/sitemap.xml",
+      "mimeType": "application/xml"
+    }
+  ]
+}

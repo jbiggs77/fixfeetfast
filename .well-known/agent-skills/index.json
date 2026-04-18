@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "fixfeetfast-search",
+      "type": "search",
+      "description": "Search real patient discussions about foot health conditions, surgery recovery, treatments, and products across 15 specialized topics",
+      "url": "https://fixfeetfast.com/sitemap.xml",
+      "sha256": "469e4fd28b23271c41614d4e7182ed7b12d61f879aa7bc060475c1b11324ae1d"
+    },
+    {
+      "name": "fixfeetfast-content",
+      "type": "content",
+      "description": "Access structured foot health content via llms.txt - topics, conditions, surgery types, treatments, and product recommendations from real patient experiences",
+      "url": "https://fixfeetfast.com/llms.txt",
+      "sha256": "7c4cba4fc160929e758885d03e4205dbc6f81ae783a6e88a0177515250aa315f"
+    }
+  ]
+}

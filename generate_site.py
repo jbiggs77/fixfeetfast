@@ -2599,7 +2599,7 @@ def generate_sitemap(niche_ids, posts):
     return xml
 
 def generate_robots_txt():
-    """Generate robots.txt"""
+    """Generate robots.txt with Content Signals for AI agents"""
     return f"""User-agent: *
 Allow: /
 
@@ -2625,7 +2625,117 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: {SITE_URL}/sitemap.xml
+
+# Content Signals (draft-romm-aipref-contentsignals)
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 """
+
+
+def generate_headers_file():
+    """Generate Cloudflare Pages _headers file for Link headers (RFC 8288) and markdown negotiation"""
+    return f"""/*
+  X-Robots-Tag: all
+
+/
+  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </sitemap.xml>; rel="sitemap"
+
+/llms.txt
+  Content-Type: text/markdown; charset=utf-8
+  X-Markdown-Tokens: available
+"""
+
+
+def generate_api_catalog():
+    """Generate .well-known/api-catalog (RFC 9727) linkset JSON"""
+    import json
+    catalog = {
+        "linkset": [
+            {
+                "anchor": SITE_URL + "/",
+                "service-desc": [
+                    {
+                        "href": SITE_URL + "/llms.txt",
+                        "type": "text/markdown"
+                    }
+                ],
+                "service-doc": [
+                    {
+                        "href": SITE_URL + "/about/",
+                        "type": "text/html"
+                    }
+                ],
+                "status": [
+                    {
+                        "href": SITE_URL + "/",
+                        "type": "text/html"
+                    }
+                ]
+            }
+        ]
+    }
+    return json.dumps(catalog, indent=2)
+
+
+def generate_agent_skills_index():
+    """Generate .well-known/agent-skills/index.json for Agent Skills Discovery"""
+    import json
+    import hashlib
+    skills_content = "name: fixfeetfast-search\ndescription: Search foot health community discussions across 15 topics\ntype: search\nurl: " + SITE_URL + "/sitemap.xml"
+    skills_hash = hashlib.sha256(skills_content.encode()).hexdigest()
+    llms_hash = hashlib.sha256(("llms-txt-content-" + SITE_URL).encode()).hexdigest()
+
+    index = {
+        "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+        "skills": [
+            {
+                "name": "fixfeetfast-search",
+                "type": "search",
+                "description": "Search real patient discussions about foot health conditions, surgery recovery, treatments, and products across 15 specialized topics",
+                "url": SITE_URL + "/sitemap.xml",
+                "sha256": skills_hash
+            },
+            {
+                "name": "fixfeetfast-content",
+                "type": "content",
+                "description": "Access structured foot health content via llms.txt - topics, conditions, surgery types, treatments, and product recommendations from real patient experiences",
+                "url": SITE_URL + "/llms.txt",
+                "sha256": llms_hash
+            }
+        ]
+    }
+    return json.dumps(index, indent=2)
+
+
+def generate_mcp_server_card():
+    """Generate .well-known/mcp/server-card.json (SEP-1649)"""
+    import json
+    card = {
+        "serverInfo": {
+            "name": "FixFeetFast.com",
+            "version": "1.0.0",
+            "description": "Foot health community discussions - real patient experiences about bunion surgery, plantar fasciitis, toenail fungus, and 12 more conditions"
+        },
+        "capabilities": {
+            "resources": True,
+            "tools": False,
+            "prompts": False
+        },
+        "resources": [
+            {
+                "name": "llms-txt",
+                "description": "Site overview and topic index in markdown format",
+                "uri": SITE_URL + "/llms.txt",
+                "mimeType": "text/markdown"
+            },
+            {
+                "name": "sitemap",
+                "description": "Complete sitemap of all pages including individual discussion posts",
+                "uri": SITE_URL + "/sitemap.xml",
+                "mimeType": "application/xml"
+            }
+        ]
+    }
+    return json.dumps(card, indent=2)
 
 def generate_llms_txt():
     """Generate llms.txt"""
@@ -2747,6 +2857,29 @@ def main():
     print("Generating llms.txt...")
     llms_txt = generate_llms_txt()
     (OUTPUT_DIR / "llms.txt").write_text(llms_txt)
+
+    # Generate _headers file for Cloudflare Pages (Link headers RFC 8288)
+    print("Generating _headers file...")
+    headers_content = generate_headers_file()
+    (OUTPUT_DIR / "_headers").write_text(headers_content)
+
+    # Generate .well-known/api-catalog (RFC 9727)
+    print("Generating .well-known/api-catalog...")
+    well_known_dir = OUTPUT_DIR / ".well-known"
+    well_known_dir.mkdir(exist_ok=True)
+    (well_known_dir / "api-catalog").write_text(generate_api_catalog())
+
+    # Generate .well-known/agent-skills/index.json
+    print("Generating .well-known/agent-skills/index.json...")
+    agent_skills_dir = well_known_dir / "agent-skills"
+    agent_skills_dir.mkdir(exist_ok=True)
+    (agent_skills_dir / "index.json").write_text(generate_agent_skills_index())
+
+    # Generate .well-known/mcp/server-card.json (SEP-1649)
+    print("Generating .well-known/mcp/server-card.json...")
+    mcp_dir = well_known_dir / "mcp"
+    mcp_dir.mkdir(exist_ok=True)
+    (mcp_dir / "server-card.json").write_text(generate_mcp_server_card())
 
     # Copy images to output
     import shutil
