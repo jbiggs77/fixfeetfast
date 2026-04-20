@@ -1785,8 +1785,14 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
           <h2>Comments ({len(comments)})</h2>
 """
         for comment in comments:
-            html += f"""          <div class="post-comment-card">
-            <div class="comment-text">{comment.get('comment_text', '')}</div>
+            # Comments can be plain strings or dicts with 'comment_text' key
+            if isinstance(comment, str):
+                comment_text = comment
+            else:
+                comment_text = comment.get('comment_text', '') if isinstance(comment, dict) else str(comment)
+            if comment_text:
+                html += f"""          <div class="post-comment-card">
+            <div class="comment-text">{comment_text}</div>
             <div class="comment-meta">Community member</div>
           </div>
 """
@@ -2176,7 +2182,7 @@ def generate_topic_page(niche_id, niche_data, posts):
                     surgery_mentions[surgery] += 1
 
         for comment in post.get('comments', []):
-            if products := comment.get('products_mentioned'):
+            if isinstance(comment, dict) and (products := comment.get('products_mentioned')):
                 for product in products.split(','):
                     product = product.strip()
                     if product:
@@ -2415,8 +2421,10 @@ def generate_topic_page(niche_id, niche_data, posts):
           <strong>Comments:</strong>
 """
                 for comment in post.get('comments', [])[:3]:
-                    html += f"""          <div class="comment">
-            <div class="comment-text">{comment.get('comment_text', '')[:200]}...</div>
+                    c_text = comment if isinstance(comment, str) else (comment.get('comment_text', '') if isinstance(comment, dict) else str(comment))
+                    if c_text:
+                        html += f"""          <div class="comment">
+            <div class="comment-text">{c_text[:200]}{'...' if len(c_text) > 200 else ''}</div>
             <div class="comment-meta">Community member</div>
           </div>
 """
