@@ -1,1 +1,4 @@
 new_posts.py
+build_scraped.py
+do_merge.py
+scraped_new.json
