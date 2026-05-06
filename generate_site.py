@@ -20,6 +20,38 @@ SITE_COPYRIGHT = "Built for people seeking real foot health experiences."
 
 OUTPUT_DIR = Path(__file__).parent / "site"
 
+
+def normalize_posts_metadata(posts):
+    """Convert list metadata fields back to comma-separated strings for generator compatibility."""
+    for post in posts:
+        for field in ['conditions_mentioned', 'surgery_types_mentioned', 'treatments_mentioned', 'products_mentioned']:
+            val = post.get(field, '')
+            if isinstance(val, list):
+                post[field] = ', '.join(str(x) for x in val if x)
+            elif val is None:
+                post[field] = ''
+    return posts
+
+def ensure_list(val):
+    """Convert metadata value to a flat list of strings, handling both str and list types."""
+    if not val:
+        return []
+    if isinstance(val, list):
+        result = []
+        for item in val:
+            if isinstance(item, str):
+                for sub in ensure_list(item):
+                    sub = sub.strip()
+                    if sub:
+                        result.append(sub)
+            else:
+                result.append(str(item))
+        return result
+    if isinstance(val, str):
+        return [x.strip() for x in val.split(',') if x.strip()]
+    return []
+
+
 # Color scheme - WebMD inspired
 COLORS = {
     "primary": "#1a237e",          # Deep navy
@@ -1757,19 +1789,19 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
     html += """        <div class="discussion-badges">
 """
     if products := post.get('products_mentioned'):
-        for product in products.split(','):
+        for product in ensure_list(products):
             product = product.strip()
             if product:
                 html += f'          <span class="badge product">{product}</span>\n'
 
     if treatments := post.get('treatments_mentioned'):
-        for treatment in treatments.split(','):
+        for treatment in ensure_list(treatments):
             treatment = treatment.strip()
             if treatment:
                 html += f'          <span class="badge treatment">{treatment}</span>\n'
 
     if surgeries := post.get('surgery_types_mentioned'):
-        for surgery in surgeries.split(','):
+        for surgery in ensure_list(surgeries):
             surgery = surgery.strip()
             if surgery:
                 html += f'          <span class="badge surgery">{surgery}</span>\n'
@@ -1842,13 +1874,13 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
     # Cross-topic related discussions (from other topics that share conditions/treatments)
     post_conditions = set()
     if cond_str := post.get('conditions_mentioned'):
-        post_conditions = {c.strip().lower() for c in cond_str.split(',')}
+        post_conditions = {c.strip().lower() for c in ensure_list(cond_str)}
     post_treatments = set()
     if treat_str := post.get('treatments_mentioned'):
-        post_treatments = {t.strip().lower() for t in treat_str.split(',')}
+        post_treatments = {t.strip().lower() for t in ensure_list(treat_str)}
     post_products = set()
     if prod_str := post.get('products_mentioned'):
-        post_products = {p.strip().lower() for p in prod_str.split(',')}
+        post_products = {p.strip().lower() for p in ensure_list(prod_str)}
 
     cross_topic_posts = []
     for other_post in all_posts:
@@ -1860,13 +1892,13 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
         # Check for overlap in conditions, treatments, or products
         other_conds = set()
         if c := other_post.get('conditions_mentioned'):
-            other_conds = {x.strip().lower() for x in c.split(',')}
+            other_conds = {x.strip().lower() for x in ensure_list(c)}
         other_treats = set()
         if t := other_post.get('treatments_mentioned'):
-            other_treats = {x.strip().lower() for x in t.split(',')}
+            other_treats = {x.strip().lower() for x in ensure_list(t)}
         other_prods = set()
         if p := other_post.get('products_mentioned'):
-            other_prods = {x.strip().lower() for x in p.split(',')}
+            other_prods = {x.strip().lower() for x in ensure_list(p)}
 
         overlap = len(post_conditions & other_conds) + len(post_treatments & other_treats) + len(post_products & other_prods)
         if overlap >= 2:
@@ -1972,7 +2004,7 @@ def generate_homepage(posts):
     product_counts = defaultdict(int)
     for post in posts:
         if products := post.get('products_mentioned'):
-            for product in products.split(','):
+            for product in ensure_list(products):
                 product = product.strip()
                 if product:
                     product_counts[product] += 1
@@ -2164,26 +2196,26 @@ def generate_topic_page(niche_id, niche_data, posts):
         total_comments += len(post.get('comments', []))
 
         if treatments := post.get('treatments_mentioned'):
-            for treatment in treatments.split(','):
+            for treatment in ensure_list(treatments):
                 treatment = treatment.strip()
                 if treatment:
                     treatment_mentions[treatment] += 1
 
         if products := post.get('products_mentioned'):
-            for product in products.split(','):
+            for product in ensure_list(products):
                 product = product.strip()
                 if product:
                     product_mentions[product] += 1
 
         if surgeries := post.get('surgery_types_mentioned'):
-            for surgery in surgeries.split(','):
+            for surgery in ensure_list(surgeries):
                 surgery = surgery.strip()
                 if surgery:
                     surgery_mentions[surgery] += 1
 
         for comment in post.get('comments', []):
             if isinstance(comment, dict) and (products := comment.get('products_mentioned')):
-                for product in products.split(','):
+                for product in ensure_list(products):
                     product = product.strip()
                     if product:
                         product_mentions[product] += 1
@@ -2392,21 +2424,21 @@ def generate_topic_page(niche_id, niche_data, posts):
 
             # Add product badges
             if products := post.get('products_mentioned'):
-                for product in products.split(',')[:3]:
+                for product in ensure_list(products)[:3]:
                     product = product.strip()
                     if product:
                         html += f'          <span class="badge product">{product}</span>\n'
 
             # Add treatment badges
             if treatments := post.get('treatments_mentioned'):
-                for treatment in treatments.split(',')[:3]:
+                for treatment in ensure_list(treatments)[:3]:
                     treatment = treatment.strip()
                     if treatment:
                         html += f'          <span class="badge treatment">{treatment}</span>\n'
 
             # Add surgery badges
             if surgeries := post.get('surgery_types_mentioned'):
-                for surgery in surgeries.split(',')[:2]:
+                for surgery in ensure_list(surgeries)[:2]:
                     surgery = surgery.strip()
                     if surgery:
                         html += f'          <span class="badge surgery">{surgery}</span>\n'
@@ -2800,7 +2832,7 @@ def main():
 
     # Load posts
     posts_file = Path(__file__).parent / "posts.json"
-    posts = load_posts(str(posts_file))
+    posts = normalize_posts_metadata(load_posts(str(posts_file)))
     print(f"Loaded {len(posts)} posts")
 
     # Create output directories
