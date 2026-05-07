@@ -569,7 +569,9 @@
       "scarf akin",
       "tea tree oil"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "treatments_mentioned": [
       "epsom salt",
       "laser therapy",
@@ -1713,7 +1715,9 @@
       "toenail fungus",
       "oncholysis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "treatments_mentioned": [
       "laser therapy"
     ],
@@ -1749,7 +1753,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-04",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "treatments_mentioned": [
       "laser therapy"
     ],
@@ -1767,7 +1773,9 @@
     "conditions_mentioned": [
       "infection"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "treatments_mentioned": [
       "laser therapy"
     ],
@@ -3601,7 +3609,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "laser therapy"
@@ -3618,7 +3628,9 @@
     "conditions_mentioned": [
       "infection"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "laser therapy"
@@ -4248,7 +4260,10 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "soaking",
+      "anti-fungal"
+    ]
   },
   {
     "id": 207,
@@ -4406,7 +4421,9 @@
       "plantar fasciitis",
       "bone spur"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "laser surgery"
+    ],
     "products_mentioned": [
       "Lems"
     ],
@@ -5570,7 +5587,9 @@
     "comments": [],
     "images": [],
     "date": "2026-04-05",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "athletes foot"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "Vicks VapoRub",
@@ -6671,7 +6690,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "soaking"
+    ]
   },
   {
     "id": 332,
@@ -9222,7 +9243,10 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "soaking",
+      "anti-fungal"
+    ]
   },
   {
     "id": 467,
@@ -13889,7 +13913,9 @@
     "date_captured": "2026-04-22",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "soaking"
+    ],
     "products_mentioned": [],
     "comments": [],
     "images": [],
@@ -14192,7 +14218,9 @@
     "date_captured": "2026-04-22",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "soaking"
+    ],
     "products_mentioned": [],
     "comments": [],
     "images": [],
@@ -14257,7 +14285,9 @@
       "diabetes"
     ],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "soaking"
+    ],
     "products_mentioned": [],
     "comments": [],
     "images": [],
@@ -15200,7 +15230,9 @@
       "toenail fungus"
     ],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "topical treatment"
+    ],
     "products_mentioned": [],
     "images": [],
     "author": null,
@@ -17015,7 +17047,9 @@
     "surgery_types_mentioned": [
       "bunionectomy"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "Correct Toes"
+    ],
     "treatments_mentioned": [
       "surgery",
       "massage",
@@ -17078,7 +17112,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -17423,7 +17459,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "stretching"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-06",
