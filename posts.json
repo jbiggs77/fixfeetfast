@@ -6733,7 +6733,10 @@
     "products_mentioned": [
       "Lamisil"
     ],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "lamisil",
+      "terbinafine"
+    ]
   },
   {
     "id": 334,
@@ -8134,7 +8137,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "steroid injection"
+    ]
   },
   {
     "id": 406,
@@ -8458,7 +8463,9 @@
     "products_mentioned": [
       "Kerasal"
     ],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "kerasal"
+    ]
   },
   {
     "id": 423,
@@ -10619,7 +10626,9 @@
     "date_captured": "2026-04-17",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "kerasal"
+    ],
     "products_mentioned": [
       "kerasal",
       "proclearz",
@@ -11107,7 +11116,9 @@
     "date_captured": "2026-04-18",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "kerasal"
+    ],
     "products_mentioned": [
       "kerasal"
     ],
@@ -15673,7 +15684,9 @@
     "images": [],
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "laser treatment"
+    ],
     "products_mentioned": []
   },
   {
@@ -16855,7 +16868,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "cortisone injection"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-06",
