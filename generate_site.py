@@ -1664,6 +1664,7 @@ def get_page_header(title, description="", niche_id=None, niche_data=None):
   <title>{title} | {SITE_NAME}</title>
   <meta name="description" content="{description or SITE_DESCRIPTION}">
   <meta name="theme-color" content="{COLORS['primary']}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦶</text></svg>">
   <link rel="canonical" href="{canonical_url}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -2043,6 +2044,7 @@ def generate_homepage(posts):
   <title>{SITE_NAME} | {SITE_NAME}</title>
   <meta name="description" content="{SITE_DESCRIPTION}">
   <meta name="theme-color" content="{COLORS['primary']}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦶</text></svg>">
   <link rel="canonical" href="{SITE_URL}/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
