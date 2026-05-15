@@ -76,6 +76,7 @@
       "lapiplasty"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [
@@ -173,7 +174,8 @@
     ],
     "surgery_types_mentioned": [
       "osteotomy",
-      "scarf akin"
+      "scarf akin",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "surgery"
@@ -236,7 +238,8 @@
     ],
     "surgery_types_mentioned": [
       "hardware removal",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "surgery"
@@ -267,6 +270,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "elevation",
       "ice therapy",
       "icing",
@@ -300,6 +304,7 @@
       "osteotomy"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [
@@ -357,6 +362,7 @@
     "date_captured": "2026-04-03",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "icing",
       "massage",
@@ -371,6 +377,7 @@
     "treatments_mentioned": [
       "anti-inflammatory",
       "copper peptide",
+      "copper peptides",
       "icing",
       "massage",
       "night splint",
@@ -379,6 +386,7 @@
       "stretching"
     ],
     "products_mentioned": [
+      "insoles",
       "night splint",
       "orthotic insoles",
       "orthotics"
@@ -417,6 +425,7 @@
     ],
     "products_mentioned": [
       "Theragun",
+      "insoles",
       "massage gun",
       "orthotic insoles",
       "orthotics",
@@ -508,6 +517,7 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "PRP injection",
+      "boot/walking boot",
       "cortisone",
       "cortisone injection",
       "steroid injection"
@@ -582,6 +592,7 @@
       "epsom salt",
       "laser therapy",
       "laser treatment",
+      "soaking",
       "tea tree oil",
       "terbinafine"
     ],
@@ -754,7 +765,8 @@
     "surgery_types_mentioned": [
       "bunionectomy",
       "minimally invasive",
-      "minimally invasive surgery"
+      "minimally invasive surgery",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "rest",
@@ -852,13 +864,16 @@
       "bunion",
       "hammer toe",
       "metatarsalgia",
+      "morton neuroma",
       "neuroma",
       "pain",
       "scarf akin",
       "stress fracture",
       "surgery"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "treatments_mentioned": [
       "rest",
       "surgery"
@@ -983,6 +998,7 @@
       "orthotics"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -1043,6 +1059,7 @@
     ],
     "treatments_mentioned": [
       "bone graft",
+      "boot/walking boot",
       "elevation",
       "icing",
       "nerve block",
@@ -1069,6 +1086,7 @@
       "lapiplasty"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "pain medication"
     ],
     "products_mentioned": [],
@@ -1084,7 +1102,9 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "Morton's neuroma",
-      "neuroma"
+      "morton neuroma",
+      "neuroma",
+      "numbness"
     ],
     "surgery_types_mentioned": [
       "Lapiplasty",
@@ -1104,7 +1124,8 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy"
@@ -1125,7 +1146,8 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "lapidus",
@@ -1148,13 +1170,16 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "edema",
-      "hammer toe"
+      "hammer toe",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "lapidus"
     ],
     "treatments_mentioned": [
-      "nerve block"
+      "anti-inflammatory",
+      "nerve block",
+      "surgery"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -1204,6 +1229,7 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -1213,7 +1239,8 @@
       "cortisone injection",
       "massage",
       "physical therapy",
-      "rolling"
+      "rolling",
+      "stretching"
     ],
     "products_mentioned": [
       "tennis ball"
@@ -1230,6 +1257,7 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -1250,6 +1278,7 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -1292,6 +1321,7 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis",
       "tarsal tunnel",
@@ -1662,6 +1692,7 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "acupuncture",
+      "boot/walking boot",
       "cortisone",
       "cortisone injection",
       "orthotics",
@@ -1867,6 +1898,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "compression",
       "shockwave therapy"
     ],
@@ -2172,6 +2204,7 @@
     "treatments_mentioned": [
       "cortisone",
       "cortisone injection",
+      "physical therapy",
       "shockwave therapy",
       "surgery"
     ],
@@ -2325,6 +2358,7 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -2345,8 +2379,14 @@
     "date_captured": "2026-04-04",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
-    "products_mentioned": [],
+    "treatments_mentioned": [
+      "oregano oil"
+    ],
+    "products_mentioned": [
+      "Hatman Labs",
+      "black seed oil",
+      "wild oregano oil"
+    ],
     "comments": [],
     "images": []
   },
@@ -2361,6 +2401,7 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "Listerine",
+      "epsom salt",
       "epsom salts",
       "soaking",
       "tea tree oil",
@@ -2386,6 +2427,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "listerine",
       "tea tree oil",
@@ -2472,9 +2514,13 @@
       "swelling"
     ],
     "surgery_types_mentioned": [
-      "mis"
+      "minimally invasive surgery",
+      "mis",
+      "screw fixation"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ],
     "products_mentioned": [],
     "comments": [],
     "images": []
@@ -2525,6 +2571,7 @@
     "images": [],
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -2582,11 +2629,13 @@
     "images": [],
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "MIS",
-      "bunionectomy"
+      "bunionectomy",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -2604,7 +2653,8 @@
     "conditions_mentioned": [
       "bunion",
       "edema",
-      "hammer toe"
+      "hammer toe",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy"
@@ -2624,7 +2674,8 @@
     "images": [],
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy"
@@ -2643,6 +2694,7 @@
     "date_captured": "2026-04-04",
     "images": [],
     "treatments_mentioned": [
+      "epsom salt",
       "soaking",
       "tea tree oil",
       "terbinafine"
@@ -2732,6 +2784,7 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "minimally invasive surgery",
       "mis"
     ],
     "images": [],
@@ -2771,7 +2824,9 @@
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "physical therapy",
+      "stretching",
       "surgery",
       "taping"
     ]
@@ -2793,6 +2848,7 @@
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ]
   },
@@ -2806,6 +2862,7 @@
     "images": [],
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
@@ -2826,7 +2883,9 @@
       "Morton's neuroma",
       "edema",
       "metatarsalgia",
-      "neuroma"
+      "morton neuroma",
+      "neuroma",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -2902,6 +2961,7 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "physical therapy",
       "surgery"
     ]
   },
@@ -2941,7 +3001,9 @@
       "ibuprofen"
     ],
     "treatments_mentioned": [
-      "anti-inflammatory"
+      "anti-inflammatory",
+      "boot/walking boot",
+      "surgery"
     ]
   },
   {
@@ -2986,7 +3048,8 @@
       "arthritis",
       "bunion",
       "edema",
-      "hallux rigidus"
+      "hallux rigidus",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -3011,6 +3074,7 @@
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ]
   },
@@ -3246,8 +3310,10 @@
       "tea tree oil"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "anti-fungal medication",
+      "antifungal",
       "tea tree oil"
     ]
   },
@@ -3267,6 +3333,7 @@
       "tea tree oil"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "tea tree oil"
     ]
@@ -3286,6 +3353,7 @@
       "Vicks VapoRub"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment"
     ]
   },
@@ -3306,6 +3374,7 @@
       "Vicks VapoRub"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment"
     ]
   },
@@ -3343,7 +3412,8 @@
     "conditions_mentioned": [
       "bunion",
       "edema",
-      "hammer toe"
+      "hammer toe",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -3474,6 +3544,7 @@
       "Hoka",
       "OOFOS",
       "Oofos",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -3515,7 +3586,8 @@
       "hammer toe"
     ],
     "surgery_types_mentioned": [
-      "MIS"
+      "MIS",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -3534,7 +3606,9 @@
       "edema",
       "swelling"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -3568,7 +3642,9 @@
       "edema",
       "swelling"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -3841,7 +3917,8 @@
       "bunion"
     ],
     "surgery_types_mentioned": [
-      "bunionectomy"
+      "bunionectomy",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "surgery"
@@ -3861,7 +3938,8 @@
     "date_captured": "2026-04-06",
     "conditions_mentioned": [
       "edema",
-      "sesamoiditis"
+      "sesamoiditis",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "austin"
@@ -3880,11 +3958,14 @@
     "date_captured": "2026-04-06",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
       "chevron",
+      "chevron osteotomy",
+      "minimally invasive surgery",
       "mis",
       "osteotomy"
     ],
@@ -3911,6 +3992,7 @@
     "products_mentioned": [
       "Hoka",
       "hoka",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -3926,6 +4008,7 @@
     "date_captured": "2026-04-06",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -3933,13 +4016,16 @@
       "plantar fascia release"
     ],
     "treatments_mentioned": [
+      "compression",
       "cortisone",
       "cortisone injection",
       "dry needling",
       "ice therapy",
       "icing",
+      "massage",
       "night splint",
       "orthotics",
+      "physical therapy",
       "shockwave therapy",
       "surgery"
     ],
@@ -3961,6 +4047,7 @@
     "date_captured": "2026-04-06",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -3985,7 +4072,8 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "cortisone",
-      "cortisone injection"
+      "cortisone injection",
+      "physical therapy"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -4064,6 +4152,7 @@
       "orthotics"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -4215,7 +4304,8 @@
       "bunionette",
       "edema",
       "hammer toe",
-      "hammertoe"
+      "hammertoe",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
@@ -4328,7 +4418,8 @@
       "tea tree oil"
     ],
     "treatments_mentioned": [
-      "castor oil"
+      "castor oil",
+      "physical therapy"
     ],
     "surgery_types_mentioned": []
   },
@@ -4356,6 +4447,7 @@
     "treatments_mentioned": [
       "anti-fungal",
       "anti-fungal medication",
+      "physical therapy",
       "soaking"
     ]
   },
@@ -4501,6 +4593,7 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "elevation",
       "rest"
     ]
@@ -4515,6 +4608,7 @@
     "date": "2026-04-01",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -4545,6 +4639,7 @@
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "physical therapy"
     ]
   },
@@ -4575,17 +4670,20 @@
     "date": "2026-04-07",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
       "minimally invasive",
-      "minimally invasive surgery"
+      "minimally invasive surgery",
+      "screw fixation"
     ],
     "products_mentioned": [
       "bone stimulator"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ]
   },
@@ -4621,7 +4719,9 @@
     "products_mentioned": [
       "cast"
     ],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "cast"
+    ]
   },
   {
     "id": 222,
@@ -4633,7 +4733,8 @@
     "date": "2026-03-31",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy"
@@ -4765,6 +4866,7 @@
     "images": [],
     "date": "2026-04-02",
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -4799,7 +4901,9 @@
     "products_mentioned": [
       "knee scooter"
     ],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ]
   },
   {
     "id": 231,
@@ -4821,7 +4925,8 @@
       "ibuprofen"
     ],
     "treatments_mentioned": [
-      "anti-inflammatory"
+      "anti-inflammatory",
+      "boot/walking boot"
     ]
   },
   {
@@ -4833,7 +4938,9 @@
     "images": [],
     "date": "2026-03-26",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -4886,7 +4993,8 @@
     ],
     "surgery_types_mentioned": [
       "hammertoe surgery",
-      "minimally invasive"
+      "minimally invasive",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -5146,11 +5254,13 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
-      "orthotics"
+      "orthotics",
+      "surgery"
     ]
   },
   {
@@ -5224,6 +5334,7 @@
       "night splint"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "night splint"
     ]
   },
@@ -5281,6 +5392,7 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "Altra",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -5405,6 +5517,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [
       "MIS",
+      "minimally invasive surgery",
       "scarf akin"
     ],
     "products_mentioned": [],
@@ -5424,6 +5537,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [
       "MIS",
+      "minimally invasive surgery",
       "scarf akin"
     ],
     "products_mentioned": [],
@@ -5493,12 +5607,14 @@
     "date": "2026-04-06",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "Kuru",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -5506,6 +5622,7 @@
       "cortisone",
       "cortisone injection",
       "orthotics",
+      "physical therapy",
       "steroid injection"
     ]
   },
@@ -5544,6 +5661,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -5581,7 +5699,8 @@
       "neuropathy"
     ],
     "surgery_types_mentioned": [
-      "MIS"
+      "MIS",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -5618,7 +5737,8 @@
     "date": "2026-04-05",
     "conditions_mentioned": [
       "bunion",
-      "neuropathy"
+      "neuropathy",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -5643,6 +5763,7 @@
     "surgery_types_mentioned": [
       "bunionectomy",
       "chevron",
+      "chevron osteotomy",
       "osteotomy"
     ],
     "products_mentioned": [
@@ -5672,7 +5793,9 @@
       "apple cider vinegar"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
+      "apple cider vinegar",
       "soaking",
       "vinegar soak"
     ]
@@ -5695,6 +5818,7 @@
       "Vicks VapoRub"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment"
     ]
   },
@@ -5716,6 +5840,7 @@
       "Vicks VapoRub"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment"
     ]
   },
@@ -5736,6 +5861,7 @@
       "tea tree oil"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "tea tree oil"
     ]
@@ -5777,6 +5903,7 @@
       "vicks"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "soaking",
       "tea tree oil",
@@ -5836,7 +5963,8 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
-      "compression socks"
+      "compression socks",
+      "crutches"
     ],
     "treatments_mentioned": [
       "compression"
@@ -5854,9 +5982,11 @@
     ],
     "surgery_types_mentioned": [
       "hardware removal",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "treatments_mentioned": [
+      "compression",
       "surgery"
     ],
     "products_mentioned": [],
@@ -5875,7 +6005,8 @@
     "conditions_mentioned": [
       "bunion",
       "edema",
-      "neuropathy"
+      "neuropathy",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "Lapiplasty",
@@ -5883,7 +6014,8 @@
       "lapiplasty",
       "minimally invasive",
       "minimally invasive surgery",
-      "mis"
+      "mis",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "rest",
@@ -5908,8 +6040,10 @@
       "lapiplasty"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "physical therapy",
-      "rest"
+      "rest",
+      "surgery"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -5977,7 +6111,8 @@
     "conditions_mentioned": [
       "bunion",
       "edema",
-      "hammer toe"
+      "hammer toe",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
@@ -6000,7 +6135,8 @@
     "date_captured": "2026-04-09",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy"
@@ -6060,12 +6196,14 @@
     "date_captured": "2026-04-09",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis",
       "tendonitis"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [],
@@ -6259,10 +6397,13 @@
       "pain"
     ],
     "surgery_types_mentioned": [
+      "minimally invasive surgery",
       "mis"
     ],
     "treatments_mentioned": [
-      "ibuprofen"
+      "anti-inflammatory",
+      "ibuprofen",
+      "surgery"
     ],
     "products_mentioned": [
       "ibuprofen"
@@ -6301,13 +6442,16 @@
     "source_group": "Minimally invasive bunion surgery",
     "date_captured": "2026-04-09",
     "conditions_mentioned": [
-      "bunion"
+      "bunion",
+      "numbness"
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "minimally invasive surgery",
       "mis"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "rest",
       "surgery"
     ],
@@ -6502,6 +6646,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "oregano oil",
       "tea tree oil"
     ],
     "products_mentioned": [
@@ -6523,6 +6668,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "rest"
     ],
     "products_mentioned": [
@@ -6590,6 +6736,7 @@
     "surgery_types_mentioned": [
       "MIS",
       "fusion",
+      "minimally invasive surgery",
       "osteotomy"
     ],
     "products_mentioned": [],
@@ -6613,7 +6760,8 @@
     "conditions_mentioned": [
       "bunion",
       "edema",
-      "neuropathy"
+      "neuropathy",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "Lapiplasty",
@@ -6621,7 +6769,8 @@
       "fusion",
       "lapiplasty",
       "minimally invasive",
-      "minimally invasive surgery"
+      "minimally invasive surgery",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -6756,7 +6905,9 @@
       "bunion",
       "tailor's bunion"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -6833,6 +6984,7 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "antibiotics",
       "soaking"
     ]
   },
@@ -7012,6 +7164,7 @@
       "Hoka"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ]
   },
@@ -7043,7 +7196,8 @@
     "images": [],
     "surgeries": [],
     "conditions_mentioned": [
-      "hammer toe"
+      "hammer toe",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -7067,7 +7221,8 @@
     ],
     "surgery_types_mentioned": [
       "MIS",
-      "bunionectomy"
+      "bunionectomy",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -7085,6 +7240,7 @@
     "images": [],
     "surgeries": [],
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -7130,13 +7286,15 @@
     ],
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "osteotomy"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "elevation",
       "ice therapy",
       "icing"
@@ -7160,6 +7318,7 @@
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ]
   },
@@ -7177,6 +7336,7 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "rest",
       "weight bearing"
     ]
@@ -7197,6 +7357,7 @@
       "Hoka"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "physical therapy",
       "surgery"
     ]
@@ -7221,7 +7382,9 @@
     "surgery_types_mentioned": [
       "MIS",
       "akin osteotomy",
-      "osteotomy"
+      "minimally invasive surgery",
+      "osteotomy",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -7350,6 +7513,7 @@
       "lapiplasty"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "physical therapy",
       "rest"
     ],
@@ -7366,6 +7530,7 @@
     "date_captured": "2026-04-11",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
@@ -7408,7 +7573,9 @@
       "Morton's neuroma",
       "edema",
       "metatarsalgia",
-      "neuroma"
+      "morton neuroma",
+      "neuroma",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "scarf akin"
@@ -7450,7 +7617,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "night splint",
+      "physical therapy",
       "rest"
     ],
     "products_mentioned": [
@@ -7598,7 +7767,8 @@
     "date_captured": "2026-04-11",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [],
@@ -7635,7 +7805,8 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
-      "antibiotics"
+      "antibiotics",
+      "soaking"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -7858,6 +8029,7 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "k-wire",
       "mis",
       "osteotomy",
       "scarf akin"
@@ -7982,6 +8154,7 @@
     "images": [],
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
@@ -7998,7 +8171,8 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": [
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -8157,6 +8331,7 @@
       "walking boot"
     ],
     "treatments_mentioned": [
+      "cast",
       "rest",
       "surgery"
     ]
@@ -8205,6 +8380,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": [
+      "blister",
       "bunion"
     ],
     "surgery_types_mentioned": [],
@@ -8297,6 +8473,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -8434,6 +8611,7 @@
     "products_mentioned": [
       "Theragun",
       "compression socks",
+      "insoles",
       "massage gun",
       "orthotic insoles",
       "orthotics"
@@ -8507,7 +8685,8 @@
       "scar tissue"
     ],
     "surgery_types_mentioned": [
-      "hardware removal"
+      "hardware removal",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -8569,7 +8748,8 @@
     "images": [],
     "date": "2025",
     "conditions_mentioned": [
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "revision surgery"
@@ -8578,6 +8758,7 @@
       "cast"
     ],
     "treatments_mentioned": [
+      "cast",
       "elevation",
       "icing",
       "surgery"
@@ -8724,7 +8905,8 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "chiropractic",
-      "dry needling"
+      "dry needling",
+      "physical therapy"
     ]
   },
   {
@@ -8758,7 +8940,8 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "PRP",
-      "PRP injection"
+      "PRP injection",
+      "physical therapy"
     ]
   },
   {
@@ -8875,6 +9058,7 @@
       "Kuailu",
       "Powerstep",
       "Voltaren",
+      "heel cups",
       "orthotic insoles",
       "orthotics"
     ],
@@ -8965,7 +9149,8 @@
     "conditions_mentioned": [
       "edema",
       "plantar fasciitis",
-      "stress fracture"
+      "stress fracture",
+      "swelling"
     ],
     "images": [],
     "date": "2026",
@@ -9082,11 +9267,13 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": [
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "hardware removal",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": []
@@ -9161,7 +9348,9 @@
       "edema",
       "tailor's bunion"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -9182,7 +9371,10 @@
     "products_mentioned": [
       "walking boot"
     ],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "cast"
+    ]
   },
   {
     "id": 452,
@@ -9215,6 +9407,7 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -9444,6 +9637,7 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "anti-fungal",
+      "physical therapy",
       "soaking"
     ]
   },
@@ -9497,6 +9691,7 @@
     ],
     "treatments_mentioned": [
       "anti-fungal medication",
+      "antifungal",
       "gabapentin"
     ]
   },
@@ -9515,6 +9710,8 @@
       "epsom salt"
     ],
     "treatments_mentioned": [
+      "apple cider vinegar",
+      "epsom salt",
       "vinegar soak"
     ]
   },
@@ -9572,6 +9769,7 @@
       "fusion"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -9650,6 +9848,7 @@
     "conditions_mentioned": [
       "Morton's neuroma",
       "bunion",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
@@ -9745,11 +9944,13 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": [
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "cortisone",
       "cortisone injection",
       "steroid injection"
@@ -9983,7 +10184,8 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "PRP",
-      "PRP injection"
+      "PRP injection",
+      "physical therapy"
     ]
   },
   {
@@ -10048,6 +10250,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -10070,6 +10273,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -10085,7 +10289,8 @@
     "images": [],
     "conditions_mentioned": [],
     "surgery_types_mentioned": [
-      "fusion"
+      "fusion",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": []
@@ -10123,6 +10328,7 @@
     "images": [],
     "conditions_mentioned": [
       "flat feet",
+      "peroneal tendonitis",
       "tendonitis"
     ],
     "surgery_types_mentioned": [],
@@ -10147,6 +10353,7 @@
       "plantar fasciitis"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "nerve conduction test"
     ],
     "comments": [],
@@ -10232,6 +10439,7 @@
     "conditions_mentioned": [
       "Morton's neuroma",
       "bunion",
+      "morton neuroma",
       "morton's neuroma",
       "neuroma"
     ],
@@ -10256,6 +10464,7 @@
       "Morton's neuroma",
       "arthritis",
       "bunion",
+      "morton neuroma",
       "morton's neuroma",
       "neuroma"
     ],
@@ -10291,6 +10500,7 @@
       "lapidus"
     ],
     "treatments_mentioned": [
+      "physical therapy",
       "pt",
       "surgery"
     ],
@@ -10339,6 +10549,7 @@
     "conditions_mentioned": [
       "Morton's neuroma",
       "bunion",
+      "morton neuroma",
       "morton's neuroma",
       "neuroma"
     ],
@@ -10425,6 +10636,7 @@
     "products_mentioned": [
       "Hoka",
       "hoka",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -10447,6 +10659,7 @@
       "orthotics"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -10507,6 +10720,7 @@
       "Voltaren",
       "asics",
       "brooks",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -10565,6 +10779,7 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "minimally invasive surgery",
       "mis",
       "osteotomy"
     ],
@@ -10588,6 +10803,7 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "minimally invasive surgery",
       "mis"
     ],
     "treatments_mentioned": [
@@ -10628,6 +10844,7 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "minimally invasive surgery",
       "mis",
       "osteotomy"
     ],
@@ -10657,6 +10874,8 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "boot",
+      "boot/walking boot",
+      "physical therapy",
       "pt"
     ],
     "products_mentioned": [],
@@ -10711,13 +10930,15 @@
     "conditions_mentioned": [
       "Morton's neuroma",
       "bunion",
+      "morton neuroma",
       "morton's neuroma",
       "neuroma",
       "stress fracture"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
-      "mri"
+      "mri",
+      "surgery"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -10735,7 +10956,8 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
-      "mri"
+      "mri",
+      "surgery"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -10754,6 +10976,7 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "orthotics",
+      "physical therapy",
       "pt",
       "rest"
     ],
@@ -11040,6 +11263,8 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "boot",
+      "boot/walking boot",
+      "cast",
       "rest",
       "surgery"
     ],
@@ -11084,9 +11309,11 @@
     ],
     "surgery_types_mentioned": [
       "minimally invasive",
-      "minimally invasive surgery"
+      "minimally invasive surgery",
+      "screw fixation"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [
@@ -11145,6 +11372,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "physical therapy",
       "pt"
     ],
     "products_mentioned": [],
@@ -11198,7 +11426,8 @@
     "date_captured": "2026-04-18",
     "conditions_mentioned": [
       "edema",
-      "gout"
+      "gout",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
@@ -11206,6 +11435,7 @@
       "pt"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -11222,11 +11452,13 @@
     "conditions_mentioned": [
       "edema",
       "metatarsalgia",
+      "plantar plate tear",
       "sesamoiditis",
       "swelling"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "custom orthotics",
       "orthotics"
     ],
@@ -11333,7 +11565,9 @@
       "austin",
       "bunionectomy"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ],
     "products_mentioned": [],
     "comments": [],
     "images": []
@@ -11478,7 +11712,8 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
-      "MRI"
+      "MRI",
+      "cast"
     ],
     "products_mentioned": [
       "cast"
@@ -11601,6 +11836,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "physical therapy",
       "pt"
     ],
     "products_mentioned": [],
@@ -11622,6 +11858,7 @@
       "fusion"
     ],
     "treatments_mentioned": [
+      "physical therapy",
       "pt",
       "surgery"
     ],
@@ -11849,6 +12086,7 @@
     "date_captured": "2026-04-19",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
@@ -11866,6 +12104,7 @@
     "date_captured": "2026-04-19",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [
@@ -11887,11 +12126,13 @@
     "conditions_mentioned": [
       "Morton's neuroma",
       "bursitis",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
-      "boot"
+      "boot",
+      "boot/walking boot"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -11906,6 +12147,7 @@
     "date_captured": "2026-04-19",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [],
@@ -11923,6 +12165,7 @@
     "date_captured": "2026-04-19",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma"
     ],
     "surgery_types_mentioned": [
@@ -12184,6 +12427,7 @@
     "treatments_mentioned": [
       "apple cider vinegar",
       "boot",
+      "soaking",
       "vinegar soak"
     ],
     "products_mentioned": [
@@ -12228,6 +12472,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "anti-fungal medication",
       "antifungal",
@@ -12401,9 +12646,11 @@
     "treatments": [],
     "conditions_mentioned": [
       "arthritis",
+      "numbness",
       "plantar fasciitis"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "massage"
     ],
@@ -12610,7 +12857,10 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "antibiotic",
-      "pt"
+      "antibiotics",
+      "physical therapy",
+      "pt",
+      "surgery"
     ]
   },
   {
@@ -12630,6 +12880,7 @@
       "walking boot"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "prednisone"
     ]
   },
@@ -12648,11 +12899,13 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
       "orthotics",
+      "physical therapy",
       "pt",
       "shockwave therapy"
     ]
@@ -12797,6 +13050,7 @@
       "ibuprofen"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "hydrocodone",
       "ibuprofen",
       "ice therapy",
@@ -12832,7 +13086,8 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "surgery"
@@ -12874,6 +13129,8 @@
       "fusion"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
+      "cast",
       "surgery"
     ],
     "products_mentioned": [
@@ -12972,9 +13229,11 @@
     "treatments": [],
     "conditions_mentioned": [
       "ingrown toenail",
+      "numbness",
       "toenail fungus"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "ibuprofen"
     ],
     "surgery_types_mentioned": [],
@@ -12999,6 +13258,7 @@
     ],
     "treatments_mentioned": [
       "orthotics",
+      "physical therapy",
       "pt"
     ]
   },
@@ -13125,7 +13385,8 @@
     "surgery_types_mentioned": [
       "bunion surgery",
       "fusion",
-      "revision surgery"
+      "revision surgery",
+      "screw fixation"
     ],
     "treatments_mentioned": [
       "hardware",
@@ -13166,6 +13427,7 @@
       "lapiplasty"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "elevation",
       "physical therapy",
       "rest",
@@ -13193,10 +13455,12 @@
     "url": null,
     "source_group": "bunion surgery / foot surgery support group",
     "conditions_mentioned": [
-      "nerve block"
+      "nerve block",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "physical therapy",
       "surgery"
     ],
     "products_mentioned": [
@@ -13235,11 +13499,13 @@
       "callus",
       "corn",
       "corns and calluses",
+      "plantar wart",
       "plantar warts",
       "warts"
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
+      "minimally invasive surgery",
       "mis"
     ],
     "treatments_mentioned": [
@@ -13304,6 +13570,8 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "apple cider vinegar",
+      "soaking",
       "vinegar soak"
     ],
     "products_mentioned": [
@@ -13321,7 +13589,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
+      "soaking",
       "vinegar soak"
     ],
     "products_mentioned": [
@@ -13388,6 +13658,7 @@
     "url": null,
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -13396,7 +13667,8 @@
       "calf massage",
       "massage",
       "orthotics",
-      "rest"
+      "rest",
+      "stretching"
     ],
     "products_mentioned": [
       "Altra",
@@ -13406,6 +13678,7 @@
       "altra",
       "hobibear",
       "hoka",
+      "insoles",
       "oofos",
       "orthotic insoles",
       "orthotics",
@@ -13647,6 +13920,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [],
@@ -13662,6 +13936,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "rest",
       "weight bearing"
     ],
@@ -13714,13 +13989,16 @@
     "url": null,
     "source_group": "Bunion Support Group",
     "conditions_mentioned": [
-      "bunion"
+      "bunion",
+      "numbness"
     ],
     "surgery_types_mentioned": [
       "bunion surgery",
       "bunionectomy"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
+      "cast",
       "rest",
       "surgery",
       "taping"
@@ -13749,9 +14027,12 @@
     "url": null,
     "source_group": "Bunion Support Group",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "treatments_mentioned": [
-      "rest"
+      "rest",
+      "surgery"
     ],
     "products_mentioned": [],
     "comments": [],
@@ -13770,6 +14051,9 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "apple cider vinegar",
+      "epsom salt",
+      "soaking",
       "vinegar soak"
     ],
     "products_mentioned": [
@@ -13811,7 +14095,8 @@
     "url": null,
     "source_group": "Toenail Fungus Support & Management",
     "conditions_mentioned": [
-      "fungus"
+      "fungus",
+      "numbness"
     ],
     "surgery_types_mentioned": [
       "mica"
@@ -13878,7 +14163,9 @@
     "source_group": "bunion surgery / foot surgery support group",
     "date_captured": "2026-04-22",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "treatments_mentioned": [
       "surgery"
     ],
@@ -13897,6 +14184,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "rest"
     ],
     "products_mentioned": [],
@@ -13939,6 +14227,7 @@
       "bunionectomy"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [],
@@ -14025,6 +14314,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "physical therapy",
       "surgery"
     ],
     "products_mentioned": [
@@ -14138,6 +14428,7 @@
       "orthotics"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -14156,7 +14447,9 @@
       "bunion"
     ],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ],
     "products_mentioned": [
       "Hoka",
       "hoka",
@@ -14202,7 +14495,9 @@
       "bunion"
     ],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "products_mentioned": [],
     "comments": [],
     "images": [],
@@ -14218,8 +14513,10 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "epsom salt",
+      "soaking",
       "tea tree oil"
     ],
     "products_mentioned": [
@@ -14274,6 +14571,8 @@
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
       "bleach soak",
+      "physical therapy",
+      "soaking",
       "tea tree oil"
     ],
     "products_mentioned": [
@@ -14441,10 +14740,12 @@
       "insoles",
       "massage",
       "orthotics",
-      "physical therapy"
+      "physical therapy",
+      "stretching"
     ],
     "products_mentioned": [
       "custom orthotics",
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -14526,6 +14827,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "compression",
       "surgery"
     ],
     "products_mentioned": [
@@ -14583,6 +14885,7 @@
     "date_captured": "2026-04-22",
     "conditions_mentioned": [
       "edema",
+      "swelling",
       "tarsal tunnel",
       "tarsal tunnel syndrome"
     ],
@@ -14670,6 +14973,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "antibiotics",
       "soaking"
     ],
     "products_mentioned": [],
@@ -14687,6 +14991,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "physical therapy",
       "terbinafine"
     ],
     "products_mentioned": [
@@ -14731,11 +15036,13 @@
       "bursectomy"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "insoles",
       "orthotics",
       "surgery"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -14760,7 +15067,8 @@
     ],
     "products_mentioned": [
       "Altra",
-      "altra"
+      "altra",
+      "heel cups"
     ],
     "comments": [],
     "images": [],
@@ -14805,6 +15113,8 @@
       "rest"
     ],
     "products_mentioned": [
+      "heel cups",
+      "insoles",
       "night splint",
       "orthotic insoles",
       "orthotics",
@@ -14849,6 +15159,8 @@
       "orthotics"
     ],
     "products_mentioned": [
+      "heel cups",
+      "insoles",
       "orthotic insoles",
       "orthotics",
       "tulis"
@@ -14873,6 +15185,7 @@
       "lapidus"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "products_mentioned": [],
@@ -14927,6 +15240,7 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "PRP injection",
+      "physical therapy",
       "prp",
       "surgery",
       "taping",
@@ -15053,6 +15367,7 @@
     "images": [],
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -15159,7 +15474,10 @@
     "products_mentioned": [
       "walking boot"
     ],
-    "treatments_mentioned": []
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "cast"
+    ]
   },
   {
     "id": 746,
@@ -15229,6 +15547,7 @@
       "vicks"
     ],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
       "apple cider vinegar",
       "epsom salt",
@@ -15330,6 +15649,7 @@
     "surgery_types_mentioned": [
       "Lapiplasty",
       "chevron",
+      "chevron osteotomy",
       "lapiplasty",
       "osteotomy"
     ],
@@ -15337,7 +15657,9 @@
       "knee scooter"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "elevation",
+      "physical therapy",
       "rest",
       "surgery"
     ]
@@ -15385,7 +15707,8 @@
     "source_group": "Minimally invasive bunion surgery",
     "images": [],
     "conditions_mentioned": [
-      "bunion"
+      "bunion",
+      "numbness"
     ],
     "surgery_types_mentioned": [
       "360 bunionplasty"
@@ -15685,6 +16008,7 @@
       "bunionectomy"
     ],
     "treatments_mentioned": [
+      "compression",
       "physical therapy",
       "surgery"
     ],
@@ -15721,7 +16045,8 @@
     "source_group": "bunion surgery / foot surgery support group",
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy"
@@ -15860,6 +16185,7 @@
       "fusion"
     ],
     "treatments_mentioned": [
+      "physical therapy",
       "surgery"
     ],
     "products_mentioned": [],
@@ -15916,6 +16242,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "diclofenac",
       "ibuprofen"
     ],
@@ -16018,7 +16345,9 @@
       "pain"
     ],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "products_mentioned": []
   },
   {
@@ -16031,7 +16360,8 @@
     "comments": [],
     "conditions_mentioned": [
       "bunion",
-      "neuropathy"
+      "neuropathy",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [],
@@ -16048,7 +16378,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "Vicks",
       "Vicks treatment",
+      "soaking",
       "tea tree oil",
       "vinegar soak"
     ],
@@ -16151,11 +16483,13 @@
     "images": [],
     "conditions_mentioned": [
       "bunion",
+      "callus",
       "corns and calluses",
       "tailor's bunion"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "cortisone",
       "cortisone injection",
       "ibuprofen",
@@ -16212,7 +16546,8 @@
     "source_group": "bunion surgery / foot surgery support group",
     "images": [],
     "conditions_mentioned": [
-      "neuropathy"
+      "neuropathy",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
@@ -16268,6 +16603,7 @@
     ],
     "surgery_types_mentioned": [
       "chevron",
+      "chevron osteotomy",
       "osteotomy"
     ],
     "treatments_mentioned": [
@@ -16288,6 +16624,7 @@
       "fusion"
     ],
     "treatments_mentioned": [
+      "physical therapy",
       "rest",
       "surgery"
     ],
@@ -16320,6 +16657,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "non-weight bearing",
       "rest",
       "weight bearing"
@@ -16368,6 +16706,7 @@
       "bone spur",
       "gout",
       "heel fat pad syndrome",
+      "heel pain",
       "heel spur",
       "plantar fasciitis",
       "tendonitis"
@@ -16413,6 +16752,7 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "antibiotics",
       "surgery"
     ],
     "products_mentioned": [
@@ -16515,9 +16855,11 @@
     "surgery_types_mentioned": [
       "minimally invasive",
       "minimally invasive surgery",
-      "mis"
+      "mis",
+      "screw fixation"
     ],
     "treatments_mentioned": [
+      "elevation",
       "gabapentin",
       "ice therapy",
       "icing",
@@ -16539,7 +16881,10 @@
       "crps"
     ],
     "surgery_types_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "physical therapy"
+    ],
     "products_mentioned": [
       "walking boot"
     ]
@@ -16557,10 +16902,12 @@
     ],
     "surgery_types_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "gabapentin"
     ],
     "products_mentioned": [
-      "Gabapentin"
+      "Gabapentin",
+      "crutches"
     ]
   },
   {
@@ -16621,7 +16968,9 @@
     "surgery_types_mentioned": [
       "mis"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "products_mentioned": [
       "Skechers",
       "skechers"
@@ -16704,6 +17053,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [
       "chevron",
+      "chevron osteotomy",
       "osteotomy"
     ],
     "treatments_mentioned": [
@@ -16729,6 +17079,7 @@
     ],
     "surgery_types_mentioned": [
       "chevron",
+      "chevron osteotomy",
       "osteotomy",
       "weil procedure"
     ],
@@ -16754,6 +17105,7 @@
     "surgery_types_mentioned": [
       "bunionectomy",
       "chevron",
+      "chevron osteotomy",
       "lapidus",
       "osteotomy"
     ],
@@ -16774,6 +17126,7 @@
     "surgery_types_mentioned": [
       "cheilectomy",
       "chevron",
+      "chevron osteotomy",
       "osteotomy"
     ],
     "treatments_mentioned": [
@@ -16791,14 +17144,18 @@
     "images": [],
     "conditions_mentioned": [
       "bunion",
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
       "chevron",
+      "chevron osteotomy",
       "osteotomy"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "products_mentioned": []
   },
   {
@@ -16830,7 +17187,10 @@
     "products_mentioned": [
       "walking boot"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "cast"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -16848,6 +17208,7 @@
     "images": [],
     "id": 831,
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -16868,6 +17229,7 @@
     "images": [],
     "id": 832,
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
@@ -16920,6 +17282,7 @@
     "conditions_mentioned": [
       "bunion",
       "flat feet",
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -17012,14 +17375,17 @@
     ],
     "surgery_types_mentioned": [
       "bunionectomy",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
       "orthotics",
+      "physical therapy",
       "surgery"
     ],
     "author": null,
@@ -17078,7 +17444,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -17119,7 +17487,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -17145,6 +17515,7 @@
     "search_term_used": "neuroma",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -17196,6 +17567,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "neuroma",
       "plantar fasciitis"
     ],
@@ -17206,7 +17578,8 @@
       "Hoka"
     ],
     "treatments_mentioned": [
-      "massage"
+      "massage",
+      "physical therapy"
     ],
     "author": null,
     "url": null,
@@ -17244,9 +17617,11 @@
       "night splint"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "ice therapy",
       "icing",
       "night splint",
+      "stretching",
       "surgery"
     ],
     "author": null,
@@ -17270,6 +17645,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
       "Morton's neuroma",
+      "morton neuroma",
       "morton's neuroma",
       "neuroma",
       "plantar fasciitis"
@@ -17385,6 +17761,7 @@
     "conditions_mentioned": [
       "Morton's neuroma",
       "bunion",
+      "morton neuroma",
       "morton's neuroma",
       "neuroma",
       "plantar fasciitis"
@@ -17439,7 +17816,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -17468,7 +17847,8 @@
     "source_group": "Bunion Support Group",
     "conditions_mentioned": [
       "bunion",
-      "neuropathy"
+      "neuropathy",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -17492,7 +17872,8 @@
     "conditions_mentioned": [
       "bunion",
       "ingrown toenail",
-      "neuropathy"
+      "neuropathy",
+      "numbness"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
@@ -17522,10 +17903,12 @@
     "conditions_mentioned": [
       "bunion",
       "edema",
-      "neuropathy"
+      "neuropathy",
+      "swelling"
     ],
     "surgery_types_mentioned": [
-      "bunionectomy"
+      "bunionectomy",
+      "screw fixation"
     ],
     "products_mentioned": [
       "Correct Toes"
@@ -17638,7 +18021,8 @@
       "bunion"
     ],
     "surgery_types_mentioned": [
-      "minimally invasive"
+      "minimally invasive",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -17697,15 +18081,18 @@
       "edema",
       "hallux limitus",
       "hammer toe",
+      "swelling",
       "tailor's bunion"
     ],
     "surgery_types_mentioned": [
-      "MIS"
+      "MIS",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [
       "crutches"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "author": null,
@@ -17821,10 +18208,12 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [
       "hardware removal",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "compression",
       "surgery"
     ],
     "author": null,
@@ -17839,11 +18228,13 @@
     "search_term_used": "hardware removal",
     "source_group": "Bunion Surgery / Foot Surgery Support",
     "conditions_mentioned": [
-      "edema"
+      "edema",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "hardware removal",
-      "osteotomy"
+      "osteotomy",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [],
@@ -17859,11 +18250,12 @@
     "search_term_used": "hardware removal",
     "source_group": "Bunion Surgery / Foot Surgery Support",
     "conditions_mentioned": [
-      "swelling",
-      "pain"
+      "pain",
+      "swelling"
     ],
     "surgery_types_mentioned": [
       "hardware removal",
+      "screw fixation",
       "screw removal"
     ],
     "products_mentioned": [],
@@ -18021,7 +18413,8 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "cortisone",
-      "cortisone injection"
+      "cortisone injection",
+      "physical therapy"
     ],
     "author": null,
     "url": null,
@@ -18036,6 +18429,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "heel spur",
       "plantar fasciitis"
     ],
@@ -18215,19 +18609,24 @@
       "osteotomy"
     ],
     "products_mentioned": [
+      "Brooks",
       "Hoka",
       "Hoka, Brooks",
       "Vionic",
       "ibuprofen",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "cortisone injection",
       "cortisone, taping, physical therapy, surgery, shockwave therapy, ibuprofen, icing, stretching",
+      "elevation",
       "ice therapy",
       "physical therapy",
       "shockwave therapy",
       "stretching",
+      "surgery",
       "taping"
     ],
     "author": null,
@@ -18349,13 +18748,17 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "Brooks",
       "Hoka",
       "Hoka, Brooks",
       "Vionic",
       "ibuprofen",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
+      "cast",
       "cortisone injection",
       "cortisone, taping, physical therapy, shockwave therapy, ibuprofen, icing, stretching",
       "ice therapy",
@@ -18414,7 +18817,10 @@
     "products_mentioned": [
       "walking boot"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "cast"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-11",
@@ -18522,13 +18928,16 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "Brooks",
       "Hoka",
       "Hoka, Brooks",
       "Vionic",
       "ibuprofen",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "cortisone injection",
       "cortisone, taping, physical therapy, shockwave therapy, ibuprofen, icing, stretching",
       "ice therapy",
@@ -18553,6 +18962,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
@@ -18698,13 +19108,16 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "Brooks",
       "Hoka",
       "Hoka, Brooks",
       "Vionic",
       "ibuprofen",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "cortisone injection",
       "cortisone, taping, physical therapy, shockwave therapy, ibuprofen, icing, stretching",
       "ice therapy",
@@ -18783,12 +19196,16 @@
       "bunion"
     ],
     "surgery_types_mentioned": [
+      "fusion",
       "toe fusion"
     ],
     "products_mentioned": [
-      "Hoka"
+      "Hoka",
+      "crutches"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
+      "physical therapy",
       "surgery"
     ],
     "author": null,
@@ -18811,13 +19228,16 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "Brooks",
       "Hoka",
       "Hoka, Brooks",
       "Vionic",
       "ibuprofen",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "cortisone injection",
       "cortisone, taping, physical therapy, shockwave therapy, ibuprofen, icing, stretching",
       "ice therapy",
@@ -18888,7 +19308,8 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "Hoka",
-      "orthotic insoles"
+      "orthotic insoles",
+      "orthotics"
     ],
     "treatments_mentioned": [
       "orthotics"
@@ -18962,7 +19383,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "Brooks",
       "Powerstep, Brooks",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
@@ -18987,6 +19410,7 @@
     "images": [],
     "id": 928,
     "conditions_mentioned": [
+      "heel pain",
       "heel spurs",
       "plantar fasciitis"
     ],
@@ -19010,9 +19434,11 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "CBD",
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "CBD",
       "anti-inflammatory"
     ],
     "author": null,
@@ -19052,6 +19478,7 @@
       "orthotic insoles"
     ],
     "treatments_mentioned": [
+      "anti-inflammatory",
       "stretching"
     ],
     "author": null,
@@ -19081,7 +19508,8 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "malpractice consultation",
-      "second opinion"
+      "second opinion",
+      "surgery"
     ]
   },
   {
@@ -19114,7 +19542,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-11",
@@ -19145,8 +19575,10 @@
     "source_group": "Forefoot Forum",
     "conditions_mentioned": [
       "metatarsalgia",
+      "morton neuroma",
       "neuroma",
-      "neuroma, morton's neuroma"
+      "neuroma, morton's neuroma",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -19167,10 +19599,12 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [
-      "orthotic insoles"
+      "orthotic insoles",
+      "orthotics"
     ],
     "treatments_mentioned": [
-      "orthotics"
+      "orthotics",
+      "taping"
     ],
     "author": null,
     "url": null,
@@ -19216,7 +19650,9 @@
     "search_term_used": "anyone else",
     "source_group": "Bunion Surgery / Foot Surgery Support",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -19344,7 +19780,9 @@
     "search_term_used": "anyone else",
     "source_group": "Bunion Surgery / Foot Surgery Support",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "screw fixation"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -19450,8 +19888,11 @@
     "search_term_used": "is this normal",
     "source_group": "Foot Pain Community",
     "conditions_mentioned": [
+      "callus",
+      "corn",
       "corn, callus",
       "corns and calluses",
+      "plantar wart",
       "warts"
     ],
     "surgery_types_mentioned": [],
@@ -19475,6 +19916,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [],
@@ -19494,6 +19936,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotic insoles"
     ],
     "treatments_mentioned": [],
@@ -19645,7 +20088,8 @@
       "bunion"
     ],
     "surgery_types_mentioned": [
-      "MIS"
+      "MIS",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -19685,6 +20129,7 @@
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "author": null,
@@ -19702,7 +20147,8 @@
       "pain"
     ],
     "surgery_types_mentioned": [
-      "MIS"
+      "MIS",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -19757,7 +20203,8 @@
       "bunion"
     ],
     "surgery_types_mentioned": [
-      "minimally invasive"
+      "minimally invasive",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -19777,6 +20224,7 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "Brooks",
       "Hoka",
       "Kuru, Brooks, Hoka, New Balance",
       "New Balance"
@@ -19833,7 +20281,8 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
-      "orthotic insoles"
+      "orthotic insoles",
+      "orthotics"
     ],
     "treatments_mentioned": [
       "custom orthotics, orthotics"
@@ -19999,6 +20448,7 @@
     "images": [],
     "id": 982,
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -20044,6 +20494,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
       "bone spur",
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -20051,8 +20502,8 @@
       "Hoka"
     ],
     "treatments_mentioned": [
-      "stretching",
-      "X-ray"
+      "X-ray",
+      "stretching"
     ],
     "author": null,
     "url": null,
@@ -20072,9 +20523,11 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "PRP injection",
+      "boot/walking boot",
       "cortisone injection",
       "shockwave therapy",
-      "steroid injection, PRP, surgery"
+      "steroid injection, PRP, surgery",
+      "surgery"
     ],
     "author": null,
     "url": null,
@@ -20092,7 +20545,8 @@
     "products_mentioned": [],
     "treatments_mentioned": [
       "shockwave therapy",
-      "shockwave therapy, surgery"
+      "shockwave therapy, surgery",
+      "surgery"
     ],
     "author": null,
     "url": null,
@@ -20142,6 +20596,7 @@
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
+      "heel pain",
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
@@ -20257,6 +20712,7 @@
       "boot"
     ],
     "treatments_mentioned": [
+      "boot/walking boot",
       "surgery"
     ],
     "author": null,
@@ -20339,15 +20795,16 @@
       "neuropathy"
     ],
     "surgery_types_mentioned": [
-      "minimally invasive"
+      "minimally invasive",
+      "minimally invasive surgery"
     ],
     "products_mentioned": [
       "night splint"
     ],
     "treatments_mentioned": [
+      "X-ray",
       "icing",
-      "surgery",
-      "X-ray"
+      "surgery"
     ],
     "author": null,
     "url": null,
@@ -20366,7 +20823,9 @@
       "cast",
       "knee scooter"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "cast"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-13",
@@ -20396,7 +20855,8 @@
     "search_term_used": "is this normal",
     "source_group": "Foot Pain Community",
     "conditions_mentioned": [
-      "bone spur"
+      "bone spur",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -20415,14 +20875,15 @@
     "search_term_used": "is this normal",
     "source_group": "Foot Pain Community",
     "conditions_mentioned": [
-      "swelling",
-      "pain"
+      "pain",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
-      "surgery",
-      "meloxicam"
+      "anti-inflammatory",
+      "meloxicam",
+      "surgery"
     ],
     "author": null,
     "url": null,
@@ -20460,6 +20921,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
@@ -20628,19 +21090,20 @@
     "search_term_used": "before and after",
     "source_group": "Bunion Support Group",
     "conditions_mentioned": [
-      "hallux valgus, bunion",
-      "bunion"
+      "bunion",
+      "hallux valgus",
+      "hallux valgus, bunion"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "Brooks",
-      "wide toe box shoes",
-      "orthotics"
+      "orthotics",
+      "wide toe box shoes"
     ],
     "treatments_mentioned": [
+      "X-ray",
       "surgery",
-      "surgery, orthotics",
-      "X-ray"
+      "surgery, orthotics"
     ],
     "author": null,
     "url": null,
@@ -20675,7 +21138,8 @@
       "bunion"
     ],
     "surgery_types_mentioned": [
-      "bunionectomy"
+      "bunionectomy",
+      "screw fixation"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -20805,11 +21269,13 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
-      "cushioned mats",
       "compression socks",
+      "cushioned mats",
+      "insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
+      "compression",
       "icing"
     ],
     "author": null,
@@ -20891,7 +21357,10 @@
     "products_mentioned": [
       "Vicks"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "Vicks",
+      "taping"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-13",
@@ -20962,15 +21431,16 @@
     "products_mentioned": [
       "Brooks",
       "Hoka",
+      "insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
-      "podiatrist visit",
-      "ultrasound",
       "MRI",
+      "cortisone injection",
       "cortisone, arch support, dry needling, physical therapy",
       "physical therapy",
-      "cortisone injection"
+      "podiatrist visit",
+      "ultrasound"
     ],
     "author": null,
     "url": null,
@@ -21030,6 +21500,7 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
@@ -21070,10 +21541,11 @@
       "boot"
     ],
     "treatments_mentioned": [
-      "podiatrist visit",
       "MRI",
       "X-ray",
+      "boot/walking boot",
       "physical therapy",
+      "podiatrist visit",
       "surgery"
     ],
     "author": null,
@@ -21124,15 +21596,16 @@
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
+      "heel pain",
       "heel spur"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
-      "podiatrist visit",
       "MRI",
-      "second opinion",
       "physical therapy",
+      "podiatrist visit",
+      "second opinion",
       "surgery"
     ],
     "author": null,
@@ -21147,16 +21620,18 @@
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
+      "heel pain",
       "heel spur"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
+      "insoles",
       "orthotics"
     ],
     "treatments_mentioned": [
-      "second opinion",
+      "X-ray",
       "podiatrist visit",
-      "X-ray"
+      "second opinion"
     ],
     "author": null,
     "url": null,
@@ -21239,18 +21714,19 @@
     "images": [],
     "id": 1045,
     "conditions_mentioned": [
-      "tarsal tunnel",
+      "achilles tendinitis",
+      "achilles tendonitis",
       "plantar fasciitis",
-      "achilles tendinitis"
+      "tarsal tunnel"
     ],
     "surgery_types_mentioned": [
       "achilles tendon surgery"
     ],
     "products_mentioned": [],
     "treatments_mentioned": [
-      "surgery",
       "second opinion",
-      "stretching"
+      "stretching",
+      "surgery"
     ]
   },
   {
@@ -21259,9 +21735,10 @@
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
+      "heel pain",
       "heel spur",
-      "plantar fasciitis",
-      "heel spur, plantar fasciitis"
+      "heel spur, plantar fasciitis",
+      "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -21281,7 +21758,8 @@
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
       "achilles",
-      "achilles tendinitis"
+      "achilles tendinitis",
+      "achilles tendonitis"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
@@ -21299,7 +21777,9 @@
     "comments": [],
     "search_term_used": "anyone else",
     "source_group": "Plantar Fasciitis Talk and Tips",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "plantar fasciitis"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [
@@ -21333,7 +21813,9 @@
     "comments": [],
     "search_term_used": "anyone else",
     "source_group": "Plantar Fasciitis Talk and Tips",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "plantar fasciitis"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [],
@@ -21390,15 +21872,21 @@
     ],
     "search_term_used": "anyone else",
     "source_group": "Plantar Fasciitis Talk and Tips",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "bunion",
+      "swelling"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
-      "cast",
-      "bone stimulator"
+      "bone stimulator",
+      "cast"
     ],
     "treatments_mentioned": [
-      "surgery",
-      "X-ray"
+      "X-ray",
+      "boot/walking boot",
+      "cast",
+      "physical therapy",
+      "surgery"
     ],
     "author": null,
     "url": null,
@@ -21427,6 +21915,7 @@
     "search_term_used": "anyone else",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": [
+      "heel pain",
       "pain"
     ],
     "surgery_types_mentioned": [],
@@ -21444,12 +21933,14 @@
     "search_term_used": "is this normal",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": [
-      "swelling",
-      "pain"
+      "pain",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21461,7 +21952,9 @@
     "comments": [],
     "search_term_used": "is this normal",
     "source_group": "Minimally Invasive Bunion Surgery",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "numbness"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [],
@@ -21488,7 +21981,11 @@
     "products_mentioned": [
       "orthotics"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "anti-inflammatory",
+      "physical therapy",
+      "stretching"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21512,7 +22009,9 @@
     "products_mentioned": [
       "orthotics"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21527,7 +22026,10 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "elevation",
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21561,7 +22063,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21576,7 +22080,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21592,7 +22098,9 @@
     "surgery_types_mentioned": [
       "fusion"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "Brooks"
+    ],
     "treatments_mentioned": [
       "rest"
     ],
@@ -21660,7 +22168,9 @@
     "comments": [],
     "search_term_used": "before and after",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "bunion"
+    ],
     "surgery_types_mentioned": [
       "fusion"
     ],
@@ -21719,9 +22229,17 @@
     "search_term_used": "before and after",
     "source_group": "Bunion Surgery / Foot Surgery Support",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "osteotomy",
+      "screw fixation"
+    ],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "PRP injection",
+      "massage",
+      "surgery",
+      "taping"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21736,7 +22254,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21751,7 +22271,10 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21763,8 +22286,13 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Minimally Invasive Bunion Surgery",
-    "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "conditions_mentioned": [
+      "bunion",
+      "plantar plate tear"
+    ],
+    "surgery_types_mentioned": [
+      "bunionectomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -21779,12 +22307,14 @@
     "search_term_used": "back to work",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": [
-      "swelling",
-      "pain"
+      "pain",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21801,9 +22331,17 @@
     "search_term_used": "back to work",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Lapiplasty",
+      "minimally invasive surgery"
+    ],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "PRP injection",
+      "massage",
+      "surgery",
+      "taping"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21815,10 +22353,14 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Minimally Invasive Bunion Surgery",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "bunion"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21833,7 +22375,9 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21846,9 +22390,13 @@
     "search_term_used": "back to work",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "minimally invasive surgery"
+    ],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -21860,7 +22408,9 @@
     "comments": [],
     "search_term_used": "wide toe box",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "toenail fungus"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [],
@@ -21970,14 +22520,17 @@
     "search_term_used": "podiatrist",
     "source_group": "Foot Pain Community",
     "conditions_mentioned": [
-      "swelling",
-      "pain"
+      "pain",
+      "plantar plate tear",
+      "swelling"
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [
       "orthotics"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22022,7 +22575,10 @@
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "anti-inflammatory",
+      "physical therapy"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22034,7 +22590,9 @@
     "comments": [],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "bunion"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
     "treatments_mentioned": [],
@@ -22064,12 +22622,20 @@
     "comments": [],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "conditions_mentioned": [
+      "bunion"
+    ],
+    "surgery_types_mentioned": [
+      "bunionectomy"
+    ],
     "products_mentioned": [
       "crutches"
     ],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "physical therapy",
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22081,10 +22647,15 @@
     "comments": [],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "bunion",
+      "charcot foot"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22134,10 +22705,14 @@
     "comments": [],
     "search_term_used": "second opinion",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "bunion"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22154,7 +22729,9 @@
     ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22181,10 +22758,15 @@
     "comments": [],
     "search_term_used": "second opinion",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": [],
+    "conditions_mentioned": [
+      "arthritis",
+      "bunion"
+    ],
     "surgery_types_mentioned": [],
     "products_mentioned": [],
-    "treatments_mentioned": [],
+    "treatments_mentioned": [
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-14",
@@ -22199,7 +22781,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Lapiplasty"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "surgery"
@@ -22219,10 +22803,32 @@
     ],
     "search_term_used": "anyone else",
     "source_group": "Foot Pain Community",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "revision surgery",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "swelling"
+    ],
+    "surgery_types_mentioned": [
+      " ",
+      "e",
+      "g",
+      "i",
+      "n",
+      "o",
+      "r",
+      "s",
+      "u",
+      "v",
+      "y"
+    ],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22249,10 +22855,12 @@
     "comments": [],
     "search_term_used": "anyone else",
     "source_group": "Foot Pain Community",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "numbness"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22264,10 +22872,12 @@
     "comments": [],
     "search_term_used": "anyone else",
     "source_group": "Foot Pain Community",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22294,10 +22904,18 @@
     "comments": [],
     "search_term_used": "is this normal",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "Jublia",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [
+      "J",
+      "Jublia",
+      "a",
+      "b",
+      "i",
+      "l",
+      "u"
+    ],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22324,10 +22942,30 @@
     "comments": [],
     "search_term_used": "is this normal",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "fungal nail",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      " ",
+      "a",
+      "f",
+      "g",
+      "i",
+      "l",
+      "n",
+      "toenail fungus",
+      "u"
+    ],
+    "surgery_types_mentioned": [
+      "nail removal"
+    ],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22354,10 +22992,18 @@
     "comments": [],
     "search_term_used": "is this normal",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "Jublia",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [
+      "J",
+      "Jublia",
+      "a",
+      "b",
+      "i",
+      "l",
+      "u"
+    ],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22399,10 +23045,13 @@
     "comments": [],
     "search_term_used": "is this normal",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy",
+      "soaking"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22414,10 +23063,24 @@
     "comments": [],
     "search_term_used": "before and after",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      " ",
+      "a",
+      "e",
+      "f",
+      "g",
+      "i",
+      "l",
+      "n",
+      "o",
+      "s",
+      "t",
+      "toenail fungus",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22459,10 +23122,14 @@
     "comments": [],
     "search_term_used": "before and after",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "toenail fungus"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22474,10 +23141,12 @@
     "comments": [],
     "search_term_used": "before and after",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "soaking"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22489,10 +23158,30 @@
     "comments": [],
     "search_term_used": "before and after",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "Jublia",
-    "treatments_mentioned": "laser therapy",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [
+      "J",
+      "Jublia",
+      "a",
+      "b",
+      "i",
+      "l",
+      "u"
+    ],
+    "treatments_mentioned": [
+      " ",
+      "a",
+      "e",
+      "h",
+      "l",
+      "laser treatment",
+      "p",
+      "r",
+      "s",
+      "t",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22523,10 +23212,30 @@
     ],
     "search_term_used": "before and after",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "gout, plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      " ",
+      ",",
+      "a",
+      "c",
+      "f",
+      "g",
+      "gout",
+      "i",
+      "l",
+      "n",
+      "o",
+      "p",
+      "plantar fasciitis",
+      "r",
+      "s",
+      "t",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "physical therapy"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22538,10 +23247,38 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "bunionectomy, MIS",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [
+      " ",
+      ",",
+      "I",
+      "M",
+      "S",
+      "b",
+      "bunionectomy",
+      "c",
+      "e",
+      "i",
+      "m",
+      "minimally invasive surgery",
+      "n",
+      "o",
+      "t",
+      "u",
+      "y"
+    ],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "surgery"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22553,10 +23290,29 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "bunionectomy",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [
+      "b",
+      "bunionectomy",
+      "c",
+      "e",
+      "i",
+      "m",
+      "n",
+      "o",
+      "t",
+      "u",
+      "y"
+    ],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22568,10 +23324,25 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22590,10 +23361,32 @@
     ],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "MIS",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "swelling",
+      "u"
+    ],
+    "surgery_types_mentioned": [
+      "I",
+      "M",
+      "S",
+      "minimally invasive surgery"
+    ],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "stretching",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22605,10 +23398,12 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "elevation"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22620,10 +23415,25 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22635,10 +23445,18 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22650,10 +23468,25 @@
     "comments": [],
     "search_term_used": "back to work",
     "source_group": "Bunion Surgery / Foot Surgery Support",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22680,10 +23513,25 @@
     "comments": [],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22695,10 +23543,18 @@
     "comments": [],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22732,10 +23588,20 @@
     ],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "e",
+      "g",
+      "physical therapy",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22747,10 +23613,17 @@
     "comments": [],
     "search_term_used": "podiatrist",
     "source_group": "Forefoot Forum",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22766,10 +23639,27 @@
     ],
     "search_term_used": "podiatrist",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "e",
+      "g",
+      "physical therapy",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22791,10 +23681,27 @@
     ],
     "search_term_used": "podiatrist",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "boot/walking boot",
+      "e",
+      "g",
+      "physical therapy",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22811,10 +23718,38 @@
     ],
     "search_term_used": "podiatrist",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "revision surgery",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "swelling",
+      "u"
+    ],
+    "surgery_types_mentioned": [
+      " ",
+      "e",
+      "g",
+      "i",
+      "n",
+      "o",
+      "r",
+      "s",
+      "u",
+      "v",
+      "y"
+    ],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22826,10 +23761,23 @@
     "comments": [],
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
-    "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      " ",
+      "a",
+      "c",
+      "f",
+      "i",
+      "l",
+      "n",
+      "p",
+      "plantar fasciitis",
+      "r",
+      "s",
+      "t"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22841,10 +23789,40 @@
     "comments": [],
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
-    "conditions_mentioned": "stress fracture",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "physical therapy, surgery",
+    "conditions_mentioned": [
+      " ",
+      "a",
+      "c",
+      "e",
+      "f",
+      "r",
+      "s",
+      "stress fracture",
+      "t",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      " ",
+      ",",
+      "a",
+      "boot/walking boot",
+      "c",
+      "e",
+      "g",
+      "h",
+      "i",
+      "l",
+      "p",
+      "physical therapy",
+      "r",
+      "s",
+      "surgery",
+      "t",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22856,10 +23834,21 @@
     "comments": [],
     "search_term_used": "second opinion",
     "source_group": "Plantar Fasciitis Talk and Tips",
-    "conditions_mentioned": "bone spur",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      " ",
+      "b",
+      "bone spur",
+      "e",
+      "n",
+      "o",
+      "p",
+      "r",
+      "s",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22886,10 +23875,29 @@
     "comments": [],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "cheilectomy",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "b",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [
+      "c",
+      "e",
+      "h",
+      "i",
+      "l",
+      "m",
+      "o",
+      "t",
+      "y"
+    ],
+    "products_mentioned": [
+      "crutches",
+      "knee scooter"
+    ],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22901,10 +23909,17 @@
     "comments": [],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22916,10 +23931,24 @@
     "comments": [],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "icing, surgery",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      " ",
+      ",",
+      "c",
+      "e",
+      "elevation",
+      "g",
+      "i",
+      "n",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22938,10 +23967,21 @@
     ],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "surgery",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [
+      "crutches",
+      "knee scooter"
+    ],
+    "treatments_mentioned": [
+      "e",
+      "g",
+      "r",
+      "s",
+      "surgery",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22953,10 +23993,17 @@
     "comments": [],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22968,10 +24015,33 @@
     "comments": [],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "cortisone, surgery",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [
+      " ",
+      ",",
+      "c",
+      "cortisone injection",
+      "e",
+      "g",
+      "i",
+      "n",
+      "o",
+      "r",
+      "s",
+      "surgery",
+      "t",
+      "u",
+      "y"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -22983,10 +24053,27 @@
     "comments": [],
     "search_term_used": "home remedy",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "taping",
+    "conditions_mentioned": [
+      "b",
+      "bunion",
+      "i",
+      "n",
+      "o",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [
+      "toe spacers"
+    ],
+    "treatments_mentioned": [
+      "a",
+      "g",
+      "i",
+      "n",
+      "p",
+      "t",
+      "taping"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -23028,10 +24115,12 @@
     "comments": [],
     "search_term_used": "barefoot shoes",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "toenail fungus"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -23073,10 +24162,24 @@
     "comments": [],
     "search_term_used": "barefoot shoes",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      " ",
+      "a",
+      "e",
+      "f",
+      "g",
+      "i",
+      "l",
+      "n",
+      "o",
+      "s",
+      "t",
+      "toenail fungus",
+      "u"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -23088,10 +24191,12 @@
     "comments": [],
     "search_term_used": "barefoot shoes",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": [
+      "toenail fungus"
+    ],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [],
+    "treatments_mentioned": [],
     "author": null,
     "url": null,
     "date": "2026-05-15",
@@ -23103,10 +24208,21 @@
     "comments": [],
     "search_term_used": "barefoot shoes",
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "terbinafine",
+    "conditions_mentioned": [],
+    "surgery_types_mentioned": [],
+    "products_mentioned": [
+      "Lamisil"
+    ],
+    "treatments_mentioned": [
+      "a",
+      "b",
+      "e",
+      "f",
+      "i",
+      "n",
+      "r",
+      "t"
+    ],
     "author": null,
     "url": null,
     "date": "2026-05-15",
