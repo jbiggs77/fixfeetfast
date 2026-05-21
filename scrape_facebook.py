@@ -380,9 +380,9 @@ class FacebookScraper:
         body_text = post.get("body", "")
         comment_hint = post.pop("comment_count_hint", 0)
 
-        if comment_hint == 0:
-            log(f"      Skipping comment capture (0 comments): {body_text[:50]}...")
-            return post
+        # Always attempt comment capture — the hint from search results is unreliable
+        # and comments are the most valuable part of each post
+        log(f"      Capturing comments (hint: {comment_hint}): {body_text[:50]}...")
 
         try:
             navigated = self._navigate_to_post(body_text)
