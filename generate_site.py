@@ -2780,52 +2780,35 @@ def generate_mcp_server_card():
     return json.dumps(card, indent=2)
 
 def generate_llms_txt():
-    """Generate llms.txt"""
+    """Generate llms.txt following the llmstxt.org specification"""
     topics_list = ""
-    total_posts = 0
     for niche_id, niche_data in NICHE_MAP.items():
         topics_list += f"- [{niche_data['title']}]({SITE_URL}/{niche_id}/): {niche_data['description']}\n"
 
     return f"""# {SITE_NAME}
 
-> Real foot health answers from real people. Community-sourced experiences about foot conditions, surgery recovery, and treatments.
+> Community-sourced foot health experiences covering bunion surgery recovery, plantar fasciitis, toenail fungus, and more. Real patient discussions organized by condition and treatment — not medical advice.
 
-## About This Site
-{SITE_NAME} aggregates real patient experiences and discussions from foot health support communities. Content is organized by condition and treatment type to help people understand what others have experienced. This is community discussion content, not medical advice.
+{SITE_NAME} aggregates real patient experiences and discussions from foot health support communities. Content is organized into 15 topic pages, each containing individual discussion pages with full post text, community comments, and related discussions.
 
-## Topics Covered
+Typical bunion surgery recovery is 6-12 weeks to normal activities, 3-6 months for swelling to resolve, and up to 1 year for full healing. Surgery types discussed include MIS (Minimally Invasive Surgery), Lapiplasty 3D correction, Scarf & Akin Osteotomy, and Hammer Toe Correction. Commonly recommended recovery products include Hoka, New Balance, Orthofeet, and Brooks shoes, plus knee scooters, surgical boots, ice packs, compression socks, and toe spacers.
+
+Individual discussion pages are available at /[topic-slug]/[discussion-slug]/ and contain the full post body, all community comments, and links to related discussions within the same topic.
+
+## Topics
+
 {topics_list}
+## Site Pages
 
-## Key Information
+- [Homepage]({SITE_URL}/): Overview with topic cards, community statistics, and latest discussions
+- [About]({SITE_URL}/about/): How the site works and content sourcing information
+- [Sitemap]({SITE_URL}/sitemap.xml): Full XML sitemap of all pages including individual discussions
 
-### Bunion Surgery Recovery
-Typical recovery: 6-12 weeks to normal activities, 3-6 months for swelling to resolve, up to 1 year for full healing.
+## Optional
 
-### Surgery Types
-- MIS (Minimally Invasive Surgery): Small incisions, potentially faster early recovery
-- Lapiplasty: 3D correction with titanium plates, addresses root cause
-- Scarf & Akin Osteotomy: Traditional open procedure, well-established technique
-- Hammer Toe Correction: Arthroplasty or arthrodesis
-
-### Common Recovery Products
-Shoes: Hoka, New Balance, Skechers, Orthofeet, Brooks
-Aids: Knee scooter, surgical boot, ice pack, compression socks, toe spacers
-
-## Other Conditions
-- Plantar Fasciitis: Heel pain treatment and prevention
-- Flat Feet & Arch Support: Arch support solutions and exercises
-- Toenail Fungus: Treatment options and success rates
-- Toe Spacers & Orthotics: Non-surgical foot solutions
-
-## Content Sources
-Real patient discussions from foot health support communities. Organized by condition and treatment type.
-
-## Individual Discussion Pages
-Each topic page contains links to individual discussion pages available at /[topic]/[discussion-slug]/. These dedicated pages show the full post content, all images, all comments, and related discussions from the same topic.
-
-## Contact
-Website: {SITE_URL}
-About: {SITE_URL}/about/
+- [API Catalog]({SITE_URL}/.well-known/api-catalog): RFC 9727 API catalog for agent discovery
+- [Agent Skills Index]({SITE_URL}/.well-known/agent-skills/index.json): Machine-readable index of site capabilities
+- [MCP Server Card]({SITE_URL}/.well-known/mcp/server-card.json): MCP server card (SEP-1649) for AI agent integration
 """
 
 def main():
