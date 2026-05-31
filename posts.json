@@ -1408,7 +1408,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "terbinafine"
     ],
@@ -1474,7 +1476,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "terbinafine"
     ],
@@ -2196,7 +2200,9 @@
     "conditions_mentioned": [
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "castor oil",
       "massage",
@@ -2251,7 +2257,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "elevation",
       "terbinafine"
@@ -4622,7 +4630,9 @@
       "castor oil",
       "physical therapy"
     ],
-    "surgery_types_mentioned": []
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ]
   },
   {
     "id": 206,
@@ -4643,7 +4653,9 @@
       "ingrown toenail",
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "anti-fungal",
@@ -5613,7 +5625,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Lamisil",
       "terbinafine"
@@ -6568,7 +6582,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "terbinafine"
     ],
@@ -7337,7 +7353,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": []
   },
@@ -7374,7 +7392,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Lamisil",
       "terbinafine"
@@ -7704,7 +7724,9 @@
     "surgery_types_mentioned": [
       "bunionectomy"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "boot/walking boot",
       "surgery"
@@ -8675,7 +8697,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "night splint"
     ],
@@ -9482,7 +9506,9 @@
     "conditions_mentioned": [
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Voltaren"
     ],
@@ -9974,7 +10000,9 @@
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": []
   },
   {
@@ -10009,7 +10037,9 @@
     "conditions_mentioned": [
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "orthotic insoles",
       "orthotics"
@@ -10098,7 +10128,9 @@
       "bunion",
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "OOFOS",
       "Oofos",
@@ -10120,7 +10152,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "anti-fungal",
@@ -10174,7 +10208,9 @@
       "nerve damage",
       "neuropathy"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Biofreeze",
       "Gabapentin"
@@ -10891,7 +10927,9 @@
     "products": [],
     "treatments": [],
     "surgery_types_mentioned": [],
-    "products_mentioned": []
+    "products_mentioned": [
+      "surgical boot"
+    ]
   },
   {
     "id": 505,
@@ -12148,7 +12186,9 @@
     "treatments_mentioned": [
       "boot/walking boot"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "comments": [],
     "images": []
   },
@@ -12732,7 +12772,9 @@
       "boot",
       "boot/walking boot"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "comments": [],
     "images": []
   },
@@ -12808,7 +12850,9 @@
       "foot pain",
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "X-ray"
     ],
@@ -12874,7 +12918,9 @@
       "boot",
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "comments": [],
     "images": []
   },
@@ -12998,7 +13044,9 @@
       "fungus",
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "epsom salt",
       "apple cider vinegar",
@@ -13078,7 +13126,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "dremel",
       "apple cider vinegar",
@@ -14626,7 +14676,9 @@
       "boot/walking boot",
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "comments": [],
     "images": []
   },
@@ -14762,7 +14814,9 @@
       "fungus",
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "epsom salt",
       "apple cider vinegar",
@@ -14903,7 +14957,9 @@
       "boot/walking boot",
       "rest"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "comments": [],
     "images": [],
     "search_term": "anyone else"
@@ -15331,7 +15387,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-22",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "soaking"
     ],
@@ -15659,7 +15717,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-22",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "soaking"
     ],
@@ -15752,7 +15812,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "physical therapy",
       "terbinafine"
@@ -15953,7 +16015,9 @@
       "boot/walking boot",
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "comments": [],
     "images": [],
     "search_term": "feed-browse"
@@ -16096,7 +16160,9 @@
     "conditions_mentioned": [
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Epsom salt",
       "apple cider vinegar",
@@ -16294,7 +16360,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "terbinafine"
@@ -16650,7 +16718,9 @@
     "conditions_mentioned": [
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "treatments_mentioned": [
       "NSAIDs",
       "anti-inflammatory"
@@ -17497,7 +17567,9 @@
       "rest",
       "weight bearing"
     ],
-    "products_mentioned": []
+    "products_mentioned": [
+      "surgical boot"
+    ]
   },
   {
     "id": 806,
@@ -18153,7 +18225,9 @@
       "heel pain",
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "podiatrist"
@@ -18363,7 +18437,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "boot/walking boot",
       "surgery"
@@ -18712,7 +18788,9 @@
       "toenail fungus",
       "neuropathy"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "physical therapy"
@@ -18731,7 +18809,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -19493,7 +19573,9 @@
     "search_term_used": "anyone else",
     "source_group": "Toenail Fungus Support & Management",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -20170,7 +20252,9 @@
     "surgery_types_mentioned": [
       "bunionectomy"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "surgery"
     ],
@@ -20656,7 +20740,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -20831,7 +20917,9 @@
     "search_term_used": "is this normal",
     "source_group": "Foot Pain Community",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -20935,7 +21023,9 @@
       "plantar wart",
       "warts"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "soaking"
@@ -21042,7 +21132,9 @@
       "plantar fasciitis",
       "plantar fasciitis, edema"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "fusion"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "MRI"
@@ -22106,7 +22198,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -23105,7 +23199,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "boot/walking boot",
       "surgery"
@@ -23474,7 +23570,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "boot/walking boot",
       "surgery"
@@ -23650,7 +23748,9 @@
       "infection"
     ],
     "surgery_types_mentioned": [],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "iodine"
+    ],
     "treatments_mentioned": [],
     "author": null,
     "url": null,
@@ -24137,7 +24237,9 @@
       "foot pain",
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "pain medication"
@@ -24228,7 +24330,9 @@
     "search_term_used": "is this normal",
     "source_group": "Toenail Fungus Support & Management",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Jublia"
     ],
@@ -24283,7 +24387,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "physical therapy",
@@ -24370,7 +24476,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "iodine"
+    ],
     "treatments_mentioned": [
       "soaking"
     ],
@@ -24388,7 +24496,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "Jublia"
     ],
@@ -24412,7 +24522,9 @@
       "toenail fungus",
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "cast"
     ],
@@ -24438,7 +24550,9 @@
       "gout",
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "physical therapy"
@@ -24462,7 +24576,9 @@
       "minimally invasive",
       "minimally invasive surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "boot/walking boot",
       "surgery"
@@ -24768,7 +24884,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "boot/walking boot",
       "physical therapy",
@@ -24935,7 +25053,9 @@
       "bunion",
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "fusion"
+    ],
     "products_mentioned": [
       "crutches",
       "knee scooter"
@@ -25190,7 +25310,9 @@
     "conditions_mentioned": [
       "toenail fungus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "pain medication"
@@ -25926,7 +26048,9 @@
     "source_group": "Foot Pain Community",
     "conditions_mentioned": [],
     "surgery_types_mentioned": [],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [],
     "author": null,
     "url": null,
@@ -25992,7 +26116,9 @@
       "foot pain",
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "wide toe box shoes"
     ],
@@ -26179,7 +26305,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "PRP",
@@ -26287,7 +26415,9 @@
       "plantar fasciitis"
     ],
     "surgery_types_mentioned": [],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "MRI",
       "PRP",
@@ -26459,7 +26589,9 @@
       "achilles tendon",
       "plantar fasciitis"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [
       "orthotics"
     ],
@@ -26536,7 +26668,9 @@
       "bunion",
       "tailor's bunion"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -27335,7 +27469,9 @@
     "search_term_used": "Lapiplasty",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": [],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "icing"
@@ -27529,7 +27665,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "surgery"
     ],
@@ -27620,7 +27758,9 @@
       "gout",
       "hallux valgus"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "fusion"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "X-ray",
@@ -29765,7 +29905,9 @@
       "bunion"
     ],
     "surgery_types_mentioned": [],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "Altra"
+    ],
     "treatments_mentioned": [],
     "author": null,
     "url": null,
@@ -30039,7 +30181,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "ice therapy",
       "surgery"
@@ -30171,7 +30315,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "icing"
@@ -30231,7 +30377,9 @@
       "toenail fungus",
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "physical therapy"
@@ -30254,7 +30402,9 @@
     "conditions_mentioned": [
       "pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [
       "icing"
@@ -31160,7 +31310,9 @@
     "conditions_mentioned": [
       "foot pain"
     ],
-    "surgery_types_mentioned": [],
+    "surgery_types_mentioned": [
+      "Akin osteotomy"
+    ],
     "products_mentioned": [],
     "treatments_mentioned": [],
     "author": null,
@@ -31382,7 +31534,9 @@
     "surgery_types_mentioned": [
       "surgery"
     ],
-    "products_mentioned": [],
+    "products_mentioned": [
+      "surgical boot"
+    ],
     "treatments_mentioned": [
       "elevation",
       "physical therapy",
