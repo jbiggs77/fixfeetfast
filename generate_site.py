@@ -2811,6 +2811,188 @@ Individual discussion pages are available at /[topic-slug]/[discussion-slug]/ an
 - [MCP Server Card]({SITE_URL}/.well-known/mcp/server-card.json): MCP server card (SEP-1649) for AI agent integration
 """
 
+import re
+
+# ─── FACEBOOK SCRAPE ARTIFACT CLEANING ───
+# Scraped text carries Facebook UI junk: reply counts, "Answer as Justin",
+# contributor badges, poster names, reaction footers. Cleaned at build time.
+
+BADGE = r"(?:All-star contributor|Top contributor|Rising contributor|New contributor|Group expert(?: in [A-Z][\w &-]*?(?=\s+[A-Z]|$))?|Admin|Moderator|Top fan|Follow)"
+VIEWS = r"(?:View (?:all )?\d+ (?:replies|reply|Replies|Reply)|View more (?:answers|comments)|View previous comments|Hide \d+ replies|\d+ (?:Reply|Replies))"
+ASJ   = r"(?:Answer|Comment) as Justin\b"
+NAME  = r"[A-Z][\w'’.-]*(?: (?:[A-Z][\w'’.-]*|Jr\.?|Sr\.?|II|III)){1,4}"
+FEEL  = r"is feeling \w+\.?"
+ISWITH = r"is with [A-Z][\w'’-]*(?: [A-Z][\w'’-]*){0,3}\.?"
+
+# Source community names — "posted to <group>" and bare leading group names are junk
+SOURCE_GROUPS = [
+    "Toenail Fungus Support & Management",
+    "Plantar Fasciitis Talk and Tips Support Group",
+    "Plantar Fasciitis Talk and Tips",
+    "bunion surgery / foot surgery support group",
+    "Bunion Surgery / Foot Surgery Support",
+    "Bunion Support Group",
+    "Foot Pain Community",
+    "Minimally Invasive Bunion Surgery",
+    "Minimally invasive bunion surgery",
+    "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
+    "Forefoot forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
+    "Forefoot Forum",
+    "Forefoot forum",
+]
+_GROUPS_RE = "|".join(re.escape(g) for g in sorted(SOURCE_GROUPS, key=len, reverse=True))
+POSTED_TO = rf"posted to (?:{_GROUPS_RE}|[A-Z][\w'’&/:,.-]*(?: [\w'’&/:,.-]+){{0,8}}?)™?(?=\s|$)"
+
+AFTER_NAME = rf"(?:{BADGE}|posted to\b|replied\b|{FEEL}|{ISWITH}|·)"
+
+LEAD = [
+    re.compile(rf"^{VIEWS}\s*"),
+    re.compile(rf"^{ASJ}\s*"),
+    re.compile(rf"^(?:Comment|Answer|Edited|Reply)\b\s+(?=(?:Comment|Answer|Edited|Reply|View|{ASJ}|{BADGE}))"),
+    re.compile(rf"^{BADGE}\s*"),
+    re.compile(rf"^{POSTED_TO}\s*"),
+    re.compile(rf"^(?:{_GROUPS_RE})™?\s*"),
+    re.compile(rf"^{NAME}\s+(?={AFTER_NAME})"),
+    re.compile(rf"^{FEEL}\s*"),
+    re.compile(rf"^{ISWITH}\s*"),
+    re.compile(r"^replied\b\s*"),
+    re.compile(r"^[A-Za-z]{3,}\d[A-Za-z\d]*\s+(?=\S)"),   # digit-bearing usernames
+    re.compile(r"^[·,:–—-]\s*"),
+]
+
+BADGE_CUT = re.compile(rf"^([^.!?]{{0,90}}?)\b{BADGE}\s*")
+
+GLOBALS = [
+    (re.compile(r"All reactions:?.*$", re.S), ""),
+    (re.compile(rf"\s*{VIEWS}\s*"), " "),
+    (re.compile(rf"\s*{ASJ}\s*"), " "),
+    (re.compile(rf"\s*{POSTED_TO}\s*"), " "),
+    (re.compile(rf"\s*(?:{_GROUPS_RE})™?\s*"), " "),
+    (re.compile(r"\s*\S+ · Original audio\s*"), " "),
+    (re.compile(r"\s*[……]?\s*See more\b"), " "),
+    (re.compile(rf"\s*{NAME} is feeling \w+(?: in [A-Z][\w'’-]*)?\.?\s*"), " "),
+    (re.compile(r"\s*(?:All-star|Top|Rising|New) contributor\s*"), " "),
+    (re.compile(r"\s*Group expert(?: in [A-Z][\w &-]*?(?=\s+[A-Z]|$))?\s*"), " "),
+]
+
+# words that mean a leading capitalized pair is NOT a person name (brands, conditions, places)
+GUARD_VOCAB = set("""Plantar Fasciitis Bunion Bunions Hallux Limitus Rigidus Valgus Lapiplasty Lapidus Scarf Akin
+Osteotomy Achilles Morton Mortons Neuroma Hammer Toe Toes Toenail Foot Feet Heel Arch Ankle Surgery Surgeon
+Podiatrist Orthopedic Ortho Doctor Dr PT Physical Therapy Therapist MRI Xray X-ray EPAT Shockwave Cortisone
+Steroid Epsom Vinegar Tea Tree Oil Vicks Lamisil Tolnaftate Terbinafine Fungus Fungal KT Tape
+Birkenstock Birkenstocks Hoka Hokas Oofos Vionic Altra Altras Topo Brooks Crocs Skechers Asics Kuru
+New Balance Orthofeet Correct Archies Superfeet Powerstep Strutz YouTube Amazon Google Facebook TikTok
+North South East West Lake Salt City Saint St Mount Mt Fort Port San Santa Los Las
+Texas Florida Ohio California Georgia Michigan Indiana Missouri Wisconsin Tennessee Kentucky Alabama
+Louisiana Oklahoma Arkansas Kansas Iowa Minnesota Illinois Colorado Arizona Nevada Oregon Washington Utah
+Idaho Montana Wyoming Nebraska Maine Vermont Maryland Delaware Connecticut Massachusetts Pennsylvania
+York Jersey Carolina Dakota Virginia Mexico Hampshire Rhode Island The""".split())
+
+CAP_TOKEN = re.compile(r"^[A-Z][\w'’-]*$")
+
+def _strip_post_marker_name(text):
+    """After a UI marker was stripped, the next 2-3 capitalized tokens are the poster's
+    name. Strip them unless they look like brand/condition/place vocabulary."""
+    words = text.split()
+    if len(words) < 3:
+        if len(words) == 2 and all(CAP_TOKEN.match(w) for w in words) \
+           and not any(w in GUARD_VOCAB for w in words):
+            return ""
+        return text
+    if not (CAP_TOKEN.match(words[0]) and CAP_TOKEN.match(words[1])):
+        return text
+    if words[0] in GUARD_VOCAB or words[1] in GUARD_VOCAB:
+        return text
+    n = 2
+    if len(words) > 3 and CAP_TOKEN.match(words[2]) and CAP_TOKEN.match(words[3]) \
+       and words[2] not in GUARD_VOCAB and words[3] not in GUARD_VOCAB:
+        n = 3
+    return " ".join(words[n:])
+
+_LEADING_MARKER = re.compile(rf"\s*(?:{VIEWS}|{ASJ}|(?:Comment|Answer|Edited|Reply)\b\s+(?:Comment|Answer|View|as Justin))")
+_SCRAPE_NAME_CTX = None
+
+def build_name_set(posts):
+    """Collect poster names from deterministic artifact contexts across the dataset."""
+    names = set()
+    pat = re.compile(rf"({NAME})\s+(?:{BADGE}|posted to|replied\b|{FEEL}|{ISWITH})")
+    pat2 = re.compile(rf"(?:Answer|Comment) as Justin\s+({NAME})")
+    def texts():
+        for p in posts:
+            if isinstance(p.get('body'), str): yield p['body']
+            for c in (p.get('comments') or []):
+                if isinstance(c, str): yield c
+            if isinstance(p.get('author'), str) and p['author'].strip():
+                names.add(p['author'].strip())
+    for t in texts():
+        for m in pat.finditer(t): names.add(m.group(1).strip())
+        for m in pat2.finditer(t): names.add(m.group(1).strip())
+    return {n for n in names if 1 <= len(n.split()) <= 4}
+
+def clean_artifacts(text, name_set=frozenset()):
+    if not isinstance(text, str) or not text:
+        return text
+    raw = text
+    for pat, repl in GLOBALS:
+        text = pat.sub(repl, text)
+    text = text.strip()
+    changed = True
+    marker_seen = bool(_LEADING_MARKER.match(raw))
+    NAME_MARKERS = LEAD[:3] + [LEAD[9]]
+    while changed:
+        changed = False
+        m = BADGE_CUT.match(text)
+        if m:
+            text, changed, marker_seen = text[m.end():].lstrip(), True, True
+            continue
+        for pat in LEAD:
+            new = pat.sub("", text, count=1)
+            if new != text:
+                if pat in NAME_MARKERS:
+                    marker_seen = True
+                text, changed = new.lstrip(), True
+                break
+        if not changed and name_set:
+            words = text.split()
+            for n in (4, 3, 2, 1):
+                if len(words) > n and " ".join(words[:n]) in name_set:
+                    text, changed = " ".join(words[n:]), True
+                    break
+        if not changed and marker_seen:
+            new = _strip_post_marker_name(text)
+            if new != text:
+                text, changed, marker_seen = new, True, False
+    return re.sub(r"  +", " ", text).strip()
+
+UI_ONLY = re.compile(r"^(?:Comment|Answer|Reply|Edited|View|Follow)$", re.I)
+
+def is_junk_comment(text):
+    if not isinstance(text, str):
+        return True
+    if UI_ONLY.match(text.strip()):
+        return True
+    return len(re.sub(r"[^A-Za-z0-9]", "", text)) < 2
+
+def clean_post_artifacts(post, name_set):
+    """Clean artifact junk from a post's text fields; drop junk/duplicate comments."""
+    if isinstance(post.get('body'), str):
+        post['body'] = clean_artifacts(post['body'], name_set)
+    if isinstance(post.get('comments'), list):
+        kept, seen = [], set()
+        for c in post['comments']:
+            if isinstance(c, str):
+                c = clean_artifacts(c, name_set)
+                if is_junk_comment(c):
+                    continue
+                key = c.strip().lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+            kept.append(c)
+        post['comments'] = kept
+    return post
+
+
 def main():
     """Main generation function"""
     print(f"Generating {SITE_NAME}...")
@@ -2819,6 +3001,8 @@ def main():
     posts_file = Path(__file__).parent / "posts.json"
     posts = normalize_posts_metadata(load_posts(str(posts_file)))
     print(f"Loaded {len(posts)} posts")
+    _names = build_name_set(posts)
+    posts = [clean_post_artifacts(p, _names) for p in posts]
 
     # Create output directories
     ensure_output_dir()
@@ -2887,6 +3071,14 @@ def main():
     print("Generating _headers file...")
     headers_content = generate_headers_file()
     (OUTPUT_DIR / "_headers").write_text(headers_content)
+
+    # Cloudflare _redirects file (301s for renamed post slugs)
+    redirects_file = Path(__file__).parent / "redirects.json"
+    if redirects_file.exists():
+        redirect_map = json.loads(redirects_file.read_text())
+        lines = [f"{r['from']} {r['to']} 301" for r in redirect_map]
+        (OUTPUT_DIR / "_redirects").write_text("\n".join(lines) + "\n")
+        print(f"Generated _redirects ({len(redirect_map)} rules)")
 
     # Generate .well-known/api-catalog (RFC 9727)
     print("Generating .well-known/api-catalog...")
