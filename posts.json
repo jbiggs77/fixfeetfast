@@ -1404,7 +1404,7 @@
     "source_group": "Bunion Support Group",
     "date_captured": "2026-04-04",
     "conditions_mentioned": "bunion, hammer toe",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "none",
     "products_mentioned": "none",
     "comments": [],
@@ -1516,7 +1516,7 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-04",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "Vicks treatment, Vicks, vinegar, vicks, vinegar soak, tea tree oil, listerine",
     "products_mentioned": "Vicks, Vicks VapoRub, vicks, tea tree oil",
     "comments": [],
@@ -1994,7 +1994,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Lamisil, terbinafine",
     "treatments_mentioned": "terbinafine"
   },
@@ -2007,7 +2007,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Lamisil, terbinafine",
     "treatments_mentioned": "terbinafine"
   },
@@ -2020,7 +2020,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Lamisil, terbinafine",
     "treatments_mentioned": "terbinafine"
   },
@@ -2033,9 +2033,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "hammer toe",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 146,
@@ -2046,7 +2046,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint",
     "treatments_mentioned": "night splint"
   },
@@ -2059,9 +2059,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "night splint"
   },
   {
     "id": 148,
@@ -2072,7 +2072,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint",
     "treatments_mentioned": "night splint"
   },
@@ -2085,7 +2085,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint",
     "treatments_mentioned": "night splint"
   },
@@ -2098,7 +2098,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint, orthotics",
     "treatments_mentioned": "acupuncture, night splint, orthotics"
   },
@@ -2111,7 +2111,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vicks, Vicks VapoRub, tea tree oil",
     "treatments_mentioned": "Vicks, Vicks treatment, anti-fungal medication, antifungal, tea tree oil"
   },
@@ -2124,7 +2124,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vicks, Vicks VapoRub, tea tree oil",
     "treatments_mentioned": "Vicks, Vicks treatment, tea tree oil"
   },
@@ -2136,8 +2136,8 @@
     "source_group": "Toenail Fungus Support & Management",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vicks, Vicks VapoRub",
     "treatments_mentioned": "Vicks, Vicks treatment"
   },
@@ -2150,7 +2150,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vicks, tea tree oil, Vicks VapoRub",
     "treatments_mentioned": "Vicks, Vicks treatment"
   },
@@ -2164,7 +2164,7 @@
     "images": [],
     "conditions_mentioned": "nerve damage, neuropathy",
     "surgery_types_mentioned": "MIS, minimally invasive, minimally invasive surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, surgery"
   },
   {
@@ -2177,7 +2177,7 @@
     "images": [],
     "conditions_mentioned": "bunion, edema, hammer toe, swelling",
     "surgery_types_mentioned": "hammertoe correction",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "X-ray, cortisone, cortisone injection, surgery"
   },
   {
@@ -2190,7 +2190,7 @@
     "images": [],
     "conditions_mentioned": "bunion, heel spur, tailor's bunion",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, surgery"
   },
   {
@@ -2203,7 +2203,7 @@
     "images": [],
     "conditions_mentioned": "big toe joint, bunion, metatarsalgia, sesamoiditis",
     "surgery_types_mentioned": "bunionectomy, fusion, toe fusion",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, surgery"
   },
   {
@@ -2216,7 +2216,7 @@
     "images": [],
     "conditions_mentioned": "arthritis, bunion",
     "surgery_types_mentioned": "bunionectomy, fusion",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, rest, surgery"
   },
   {
@@ -2228,9 +2228,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "bunion, tendonitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Birkenstock, Birkenstocks, Hoka",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 161,
@@ -2240,7 +2240,7 @@
     "source_group": "Bunion Support Group",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "surgery",
     "products_mentioned": "Hoka",
     "treatments_mentioned": "surgery"
@@ -2254,7 +2254,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "high arches",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Brooks, Hoka, OOFOS, Oofos, insoles, orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics, rest"
   },
@@ -2267,7 +2267,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Theragun, massage gun",
     "treatments_mentioned": "massage, shockwave therapy"
   },
@@ -2281,7 +2281,7 @@
     "images": [],
     "conditions_mentioned": "hammer toe",
     "surgery_types_mentioned": "MIS, hammer toe surgery, minimally invasive, minimally invasive surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -2294,7 +2294,7 @@
     "images": [],
     "conditions_mentioned": "edema, swelling",
     "surgery_types_mentioned": "screw fixation",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -2306,9 +2306,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "edema, stiffness, swelling",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "surgery"
   },
   {
     "id": 167,
@@ -2320,7 +2320,7 @@
     "images": [],
     "conditions_mentioned": "edema, swelling",
     "surgery_types_mentioned": "screw fixation",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -2333,7 +2333,7 @@
     "images": [],
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, bunionectomy, osteotomy, scarf akin, scarf osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "physical therapy, surgery"
   },
   {
@@ -2345,9 +2345,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "hallux valgus, bunionette, bunion, tailor's bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "surgery"
   },
   {
     "id": 170,
@@ -2359,7 +2359,7 @@
     "images": [],
     "conditions_mentioned": "bunion, tailor's bunion",
     "surgery_types_mentioned": "Akin osteotomy, Lapiplasty, bunionectomy, osteotomy, scarf akin",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -2372,8 +2372,8 @@
     "images": [],
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, Lapiplasty, bunionectomy",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "products_mentioned": "none",
+    "treatments_mentioned": "surgery"
   },
   {
     "id": 172,
@@ -2385,7 +2385,7 @@
     "images": [],
     "conditions_mentioned": "edema, swelling",
     "surgery_types_mentioned": "Akin osteotomy, hardware removal, osteotomy, scarf akin, scarf osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery, X-ray"
   },
   {
@@ -2396,9 +2396,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "laser surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "laser therapy, laser treatment"
   },
   {
@@ -2411,7 +2411,7 @@
     "images": [],
     "conditions_mentioned": "infection",
     "surgery_types_mentioned": "laser surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "laser therapy, laser treatment"
   },
   {
@@ -2422,9 +2422,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "laser surgery",
+    "products_mentioned": "none",
     "treatments_mentioned": "laser treatment"
   },
   {
@@ -2435,9 +2435,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "laser surgery",
+    "products_mentioned": "none",
     "treatments_mentioned": "laser therapy"
   },
   {
@@ -2448,10 +2448,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Brooks, Crocs, Hoka",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 178,
@@ -2461,10 +2461,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Hoka",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 179,
@@ -2475,7 +2475,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "surgery recovery",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Brooks, Hoka, orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics, rolling"
   },
