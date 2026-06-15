@@ -3165,7 +3165,7 @@
     "images": [],
     "date": "2026-04-02",
     "conditions_mentioned": "heel pain, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "compression socks, orthotics",
     "treatments_mentioned": "arch support, compression, cortisone, cortisone injection, orthotics, stretching"
   },
@@ -3203,9 +3203,9 @@
     "source_group": "Bunion Support Group",
     "images": [],
     "date": "2026-03-26",
-    "conditions_mentioned": "",
+    "conditions_mentioned": "fracture",
     "surgery_types_mentioned": "screw fixation",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "X-ray, surgery"
   },
   {
@@ -3218,7 +3218,7 @@
     "date": "2026-03-25",
     "conditions_mentioned": "surgery recovery",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3231,7 +3231,7 @@
     "date": "2026-01-28",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy, osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "pain medication, surgery"
   },
   {
@@ -3244,7 +3244,7 @@
     "date": "2026-04-05",
     "conditions_mentioned": "bunion, hammer toe",
     "surgery_types_mentioned": "minimally invasive, hammertoe surgery, MIS, hammer toe surgery, minimally invasive surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3270,8 +3270,8 @@
     "date": "2026-04-01",
     "conditions_mentioned": "pain",
     "surgery_types_mentioned": "minimally invasive, minimally invasive surgery",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "products_mentioned": "none",
+    "treatments_mentioned": "surgery"
   },
   {
     "id": 238,
@@ -3283,7 +3283,7 @@
     "date": "2026-03-30",
     "conditions_mentioned": "bunion, hallux valgus",
     "surgery_types_mentioned": "Lapiplasty, minimally invasive, minimally invasive surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3295,7 +3295,7 @@
     "images": [],
     "date": "2026-04-01",
     "conditions_mentioned": "flat feet, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotics, wide toe box shoes",
     "treatments_mentioned": "arch support, orthotics"
   },
@@ -3307,8 +3307,8 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "date": "2026-03-28",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vionic, orthotics",
     "treatments_mentioned": "arch support, orthotics"
   },
@@ -3321,7 +3321,7 @@
     "images": [],
     "date": "2026-03-25",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Birkenstock, Birkenstocks, orthotics",
     "treatments_mentioned": "arch support, orthotics"
   },
@@ -3334,7 +3334,7 @@
     "images": [],
     "date": "2026-04-06",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Lamisil, terbinafine",
     "treatments_mentioned": "terbinafine"
   },
@@ -3347,7 +3347,7 @@
     "images": [],
     "date": "2026-04-02",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Lamisil, terbinafine",
     "treatments_mentioned": "rest, terbinafine"
   },
@@ -3360,7 +3360,7 @@
     "images": [],
     "date": "2026-03-22",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Lamisil, terbinafine",
     "treatments_mentioned": "terbinafine, topical medication"
   },
@@ -3375,7 +3375,7 @@
     "date": "2026-04-07",
     "conditions_mentioned": "pain",
     "surgery_types_mentioned": "Austin, Lapiplasty",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3389,7 +3389,7 @@
     "date": "2026-04-05",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Lapiplasty",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3416,7 +3416,7 @@
     "images": [],
     "date": "2026-04-05",
     "conditions_mentioned": "bunion, tailor's bunion",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "insoles, orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics, surgery"
   },
@@ -3429,10 +3429,10 @@
     "comments": [],
     "images": [],
     "date": "2026-04-05",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "New Balance",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 250,
@@ -3448,9 +3448,9 @@
     "surgery_types": [],
     "products": [],
     "treatments": [],
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 251,
@@ -3461,8 +3461,8 @@
     "comments": [],
     "images": [],
     "date": "2026-04-06",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint",
     "treatments_mentioned": "night splint"
   },
@@ -3476,7 +3476,7 @@
     "images": [],
     "date": "2026-04-04",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "night splint, walking boot",
     "treatments_mentioned": "boot/walking boot, night splint"
   },
@@ -3503,8 +3503,8 @@
     "comments": [],
     "images": [],
     "date": "2026-04-07",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "OOFOS, Oofos, orthotics",
     "treatments_mentioned": "arch support, orthotics"
   },
@@ -3518,7 +3518,7 @@
     "images": [],
     "date": "2026-04-04",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Altra, insoles, orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics"
   },
@@ -3531,10 +3531,10 @@
     "comments": [],
     "images": [],
     "date": "2026-04-06",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "toe spacers",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 257,
@@ -3545,10 +3545,10 @@
     "comments": [],
     "images": [],
     "date": "2026-04-04",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "toe spacers",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 258,
@@ -3560,9 +3560,9 @@
     "images": [],
     "date": "2026-04-03",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 259,
@@ -3574,7 +3574,7 @@
     "images": [],
     "date": "2026-04-02",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Jublia, tea tree oil",
     "treatments_mentioned": "tea tree oil, urea cream"
   },
@@ -3589,7 +3589,7 @@
     "date": "2026-04-07",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, scarf akin, scarf osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3603,7 +3603,7 @@
     "date": "2026-04-06",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, osteotomy, scarf akin, scarf osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3617,7 +3617,7 @@
     "date": "2026-04-05",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, MIS, minimally invasive, minimally invasive surgery, scarf akin, scarf osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3645,8 +3645,8 @@
     "date": "2026-04-03",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, osteotomy, scarf osteotomy",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 265,
@@ -3672,9 +3672,9 @@
     "images": [],
     "date": "2026-04-06",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 267,
@@ -3686,7 +3686,7 @@
     "images": [],
     "date": "2026-04-06",
     "conditions_mentioned": "bone spur, heel pain, heel spur, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Kuru, insoles, orthotic insoles, orthotics",
     "treatments_mentioned": "cortisone, cortisone injection, orthotics, physical therapy, steroid injection"
   },
@@ -3700,8 +3700,8 @@
     "images": [],
     "date": "2026-04-05",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, steroid injection"
   },
   {
@@ -3714,7 +3714,7 @@
     "images": [],
     "date": "2026-04-04",
     "conditions_mentioned": "Achilles tendonitis, achilles tendon, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "insoles, orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics"
   },
@@ -3728,9 +3728,9 @@
     "images": [],
     "date": "2026-04-03",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 271,
@@ -3743,7 +3743,7 @@
     "date": "2026-04-06",
     "conditions_mentioned": "nerve damage, neuropathy, nerve pain",
     "surgery_types_mentioned": "Akin osteotomy, MIS, minimally invasive, minimally invasive surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3757,8 +3757,8 @@
     "date": "2026-04-06",
     "treatments_mentioned": "TENS",
     "conditions_mentioned": "nerve damage, neuropathy, nerve pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "TENS unit"
   },
   {
     "id": 273,
@@ -3771,7 +3771,7 @@
     "date": "2026-04-05",
     "conditions_mentioned": "nerve damage, neuropathy, numbness, bunion",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -3798,7 +3798,7 @@
     "images": [],
     "date": "2026-04-07",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vicks, Vicks VapoRub, apple cider vinegar",
     "treatments_mentioned": "Vicks, Vicks treatment, apple cider vinegar, soaking, vinegar soak"
   },
@@ -3812,7 +3812,7 @@
     "images": [],
     "date": "2026-04-06",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vicks, Vicks VapoRub",
     "treatments_mentioned": "Vicks, Vicks treatment"
   },
