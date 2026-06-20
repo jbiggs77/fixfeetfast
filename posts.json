@@ -5954,7 +5954,7 @@
     "images": [],
     "date": "April 2026",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Brooks",
     "treatments_mentioned": "podiatrist"
   },
@@ -5967,8 +5967,8 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "dry needling"
   },
   {
@@ -5980,8 +5980,8 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "dry needling"
   },
   {
@@ -5993,8 +5993,8 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "Achilles tendonitis, achilles tendon, achilles tendonitis, tendonitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "dry needling, physical therapy, shockwave therapy"
   },
   {
@@ -6006,8 +6006,8 @@
     "images": [],
     "date": "January 2026",
     "conditions_mentioned": "foot pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "chiropractic, dry needling, physical therapy"
   },
   {
@@ -6018,9 +6018,9 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "date": "2026",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "PRP, PRP injection, platelet-rich plasma"
   },
   {
@@ -6032,8 +6032,8 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "PRP, PRP injection, physical therapy, platelet-rich plasma"
   },
   {
@@ -6045,8 +6045,8 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "surgery recovery",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "PRP, PRP injection, platelet-rich plasma"
   },
   {
@@ -6057,9 +6057,9 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "date": "2026",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "PRP, PRP injection, platelet-rich plasma"
   },
   {
@@ -6071,7 +6071,7 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "OOFOS, Oofos, Voltaren, orthotic insoles, orthotics",
     "treatments_mentioned": "massage, orthotics, rest, taping, weight bearing"
   },
@@ -6097,7 +6097,7 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "arthritis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Voltaren",
     "treatments_mentioned": "physical therapy"
   },
@@ -6110,7 +6110,7 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "Morton's neuroma, neuroma, tendonitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Kuailu, Powerstep, Voltaren, heel cups, orthotic insoles, orthotics",
     "treatments_mentioned": "ice therapy, icing, massage, massage therapy"
   },
@@ -6123,7 +6123,7 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "plantar fasciitis, swelling",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Voltaren, orthotics",
     "treatments_mentioned": "boot/cast"
   },
@@ -6149,9 +6149,9 @@
     "images": [],
     "date": "2026",
     "conditions_mentioned": "flat feet, plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 439,
@@ -6168,9 +6168,9 @@
     "surgery_types": [],
     "products": [],
     "treatments": [],
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 440,
@@ -6187,7 +6187,7 @@
     "surgery_types": [],
     "products": [],
     "treatments": [],
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotics",
     "treatments_mentioned": "stretching"
   },
@@ -6200,8 +6200,8 @@
     "images": [],
     "date": "2025",
     "conditions_mentioned": "plantar fasciitis, stress fracture",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "podiatrist"
   },
   {
@@ -6219,9 +6219,9 @@
     "surgery_types": [],
     "products": [],
     "treatments": [],
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 443,
@@ -6238,9 +6238,9 @@
     "surgery_types": [],
     "products": [],
     "treatments": [],
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 444,
@@ -6252,8 +6252,8 @@
     "date": "April 2026",
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 445,
@@ -6264,9 +6264,9 @@
     "images": [],
     "date": "April 2026",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "diet change"
   },
   {
     "id": 446,
@@ -6278,8 +6278,8 @@
     "images": [],
     "conditions_mentioned": "edema, swelling",
     "surgery_types_mentioned": "hardware removal, osteotomy, screw fixation",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 447,
@@ -6291,7 +6291,7 @@
     "images": [],
     "conditions_mentioned": "arthritis, bone spur, bunion, hammer toe, heel spur",
     "surgery_types_mentioned": "revision surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -6315,9 +6315,9 @@
     "source_group": "bunion surgery / foot surgery support group",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "physical therapy"
   },
   {
@@ -6330,7 +6330,7 @@
     "images": [],
     "conditions_mentioned": "bunion, edema, tailor's bunion",
     "surgery_types_mentioned": "screw fixation",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "X-ray, surgery"
   },
   {
@@ -6356,7 +6356,7 @@
     "images": [],
     "conditions_mentioned": "bunion, hammer toe",
     "surgery_types_mentioned": "hammer toe surgery, hammertoe surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "rest, surgery, weight bearing"
   },
   {
@@ -6368,7 +6368,7 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "heel pain, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics"
   },
@@ -6380,10 +6380,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Kuru",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 455,
@@ -6394,9 +6394,9 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 456,
@@ -6407,9 +6407,9 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "micro tears",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 457,
@@ -6419,10 +6419,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Koprez",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "compression sleeve"
   },
   {
     "id": 458,
@@ -6433,7 +6433,7 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "surgical boot",
     "treatments_mentioned": "boot/cast"
   },
@@ -6446,7 +6446,7 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Vionic, orthotics",
     "treatments_mentioned": "arch support, orthotics"
   },
@@ -6471,8 +6471,8 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotics",
     "treatments_mentioned": "arch support, orthotics"
   },
@@ -6485,9 +6485,9 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "New Balance",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 463,
@@ -6497,10 +6497,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Hoka, OOFOS, Oofos",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 464,
@@ -6510,10 +6510,10 @@
     "source_group": "Bunion Support Group",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "OOFOS, Oofos",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 465,
@@ -6538,7 +6538,7 @@
     "images": [],
     "conditions_mentioned": "toenail fungus",
     "surgery_types_mentioned": "Akin osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "anti-fungal, physical therapy, soaking"
   },
   {
@@ -6549,9 +6549,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-14",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "nail avulsion, matrixectomy",
+    "products_mentioned": "none",
     "treatments_mentioned": "oral medication"
   },
   {
@@ -6563,7 +6563,7 @@
     "date_captured": "2026-04-14",
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "tea tree oil",
     "treatments_mentioned": "tea tree oil"
   },
