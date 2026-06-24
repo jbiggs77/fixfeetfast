@@ -8478,7 +8478,7 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-19",
     "conditions_mentioned": "athlete's foot, athletes foot",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "boot, apple cider vinegar, vinegar, vinegar soak, soaking",
     "products_mentioned": "apple cider vinegar",
     "comments": [],
@@ -8492,7 +8492,7 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-19",
     "conditions_mentioned": "fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "apple cider vinegar, vinegar, oregano oil, vinegar soak, tea tree oil",
     "products_mentioned": "Jublia, apple cider vinegar, jublia, tea tree oil",
     "comments": [],
@@ -8520,9 +8520,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-19",
     "conditions_mentioned": "fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "topical treatment",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "comments": [],
     "images": []
   },
@@ -8534,7 +8534,7 @@
     "source_group": "Toenail Fungus Support & Management",
     "date_captured": "2026-04-19",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "epsom salt, epsom salts, listerine, soaking, tea tree oil, terbinafine",
     "products_mentioned": "terbinafine, epsom salt, Lamisil, Epsom salt, tea tree oil, listerine",
     "comments": [],
@@ -8549,9 +8549,9 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "knee scooter",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8565,7 +8565,7 @@
     "images": [],
     "conditions_mentioned": "scar tissue",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8577,9 +8577,9 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8593,7 +8593,7 @@
     "images": [],
     "conditions_mentioned": "bone spur, heel spur",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8607,7 +8607,7 @@
     "images": [],
     "conditions_mentioned": "surgery recovery",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8639,7 +8639,7 @@
     "conditions_mentioned": "arthritis, numbness, plantar fasciitis",
     "treatments_mentioned": "Vicks, Vicks treatment, massage",
     "products_mentioned": "vicks, Vicks, Vicks VapoRub",
-    "surgery_types_mentioned": ""
+    "surgery_types_mentioned": "none"
   },
   {
     "id": 617,
@@ -8667,7 +8667,7 @@
     "treatments": [],
     "conditions_mentioned": "plantar fasciitis",
     "products_mentioned": "vicks",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "rest"
   },
   {
@@ -8687,7 +8687,7 @@
     ],
     "conditions_mentioned": "plantar fasciitis",
     "treatments_mentioned": "elevation, ice therapy, icing",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "cast"
   },
   {
@@ -8706,7 +8706,7 @@
       "castor oil"
     ],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "cast",
     "treatments_mentioned": "boot/cast"
   },
@@ -8734,7 +8734,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Birkenstock, Birkenstocks, birkenstock, wide toe box shoes",
     "treatments_mentioned": "boot/cast"
   },
@@ -8758,7 +8758,7 @@
     "conditions_mentioned": "bunion",
     "treatments_mentioned": "surgery",
     "surgery_types_mentioned": "bunionectomy",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 623,
@@ -8770,9 +8770,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "bunionectomy",
+    "products_mentioned": "none",
+    "treatments_mentioned": "surgery"
   },
   {
     "id": 624,
@@ -8785,7 +8785,7 @@
     "images": [],
     "conditions_mentioned": "surgery recovery",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8799,7 +8799,7 @@
     "images": [],
     "conditions_mentioned": "infection",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "antibiotic, antibiotics, physical therapy, surgery"
   },
   {
@@ -8826,7 +8826,7 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "edema, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "insoles, orthotic insoles, orthotics",
     "treatments_mentioned": "MRI, orthotics, physical therapy, shockwave therapy"
   },
@@ -8839,9 +8839,9 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "shockwave therapy, surgery"
   },
   {
@@ -8853,9 +8853,9 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "physical therapy, shockwave therapy"
   },
   {
@@ -8868,8 +8868,8 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "MRI"
   },
   {
@@ -8882,8 +8882,8 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "top of foot pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "topical treatment"
   },
   {
@@ -8897,7 +8897,7 @@
     "images": [],
     "conditions_mentioned": "pain",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery, toradol"
   },
   {
@@ -8909,9 +8909,9 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "mis",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8923,9 +8923,9 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -8964,7 +8964,7 @@
     "conditions_mentioned": "bone spur, bunion, heel spur, tailor's bunion",
     "surgery_types_mentioned": "bunionectomy, osteotomy, screw fixation",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 637,
@@ -9015,7 +9015,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 639,
@@ -9037,8 +9037,8 @@
       "emtrix"
     ],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "Emtrix",
     "treatments_mentioned": "podiatrist"
   },
   {
@@ -9051,8 +9051,8 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "acrylic nails",
     "treatments_mentioned": "podiatrist"
   },
   {
@@ -9093,8 +9093,8 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotic insoles, orthotics",
     "treatments_mentioned": "orthotics, physical therapy"
   },
@@ -9108,9 +9108,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "topo, barefoot shoes",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 644,
@@ -9121,10 +9121,10 @@
     "date_captured": "2026-04-20",
     "comments": [],
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "hobibear, barefoot shoes",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 645,
@@ -9164,9 +9164,9 @@
     "comments": [],
     "images": [],
     "conditions_mentioned": "bunion",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "barefoot shoes",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 648,
@@ -9179,7 +9179,7 @@
     "images": [],
     "conditions_mentioned": "bunion, hammer toe, hammertoe",
     "surgery_types_mentioned": "bunionectomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -9192,7 +9192,7 @@
     "conditions_mentioned": "bunion, metatarsalgia",
     "surgery_types_mentioned": "bunion surgery, fusion, revision surgery, screw fixation",
     "treatments_mentioned": "hardware, rest, screws, surgery, weight bearing",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "comments": [
       "Yep! It dropped the ball of my foot and I'm having reconstructive surgery next Monday",
       "That happens when we do too much walking when the surgeon said not to my screw was attached to the bone and he countersunk it, but I overdid it walking and a screw backed out a little not enough to be concerned he said, but he mentioned stay off of it",
@@ -9248,7 +9248,7 @@
     "url": null,
     "source_group": "bunion surgery / foot surgery support group",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "toe spacer",
     "products_mentioned": "toe spacers",
     "comments": [],
@@ -9289,9 +9289,9 @@
     "author": null,
     "url": null,
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "boric acid",
     "products_mentioned": "boric acid",
     "comments": [],
     "images": []
@@ -9303,7 +9303,7 @@
     "url": null,
     "source_group": "Toenail Fungus Support & Management",
     "conditions_mentioned": "athlete's foot, athletes foot",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "apple cider vinegar, vinegar, vinegar soak, soaking",
     "products_mentioned": "apple cider vinegar",
     "comments": [],
@@ -9315,8 +9315,8 @@
     "author": null,
     "url": null,
     "source_group": "Toenail Fungus Support & Management",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "Vicks treatment, Vicks, vinegar, vinegar soak, soaking",
     "products_mentioned": "vicks, Vicks, orivelle, Vicks VapoRub",
     "comments": [],
