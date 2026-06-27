@@ -10808,9 +10808,9 @@
     "source_group": "Minimally invasive bunion surgery",
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "id": 756,
@@ -10835,7 +10835,7 @@
     "images": [],
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -10846,10 +10846,10 @@
     "url": null,
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "wide toe box shoes, slippers",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 759,
@@ -10859,9 +10859,9 @@
     "url": null,
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "barefoot walking"
   },
   {
@@ -10873,7 +10873,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "slippers",
     "treatments_mentioned": "podiatrist"
   },
@@ -10885,10 +10885,10 @@
     "url": null,
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "crocs, Oofos, Crocs, barefoot shoes, oofos, OOFOS",
-    "treatments_mentioned": ""
+    "treatments_mentioned": "none"
   },
   {
     "id": 762,
@@ -10899,7 +10899,7 @@
     "source_group": "Toenail Fungus Support & Management",
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "tea tree oil",
     "treatments_mentioned": "tea tree oil"
   },
@@ -10911,9 +10911,9 @@
     "url": null,
     "source_group": "Toenail Fungus Support & Management",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "cast",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "castor oil",
     "treatments_mentioned": "castor oil"
   },
   {
@@ -10945,7 +10945,7 @@
     "comments": [],
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "NSAIDs, steroid injection, rolling, anti-inflammatory, stretching",
     "products_mentioned": "Asics",
     "images": [],
@@ -10960,7 +10960,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "X-ray, surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -10973,7 +10973,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -10986,7 +10986,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -10997,7 +10997,7 @@
     "comments": [],
     "source_group": "Toenail Fungus Support & Management",
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "terbinafine",
     "products_mentioned": "Jublia, Lamisil",
     "images": [],
@@ -11012,7 +11012,7 @@
     "conditions_mentioned": "toenail fungus",
     "surgery_types_mentioned": "nail removal",
     "treatments_mentioned": "topical treatment",
-    "products_mentioned": "",
+    "products_mentioned": "Tycelon",
     "images": [],
     "author": null,
     "url": null,
@@ -11025,7 +11025,7 @@
     "conditions_mentioned": "arthritis, bunion",
     "surgery_types_mentioned": "MICA, minimally invasive",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11051,7 +11051,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11064,7 +11064,7 @@
     "conditions_mentioned": "bunion, edema, swelling",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11075,7 +11075,7 @@
     "comments": [],
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, custom orthotics, orthotics",
     "products_mentioned": "custom orthotics, orthotic insoles, orthotics",
     "images": [],
@@ -11088,9 +11088,9 @@
     "comments": [],
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
-    "products_mentioned": "Hoka",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
+    "products_mentioned": "Hoka, Allswift",
     "images": [],
     "author": null,
     "url": null,
@@ -11112,9 +11112,9 @@
     ],
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "physical therapy, rest, stretching",
-    "products_mentioned": "OOFOS, Oofos",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "physical therapy, rest, stretching, strength training",
+    "products_mentioned": "Oofos",
     "images": [],
     "author": null,
     "url": null,
@@ -11127,7 +11127,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11140,7 +11140,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
     "treatments_mentioned": "physical therapy, surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11153,7 +11153,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "arthrodesis, fusion",
     "treatments_mentioned": "physical therapy, surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11166,7 +11166,7 @@
     "conditions_mentioned": "bunion, bunionette, tailor's bunion",
     "surgery_types_mentioned": "bunionectomy, orif, revision surgery",
     "treatments_mentioned": "surgery",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "images": [],
     "author": null,
     "url": null,
@@ -11182,8 +11182,8 @@
     "comments": [],
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunion surgery",
-    "treatments_mentioned": "",
-    "products_mentioned": ""
+    "treatments_mentioned": "none",
+    "products_mentioned": "none"
   },
   {
     "id": 783,
@@ -11194,7 +11194,7 @@
     "images": [],
     "comments": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "NSAIDs, ibuprofen, anti-inflammatory, diclofenac",
     "products_mentioned": "Voltaren, ibuprofen"
   },
@@ -11207,9 +11207,9 @@
     "images": [],
     "comments": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
-    "products_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
+    "products_mentioned": "none"
   },
   {
     "id": 785,
@@ -11220,8 +11220,8 @@
     "images": [],
     "comments": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
     "products_mentioned": "crutches"
   },
   {
@@ -11235,7 +11235,7 @@
     "conditions_mentioned": "pain",
     "surgery_types_mentioned": "surgery",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 787,
@@ -11245,10 +11245,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "comments": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "cortisone, cortisone injection, dry needling, steroid injection",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 788,
@@ -11258,8 +11258,8 @@
     "source_group": "Toenail Fungus Support & Management",
     "images": [],
     "comments": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "boric acid",
     "products_mentioned": "boric acid"
   },
@@ -11272,7 +11272,7 @@
     "images": [],
     "comments": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "physical therapy",
     "products_mentioned": "barefoot shoes"
   },
@@ -11285,9 +11285,9 @@
     "images": [],
     "comments": [],
     "conditions_mentioned": "bunion, foot pain, nerve damage, neuropathy, numbness",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "podiatrist",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 791,
@@ -11297,8 +11297,8 @@
     "source_group": "Toenail Fungus Support & Management",
     "images": [],
     "comments": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "Vicks treatment, Vicks, vinegar, vinegar soak, soaking, tea tree oil",
     "products_mentioned": "Vicks, Vicks VapoRub, tea tree oil"
   },
@@ -11312,8 +11312,8 @@
     "comments": [],
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy",
-    "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "treatments_mentioned": "none",
+    "products_mentioned": "none"
   },
   {
     "id": 793,
@@ -11323,10 +11323,10 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "comments": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "barefoot walking",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 794,
@@ -11337,9 +11337,9 @@
     "source_group": "Toenail Fungus Support & Management",
     "images": [],
     "conditions_mentioned": "toenail fungus",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "nail removal",
     "treatments_mentioned": "laser treatment",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 795,
@@ -11359,8 +11359,8 @@
     "source_group": "Toenail Fungus Support & Management",
     "images": [],
     "conditions_mentioned": "infection",
-    "surgery_types_mentioned": "mis",
-    "treatments_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
     "products_mentioned": "Crocs, KeryFlex, crocs, keryflex"
   },
   {
@@ -11390,9 +11390,9 @@
     "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
     "images": [],
     "conditions_mentioned": "arthritis, bunion",
-    "surgery_types_mentioned": "fusion",
+    "surgery_types_mentioned": "fusion, Lapiplasty",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 798,
@@ -11403,9 +11403,9 @@
     "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
-    "products_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
+    "products_mentioned": "none"
   },
   {
     "id": 799,
