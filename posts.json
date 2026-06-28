@@ -11418,7 +11418,7 @@
     "conditions_mentioned": "nerve damage, neuropathy, numbness",
     "surgery_types_mentioned": "surgery",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 800,
@@ -11431,7 +11431,7 @@
     "conditions_mentioned": "nerve damage, neuropathy, nerve pain",
     "surgery_types_mentioned": "surgery",
     "treatments_mentioned": "X-ray, surgery",
-    "products_mentioned": ""
+    "products_mentioned": "alpha lipoic acid"
   },
   {
     "id": 801,
@@ -11444,7 +11444,7 @@
     "conditions_mentioned": "pain",
     "surgery_types_mentioned": "surgery",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "Vicodin"
   },
   {
     "id": 802,
@@ -11457,7 +11457,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, chevron, chevron osteotomy, osteotomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 803,
@@ -11470,7 +11470,7 @@
     "conditions_mentioned": "surgery recovery",
     "surgery_types_mentioned": "fusion",
     "treatments_mentioned": "physical therapy, rest, surgery, weight bearing",
-    "products_mentioned": ""
+    "products_mentioned": "ace bandage, walking shoe"
   },
   {
     "id": 804,
@@ -11480,10 +11480,10 @@
     "url": null,
     "source_group": "bunion surgery / foot surgery support group",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "rest, weight bearing",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 805,
@@ -11493,8 +11493,8 @@
     "url": null,
     "source_group": "bunion surgery / foot surgery support group",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "boot/walking boot, non-weight bearing, rest, weight bearing",
     "products_mentioned": "surgical boot"
   },
@@ -11509,7 +11509,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "Akin osteotomy, bunionectomy",
     "treatments_mentioned": "non-weight bearing, rest, weight bearing",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 807,
@@ -11528,7 +11528,7 @@
     "source_group": "Foot Pain Community",
     "images": [],
     "conditions_mentioned": "arthritis, bone spur, gout, heel fat pad syndrome, heel pain, heel spur, plantar fasciitis, tendonitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "X-ray, gabapentin, rest, stemwave",
     "products_mentioned": "Gabapentin, knee scooter"
   },
@@ -11543,7 +11543,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "surgery",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "wide shoes"
   },
   {
     "id": 809,
@@ -11569,7 +11569,7 @@
     "conditions_mentioned": "plantar fasciitis",
     "surgery_types_mentioned": "fusion",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "supplements"
   },
   {
     "id": 811,
@@ -11582,7 +11582,7 @@
     "conditions_mentioned": "surgery recovery",
     "surgery_types_mentioned": "surgery",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 812,
@@ -11592,10 +11592,10 @@
     "url": null,
     "source_group": "bunion surgery / foot surgery support group",
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "biopsy",
-    "treatments_mentioned": "",
-    "products_mentioned": ""
+    "treatments_mentioned": "none",
+    "products_mentioned": "none"
   },
   {
     "id": 813,
@@ -11619,9 +11619,9 @@
     "source_group": "Minimally invasive bunion surgery",
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "pain medication",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 815,
@@ -11671,7 +11671,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "rest",
     "products_mentioned": "Altra, Brooks, Hoka, New Balance, altra, brooks, hoka, new balance, topo"
   },
@@ -11684,8 +11684,8 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
     "products_mentioned": "Hoka, asics, hoka"
   },
   {
@@ -11709,9 +11709,9 @@
     "url": null,
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
     "products_mentioned": "Skechers, sketchers"
   },
   {
@@ -11731,7 +11731,7 @@
     "source_group": "Plantar Fasciitis Talk and Tips Support Group",
     "images": [],
     "conditions_mentioned": "flat feet",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "treatments_mentioned": "arch support, orthotics, rest",
     "products_mentioned": "Birkenstock, Skechers, birks, fit flop, orthotic insoles, orthotics, powerstep, reef, skechers"
   },
@@ -11744,9 +11744,9 @@
     "source_group": "Forefoot Forum: Bunions, Hallux Limitus, Tailor's Bunion, Hammer Toes",
     "images": [],
     "conditions_mentioned": "foot pain",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": "",
-    "products_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none",
+    "products_mentioned": "none"
   },
   {
     "id": 824,
@@ -11772,7 +11772,7 @@
     "conditions_mentioned": "bunion, hammer toe, hammertoe",
     "surgery_types_mentioned": "chevron, weil procedure, chevron osteotomy, hammer toe surgery, osteotomy",
     "treatments_mentioned": "cryotherapy, elevation, ice therapy, surgery",
-    "products_mentioned": ""
+    "products_mentioned": "orthopedic shoe, cane"
   },
   {
     "id": 826,
@@ -11785,7 +11785,7 @@
     "conditions_mentioned": "bunion",
     "surgery_types_mentioned": "bunionectomy, chevron, chevron osteotomy, lapidus, osteotomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 827,
@@ -11795,10 +11795,10 @@
     "url": null,
     "source_group": "Bunion Support Group",
     "images": [],
-    "conditions_mentioned": "",
+    "conditions_mentioned": "none",
     "surgery_types_mentioned": "cheilectomy, chevron, chevron osteotomy, osteotomy",
     "treatments_mentioned": "surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "id": 828,
@@ -11811,7 +11811,7 @@
     "conditions_mentioned": "bunion, edema, swelling",
     "surgery_types_mentioned": "bunionectomy, chevron, chevron osteotomy, osteotomy",
     "treatments_mentioned": "physical therapy, surgery",
-    "products_mentioned": ""
+    "products_mentioned": "none"
   },
   {
     "body": "Hello all! I am 41 and have a somewhat active lifestyle, on my feet a lot at work in a hospital, walking my dogs, caring for all my other animals and two teenagers in sports and such...I have a lot of pain in my feet daily. I just have been getting by wearing the same pair of skechers athletic shoes since before my break in 2024. Since then I have not successfully broken in a pair of shoes. I've attempted several different athletic shoes and even a new pair of skechers and a",
@@ -11819,9 +11819,9 @@
     "search_term_used": "flat feet",
     "source_group": "Bunion Support Group",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Skechers",
-    "treatments_mentioned": "",
+    "treatments_mentioned": "none",
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -11833,8 +11833,8 @@
     "comments": [],
     "search_term_used": "flat feet",
     "source_group": "Bunion Support Group",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "high arches",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "cast, walking boot",
     "treatments_mentioned": "boot/walking boot, cast",
     "author": null,
@@ -11855,8 +11855,8 @@
     "id": 831,
     "products_mentioned": "insoles, orthotic insoles, orthotics",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "body": "Pain Relief Forefoot Protection Insole Mesh Cushion Pad for Belly Dancing Ball \n0:00 / 0:40",
@@ -11870,8 +11870,8 @@
     "id": 832,
     "products_mentioned": "insoles, orthotic insoles, orthotics",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "treatments_mentioned": ""
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "none"
   },
   {
     "body": "Hi everyone—thank you to the admins for allowing Columbus Eagles FC to be part of this group!\nWe’re excited to bring high-level women’s soccer to Columbus again this season, and we’d love for your families to experience it live.\nAs part of our partnership with this group, we’re offering 20% off season memberships and individual tickets purchased during the month of May.\nThis is a great opportunity for your players to watch the game at a high level and for families to enjoy a fun, local soccer experience together.\nOur first HOME game is May 15th at 7:00pm.\nUse code: SMAD2026 at checkout\nhttps://www.columbuseaglesfc.com/wp/tickets/season-memberships/\nWe hope to see you out at a match this season.\nFor Women. For Soccer. For Columbus.",
@@ -11881,9 +11881,9 @@
     "search_term_used": "flat feet",
     "source_group": "Bunion Support Group",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none",
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -11896,8 +11896,8 @@
     "search_term_used": "flat feet",
     "source_group": "Bunion Support Group",
     "conditions_mentioned": "bunion, flat feet",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "podiatrist",
     "author": null,
     "url": null,
@@ -11912,7 +11912,7 @@
     "source_group": "Bunion Support Group",
     "conditions_mentioned": "bunion, flat feet, heel pain, plantar fasciitis",
     "surgery_types_mentioned": "Akin osteotomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "podiatrist",
     "author": null,
     "url": null,
@@ -11926,8 +11926,8 @@
     "search_term_used": "flat feet",
     "source_group": "Bunion Support Group",
     "conditions_mentioned": "bunion, flat feet, overpronation",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "foot reconstruction",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery",
     "author": null,
     "url": null,
@@ -11941,7 +11941,7 @@
     "search_term_used": "fallen arches",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": "pain",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotics",
     "treatments_mentioned": "arch support, orthotics",
     "author": null,
@@ -11955,8 +11955,8 @@
     "comments": [],
     "search_term_used": "fallen arches",
     "source_group": "Minimally Invasive Bunion Surgery",
-    "conditions_mentioned": "",
-    "surgery_types_mentioned": "",
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotics, Orthofeet, wide toe box shoes",
     "treatments_mentioned": "arch support, orthotics",
     "author": null,
@@ -11995,7 +11995,7 @@
     "id": 840,
     "conditions_mentioned": "bunion, hammer toe",
     "surgery_types_mentioned": "Lapiplasty, bunionectomy",
-    "products_mentioned": "",
+    "products_mentioned": "none",
     "treatments_mentioned": "surgery"
   },
   {
@@ -12020,8 +12020,8 @@
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": "pain",
     "surgery_types_mentioned": "screw fixation",
-    "products_mentioned": "",
-    "treatments_mentioned": "",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none",
     "author": null,
     "url": null,
     "date": "2026-05-06",
@@ -12034,7 +12034,7 @@
     "search_term_used": "fallen arches",
     "source_group": "Minimally Invasive Bunion Surgery",
     "conditions_mentioned": "flat feet",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "orthotics",
     "treatments_mentioned": "arch support, orthotics",
     "author": null,
@@ -12100,7 +12100,7 @@
     "search_term_used": "neuroma",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": "plantar fasciitis, morton's neuroma, morton neuroma, Morton's neuroma, neuroma",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Altra, Brooks, Hoka",
     "treatments_mentioned": "massage, physical therapy",
     "author": null,
@@ -12165,7 +12165,7 @@
     "search_term_used": "neuroma",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": "plantar fasciitis, morton's neuroma, Morton's neuroma, neuroma",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "OOFOS, Oofos",
     "treatments_mentioned": "podiatrist",
     "author": null,
@@ -12183,8 +12183,8 @@
     "search_term_used": "neuroma",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": "plantar fasciitis, morton's neuroma, Morton's neuroma, neuroma",
-    "surgery_types_mentioned": "",
-    "products_mentioned": "",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
     "treatments_mentioned": "cortisone injection",
     "author": null,
     "url": null,
@@ -12202,7 +12202,7 @@
     "search_term_used": "neuroma",
     "source_group": "Plantar Fasciitis Talk and Tips",
     "conditions_mentioned": "Morton's neuroma, neuroma, plantar fasciitis",
-    "surgery_types_mentioned": "",
+    "surgery_types_mentioned": "none",
     "products_mentioned": "Hoka",
     "treatments_mentioned": "ice therapy, rest, stretching",
     "author": null,
