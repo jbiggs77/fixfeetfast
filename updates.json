@@ -1,52 +1,120 @@
 {
-"3772": {"conditions_mentioned": "cracked feet, itchy feet", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3773": {"conditions_mentioned": "low arches, heel pain, supination, plantar fasciitis", "surgery_types_mentioned": "plantar fasciitis surgery", "treatments_mentioned": "surgery, insoles"},
-"3774": {"conditions_mentioned": "foot injury, swelling, numbness", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3775": {"conditions_mentioned": "nerve pain", "surgery_types_mentioned": "none", "products_mentioned": "alpha lipoic acid"},
-"3776": {"surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3777": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3778": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3779": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "Koprez foot sleeves", "treatments_mentioned": "compression"},
-"3780": {"conditions_mentioned": "sciatica, pinched nerve", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3781": {"conditions_mentioned": "plantar fasciitis", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "rest"},
-"3782": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "massage gun"},
-"3783": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3784": {"surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3785": {"conditions_mentioned": "foot deformity", "surgery_types_mentioned": "none", "products_mentioned": "custom footwear"},
-"3786": {"surgery_types_mentioned": "bunion surgery", "products_mentioned": "none"},
-"3787": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "walker", "treatments_mentioned": "physical therapy"},
-"3788": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "foot elevation pillow"},
-"3789": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3790": {"surgery_types_mentioned": "bunion surgery", "products_mentioned": "knee scooter"},
-"3791": {"conditions_mentioned": "none", "products_mentioned": "none"},
-"3792": {"conditions_mentioned": "nonunion", "products_mentioned": "none"},
-"3793": {"surgery_types_mentioned": "bunion surgery", "products_mentioned": "none"},
-"3794": {"surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "antibiotics, soaking, filing"},
-"3795": {"conditions_mentioned": "metatarsal fracture", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "casting"},
-"3796": {"surgery_types_mentioned": "peroneal tendon repair, bone spur removal", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3797": {"surgery_types_mentioned": "bone spur removal", "products_mentioned": "naproxen"},
-"3798": {"surgery_types_mentioned": "ganglion cyst removal", "products_mentioned": "none"},
-"3799": {"conditions_mentioned": "os peroneum", "surgery_types_mentioned": "os peroneum excision", "products_mentioned": "Polar Care cold compression wrap"},
-"3800": {"conditions_mentioned": "corn, hyperhidrosis, plantar keratosis", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "Botox injections"},
-"3801": {"surgery_types_mentioned": "bunion surgery", "products_mentioned": "none"},
-"3802": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3803": {"conditions_mentioned": "none", "products_mentioned": "none"},
-"3804": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3805": {"conditions_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3806": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3807": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "ice pack gel slippers", "treatments_mentioned": "icing"},
-"3808": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3809": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3810": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none"},
-"3811": {"conditions_mentioned": "bunion, flat feet", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery, massage, physical therapy"},
-"3812": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
-"3813": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3814": {"conditions_mentioned": "infection", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3815": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "USHTH waterproof boot cover", "treatments_mentioned": "surgery"},
-"3816": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3817": {"conditions_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3818": {"conditions_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3819": {"conditions_mentioned": "nerve pain", "products_mentioned": "none"},
-"3820": {"conditions_mentioned": "foot odor", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "surgery"},
-"3821": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "shower stool, waterproof cast cover"}
+  "3822": {
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "Good Feet Store",
+    "treatments_mentioned": "icing, orthotics, arch supports"
+  },
+  "3823": {
+    "surgery_types_mentioned": "none"
+  },
+  "3824": {
+    "surgery_types_mentioned": "none"
+  },
+  "3825": {
+    "surgery_types_mentioned": "none"
+  },
+  "3826": {
+    "products_mentioned": "none"
+  },
+  "3827": {
+    "surgery_types_mentioned": "bunionectomy",
+    "products_mentioned": "Merrell, toe separators"
+  },
+  "3828": {
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "Merrell, toe separators"
+  },
+  "3829": {
+    "products_mentioned": "barefoot shoes"
+  },
+  "3830": {
+    "products_mentioned": "none"
+  },
+  "3831": {
+    "surgery_types_mentioned": "none"
+  },
+  "3832": {
+    "surgery_types_mentioned": "none"
+  },
+  "3833": {
+    "surgery_types_mentioned": "none"
+  },
+  "3834": {
+    "conditions_mentioned": "plantar fasciitis",
+    "surgery_types_mentioned": "none"
+  },
+  "3835": {
+    "conditions_mentioned": "plantar fasciitis",
+    "surgery_types_mentioned": "none"
+  },
+  "3836": {
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "surgery, orthotics"
+  },
+  "3837": {
+    "surgery_types_mentioned": "none"
+  },
+  "3838": {
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "massage gun"
+  },
+  "3839": {
+    "conditions_mentioned": "plantar fasciitis",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "insoles"
+  },
+  "3840": {
+    "conditions_mentioned": "bunion",
+    "products_mentioned": "leg elevation pillow, shower chair, walker, gel ice packs, grabber"
+  },
+  "3841": {
+    "surgery_types_mentioned": "none"
+  },
+  "3842": {
+    "products_mentioned": "coconut oil, Vaseline, silicone socks"
+  },
+  "3843": {
+    "conditions_mentioned": "bunion, wound dehiscence",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "post-op sandal, saline solution"
+  },
+  "3844": {
+    "conditions_mentioned": "none",
+    "surgery_types_mentioned": "1st MPJ fusion",
+    "products_mentioned": "post-op sandal"
+  },
+  "3845": {
+    "conditions_mentioned": "toenail fungus, athlete's foot",
+    "surgery_types_mentioned": "none"
+  },
+  "3846": {
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "Mycosoothe, EMUAID",
+    "treatments_mentioned": "home remedies, topical antifungals"
+  },
+  "3847": {
+    "surgery_types_mentioned": "none",
+    "treatments_mentioned": "Candazole, antifungal medication"
+  },
+  "3848": {
+    "surgery_types_mentioned": "none"
+  },
+  "3849": {
+    "products_mentioned": "post-op boot"
+  },
+  "3850": {
+    "products_mentioned": "none"
+  },
+  "3851": {
+    "conditions_mentioned": "forefoot pain",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
+  },
+  "3852": {
+    "conditions_mentioned": "forefoot pain",
+    "surgery_types_mentioned": "none",
+    "products_mentioned": "none",
+    "treatments_mentioned": "none"
+  }
 }
