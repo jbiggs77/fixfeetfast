@@ -1,120 +1,32 @@
 {
-  "3822": {
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "Good Feet Store",
-    "treatments_mentioned": "icing, orthotics, arch supports"
-  },
-  "3823": {
-    "surgery_types_mentioned": "none"
-  },
-  "3824": {
-    "surgery_types_mentioned": "none"
-  },
-  "3825": {
-    "surgery_types_mentioned": "none"
-  },
-  "3826": {
-    "products_mentioned": "none"
-  },
-  "3827": {
-    "surgery_types_mentioned": "bunionectomy",
-    "products_mentioned": "Merrell, toe separators"
-  },
-  "3828": {
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "Merrell, toe separators"
-  },
-  "3829": {
-    "products_mentioned": "barefoot shoes"
-  },
-  "3830": {
-    "products_mentioned": "none"
-  },
-  "3831": {
-    "surgery_types_mentioned": "none"
-  },
-  "3832": {
-    "surgery_types_mentioned": "none"
-  },
-  "3833": {
-    "surgery_types_mentioned": "none"
-  },
-  "3834": {
-    "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "none"
-  },
-  "3835": {
-    "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "none"
-  },
-  "3836": {
-    "surgery_types_mentioned": "none",
-    "treatments_mentioned": "surgery, orthotics"
-  },
-  "3837": {
-    "surgery_types_mentioned": "none"
-  },
-  "3838": {
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "massage gun"
-  },
-  "3839": {
-    "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "insoles"
-  },
-  "3840": {
-    "conditions_mentioned": "bunion",
-    "products_mentioned": "leg elevation pillow, shower chair, walker, gel ice packs, grabber"
-  },
-  "3841": {
-    "surgery_types_mentioned": "none"
-  },
-  "3842": {
-    "products_mentioned": "coconut oil, Vaseline, silicone socks"
-  },
-  "3843": {
-    "conditions_mentioned": "bunion, wound dehiscence",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "post-op sandal, saline solution"
-  },
-  "3844": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "1st MPJ fusion",
-    "products_mentioned": "post-op sandal"
-  },
-  "3845": {
-    "conditions_mentioned": "toenail fungus, athlete's foot",
-    "surgery_types_mentioned": "none"
-  },
-  "3846": {
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "Mycosoothe, EMUAID",
-    "treatments_mentioned": "home remedies, topical antifungals"
-  },
-  "3847": {
-    "surgery_types_mentioned": "none",
-    "treatments_mentioned": "Candazole, antifungal medication"
-  },
-  "3848": {
-    "surgery_types_mentioned": "none"
-  },
-  "3849": {
-    "products_mentioned": "post-op boot"
-  },
-  "3850": {
-    "products_mentioned": "none"
-  },
-  "3851": {
-    "conditions_mentioned": "forefoot pain",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3852": {
-    "conditions_mentioned": "forefoot pain",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  }
+"3871": {"surgery_types_mentioned": "hip replacement, hip reconstruction", "products_mentioned": "Xero Shoes, toe socks, cushioned inserts", "treatments_mentioned": "weight loss, zero drop shoes"},
+"3872": {"conditions_mentioned": "foot pain, foot swelling, postpartum foot changes", "surgery_types_mentioned": "none", "products_mentioned": "Skechers, memory foam insoles, shoe inserts", "treatments_mentioned": "physical therapy, ice, shoe inserts, rest"},
+"3873": {"surgery_types_mentioned": "hip replacement", "products_mentioned": "Hoka, Brooks, Oofos, foot circulation massager", "treatments_mentioned": "massage, circulation therapy"},
+"3874": {"conditions_mentioned": "ingrown toenail, plantar fasciitis, Haglund's deformity, pump bump, plantar fibroma, heel pain", "surgery_types_mentioned": "matrixectomy, phenol nail procedure, permanent ingrown nail removal", "products_mentioned": "Oofos, Oofos recovery flip flops, shoe inserts"},
+"3875": {"surgery_types_mentioned": "plantar fascia surgery", "products_mentioned": "none", "treatments_mentioned": "surgery, physical therapy, PRP, nerve block injection"},
+"3876": {"conditions_mentioned": "plantar fasciitis, heel spur, sciatica, pinched nerve", "surgery_types_mentioned": "none", "products_mentioned": "Koprez, Koprez foot sleeves, massage gun"},
+"3877": {"surgery_types_mentioned": "none", "products_mentioned": "massage gun"},
+"3878": {"conditions_mentioned": "plantar fasciitis, achilles tendinitis", "surgery_types_mentioned": "endoscopic plantar fasciotomy, plantar fasciotomy", "products_mentioned": "massage gun, custom orthotics"},
+"3879": {"conditions_mentioned": "bunion, tailor's bunion, neuropathy, hammer toe", "surgery_types_mentioned": "bunion surgery", "products_mentioned": "toe separators, orthotics"},
+"3880": {"surgery_types_mentioned": "MIS, minimally invasive bunion surgery", "products_mentioned": "adhesive wound dressings, leg elevation pillow"},
+"3881": {"surgery_types_mentioned": "MIS, minimally invasive bunion surgery, bunion removal", "products_mentioned": "none"},
+"3882": {"conditions_mentioned": "fungal nail, toenail fungus, onycholysis", "surgery_types_mentioned": "toenail removal, permanent nail avulsion", "products_mentioned": "Lunavia Anti Fungal Pens"},
+"3883": {"surgery_types_mentioned": "none", "products_mentioned": "Lunavia Anti Fungal Pens"},
+"3884": {"surgery_types_mentioned": "none", "products_mentioned": "Good Feet Store, orthotic inserts, walking boot", "treatments_mentioned": "physical therapy, orthotics, walking boot"},
+"3885": {"surgery_types_mentioned": "none", "treatments_mentioned": "physical therapy, walking boot"},
+"3886": {"surgery_types_mentioned": "none"},
+"3887": {"conditions_mentioned": "bunion, hallux valgus, joint stiffness", "surgery_types_mentioned": "bunion surgery, pin removal", "products_mentioned": "sneaker inserts"},
+"3888": {"surgery_types_mentioned": "bunionectomy, bunion surgery", "products_mentioned": "Merrell, toe separators, splint", "treatments_mentioned": "surgery, splinting"},
+"3889": {"conditions_mentioned": "toenail fungus, athlete's foot", "surgery_types_mentioned": "none", "treatments_mentioned": "Vicks VapoRub"},
+"3890": {"conditions_mentioned": "toenail fungus, ingrown toenail, toenail infection", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+"3891": {"surgery_types_mentioned": "none", "products_mentioned": "bunion pads, bunion plasters, wide toe box shoes"},
+"3892": {"surgery_types_mentioned": "bunion surgery", "products_mentioned": "Vionic, FitFlop, Hike Footwear"},
+"3893": {"surgery_types_mentioned": "bunion surgery", "products_mentioned": "Birkenstock, Aerothotic, orthotic sandals"},
+"3894": {"surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "physical therapy, myofascial release, toe exercises"},
+"3895": {"surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "myofascial release, physical therapy"},
+"3896": {"conditions_mentioned": "forefoot pain", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "physical therapy, prehab"},
+"3897": {"conditions_mentioned": "extensor tendinitis, peroneal tendon tear, midfoot pain, plantar fasciitis", "surgery_types_mentioned": "none", "products_mentioned": "Hoka, Brooks, Orthofeet, custom insoles"},
+"3898": {"conditions_mentioned": "bunion, hallux valgus", "surgery_types_mentioned": "1st MPJ fusion, MTP joint fusion, bunion surgery", "products_mentioned": "post-op sandal"},
+"3899": {"conditions_mentioned": "none", "surgery_types_mentioned": "1st MPJ fusion, MTP joint fusion", "products_mentioned": "none"},
+"3900": {"surgery_types_mentioned": "none", "products_mentioned": "Hoka, Hoka Bondi 9, insoles", "treatments_mentioned": "cortisone, acupuncture, PRP, physical therapy, stretching exercises"}
 }
