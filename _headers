@@ -1,9 +1,22 @@
 /*
   X-Robots-Tag: all
 
-/
-  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </sitemap.xml>; rel="sitemap"
-
 /llms.txt
   Content-Type: text/markdown; charset=utf-8
   X-Markdown-Tokens: available
+
+# BEGIN ARCHIVE HEADERS
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/site-history.json
+  X-Robots-Tag: noindex
+/site-routes.json
+  X-Robots-Tag: noindex
+/site-build-report.json
+  X-Robots-Tag: noindex
+/posts.json
+  X-Robots-Tag: noindex
+/*.py
+  X-Robots-Tag: noindex
+# END ARCHIVE HEADERS

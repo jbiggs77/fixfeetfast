@@ -6,3 +6,5 @@ site/
 enrich_metadata.py
 site/
 enrich_metadata.py
+
+__pycache__/

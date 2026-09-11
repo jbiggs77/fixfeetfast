@@ -22,7 +22,13 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://fixfeetfast.com/sitemap.xml
+
 
 # Content Signals (draft-romm-aipref-contentsignals)
 Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Search inclusion is distinct from model-training permissions.
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://fixfeetfast.com/sitemap.xml

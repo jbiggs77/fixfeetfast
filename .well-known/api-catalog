@@ -1,25 +1,10 @@
 {
-  "linkset": [
+  "name": "FixFeetFast",
+  "apis": [],
+  "resources": [
     {
-      "anchor": "https://fixfeetfast.com/",
-      "service-desc": [
-        {
-          "href": "https://fixfeetfast.com/llms.txt",
-          "type": "text/markdown"
-        }
-      ],
-      "service-doc": [
-        {
-          "href": "https://fixfeetfast.com/about/",
-          "type": "text/html"
-        }
-      ],
-      "status": [
-        {
-          "href": "https://fixfeetfast.com/",
-          "type": "text/html"
-        }
-      ]
+      "url": "https://fixfeetfast.com/sitemap.xml",
+      "type": "sitemap"
     }
   ]
 }
