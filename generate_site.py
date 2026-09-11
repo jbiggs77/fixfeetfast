@@ -10,6 +10,7 @@ from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 from urllib.parse import quote
+from site_media import render_images, render_comment
 
 # Configuration
 SITE_URL = "https://fixfeetfast.com"
@@ -952,7 +953,7 @@ section {{
 .discussion-images img {{
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 6px;
   border: 1px solid var(--border);
   cursor: pointer;
@@ -1777,14 +1778,8 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
         <div class="post-full-body">{post_body}</div>
 """
 
-    # Images
-    images = post.get('images', [])
-    if images:
-        img_class = 'single' if len(images) == 1 else 'gallery'
-        html += f'        <div class="discussion-images {img_class}">\n'
-        for img_path in images:
-            html += f'          <img src="/{img_path}" alt="Community photo" loading="lazy">\n'
-        html += '        </div>\n'
+    # Archived photos use verified local asset paths.
+    html += render_images(post)
 
     # Badges
     html += """        <div class="discussion-badges">
@@ -1818,17 +1813,7 @@ def generate_post_page(post, niche_id, niche_data, all_posts):
           <h2>Comments ({len(comments)})</h2>
 """
         for comment in comments:
-            # Comments can be plain strings or dicts with 'comment_text' key
-            if isinstance(comment, str):
-                comment_text = comment
-            else:
-                comment_text = comment.get('comment_text', '') if isinstance(comment, dict) else str(comment)
-            if comment_text:
-                html += f"""          <div class="post-comment-card">
-            <div class="comment-text">{comment_text}</div>
-            <div class="comment-meta">Community member</div>
-          </div>
-"""
+            html += render_comment(comment)
         html += """        </div>
 """
 
@@ -2411,14 +2396,7 @@ def generate_topic_page(niche_id, niche_data, posts):
           <div class="discussion-title">{post.get('title', 'Discussion')}</div>
         </div>
 """
-            # Add images if available
-            images = post.get('images', [])
-            if images:
-                img_class = 'single' if len(images) == 1 else 'gallery'
-                html += f'        <div class="discussion-images {img_class}">\n'
-                for img_path in images[:4]:  # Max 4 images per post
-                    html += f'          <img src="/{img_path}" alt="Community photo" loading="lazy">\n'
-                html += '        </div>\n'
+            html += render_images(post, limit=4)
 
             html += f"""        <div class="discussion-body">{post_preview}...</div>
         <div class="discussion-badges">
@@ -2455,13 +2433,7 @@ def generate_topic_page(niche_id, niche_data, posts):
           <strong>Comments:</strong>
 """
                 for comment in post.get('comments', [])[:3]:
-                    c_text = comment if isinstance(comment, str) else (comment.get('comment_text', '') if isinstance(comment, dict) else str(comment))
-                    if c_text:
-                        html += f"""          <div class="comment">
-            <div class="comment-text">{c_text[:200]}{'...' if len(c_text) > 200 else ''}</div>
-            <div class="comment-meta">Community member</div>
-          </div>
-"""
+                    html += render_comment(comment, compact=True)
                 if len(post.get('comments', [])) > 3:
                     html += f"""          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">+{len(post.get('comments', [])) - 3} more comments</p>
 """
