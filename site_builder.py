@@ -163,7 +163,9 @@ class ArchiveSite:
                 haystack = " ".join([text(post.get("body")), *[", ".join(tokens(post.get(f))) for f in self.tag_fields]])
                 matched = [key for key, patterns in self.term_patterns.items() if any(pattern.search(haystack) for pattern in patterns)]
                 matched.extend(s for s in tokens(post.get("niches")) if s in self.taxonomy and s not in matched)
-            matched = list(dict.fromkeys(matched)) or ["general-foot-health" if self.fff else "general-insurance-discussions"]
+            # Classifiers may return a set in process-dependent order. Keep
+            # breadcrumbs, related links and search data stable across rebuilds.
+            matched = [key for key in self.taxonomy if key in set(matched)] or ["general-foot-health" if self.fff else "general-insurance-discussions"]
             self.post_groups[identifier] = matched
             self.comment_map[identifier] = comments(post)
             for key in matched:
@@ -363,7 +365,10 @@ class ArchiveSite:
             all_cards += '<details class="more-topics"><summary>Explore all '+str(len(popular))+' topics</summary>'+self.topic_cards(popular[12:])+'</details>'
         topics = f'<section id="topics" class="section"><div class="wrap"><div class="section-top"><h2>{"Find your starting point" if self.fff else "Research by risk class"}</h2><a href="/discussions/">Browse all discussions →</a></div>{all_cards}</div></section>'
         # The recent archive is drawn from record dates, never the build clock.
-        featured = [p for p in self.posts if self.reply_count(p) > 0 and len(text(p.get("body"))) > 30][:5]
+        subject = re.compile(r'\b(?:foot|feet|bunion\w*|fasciitis|pf|heel\w*|toe\w*|lapiplasty|lapidus|orthotic\w*|ankle\w*)\b' if self.fff else
+                             r'\b(?:insurance|carrier\w*|polic(?:y|ies)|underwrit\w*|liability|workers?\s+comp\w*|coverage|premium\w*|broker\w*)\b', re.I)
+        featured = [p for p in self.posts if self.reply_count(p) > 0 and
+                    subject.search(text(p.get("body"))[:600])][:5]
         recent = f'<section class="section wash"><div class="wrap"><div class="section-top"><h2>Questions with community replies</h2><a href="/discussions/">View all →</a></div><div class="two-col"><div class="discussion-list">{"".join(self.row(p) for p in featured)}</div>{self.sidebar(popular[:4])}</div></div></section>'
         self.write_page("/", title, "Explore community questions, captured replies and source context about " + ("foot surgery, recovery and foot conditions." if self.fff else "insurance risks, carrier mentions and market research."), hero+stats+topics+recent)
 
