@@ -142,8 +142,11 @@ class ArchiveSite:
         self.origin = f"https://{site}.com"
         self.source = Path(source_dir); self.output = Path(output_dir)
         self.source_post_count = len(posts)
-        self.posts = [deepcopy(p) for p in posts if text(p.get("body")) or p.get("comments") or p.get("images") or p.get("attachments")]
-        if len({str(p.get("id")) for p in self.posts}) != len(self.posts):
+        self.excluded_ids = {str(p["id"]) for p in posts if isinstance(p.get("publication"), dict)
+                             and p["publication"].get("status") == "excluded"}
+        self.posts = [deepcopy(p) for p in posts if str(p["id"]) not in self.excluded_ids and
+                      (text(p.get("body")) or p.get("comments") or p.get("images") or p.get("attachments"))]
+        if len({str(p.get("id")) for p in posts}) != len(posts):
             raise ValueError("Duplicate site IDs must be resolved before building stable routes")
         self.taxonomy = deepcopy(taxonomy)
         self.taxonomy.setdefault("general-foot-health" if self.fff else "general-insurance-discussions", {
@@ -176,13 +179,20 @@ class ArchiveSite:
         for group in self.groups.values():
             group.sort(key=lambda p: self.order[str(p["id"])])
         self.routes = {}; self.aliases = {}; self.pages = {}; self.indexable = set()
+        self.archive_bases = set()
         registry = self.load_json(self.source / "site-routes.json", {})
-        prior = registry.get("posts", {})
+        prior = self.prepare_retired_routes(registry, preferred_routes or {}, legacy_routes or {})
         self.old_history = self.load_json(self.source / "site-history.json", {}).get("pages", {})
         self.assign_routes(prior, preferred_routes or {}, legacy_routes or {})
-        for route, identifier in registry.get("aliases", {}).items():
+        for route, identifier in {**registry.get("aliases", {}), **self.retired_aliases}.items():
             if self.valid_route(route) and str(identifier) in self.routes and route not in self.routes.values():
                 self.aliases.setdefault(route, str(identifier))
+        self.retired_posts = {identifier: route for identifier, route in self.retired_posts.items()
+                              if identifier not in self.routes}
+        self.retired_aliases = {route: identifier for route, identifier in self.retired_aliases.items()
+                                if identifier not in self.routes and route not in self.retired_posts.values()}
+        self.retired_routes = {**self.retired_aliases,
+                               **{route: identifier for identifier, route in self.retired_posts.items()}}
         if not self.fff:
             # Earlier WTP rebuilds changed title-based slugs. The original URL
             # embeds the immutable record ID, so its destination is unambiguous.
@@ -215,6 +225,37 @@ class ArchiveSite:
     def valid_route(value):
         return isinstance(value, str) and bool(re.fullmatch(r"/(?:[^\W_][\w-]*/)+", value))
 
+    def prepare_retired_routes(self, registry, preferred, legacy):
+        # Keep removed route ownership without retaining advertising content.
+        # A missing record alone is not an exclusion decision.
+        self.retired_posts = {str(identifier): route for identifier, route in registry.get("retired_posts", {}).items()
+                              if self.valid_route(route)}
+        self.retired_aliases = {route: str(identifier) for route, identifier in registry.get("retired_aliases", {}).items()
+                                if self.valid_route(route)}
+        prior = {**self.retired_posts, **{str(identifier): route for identifier, route in registry.get("posts", {}).items()}}
+        canonical_owners = {route: identifier for identifier, route in prior.items() if self.valid_route(route)}
+        for identifier in self.excluded_ids:
+            choices = [prior.get(identifier), preferred.get(identifier), *legacy.get(identifier, [])]
+            canonical = next((route for route in choices if self.valid_route(route)
+                              and canonical_owners.get(route, identifier) == identifier), None)
+            if canonical:
+                self.retired_posts[identifier] = canonical
+                prior[identifier] = canonical
+                canonical_owners[canonical] = identifier
+        candidates = dict(registry.get("aliases", {}))
+        for identifier in self.excluded_ids:
+            for route in [preferred.get(identifier), *legacy.get(identifier, [])]:
+                if self.valid_route(route):
+                    candidates.setdefault(route, identifier)
+        for route, identifier in candidates.items():
+            identifier = str(identifier)
+            if (identifier in self.excluded_ids and self.valid_route(route)
+                    and canonical_owners.get(route, identifier) == identifier):
+                self.retired_aliases[route] = identifier
+        self.retired_routes = {**self.retired_aliases,
+                               **{route: identifier for identifier, route in self.retired_posts.items()}}
+        return prior
+
     def assign_routes(self, prior, preferred, legacy):
         owners = {}
         for post in self.posts[::-1]:
@@ -230,6 +271,10 @@ class ArchiveSite:
         reserved = {route: str(identifier) for identifier, route in prior.items() if self.valid_route(route)}
         if len(reserved) != sum(self.valid_route(route) for route in prior.values()):
             raise ValueError("Duplicate persisted canonical routes")
+        for route, identifier in self.retired_routes.items():
+            if route in reserved and reserved[route] != identifier:
+                raise ValueError("Retired route belongs to another record")
+            reserved[route] = identifier
         used = set()
         for post in sorted(self.posts, key=lambda p: str(p["id"])):
             identifier = str(post["id"])
@@ -240,15 +285,17 @@ class ArchiveSite:
             if not route:
                 stem = slug(short(title_for(post), 65)) or "community-question"
                 route = f"/discussions/{stem}-{slug(identifier)}/"
-            if route in used:
+            if route in used or reserved.get(route, identifier) != identifier:
                 raise ValueError("Canonical route collision: " + route)
             self.routes[identifier] = route; used.add(route)
         for alias, identifier in owners.items():
-            if identifier in self.routes and alias != self.routes[identifier] and alias not in used:
+            if (identifier in self.routes and alias != self.routes[identifier] and alias not in used
+                    and reserved.get(alias, identifier) == identifier):
                 self.aliases[alias] = identifier
         # Preserve old WTP slug URLs if titles changed after the registry exists.
         for identifier, alias in preferred.items():
-            if self.valid_route(alias) and alias not in used and identifier in self.routes:
+            if (self.valid_route(alias) and alias not in used and identifier in self.routes
+                    and reserved.get(alias, identifier) == identifier):
                 self.aliases[alias] = identifier
 
     def topic_name(self, key):
@@ -420,6 +467,7 @@ class ArchiveSite:
         return f'<section id="mentions" class="section"><h2>{label}</h2><div class="table-wrap"><table class="evidence-table"><caption>{note}</caption><thead><tr><th scope="col">Name in the archive</th><th scope="col">Discussions</th><th scope="col">Read the context</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div></section>'
 
     def archive_pages(self, base, heading, posts, topic=None, state=None):
+        self.archive_bases.add(base)
         total = max(1, (len(posts)+PAGE_SIZE-1)//PAGE_SIZE)
         for number in range(1, total+1):
             route = base if number == 1 else base+f"page/{number}/"
@@ -484,6 +532,10 @@ class ArchiveSite:
             completeness = 'This archive may not include every reply to the original discussion.'
         else:
             completeness = 'Replies have not been captured for this archived discussion.'
+        publication = post.get("publication") or {}
+        omitted = publication.get("comments_excluded", 0) if isinstance(publication, dict) else 0
+        if type(omitted) is int and omitted > 0:
+            completeness += ' Promotional replies have been omitted.'
         source = self.source_url(post)
         group = text(post.get("source_group")) or ("a foot health support community" if self.fff else "an insurance community")
         attribution = f'Archived from {escape(group)}. '
@@ -598,7 +650,8 @@ class ArchiveSite:
             shutil.copytree(self.source/'images',self.output/'images',dirs_exist_ok=True)
 
     def finish(self):
-        routes={'version':1,'posts':self.routes,'aliases':self.aliases}
+        routes={'version':1,'posts':self.routes,'aliases':self.aliases,
+                'retired_posts':self.retired_posts,'retired_aliases':self.retired_aliases}
         (self.output/'site-routes.json').write_text(json.dumps(routes,indent=2,ensure_ascii=False)+'\n')
         (self.output/'site-history.json').write_text(json.dumps({'version':1,'pages':self.pages},indent=2,sort_keys=True)+'\n')
         sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('<url><loc>'+escape(self.origin+route)+'</loc><lastmod>'+self.pages[route]['modified']+'</lastmod></url>\n' for route in sorted(self.indexable))+'</urlset>\n'
@@ -633,9 +686,35 @@ class ArchiveSite:
         descriptions={'.well-known/api-catalog':{'name':self.name,'apis':[],'resources':[{'url':self.origin+'/sitemap.xml','type':'sitemap'}]},'.well-known/agent-skills/index.json':{'name':self.name,'skills':[],'url':self.origin+'/'},'.well-known/mcp/server-card.json':{'name':self.name,'type':'static-website','description':'No MCP server or callable tools are provided.','url':self.origin+'/'}}
         for relative,value in descriptions.items():
             path=self.output/relative;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2)+'\n')
-        report={'site':self.site,'source_posts':self.source_post_count,'usable_posts':len(self.posts),'canonical_discussions':len(self.routes),'legacy_aliases':len(self.aliases),'indexable_pages':len(self.indexable),'generated_pages':len(self.pages),'topics':len(self.groups),'shared_css_bytes':len((self.source/'site_assets/site.css').read_bytes())}
+        report={'site':self.site,'source_posts':self.source_post_count,'usable_posts':len(self.posts),'excluded_posts':len(self.excluded_ids),'retired_discussion_routes':len(self.retired_routes),'canonical_discussions':len(self.routes),'legacy_aliases':len(self.aliases),'indexable_pages':len(self.indexable),'generated_pages':len(self.pages),'topics':len(self.groups),'shared_css_bytes':len((self.source/'site_assets/site.css').read_bytes())}
         (self.output/'site-build-report.json').write_text(json.dumps(report,indent=2)+'\n')
         print(json.dumps(report),flush=True)
+
+    def removed_page(self, route, *, archive=False):
+        heading = 'This archive page is no longer available' if archive else 'This discussion is no longer in the archive'
+        body = '<div class="wrap"><header class="page-head"><h1>'+heading+'</h1><p>Browse the current collection for available community discussions.</p><a class="button" href="/discussions/">Browse discussions</a></header></div>'
+        self.write_page(route, heading, 'Browse the available community discussions.', body, index=False)
+
+    def retire_obsolete_archives(self):
+        # Rebuild overlays files. Replace obsolete owned indexes so their old
+        # excerpts cannot remain public after a topic or final page empties.
+        bases = self.archive_bases | {'/discussions/'} | {'/'+key+'/' for key in self.taxonomy}
+        candidates = set()
+        for base in bases:
+            if base in self.old_history or (self.source/base.strip('/')/'index.html').is_file():
+                candidates.add(base)
+            pagination = self.source/base.strip('/')/'page'
+            for old_page in pagination.glob('*/index.html'):
+                number = old_page.parent.name
+                if number.isdigit() and int(number) >= 2:
+                    candidates.add(base+'page/'+number+'/')
+        for route in self.old_history:
+            match = re.fullmatch(r'(.+/)page/([1-9][0-9]*)/', route)
+            if match and match[1] in bases and int(match[2]) >= 2:
+                candidates.add(route)
+        for route in sorted(candidates):
+            if route not in self.pages and self.valid_route(route):
+                self.removed_page(route, archive=True)
 
     def build(self, states=None):
         self.states=set(states or [])
@@ -667,6 +746,10 @@ class ArchiveSite:
             self.post_page(post)
         for alias, identifier in self.aliases.items():
             self.post_page(by_id[identifier],alias)
+        for route in sorted(self.retired_routes):
+            if route not in self.pages:
+                self.removed_page(route)
+        self.retire_obsolete_archives()
         if not self.fff:
             for old_page in (self.source/'discussions').glob('*/index.html'):
                 route='/discussions/'+old_page.parent.name+'/'
