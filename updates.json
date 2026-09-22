@@ -1,334 +1,49 @@
 {
-  "833": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "1053": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "1137": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "1802": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "1818": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "2638": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "2944": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3050": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3117": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3208": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3209": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3211": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3212": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3213": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3383": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3915": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3921": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3938": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "3990": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4037": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4038": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4099": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4185": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4201": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4276": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4287": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4289": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4330": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4482": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4519": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4521": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4533": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4550": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4566": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4567": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4568": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4727": {
-    "surgery_types_mentioned": "plantar fasciectomy, tarsal tunnel release",
-    "products_mentioned": "none"
-  },
-  "4728": {
-    "products_mentioned": "none"
-  },
-  "4729": {
-    "products_mentioned": "none"
-  },
-  "4730": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "hardware removal",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4731": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "toe separators"
-  },
-  "4732": {
-    "conditions_mentioned": "infection",
-    "products_mentioned": "none",
-    "treatments_mentioned": "antibiotics, massage"
-  },
-  "4733": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4734": {
-    "conditions_mentioned": "plantar fasciitis",
-    "surgery_types_mentioned": "none"
-  },
-  "4735": {
-    "surgery_types_mentioned": "none"
-  },
-  "4736": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4737": {
-    "conditions_mentioned": "cuboid fracture, ligament damage",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "physical therapy, elevation, rest"
-  },
-  "4738": {
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none"
-  },
-  "4739": {
-    "products_mentioned": "none"
-  },
-  "4740": {
-    "products_mentioned": "none"
-  },
-  "4741": {
-    "products_mentioned": "none"
-  },
-  "4742": {
-    "products_mentioned": "none"
-  },
-  "4743": {
-    "products_mentioned": "none",
-    "treatments_mentioned": "surgery"
-  },
-  "4745": {
-    "products_mentioned": "Neosporin",
-    "treatments_mentioned": "surgery"
-  },
-  "4746": {
-    "products_mentioned": "none"
-  },
-  "4747": {
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none"
-  },
-  "4748": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "lapidus",
-    "products_mentioned": "none"
-  },
-  "4749": {
-    "products_mentioned": "none"
-  },
-  "4752": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "No Wonder Gel",
-    "treatments_mentioned": "none"
-  },
-  "4753": {
-    "conditions_mentioned": "paronychia",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4754": {
-    "conditions_mentioned": "paronychia",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
-  },
-  "4755": {
-    "conditions_mentioned": "paronychia, ingrown toenail",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "Lotrimin"
-  },
-  "4757": {
-    "conditions_mentioned": "none",
-    "products_mentioned": "none"
-  }
+  "833": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "1053": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "1137": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "1802": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "1818": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "2638": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "2944": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3050": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3117": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3208": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3209": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3211": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3212": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3213": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3383": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3915": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3921": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3938": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "3990": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4037": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4038": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4099": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4185": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4201": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4276": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4287": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4289": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4330": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4482": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4519": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4521": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4533": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4550": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4566": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4567": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4568": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "none", "treatments_mentioned": "none"},
+  "4758": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "Columbia boots, Merrell boots"},
+  "4759": {"products_mentioned": "wheelchair, ice pack"},
+  "4760": {"products_mentioned": "none"},
+  "4761": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "nail polish"},
+  "4762": {"products_mentioned": "knee scooter, boot, ace wrap"},
+  "4763": {"conditions_mentioned": "none", "surgery_types_mentioned": "none", "products_mentioned": "boot, foot stool, offload shoe", "treatments_mentioned": "none"},
+  "4764": {"products_mentioned": "TENS machine"},
+  "4765": {"products_mentioned": "toe spacer"},
+  "4766": {"products_mentioned": "none"},
+  "4767": {"products_mentioned": "knee scooter"},
+  "4769": {"conditions_mentioned": "plantar fasciitis", "surgery_types_mentioned": "gastrocnemius recession", "products_mentioned": "none"}
 }
