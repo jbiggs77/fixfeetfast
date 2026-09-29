@@ -1,13 +1,13 @@
 {
   "site": "fixfeetfast",
-  "source_posts": 4936,
-  "usable_posts": 4899,
+  "source_posts": 4957,
+  "usable_posts": 4920,
   "excluded_posts": 36,
   "retired_discussion_routes": 43,
-  "canonical_discussions": 4899,
-  "legacy_aliases": 390,
-  "indexable_pages": 5436,
-  "generated_pages": 5869,
+  "canonical_discussions": 4920,
+  "legacy_aliases": 394,
+  "indexable_pages": 5457,
+  "generated_pages": 5894,
   "topics": 16,
   "shared_css_bytes": 17846
 }
