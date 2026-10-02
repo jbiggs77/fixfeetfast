@@ -20,6 +20,23 @@ from urllib.parse import urlsplit
 PAGE_SIZE = 30
 EMPTY_TAGS = {"none", "n/a", "unknown", "null", "not specified", "other"}
 
+# Bump when the rendered markup changes in a way search engines should re-fetch
+# (new structured data, new title logic). Content changes are detected per page.
+TEMPLATE_VERSION = "2026-10-02.1"
+
+# Index gate for discussion pages. A discussion is worth indexing on its own when
+# it has a real exchange (replies plus enough text) or a substantial question.
+# Thinner records stay published and linked for readers but are noindex,follow
+# and leave the sitemap, so crawl budget goes to pages that can rank.
+INDEX_MIN_REPLIES = 2
+INDEX_MIN_WORDS = 150
+INDEX_RICH_BODY_WORDS = 250
+
+# Anonymised attribution for structured data. Source communities are private
+# groups; member names are deliberately never published. This label matches the
+# visible "Community comment" / "Community reply" labels on the page.
+COMMUNITY_AUTHOR = {"@type": "Person", "name": "Community member"}
+
 
 def text(value):
     return str(value or "").strip()
@@ -99,6 +116,11 @@ def comments(post):
 
 
 def title_for(post):
+    # An editorial seo_title (written for the record, kept in posts.json) wins.
+    # Otherwise fall back to the supplied title, then the opening sentence.
+    seo = re.sub(r"\s+", " ", text(post.get("seo_title"))).strip(" .…")
+    if 12 <= len(seo) <= 120:
+        return seo
     proposed = text(post.get("title"))
     if len(proposed) < 12 or proposed.lower() in {"discussion", "question", "none"}:
         proposed = text(post.get("body"))
@@ -106,6 +128,10 @@ def title_for(post):
         if sentences and 18 <= len(sentences[0]) <= 130:
             proposed = sentences[0]
     return short(proposed, 112) or f"Community discussion {post['id']}"
+
+
+def word_count(value):
+    return len(re.findall(r"[\w'’-]+", text(value)))
 
 
 class InlineHTML(HTMLParser):
@@ -179,6 +205,7 @@ class ArchiveSite:
         for group in self.groups.values():
             group.sort(key=lambda p: self.order[str(p["id"])])
         self.routes = {}; self.aliases = {}; self.pages = {}; self.indexable = set()
+        self.index_decisions = {}
         self.archive_bases = set()
         registry = self.load_json(self.source / "site-routes.json", {})
         prior = self.prepare_retired_routes(registry, preferred_routes or {}, legacy_routes or {})
@@ -344,10 +371,16 @@ class ArchiveSite:
         return visible, schema
 
     def write_page(self, route, title, description, body, *, kind="WebPage", extra=None,
-                   canonical=None, index=True, citations=None):
+                   canonical=None, index=True, citations=None, content_key=None):
         canonical = canonical or route
-        signature = sha256(json.dumps([title, description, body, canonical, kind, extra, citations,
-                                       self.assets], ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+        # The modification date must track the page's own content, not every
+        # sidebar, count or related-link list that shifts whenever a new record
+        # lands elsewhere in the archive. Callers pass the content that matters;
+        # hashing the rendered body re-dated the whole site on every build and
+        # taught crawlers that lastmod here is noise.
+        payload = [TEMPLATE_VERSION, canonical, kind, content_key] if content_key is not None else [
+            title, description, body, canonical, kind, extra, citations, self.assets]
+        signature = sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
         old = self.old_history.get(route, {})
         modified = old.get("modified") if old.get("hash") == signature and valid_date(old.get("modified")) else self.today
         self.pages[route] = {"hash": signature, "modified": modified}
@@ -417,7 +450,8 @@ class ArchiveSite:
         featured = [p for p in self.posts if self.reply_count(p) > 0 and
                     subject.search(text(p.get("body"))[:600])][:5]
         recent = f'<section class="section wash"><div class="wrap"><div class="section-top"><h2>Questions with community replies</h2><a href="/discussions/">View all →</a></div><div class="two-col"><div class="discussion-list">{"".join(self.row(p) for p in featured)}</div>{self.sidebar(popular[:4])}</div></div></section>'
-        self.write_page("/", title, "Explore community questions, captured replies and source context about " + ("foot surgery, recovery and foot conditions." if self.fff else "insurance risks, carrier mentions and market research."), hero+stats+topics+recent)
+        key = [len(self.posts), total_replies, popular, [str(p["id"]) for p in featured], [title_for(p) for p in featured]]
+        self.write_page("/", title, "Explore community questions, captured replies and source context about " + ("foot surgery, recovery and foot conditions." if self.fff else "insurance risks, carrier mentions and market research."), hero+stats+topics+recent, content_key=key)
 
     def mentions(self, posts, field):
         result = defaultdict(list)
@@ -501,7 +535,13 @@ class ArchiveSite:
             note = 'Personal experiences can differ. These discussions are not clinical guidance.' if self.fff else 'Carrier names are mentions in community conversations, not verified placement outcomes.'
             body = f'<div class="wrap">{crumb}<header class="page-head"><p class="eyebrow">{"Community experiences" if self.fff else "Insurance market research"}</p><h1>{escape(title)}</h1><p class="lede">{escape(intro)}</p><p class="site-note">{note}</p></header><div class="two-col"><div>{search}{list_html}{overview}</div>{aside}</div></div>'
             items = {"@type":"ItemList","numberOfItems":len(visible),"itemListElement":[{"@type":"ListItem","position":(number-1)*PAGE_SIZE+i+1,"url":self.origin+self.routes[str(p["id"])],"name":title_for(p)} for i,p in enumerate(visible)]}
-            self.write_page(route, title, short(intro, 160), body, kind="CollectionPage", extra=[schema,items])
+            # Only the first page of an archive is indexable. Deeper pages shift
+            # by one with every new record, so they would be re-crawled daily for
+            # no ranking benefit; links on them are still followed.
+            listing = [[self.routes[str(p["id"])], title_for(p), self.reply_count(p), archive_date(p)] for p in visible]
+            key = [route, title, intro, len(posts), listing, overview]
+            self.write_page(route, title, short(intro, 160), body, kind="CollectionPage", extra=[schema,items],
+                            index=(number == 1), content_key=key)
 
     def state_groups(self, topic):
         groups = defaultdict(list)
@@ -572,8 +612,38 @@ class ArchiveSite:
         aside = '<aside class="sidebar">'+overview+related_html+'<div class="context-note">'+note+' <a href="/about/#sources">How to use this archive</a></div></aside>'
         body = f'<div class="wrap">{crumb}<header class="discussion-head" id="question"><p class="eyebrow">Community discussion</p><h1>{escape(heading)}</h1><div class="row-meta">{date_label}<span>{len(replies)} archived replies</span></div><div class="pill-row">{pills}</div></header><div class="two-col"><div class="prose">{question}{discussion}</div>{aside}</div><a class="back-link" href="/{first}/">← More {escape(self.topic_name(first))}</a></div>'
         description = short(text(post.get("body")), 115) + f' Read {len(replies)} archived replies and the available source context.'
-        self.write_page(route, heading, description, body, extra=[breadcrumb], canonical=canonical,
-                        citations=[source] if source else None)
+        # Structured data for the visible discussion: the question, its archived
+        # replies and their anchors. Attribution is anonymised on purpose.
+        page_id = self.origin + canonical + "#webpage"
+        posting = {"@type": "DiscussionForumPosting", "@id": self.origin + canonical + "#discussion",
+                   "mainEntityOfPage": {"@id": page_id}, "url": self.origin + canonical, "headline": heading,
+                   "text": text(post.get("body")), "author": COMMUNITY_AUTHOR,
+                   "isPartOf": {"@id": self.origin + "/#website"},
+                   "interactionStatistic": {"@type": "InteractionCounter", "interactionType": "https://schema.org/CommentAction",
+                                            "userInteractionCount": len(replies)}}
+        if date:
+            posting["datePublished"] = date
+        comment_nodes = []
+        for anchor, reply in zip(anchors, replies):
+            node = {"@type": "Comment", "@id": self.origin + canonical + "#" + anchor, "url": self.origin + canonical + "#" + anchor,
+                    "text": text(reply.get("comment_text")), "author": COMMUNITY_AUTHOR}
+            if date:
+                node["datePublished"] = date
+            comment_nodes.append(node)
+        if comment_nodes:
+            posting["commentCount"] = len(comment_nodes)
+            posting["comment"] = comment_nodes
+        # Index gate: see INDEX_* constants. Aliases are never indexable.
+        body_words = word_count(post.get("body"))
+        total_words = body_words + sum(word_count(r.get("comment_text")) for r in replies)
+        worth_indexing = (len(replies) >= INDEX_MIN_REPLIES and total_words >= INDEX_MIN_WORDS) or body_words >= INDEX_RICH_BODY_WORDS
+        if route == canonical:
+            self.index_decisions[identifier] = worth_indexing
+        key = [identifier, heading, text(post.get("body")), [[text(r.get("comment_text")), text(r.get("parent_comment_id"))] for r in replies],
+               date, groups, source, group, status, omitted, labels, post.get("images"), post.get("attachments"),
+               [r.get("images") for r in replies], worth_indexing]
+        self.write_page(route, heading, description, body, extra=[breadcrumb, posting], canonical=canonical,
+                        citations=[source] if source else None, index=worth_indexing, content_key=key)
 
     def about(self):
         heading = f"About {self.name}"
@@ -583,7 +653,7 @@ class ArchiveSite:
                 'This site is a community-discussion archive. It is not a carrier appetite database, and a mention does not verify coverage, eligibility or a successful placement.')
         guide = '' if self.fff else '<h2>Market guides</h2><p>Editorial market guides are presented separately from community discussions. Each guide retains its stated update period and supporting source links. Availability and terms can change; confirm them with the named market.</p>'
         prose = f'<div class="prose"><p class="lede">A clearer way to explore community conversations about {subject}.</p><h2>What you will find</h2><p>The archive contains {len(self.posts):,} discussions, organized by topic, with the replies and source links available in each record. Questions and comments describe individual experiences; they do not establish consensus.</p><h2 id="sources">Sources &amp; limitations</h2><p>{role}</p><p>Discussions originate in online communities, including Facebook groups. An original source link is shown when available; accessing it may require sign-in or group membership. Older records can be missing their source link or replies. Pages say when the archived discussion may be incomplete.</p><h2>How the archive is maintained</h2><p>The collection process retains discussion identities and reply relationships, revisits older records, and expands accessible comments. It cannot recover material that is deleted or inaccessible. No missing answers are invented. Topic labels and mention counts organize the archive; they are not professional recommendations.</p><h2>Dates and context</h2><p>Archive dates come from stored records. They are not replaced with today’s date each time the site is rebuilt and may differ from the date of the original conversation. Always read the surrounding question and replies before using an excerpt.</p>{guide}<h2>Using a community account responsibly</h2><p>{"Use these accounts to prepare questions for your care team, not to diagnose a condition or choose a treatment without professional advice." if self.fff else "Use these accounts to identify questions and markets to research. Confirm current appetite, state eligibility and terms directly before relying on any suggestion."}</p></div>'
-        self.write_page('/about/', heading, f'Learn how {self.name} organizes community discussions, preserves source context and labels limitations.', '<div class="wrap">'+crumb+'<header class="page-head"><p class="eyebrow">Sources and methodology</p><h1>'+heading+'</h1></header>'+prose+'</div>', kind='AboutPage', extra=[breadcrumb])
+        self.write_page('/about/', heading, f'Learn how {self.name} organizes community discussions, preserves source context and labels limitations.', '<div class="wrap">'+crumb+'<header class="page-head"><p class="eyebrow">Sources and methodology</p><h1>'+heading+'</h1></header>'+prose+'</div>', kind='AboutPage', extra=[breadcrumb], content_key=[heading, prose])
 
     def guide_pages(self):
         guides = self.guides_data.get('guides', [])
@@ -686,14 +756,16 @@ class ArchiveSite:
         descriptions={'.well-known/api-catalog':{'name':self.name,'apis':[],'resources':[{'url':self.origin+'/sitemap.xml','type':'sitemap'}]},'.well-known/agent-skills/index.json':{'name':self.name,'skills':[],'url':self.origin+'/'},'.well-known/mcp/server-card.json':{'name':self.name,'type':'static-website','description':'No MCP server or callable tools are provided.','url':self.origin+'/'}}
         for relative,value in descriptions.items():
             path=self.output/relative;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2)+'\n')
-        report={'site':self.site,'source_posts':self.source_post_count,'usable_posts':len(self.posts),'excluded_posts':len(self.excluded_ids),'retired_discussion_routes':len(self.retired_routes),'canonical_discussions':len(self.routes),'legacy_aliases':len(self.aliases),'indexable_pages':len(self.indexable),'generated_pages':len(self.pages),'topics':len(self.groups),'shared_css_bytes':len((self.source/'site_assets/site.css').read_bytes())}
+        indexed_posts=sum(1 for v in self.index_decisions.values() if v)
+        modified_today=sum(1 for p in self.pages.values() if p['modified']==self.today)
+        report={'site':self.site,'source_posts':self.source_post_count,'usable_posts':len(self.posts),'excluded_posts':len(self.excluded_ids),'retired_discussion_routes':len(self.retired_routes),'canonical_discussions':len(self.routes),'legacy_aliases':len(self.aliases),'indexable_pages':len(self.indexable),'indexable_discussions':indexed_posts,'noindex_thin_discussions':len(self.index_decisions)-indexed_posts,'pages_modified_today':modified_today,'generated_pages':len(self.pages),'topics':len(self.groups),'shared_css_bytes':len((self.source/'site_assets/site.css').read_bytes())}
         (self.output/'site-build-report.json').write_text(json.dumps(report,indent=2)+'\n')
         print(json.dumps(report),flush=True)
 
     def removed_page(self, route, *, archive=False):
         heading = 'This archive page is no longer available' if archive else 'This discussion is no longer in the archive'
         body = '<div class="wrap"><header class="page-head"><h1>'+heading+'</h1><p>Browse the current collection for available community discussions.</p><a class="button" href="/discussions/">Browse discussions</a></header></div>'
-        self.write_page(route, heading, 'Browse the available community discussions.', body, index=False)
+        self.write_page(route, heading, 'Browse the available community discussions.', body, index=False, content_key=[route, heading])
 
     def retire_obsolete_archives(self):
         # Rebuild overlays files. Replace obsolete owned indexes so their old
