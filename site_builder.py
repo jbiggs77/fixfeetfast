@@ -228,7 +228,11 @@ class ArchiveSite:
                 route = "/discussions/" + old_page.parent.name + "/"
                 if match and match[1] in self.routes and route not in self.routes.values() and self.valid_route(route):
                     self.aliases.setdefault(route, match[1])
-        self.guides_data = self.load_json(self.source / "guides.json", {}) if not self.fff else {}
+        self.guides_data = self.load_json(self.source / "guides.json", {})
+        self.guide_by_niche = {}
+        for guide in self.guides_data.get("guides", []):
+            if self.fff and guide.get("niche"):
+                self.guide_by_niche.setdefault(guide["niche"], guide)
         self.assets = {}; self.search_asset = None
         self.today = datetime.now(timezone.utc).date().isoformat()
         self.link_terms = []
@@ -350,6 +354,8 @@ class ArchiveSite:
         items = [("/discussions/", "Discussions"), ("/#topics", "Topics" if self.fff else "Risk classes")]
         if not self.fff:
             items.append(("/hard-to-place-insurance/", "Market guides"))
+        elif self.guides_data.get("guides"):
+            items.append(("/guides/", "Guides"))
         items.append(("/about/", "About"))
         links = "".join(f'<a href="{url}">{label}</a>' for url, label in items)
         return f'<header class="site-header"><div class="wrap header-inner">{self.brand()}<nav class="site-nav" aria-label="Main navigation">{links}</nav><details class="mobile-nav"><summary>Menu</summary><nav class="mobile-links" aria-label="Mobile navigation">{links}</nav></details></div></header>'
@@ -450,8 +456,13 @@ class ArchiveSite:
         featured = [p for p in self.posts if self.reply_count(p) > 0 and
                     subject.search(text(p.get("body"))[:600])][:5]
         recent = f'<section class="section wash"><div class="wrap"><div class="section-top"><h2>Questions with community replies</h2><a href="/discussions/">View all →</a></div><div class="two-col"><div class="discussion-list">{"".join(self.row(p) for p in featured)}</div>{self.sidebar(popular[:4])}</div></div></section>'
-        key = [len(self.posts), total_replies, popular, [str(p["id"]) for p in featured], [title_for(p) for p in featured]]
-        self.write_page("/", title, "Explore community questions, captured replies and source context about " + ("foot surgery, recovery and foot conditions." if self.fff else "insurance risks, carrier mentions and market research."), hero+stats+topics+recent, content_key=key)
+        guides_section = ''
+        guides = self.guides_data.get("guides", []) if self.fff else []
+        if guides:
+            cards = ''.join(f'<a class="guide-card" href="/guides/{slug(g["slug"])}/"><h3>{escape(g["title"])}</h3><p>{escape(short(g.get("meta_description"), 150))}</p><span>Read the guide →</span></a>' for g in guides[:6])
+            guides_section = f'<section class="section"><div class="wrap"><div class="section-top"><h2>Guides built from the archive</h2><a href="/guides/">All guides →</a></div><p class="lede">What hundreds of people reported about the same procedure, symptom or product, counted and quoted, with links back to the original discussions.</p><div class="guide-grid">{cards}</div></div></section>'
+        key = [len(self.posts), total_replies, popular, [str(p["id"]) for p in featured], [title_for(p) for p in featured], [[g["slug"], g["title"], g.get("meta_description")] for g in guides[:6]]]
+        self.write_page("/", title, "Explore community questions, captured replies and source context about " + ("foot surgery, recovery and foot conditions." if self.fff else "insurance risks, carrier mentions and market research."), hero+stats+topics+guides_section+recent, content_key=key)
 
     def mentions(self, posts, field):
         result = defaultdict(list)
@@ -533,13 +544,17 @@ class ArchiveSite:
                 if codes:
                     overview += '<section class="section"><h2>Classification references</h2><p class="site-note">Codes listed for this risk class are a starting point; confirm the classification for the actual operation.</p><div class="pill-row">'+''.join(f'<span class="pill neutral">{kind} {escape(str(code))} · {escape(label)}</span>' for kind,code,label in codes)+'</div></section>'
             note = 'Personal experiences can differ. These discussions are not clinical guidance.' if self.fff else 'Carrier names are mentions in community conversations, not verified placement outcomes.'
-            body = f'<div class="wrap">{crumb}<header class="page-head"><p class="eyebrow">{"Community experiences" if self.fff else "Insurance market research"}</p><h1>{escape(title)}</h1><p class="lede">{escape(intro)}</p><p class="site-note">{note}</p></header><div class="two-col"><div>{search}{list_html}{overview}</div>{aside}</div></div>'
+            start_here = ''
+            guide = self.guide_by_niche.get(topic) if topic and number == 1 else None
+            if guide:
+                start_here = f'<a class="guide-card start-here" href="/guides/{slug(guide["slug"])}/"><p class="eyebrow">Start here</p><h3>{escape(guide["title"])}</h3><p>{escape(short(guide.get("meta_description"), 170))}</p><span>Read the guide →</span></a>'
+            body = f'<div class="wrap">{crumb}<header class="page-head"><p class="eyebrow">{"Community experiences" if self.fff else "Insurance market research"}</p><h1>{escape(title)}</h1><p class="lede">{escape(intro)}</p><p class="site-note">{note}</p></header><div class="two-col"><div>{start_here}{search}{list_html}{overview}</div>{aside}</div></div>'
             items = {"@type":"ItemList","numberOfItems":len(visible),"itemListElement":[{"@type":"ListItem","position":(number-1)*PAGE_SIZE+i+1,"url":self.origin+self.routes[str(p["id"])],"name":title_for(p)} for i,p in enumerate(visible)]}
             # Only the first page of an archive is indexable. Deeper pages shift
             # by one with every new record, so they would be re-crawled daily for
             # no ranking benefit; links on them are still followed.
             listing = [[self.routes[str(p["id"])], title_for(p), self.reply_count(p), archive_date(p)] for p in visible]
-            key = [route, title, intro, len(posts), listing, overview]
+            key = [route, title, intro, len(posts), listing, overview, start_here]
             self.write_page(route, title, short(intro, 160), body, kind="CollectionPage", extra=[schema,items],
                             index=(number == 1), content_key=key)
 
@@ -652,6 +667,8 @@ class ArchiveSite:
         role = ('This site is a community-experience archive. It is not a medical practice, and discussions are not reviewed or endorsed as clinical advice.' if self.fff else
                 'This site is a community-discussion archive. It is not a carrier appetite database, and a mention does not verify coverage, eligibility or a successful placement.')
         guide = '' if self.fff else '<h2>Market guides</h2><p>Editorial market guides are presented separately from community discussions. Each guide retains its stated update period and supporting source links. Availability and terms can change; confirm them with the named market.</p>'
+        if self.fff and self.guides_data.get('guides'):
+            guide = '<h2>Guides</h2><p>The <a href="/guides/">guides</a> summarise what many archived discussions say about one procedure, symptom or product. Every count comes from the archive and every excerpt links to the discussion it was taken from. Guides are updated as the archive grows; they are not reviewed by clinicians and are not medical advice.</p>'
         prose = f'<div class="prose"><p class="lede">A clearer way to explore community conversations about {subject}.</p><h2>What you will find</h2><p>The archive contains {len(self.posts):,} discussions, organized by topic, with the replies and source links available in each record. Questions and comments describe individual experiences; they do not establish consensus.</p><h2 id="sources">Sources &amp; limitations</h2><p>{role}</p><p>Discussions originate in online communities, including Facebook groups. An original source link is shown when available; accessing it may require sign-in or group membership. Older records can be missing their source link or replies. Pages say when the archived discussion may be incomplete.</p><h2>How the archive is maintained</h2><p>The collection process retains discussion identities and reply relationships, revisits older records, and expands accessible comments. It cannot recover material that is deleted or inaccessible. No missing answers are invented. Topic labels and mention counts organize the archive; they are not professional recommendations.</p><h2>Dates and context</h2><p>Archive dates come from stored records. They are not replaced with today’s date each time the site is rebuilt and may differ from the date of the original conversation. Always read the surrounding question and replies before using an excerpt.</p>{guide}<h2>Using a community account responsibly</h2><p>{"Use these accounts to prepare questions for your care team, not to diagnose a condition or choose a treatment without professional advice." if self.fff else "Use these accounts to identify questions and markets to research. Confirm current appetite, state eligibility and terms directly before relying on any suggestion."}</p></div>'
         self.write_page('/about/', heading, f'Learn how {self.name} organizes community discussions, preserves source context and labels limitations.', '<div class="wrap">'+crumb+'<header class="page-head"><p class="eyebrow">Sources and methodology</p><h1>'+heading+'</h1></header>'+prose+'</div>', kind='AboutPage', extra=[breadcrumb], content_key=[heading, prose])
 
@@ -660,6 +677,8 @@ class ArchiveSite:
         hub = self.guides_data.get('hub', {})
         if not guides:
             return
+        if self.fff:
+            return self.fff_guide_pages(guides, hub)
         for guide in guides:
             route = '/guides/'+slug(guide['slug'])+'/'
             heading = text(guide['title']); crumb, breadcrumb = self.breadcrumbs([('Market guides','/hard-to-place-insurance/'),(heading,route)])
@@ -689,6 +708,79 @@ class ArchiveSite:
         crumb, breadcrumb = self.breadcrumbs([('Hard-to-place insurance guides','/hard-to-place-insurance/')])
         body = '<div class="wrap">'+crumb+'<header class="page-head"><p class="eyebrow">Market guides · '+escape(text(hub.get('updated')))+'</p><h1>Research your next route to market.</h1><p class="lede">Sourced guides to specialty risks, wholesalers and market access, alongside the community discussions that add context.</p></header>'+cards+'<section class="section prose">'+content+'</section></div>'
         self.write_page('/hard-to-place-insurance/','Hard-to-place insurance market guides',text(hub.get('meta_description')),body,kind='CollectionPage',extra=[breadcrumb])
+
+    def quote_block(self, quotes):
+        # Short excerpts from archived discussions, each linked to its source page.
+        out = []
+        for q in quotes or []:
+            route = text(q.get('route')) if isinstance(q, dict) else ''
+            body = text(q.get('text')) if isinstance(q, dict) else text(q)
+            if not body:
+                continue
+            link = f' <a class="quote-source" href="{escape(route, quote=True)}">Read the discussion →</a>' if self.valid_route(route) and route in self.routes.values() else ''
+            out.append(f'<blockquote class="community-quote"><p>{escape(body)}</p><footer>Community member{link}</footer></blockquote>')
+        return ''.join(out)
+
+    def fff_guide_pages(self, guides, hub):
+        by_id = {str(p['id']): p for p in self.posts}
+        for guide in guides:
+            route = '/guides/' + slug(guide['slug']) + '/'
+            heading = text(guide['title']); updated = valid_date(guide.get('updated')) or ''
+            crumb, breadcrumb = self.breadcrumbs([('Guides', '/guides/'), (heading, route)])
+            niche = guide.get('niche') if guide.get('niche') in self.groups else None
+            basis = guide.get('basis') or {}
+            basis_line = ''
+            if basis.get('discussions'):
+                basis_line = f' · Based on {int(basis["discussions"]):,} archived discussions' + (f' and {int(basis["replies"]):,} replies' if basis.get('replies') else '')
+            content = ''.join('<p>' + rich(p) + '</p>' for p in guide.get('intro', []))
+            if guide.get('at_a_glance'):
+                content += '<div class="at-a-glance"><h2>At a glance</h2><ul>' + ''.join('<li>' + rich(item) + '</li>' for item in guide['at_a_glance']) + '</ul></div>'
+            for section in guide.get('sections', []):
+                content += '<h2>' + escape(text(section.get('h'))) + '</h2>'
+                content += ''.join('<p>' + rich(p) + '</p>' for p in section.get('p', []))
+                if section.get('list'):
+                    content += '<ul>' + ''.join('<li>' + rich(item) + '</li>' for item in section['list']) + '</ul>'
+                content += self.quote_block(section.get('quotes'))
+            if guide.get('timeline'):
+                content += '<h2>' + escape(text(guide.get('timeline_heading') or 'What people report, stage by stage')) + '</h2><p class="site-note">Stages are as people described them. Surgeons, procedures and bodies differ; a stage below is not a schedule.</p><dl class="timeline">'
+                for step in guide['timeline']:
+                    content += '<dt>' + escape(text(step.get('stage'))) + '</dt><dd>' + ''.join('<p>' + rich(p) + '</p>' for p in ([step.get('summary')] if isinstance(step.get('summary'), str) else step.get('summary', []))) + self.quote_block(step.get('quotes')) + '</dd>'
+                content += '</dl>'
+            evidence = guide.get('evidence')
+            if evidence and evidence.get('rows'):
+                rows = []
+                for row in evidence['rows']:
+                    links = ''.join(f'<a href="{escape(r, quote=True)}">Discussion {i + 1}</a>' for i, r in enumerate([x for x in row.get('routes', []) if self.valid_route(x) and x in self.routes.values()][:3]))
+                    rows.append(f'<tr><td>{escape(text(row.get("name")))}</td><td>{int(row.get("count", 0)):,}</td><td>{rich(row.get("note"))}</td><td><div class="evidence-links">{links}</div></td></tr>')
+                content += '<h2>' + escape(text(evidence.get('label') or 'What people mention')) + '</h2><div class="table-wrap"><table class="evidence-table"><caption>' + escape(text(evidence.get('note') or 'Counts are archived discussions that mention the item. A mention can be a question, a recommendation or a complaint; it is not an endorsement.')) + '</caption><thead><tr><th scope="col">Mentioned</th><th scope="col">Discussions</th><th scope="col">Context</th><th scope="col">Read</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table></div>'
+            if guide.get('faq'):
+                content += '<h2>Questions people ask</h2><div class="details-list">' + ''.join('<details><summary>' + escape(text(item['q'])) + '</summary><p>' + rich(item['a']) + '</p></details>' for item in guide['faq']) + '</div>'
+            content += '<h2>How this guide was built</h2><p>' + rich(guide.get('method') or 'This guide summarises archived community discussions on this site. Counts come from the archive, excerpts link to their source discussion, and nothing here is clinical advice. Bring the questions it raises to your own surgeon or podiatrist.') + '</p>'
+            content += self.sources(guide.get('sources', []))
+            related = [by_id[str(i)] for i in guide.get('related_ids', []) if str(i) in by_id]
+            if not related and niche:
+                related = [p for p in self.groups[niche] if self.index_decisions.get(str(p['id']))][:4]
+            if related:
+                content += '<h2>Related community discussions</h2><div class="discussion-list">' + ''.join(self.row(p) for p in related[:6]) + '</div>'
+            aside = self.sidebar([niche] if niche else None)
+            eyebrow = 'Community data guide' + (' · Updated ' + escape(updated) if updated else '') + escape(basis_line)
+            body = '<div class="wrap">' + crumb + '<header class="page-head"><p class="eyebrow">' + eyebrow + '</p><h1>' + escape(heading) + '</h1><p class="lede">' + escape(text(guide.get('meta_description'))) + '</p><p class="site-note">Personal experiences, counted and quoted. Not medical advice.</p></header><div class="two-col"><article class="prose guide">' + content + '</article>' + aside + '</div></div>'
+            article = {"@type": "Article", "@id": self.origin + route + "#article", "mainEntityOfPage": {"@id": self.origin + route + "#webpage"},
+                       "headline": heading, "description": text(guide.get('meta_description')), "inLanguage": "en-US",
+                       "author": {"@id": self.origin + "/#organization"}, "publisher": {"@id": self.origin + "/#organization"},
+                       "isPartOf": {"@id": self.origin + "/#website"}}
+            if updated:
+                article["datePublished"] = valid_date(guide.get('published')) or updated; article["dateModified"] = updated
+            self.write_page(route, heading, text(guide.get('meta_description')), body, extra=[breadcrumb, article],
+                            citations=[safe_url(s.get('url')) for s in guide.get('sources', []) if safe_url(s.get('url'))] or None,
+                            content_key=[guide, [r['id'] for r in related[:6]], [title_for(p) for p in related[:6]]])
+        cards = '<div class="guide-grid">' + ''.join('<a class="guide-card" href="/guides/' + slug(g['slug']) + '/"><h3>' + escape(g['title']) + '</h3><p>' + escape(short(g.get('meta_description'), 150)) + '</p><span>Read the guide →</span></a>' for g in guides) + '</div>'
+        hub_title = text(hub.get('title')) or 'Foot surgery and foot health guides'
+        crumb, breadcrumb = self.breadcrumbs([('Guides', '/guides/')])
+        intro = ''.join('<p>' + rich(p) + '</p>' for p in hub.get('intro', []))
+        body = '<div class="wrap">' + crumb + '<header class="page-head"><p class="eyebrow">Community data guides' + (' · Updated ' + escape(text(hub.get('updated'))) if hub.get('updated') else '') + '</p><h1>' + escape(hub_title) + '</h1><p class="lede">' + escape(text(hub.get('meta_description'))) + '</p></header>' + cards + ('<section class="section prose">' + intro + '</section>' if intro else '') + '</div>'
+        items = {"@type": "ItemList", "numberOfItems": len(guides), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": self.origin + '/guides/' + slug(g['slug']) + '/', "name": g['title']} for i, g in enumerate(guides)]}
+        self.write_page('/guides/', hub_title, text(hub.get('meta_description')), body, kind='CollectionPage', extra=[breadcrumb, items], content_key=[hub, [[g['slug'], g['title'], g.get('meta_description')] for g in guides]])
 
     @staticmethod
     def sources(sources):
