@@ -5,12 +5,12 @@
   "excluded_posts": 84,
   "retired_discussion_routes": 91,
   "canonical_discussions": 4983,
-  "legacy_aliases": 403,
+  "legacy_aliases": 405,
   "indexable_pages": 1298,
   "indexable_discussions": 1277,
   "noindex_thin_discussions": 3706,
-  "pages_modified_today": 607,
-  "generated_pages": 6027,
+  "pages_modified_today": 130,
+  "generated_pages": 6029,
   "topics": 16,
   "shared_css_bytes": 19005
 }
