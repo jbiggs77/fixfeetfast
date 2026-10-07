@@ -1,482 +1,318 @@
 {
-  "833": {
+  "4550": {
     "conditions_mentioned": "none",
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "905": {
+  "4566": {
     "conditions_mentioned": "none",
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "907": {
+  "4567": {
     "conditions_mentioned": "none",
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "952": {
+  "4568": {
     "conditions_mentioned": "none",
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "991": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4934": {
+    "surgery_types_mentioned": "neuroma excision"
   },
-  "1000": {
-    "conditions_mentioned": "none",
+  "4935": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1053": {
-    "conditions_mentioned": "none",
+  "4936": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1137": {
-    "conditions_mentioned": "none",
+  "4937": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "Neosporin"
   },
-  "1138": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4938": {
+    "surgery_types_mentioned": "gastrocnemius recession",
+    "products_mentioned": "none"
   },
-  "1186": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
+  "4939": {
     "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "treatments_mentioned": "antibiotics"
   },
-  "1216": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4940": {
+    "surgery_types_mentioned": "none"
   },
-  "1288": {
-    "conditions_mentioned": "none",
+  "4941": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1388": {
-    "conditions_mentioned": "none",
+  "4942": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1392": {
-    "conditions_mentioned": "none",
+  "4943": {
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "1511": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4944": {
+    "surgery_types_mentioned": "none"
   },
-  "1515": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4945": {
+    "surgery_types_mentioned": "none"
   },
-  "1541": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4946": {
+    "surgery_types_mentioned": "none"
   },
-  "1555": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4947": {
+    "conditions_mentioned": "fracture",
+    "surgery_types_mentioned": "tibiotalocalcaneal fusion",
+    "products_mentioned": "none"
   },
-  "1561": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4948": {
+    "products_mentioned": "none"
   },
-  "1575": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
+  "4949": {
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "1605": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4950": {
+    "surgery_types_mentioned": "none"
   },
-  "1614": {
-    "conditions_mentioned": "none",
+  "4951": {
+    "conditions_mentioned": "toenail fungus",
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "Toe Fx, Urea cream"
   },
-  "1615": {
+  "4952": {
     "conditions_mentioned": "none",
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1617": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4953": {
+    "surgery_types_mentioned": "none"
   },
-  "1663": {
-    "conditions_mentioned": "none",
+  "4954": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1693": {
-    "conditions_mentioned": "none",
+  "4956": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1707": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4957": {
+    "surgery_types_mentioned": "none"
   },
-  "1770": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4958": {
+    "conditions_mentioned": "plantar fasciitis",
+    "surgery_types_mentioned": "none"
   },
-  "1802": {
+  "4959": {
     "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "surgery_types_mentioned": "none"
   },
-  "1818": {
-    "conditions_mentioned": "none",
+  "4960": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "1820": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4961": {
+    "surgery_types_mentioned": "none"
   },
-  "1860": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4962": {
+    "surgery_types_mentioned": "none"
   },
-  "1899": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4963": {
+    "surgery_types_mentioned": "none"
   },
-  "2073": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4964": {
+    "surgery_types_mentioned": "neuroma excision",
+    "products_mentioned": "Upstep"
   },
-  "2187": {
-    "conditions_mentioned": "none",
+  "4965": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "2193": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4967": {
+    "conditions_mentioned": "plantar fasciitis",
+    "surgery_types_mentioned": "plantar fascia release",
+    "products_mentioned": "none"
   },
-  "2638": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4968": {
+    "products_mentioned": "none"
   },
-  "2780": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4969": {
+    "products_mentioned": "none"
   },
-  "2835": {
-    "conditions_mentioned": "none",
+  "4970": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "2874": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
+  "4971": {
+    "conditions_mentioned": "foot drop, nerve damage",
+    "surgery_types_mentioned": "knee replacement",
+    "products_mentioned": "AFO (ankle foot orthosis)",
     "treatments_mentioned": "none"
   },
-  "2886": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4972": {
+    "surgery_types_mentioned": "none"
   },
-  "2944": {
-    "conditions_mentioned": "none",
+  "4973": {
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "treatments_mentioned": "exercises"
   },
-  "2948": {
-    "conditions_mentioned": "none",
+  "4974": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "2985": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4975": {
+    "products_mentioned": "none"
   },
-  "3050": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4976": {
+    "products_mentioned": "none"
   },
-  "3117": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4978": {
+    "conditions_mentioned": "toenail fungus",
+    "surgery_types_mentioned": "none"
   },
-  "3193": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4979": {
+    "surgery_types_mentioned": "none"
   },
-  "3208": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4980": {
+    "products_mentioned": "none"
   },
-  "3209": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
+  "4981": {
+    "surgery_types_mentioned": "exostectomy",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "3211": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4982": {
+    "surgery_types_mentioned": "none"
   },
-  "3212": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4983": {
+    "surgery_types_mentioned": "none"
   },
-  "3213": {
-    "conditions_mentioned": "none",
+  "4984": {
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "treatments_mentioned": "vitamin B12, nerve cream, physical therapy, low-dose naltrexone, pain management"
   },
-  "3234": {
-    "conditions_mentioned": "none",
+  "4985": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "3313": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4986": {
+    "surgery_types_mentioned": "fasciotomy",
+    "products_mentioned": "none"
   },
-  "3353": {
-    "conditions_mentioned": "none",
+  "4987": {
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "3375": {
-    "conditions_mentioned": "none",
+  "4988": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "treatments_mentioned": "vitamin B, vitamin D"
   },
-  "3383": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4989": {
+    "conditions_mentioned": "bunion, non-union",
+    "products_mentioned": "bone stimulator, calcium supplements"
   },
-  "3438": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4990": {
+    "products_mentioned": "none"
   },
-  "3456": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4991": {
+    "conditions_mentioned": "fracture",
+    "products_mentioned": "none"
   },
-  "3503": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4992": {
+    "products_mentioned": "none"
   },
-  "3514": {
-    "conditions_mentioned": "none",
+  "4993": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "3631": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4994": {
+    "surgery_types_mentioned": "hammertoe removal"
   },
-  "3915": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4996": {
+    "products_mentioned": "none"
   },
-  "3921": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "4997": {
+    "products_mentioned": "none"
   },
-  "3938": {
-    "conditions_mentioned": "none",
+  "4998": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "Hoka, Aleve"
   },
-  "3990": {
-    "conditions_mentioned": "none",
+  "4999": {
+    "conditions_mentioned": "ligament damage, hammertoe",
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "orthotics"
   },
-  "4037": {
-    "conditions_mentioned": "none",
+  "5000": {
+    "conditions_mentioned": "flat feet, overpronation",
     "surgery_types_mentioned": "none",
     "products_mentioned": "none",
     "treatments_mentioned": "none"
   },
-  "4038": {
-    "conditions_mentioned": "none",
+  "5001": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "4099": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5002": {
+    "conditions_mentioned": "fallen arches",
+    "surgery_types_mentioned": "none"
   },
-  "4128": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5003": {
+    "surgery_types_mentioned": "bunionectomy, neuroma excision",
+    "products_mentioned": "none"
   },
-  "4185": {
-    "conditions_mentioned": "none",
+  "5004": {
     "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "products_mentioned": "none"
   },
-  "4201": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5005": {
+    "surgery_types_mentioned": "bunionectomy",
+    "products_mentioned": "none"
   },
-  "4276": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5006": {
+    "surgery_types_mentioned": "neuroma excision",
+    "products_mentioned": "none"
   },
-  "4287": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5007": {
+    "surgery_types_mentioned": "bunionectomy, neuroma excision, hammertoe correction",
+    "products_mentioned": "none"
   },
-  "4289": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
+  "5008": {
+    "surgery_types_mentioned": "ingrown toenail removal (phenolization)",
     "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "treatments_mentioned": "phenol treatment"
   },
-  "4330": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5009": {
+    "surgery_types_mentioned": "ingrown toenail removal",
+    "products_mentioned": "Birkenstock, Oofos"
   },
-  "4482": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5010": {
+    "surgery_types_mentioned": "none"
   },
-  "4519": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5011": {
+    "surgery_types_mentioned": "Tenex procedure",
+    "products_mentioned": "none"
   },
-  "4521": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
-    "products_mentioned": "none",
-    "treatments_mentioned": "none"
+  "5012": {
+    "surgery_types_mentioned": "none"
   },
-  "4533": {
-    "conditions_mentioned": "none",
-    "surgery_types_mentioned": "none",
+  "5013": {
+    "surgery_types_mentioned": "ingrown toenail removal",
     "products_mentioned": "none",
-    "treatments_mentioned": "none"
+    "treatments_mentioned": "weight training"
   }
 }
