@@ -13111,12 +13111,12 @@
       "captured_count": 10,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:33:56.143261+00:00",
+      "captured_at": "2026-10-23T12:31:22.815987+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 10,
       "empty_comment_nodes_at_end": [],
       "expansions": 2,
-      "duration_seconds": 11.47
+      "duration_seconds": 9.86
     },
     "search_term_used": "neuropathy",
     "date": "2026-09-13",
@@ -13966,14 +13966,78 @@
     "body": "Hey guys, thx for the add. Left foot suffering from Morton's neuroma plus an emerging bunion. Had a stress fracture in 2023, surgeon is sending me for an MRI in two weeks to see if they can figure out which of my multiple issues is causing the pain.",
     "author": null,
     "url": null,
-    "source_group": "bunion surgery / foot surgery support group",
+    "source_group": "Bunion Surgery / Foot Surgery Support",
     "date_captured": "2026-04-17",
     "conditions_mentioned": "Morton's neuroma, bunion, morton neuroma, morton's neuroma, neuroma, stress fracture",
     "surgery_types_mentioned": "none",
     "treatments_mentioned": "MRI, mri, surgery",
     "products_mentioned": "none",
-    "comments": [],
-    "images": []
+    "comments": [
+      {
+        "comment_text": "Feel for you. I had Morton's Neuroma years ago.  Had it operated on & haven't had any more trouble",
+        "comment_id": "9565276030208758",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "My surgeon thinks my bunion is affecting how I'm walking which the cause of my neuroma. He'll review the neuromas again after my surgery and recovery. All the best 👍",
+        "comment_id": "9567207956682232",
+        "parent_comment_id": null,
+        "attachments": []
+      }
+    ],
+    "images": [
+      "images/captured/f73a16647e7dab50f6a25a9cf6943f2c53b85d87a99b155c73ef34c614335806.webp"
+    ],
+    "body_truncated": false,
+    "comment_count_hint": 2,
+    "group_id": "879667705436344",
+    "source_post_id": "9564356916967336",
+    "source_url": "https://www.facebook.com/groups/879667705436344/posts/9564356916967336/",
+    "search_group_id": "879667705436344",
+    "attachments": [
+      {
+        "type": "image",
+        "path": "images/captured/f73a16647e7dab50f6a25a9cf6943f2c53b85d87a99b155c73ef34c614335806.webp",
+        "media_id": "86b41acc690e8f2f788b841698e4deac030ddd3422a1402feaeeb534b7cc21a3",
+        "width": 1239,
+        "height": 1600,
+        "alt": "No photo description available.",
+        "photo_id": "10166007507998849"
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 1,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 1,
+      "comment_images": 0,
+      "discovered_count": 1,
+      "saved_count": 1,
+      "failed_count": 0,
+      "saved": 1,
+      "failed": 0,
+      "published": 1,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 2,
+      "captured_count": 2,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:27:30.849033+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 2,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 0,
+      "duration_seconds": 10.44
+    },
+    "search_term_used": "neuroma",
+    "date": "2026-10-23"
   },
   {
     "id": 531,
@@ -14855,12 +14919,12 @@
       "captured_count": 4,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:28:57.151759+00:00",
+      "captured_at": "2026-10-23T12:26:01.674962+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 4,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 9.88
+      "duration_seconds": 9.12
     },
     "search_term_used": "neuroma",
     "date": "2026-09-12",
@@ -17717,16 +17781,16 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 140,
       "captured_count": 140,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-12T19:13:20.084603+00:00",
+      "captured_at": "2026-10-23T12:23:36.140449+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 140,
       "empty_comment_nodes_at_end": [],
-      "expansions": 52,
-      "duration_seconds": 64.71
+      "expansions": 51,
+      "duration_seconds": 113.61
     },
-    "search_term_used": "",
+    "search_term_used": "fallen arches",
     "date": "2026-09-12",
     "seo_title": "20 years of toenail fungus: permanent removal solution"
   },
@@ -20517,12 +20581,12 @@
       "captured_count": 25,
       "sort_mode": "not_offered",
       "remaining_controls": 0,
-      "captured_at": "2026-09-30T12:18:31.213308+00:00",
+      "captured_at": "2026-10-23T12:18:59.750138+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 25,
       "empty_comment_nodes_at_end": [],
       "expansions": 10,
-      "duration_seconds": 36.0
+      "duration_seconds": 28.82
     },
     "seo_title": "Flat feet and bunions: finding effective orthotics"
   },
@@ -20799,15 +20863,15 @@
       "reason": "visible_comments_verified_counter_offset",
       "expected_count": 7,
       "captured_count": 6,
-      "sort_mode": "all_comments",
+      "sort_mode": "not_offered",
       "remaining_controls": 0,
-      "captured_at": "2026-10-01T12:18:18.016885+00:00",
+      "captured_at": "2026-10-23T12:19:40.100721+00:00",
       "count_relation": "below",
       "rendered_comment_nodes_at_end": 6,
       "empty_comment_nodes_at_end": [],
       "counter_offset": -1,
       "expansions": 0,
-      "duration_seconds": 9.13
+      "duration_seconds": 8.09
     }
   },
   {
@@ -40754,14 +40818,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 2,
       "captured_count": 2,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-30T12:17:48.929203+00:00",
+      "captured_at": "2026-10-23T12:18:37.895215+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 2,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 7.89
+      "duration_seconds": 9.23
     }
   },
   {
@@ -48713,7 +48777,7 @@
         "attachments": []
       }
     ],
-    "search_term_used": "toenail fungus",
+    "search_term_used": "ingrown toenail",
     "source_group": "Bunion Support Group",
     "conditions_mentioned": "hammer toe, bunion, toenail fungus, fungal nail",
     "surgery_types_mentioned": "none",
@@ -48776,12 +48840,12 @@
       "captured_count": 7,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-15T13:14:11.279051+00:00",
+      "captured_at": "2026-10-23T12:28:35.451218+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 7,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 13.36
+      "duration_seconds": 16.36
     },
     "seo_title": "Difficulty with thick toenails: possible fungal infection"
   },
@@ -89774,7 +89838,7 @@
       "saved": 3,
       "failed": 1,
       "published": 3,
-      "publication_failed": 0
+      "publication_failed": 1
     },
     "capture": {
       "status": "complete",
@@ -89783,12 +89847,12 @@
       "captured_count": 28,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-15T12:15:08.908709+00:00",
+      "captured_at": "2026-10-23T12:22:41.695021+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 28,
       "empty_comment_nodes_at_end": [],
       "expansions": 9,
-      "duration_seconds": 27.75
+      "duration_seconds": 21.71
     },
     "search_term_used": "fallen arches",
     "author": null,
@@ -90346,7 +90410,7 @@
       "saved": 1,
       "failed": 1,
       "published": 1,
-      "publication_failed": 1
+      "publication_failed": 0
     },
     "capture": {
       "status": "complete",
@@ -95929,14 +95993,14 @@
       "captured_count": 11,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-15T13:13:55.590972+00:00",
+      "captured_at": "2026-10-23T12:28:18.198074+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 11,
       "empty_comment_nodes_at_end": [],
       "expansions": 2,
-      "duration_seconds": 13.51
+      "duration_seconds": 14.94
     },
-    "search_term_used": "toenail fungus",
+    "search_term_used": "ingrown toenail",
     "author": null,
     "url": null,
     "date": "2026-09-13",
@@ -96085,14 +96149,14 @@
       "captured_count": 4,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-15T13:16:59.117987+00:00",
+      "captured_at": "2026-10-23T12:30:02.413994+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 4,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 9.73
+      "duration_seconds": 11.17
     },
-    "search_term_used": "toenail fungus",
+    "search_term_used": "ingrown toenail",
     "author": null,
     "url": null,
     "date": "2026-09-13",
@@ -96374,14 +96438,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 3,
       "captured_count": 3,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-29T12:29:23.486048+00:00",
+      "captured_at": "2026-10-23T12:31:00.923215+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 3,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 7.56
+      "duration_seconds": 8.46
     },
     "search_term_used": "ingrown toenail",
     "author": null,
@@ -96890,14 +96954,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 36,
       "captured_count": 36,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-29T12:30:32.420851+00:00",
+      "captured_at": "2026-10-23T12:32:10.622628+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 36,
       "empty_comment_nodes_at_end": [],
       "expansions": 12,
-      "duration_seconds": 23.75
+      "duration_seconds": 23.38
     },
     "search_term_used": "neuropathy",
     "author": null,
@@ -111524,7 +111588,7 @@
       "saved": 0,
       "failed": 1,
       "published": 0,
-      "publication_failed": 0
+      "publication_failed": 1
     },
     "capture": {
       "status": "complete",
@@ -111533,12 +111597,12 @@
       "captured_count": 7,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-11T13:15:06.971894+00:00",
+      "captured_at": "2026-10-23T12:15:06.495985+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 7,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 11.61
+      "duration_seconds": 11.03
     },
     "search_term_used": "is this normal",
     "author": null,
@@ -118674,14 +118738,14 @@
       "captured_count": 10,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-15T13:14:32.893965+00:00",
+      "captured_at": "2026-10-23T12:28:56.999482+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 10,
       "empty_comment_nodes_at_end": [],
       "expansions": 2,
-      "duration_seconds": 13.09
+      "duration_seconds": 15.27
     },
-    "search_term_used": "toenail fungus",
+    "search_term_used": "ingrown toenail",
     "author": null,
     "url": null,
     "date": "2026-09-21",
@@ -129390,12 +129454,12 @@
       "captured_count": 4,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:34:36.496387+00:00",
+      "captured_at": "2026-10-23T12:33:11.636305+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 4,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 9.63
+      "duration_seconds": 8.89
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -131276,21 +131340,22 @@
       "saved": 7,
       "failed": 1,
       "published": 7,
-      "publication_failed": 0
+      "publication_failed": 1
     },
     "capture": {
       "status": "complete",
-      "reason": "all_visible_comments_verified",
+      "reason": "visible_comments_verified_counter_offset",
       "expected_count": 20,
-      "captured_count": 20,
+      "captured_count": 19,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-11T13:15:38.221624+00:00",
-      "count_relation": "equal",
-      "rendered_comment_nodes_at_end": 20,
+      "captured_at": "2026-10-23T12:15:36.549631+00:00",
+      "count_relation": "below",
+      "rendered_comment_nodes_at_end": 19,
       "empty_comment_nodes_at_end": [],
+      "counter_offset": -1,
       "expansions": 8,
-      "duration_seconds": 62.86
+      "duration_seconds": 50.48
     },
     "search_term_used": "bunionectomy",
     "author": null,
@@ -134935,12 +135000,12 @@
       "captured_count": 11,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:29:17.390034+00:00",
+      "captured_at": "2026-10-23T12:26:20.999000+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 11,
       "empty_comment_nodes_at_end": [],
       "expansions": 3,
-      "duration_seconds": 16.18
+      "duration_seconds": 15.64
     },
     "search_term_used": "neuroma",
     "author": null,
@@ -141122,15 +141187,15 @@
       "captured_count": 9,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-11T13:19:07.774543+00:00",
+      "captured_at": "2026-10-23T12:31:33.492810+00:00",
       "count_relation": "below",
       "rendered_comment_nodes_at_end": 9,
       "empty_comment_nodes_at_end": [],
       "counter_offset": -2,
       "expansions": 3,
-      "duration_seconds": 11.21
+      "duration_seconds": 10.81
     },
-    "search_term_used": "anyone else",
+    "search_term_used": "neuropathy",
     "author": null,
     "url": null,
     "date": "2026-09-13",
@@ -142017,12 +142082,12 @@
       "captured_count": 8,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:20:51.033193+00:00",
+      "captured_at": "2026-10-23T12:17:03.891227+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 8,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 9.17
+      "duration_seconds": 10.89
     },
     "search_term_used": "flat feet",
     "author": null,
@@ -142182,12 +142247,12 @@
       "captured_count": 11,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:21:01.092971+00:00",
+      "captured_at": "2026-10-23T12:17:15.519703+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 11,
       "empty_comment_nodes_at_end": [],
       "expansions": 2,
-      "duration_seconds": 23.58
+      "duration_seconds": 20.01
     },
     "search_term_used": "flat feet",
     "author": null,
@@ -142356,14 +142421,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 14,
       "captured_count": 14,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-29T12:19:31.092458+00:00",
+      "captured_at": "2026-10-23T12:17:45.076096+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 14,
       "empty_comment_nodes_at_end": [],
       "expansions": 5,
-      "duration_seconds": 18.39
+      "duration_seconds": 18.29
     },
     "search_term_used": "flat feet",
     "author": null,
@@ -144805,12 +144870,12 @@
       "captured_count": 9,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:29:36.491670+00:00",
+      "captured_at": "2026-10-23T12:26:39.265007+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 9,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 10.26
+      "duration_seconds": 10.29
     },
     "search_term_used": "neuroma",
     "author": null,
@@ -147334,14 +147399,14 @@
       "expected_image_count": 5,
       "remaining_controls": 0,
       "version": 1,
-      "status": "partial",
+      "status": "complete",
       "post_images": 2,
       "comment_images": 3,
       "discovered_count": 5,
-      "saved_count": 3,
-      "failed_count": 2,
-      "saved": 3,
-      "failed": 2,
+      "saved_count": 5,
+      "failed_count": 0,
+      "saved": 5,
+      "failed": 0,
       "published": 5,
       "publication_failed": 0
     },
@@ -147349,18 +147414,18 @@
       "status": "complete",
       "reason": "visible_comments_verified_counter_offset",
       "expected_count": 21,
-      "captured_count": 20,
+      "captured_count": 19,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-15T13:14:49.341288+00:00",
+      "captured_at": "2026-10-23T12:29:15.843941+00:00",
       "count_relation": "below",
-      "rendered_comment_nodes_at_end": 20,
+      "rendered_comment_nodes_at_end": 19,
       "empty_comment_nodes_at_end": [],
-      "counter_offset": -1,
+      "counter_offset": -2,
       "expansions": 2,
-      "duration_seconds": 23.55
+      "duration_seconds": 26.58
     },
-    "search_term_used": "toenail fungus",
+    "search_term_used": "ingrown toenail",
     "author": null,
     "url": null,
     "date": "2026-09-21",
@@ -147589,15 +147654,15 @@
       "reason": "visible_comments_verified_counter_offset",
       "expected_count": 28,
       "captured_count": 27,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-29T12:16:50.306970+00:00",
+      "captured_at": "2026-10-23T12:31:44.918478+00:00",
       "count_relation": "below",
       "rendered_comment_nodes_at_end": 27,
       "empty_comment_nodes_at_end": [],
       "counter_offset": -1,
       "expansions": 8,
-      "duration_seconds": 27.35
+      "duration_seconds": 21.15
     },
     "search_term_used": "neuropathy",
     "author": null,
@@ -148493,14 +148558,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 4,
       "captured_count": 4,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-29T12:21:45.782559+00:00",
+      "captured_at": "2026-10-23T12:20:04.718712+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 4,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 9.45
+      "duration_seconds": 8.57
     },
     "search_term_used": "fallen arches",
     "author": null,
@@ -149968,16 +150033,16 @@
     ],
     "media_capture": {
       "discovery_status": "complete",
-      "expected_image_count": 3,
+      "expected_image_count": 2,
       "remaining_controls": 0,
       "version": 1,
       "status": "complete",
       "post_images": 0,
-      "comment_images": 3,
-      "discovered_count": 3,
-      "saved_count": 3,
+      "comment_images": 2,
+      "discovered_count": 2,
+      "saved_count": 2,
       "failed_count": 0,
-      "saved": 3,
+      "saved": 2,
       "failed": 0,
       "published": 3,
       "publication_failed": 0
@@ -149989,13 +150054,13 @@
       "captured_count": 24,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-30T12:24:23.455492+00:00",
+      "captured_at": "2026-10-23T12:26:50.340064+00:00",
       "count_relation": "below",
       "rendered_comment_nodes_at_end": 24,
       "empty_comment_nodes_at_end": [],
       "counter_offset": -1,
       "expansions": 11,
-      "duration_seconds": 21.41
+      "duration_seconds": 20.25
     },
     "search_term_used": "neuroma",
     "author": null,
@@ -150116,14 +150181,14 @@
       "captured_count": 10,
       "sort_mode": "not_offered",
       "remaining_controls": 0,
-      "captured_at": "2026-10-12T12:31:33.204762+00:00",
+      "captured_at": "2026-10-23T12:27:12.164363+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 10,
       "empty_comment_nodes_at_end": [],
       "expansions": 4,
-      "duration_seconds": 9.78
+      "duration_seconds": 11.13
     },
-    "search_term_used": "recovery",
+    "search_term_used": "neuroma",
     "author": null,
     "url": null,
     "date": "2026-09-29",
@@ -150608,14 +150673,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 5,
       "captured_count": 5,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-29T12:34:25.201795+00:00",
+      "captured_at": "2026-10-23T12:33:55.538135+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 5,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 7.05
+      "duration_seconds": 9.08
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -150718,14 +150783,14 @@
       "captured_count": 9,
       "sort_mode": "not_offered",
       "remaining_controls": 0,
-      "captured_at": "2026-10-17T12:19:22.273535+00:00",
+      "captured_at": "2026-10-23T12:35:24.885443+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 9,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 8.33
+      "duration_seconds": 7.75
     },
-    "search_term_used": "bunion",
+    "search_term_used": "hardware removal",
     "author": null,
     "url": null,
     "date": "2026-09-29",
@@ -151240,14 +151305,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 3,
       "captured_count": 3,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-30T12:17:40.143007+00:00",
+      "captured_at": "2026-10-23T12:18:18.831721+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 3,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 8.41
+      "duration_seconds": 7.92
     },
     "search_term_used": "flat feet",
     "author": null,
@@ -153588,14 +153653,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 19,
       "captured_count": 19,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-30T12:31:36.463970+00:00",
+      "captured_at": "2026-10-23T12:34:24.079855+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 19,
       "empty_comment_nodes_at_end": [],
       "expansions": 2,
-      "duration_seconds": 12.85
+      "duration_seconds": 12.75
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -153679,14 +153744,14 @@
       "reason": "all_visible_comments_verified",
       "expected_count": 3,
       "captured_count": 3,
-      "sort_mode": "not_offered",
+      "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-09-30T12:31:49.656962+00:00",
+      "captured_at": "2026-10-23T12:34:05.964860+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 3,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 14.02
+      "duration_seconds": 14.33
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -165997,13 +166062,13 @@
       "captured_count": 9,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:35:01.660101+00:00",
+      "captured_at": "2026-10-23T12:33:21.097283+00:00",
       "count_relation": "below",
       "rendered_comment_nodes_at_end": 9,
       "empty_comment_nodes_at_end": [],
       "counter_offset": -1,
       "expansions": 3,
-      "duration_seconds": 12.67
+      "duration_seconds": 11.03
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -182320,7 +182385,7 @@
       "saved": 6,
       "failed": 2,
       "published": 6,
-      "publication_failed": 2
+      "publication_failed": 0
     },
     "capture": {
       "status": "complete",
@@ -185938,7 +186003,7 @@
       "saved": 8,
       "failed": 1,
       "published": 8,
-      "publication_failed": 1
+      "publication_failed": 0
     },
     "capture": {
       "status": "complete",
@@ -206674,12 +206739,12 @@
       "captured_count": 2,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:34:26.435896+00:00",
+      "captured_at": "2026-10-23T12:33:02.105359+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 2,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 8.95
+      "duration_seconds": 8.73
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -217887,12 +217952,12 @@
       "captured_count": 10,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:29:07.805604+00:00",
+      "captured_at": "2026-10-23T12:26:11.360911+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 10,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 8.89
+      "duration_seconds": 8.94
     },
     "search_term_used": "neuroma",
     "author": null,
@@ -218992,12 +219057,12 @@
       "captured_count": 4,
       "sort_mode": "all_comments",
       "remaining_controls": 0,
-      "captured_at": "2026-10-22T12:35:27.041466+00:00",
+      "captured_at": "2026-10-23T12:33:46.819557+00:00",
       "count_relation": "equal",
       "rendered_comment_nodes_at_end": 4,
       "empty_comment_nodes_at_end": [],
       "expansions": 0,
-      "duration_seconds": 9.8
+      "duration_seconds": 7.94
     },
     "search_term_used": "revision surgery",
     "author": null,
@@ -219010,5 +219075,1738 @@
     "images": [],
     "source_group": "Bunion Surgery / Foot Surgery Support",
     "id": 5379
+  },
+  {
+    "body": "Hi, thanks for adding me to the group. I'm 62 and have had bunions since I was in my teens , which I understand are hereditary, however I have now developed tailors bunions on both feet. I also have flat feet. \nI find it very difficult to walk barefoot or in shoes, with thin soles. I had a x-ray on the right little toe and was told it was osteoarthritis. My G P just said to wear comfy shoes with wide toe box.\nIs there anything else I can do?\nI don't want to sound like a whinge, but I have osteoarthritis in most joints and spinal stenosis as well.\nI wear skechers wide fit  mostly and have some wide fit boots, but wondered if anyone can recommend any other comfortable shoes please. Thanks in advance",
+    "body_truncated": true,
+    "comment_count_hint": 3,
+    "group_id": "88983293238",
+    "source_post_id": "10161678024583239",
+    "source_url": "https://www.facebook.com/groups/88983293238/posts/10161678024583239/",
+    "search_group_id": "88983293238",
+    "attachments": [],
+    "comments": [
+      {
+        "comment_text": "Strength and providing toe splay space in footwear can prevent bunions - so pass that information along to all younger relatives! For your relatives: Wide toe box footwear and physiotherapy are key to prevention.\nIt’s worthwhile to try Altra Running shoes and Topo athletic footwear- they are probably better than sketchers.  And if you overpronate look for the “stability” styles.  Type in stability in the search feature of the Altra website for your country and a few styles come up.  Your physiotherapist can let you know if you overpronate.  It’s important to be diligent with physiotherapy exercises, it’s key to keeping going.\nThe Altra and the Topo shoes give ample space for toe splay in the toe box area and the return policies are great!\nGood luck",
+        "comment_id": "10161678269733239",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/6a6c7516cf4decaa99c473e88d91da68593b029b45636651f3eb5452aa687a4e.webp",
+            "media_id": "8a2a179f6c0e0502a8ef53cb513d60bb02371519571838092ad12088e6162fa4",
+            "width": 196,
+            "height": 196,
+            "alt": "Topo Athletic"
+          }
+        ],
+        "images": [
+          "images/captured/6a6c7516cf4decaa99c473e88d91da68593b029b45636651f3eb5452aa687a4e.webp"
+        ]
+      },
+      {
+        "comment_text": "I have had bunions for years and was told I have osteoarthritis about 10 years ago. I was diagnosed with Celiac 8 years ago, going on whole foods due to gf processed foods not sitting well with me. This is when I realized grains were causing deep bone and joint pain so I went grain free. Since then I no longer have bone and joint pain unless I have grains. I just had bunion and hammer toe surgery, the foot pain was becoming unbearable, not excruciating but constant plus a ball was forming on my lower leg that needed constant massaging. I am now looking into shoes.",
+        "comment_id": "10161678399108239",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "There is a video titled “toe splay” from the YouTube account called Beam Tribe that helps me to wrap my head around how my foot should be working. It’s worth watching 🙂",
+        "comment_id": "10161678438958239",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/da52f24ff173f93dd8fb794e07cd57a00f512ad58adc577594465c39473126c2.webp",
+            "media_id": "c3636232c5e705f8d7a0a7101d23b98371f97f0c45d1f710b70dba09d7d1771d",
+            "width": 196,
+            "height": 196,
+            "alt": "Toe splay"
+          }
+        ],
+        "images": [
+          "images/captured/da52f24ff173f93dd8fb794e07cd57a00f512ad58adc577594465c39473126c2.webp"
+        ]
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 2,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 0,
+      "comment_images": 2,
+      "discovered_count": 2,
+      "saved_count": 2,
+      "failed_count": 0,
+      "saved": 2,
+      "failed": 0,
+      "published": 2,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 3,
+      "captured_count": 3,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:18:27.401165+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 3,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 0,
+      "duration_seconds": 9.5
+    },
+    "search_term_used": "flat feet",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "bunion, hammer toe, flat feet, arthritis",
+    "surgery_types_mentioned": "",
+    "products_mentioned": "Skechers, Altra, Topo Athletic",
+    "treatments_mentioned": "surgery",
+    "images": [],
+    "source_group": "Bunion Support Group",
+    "id": 5380
+  },
+  {
+    "body": "For people with high arches, is there anyone who's worn Hoka's for a couple of years and still likes them? \n\n(Edit to add: can you also please include if you've been wearing hokas for more or less than 2 years? I think that would give me the enough confidence to ditch my Altras, which is what my new podiatrist recommended. I just have so much anxiety about feet because i've dealt with this for over a decade.)\n\nI have seen on here people warning that they've tried Hokas, and that even though initially they may have felt good, they've ultimately made their feet worse. And 6 months ago I switched from Altras with a custom orthotic to Hoka's, with no orthodotic, and every time I try to wear the Altras for even one hour (without an orthotic) I seem to have some kind of pain.",
+    "body_truncated": true,
+    "comment_count_hint": 22,
+    "group_id": "589872944541186",
+    "source_post_id": "3161713040690484",
+    "source_url": "https://www.facebook.com/groups/589872944541186/posts/3161713040690484/",
+    "search_group_id": "589872944541186",
+    "attachments": [],
+    "comments": [
+      {
+        "comment_text": "nope.  new balance 1080s my fave.",
+        "comment_id": "3161719397356515",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I’ve been wearing Altras and still can’t walk for exercise in them. I’m highly considering Hokas so at least I can start walking for a bit of exercise again.",
+        "comment_id": "3161734694021652",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I just tried altras and within 30 minutes the pain set in.",
+        "comment_id": "3161749790686809",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "High arches and really like my Hoka’s.  I walk about 2-2.5 miles a day.  I feel like they start to lose their cushion after 200 or so days and they need to be replaced after 1 year.  I have 2 pairs in diff colors so I swap them out week to week or so to “extend” their life.",
+        "comment_id": "3161763794018742",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "My Hokas are going strong after 1.5 years but I only wear them for work. Also, I swapped out the insoles for more supportive ones. I have pretty high arches.",
+        "comment_id": "3161766564018465",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have high arches and Forefoot Equinus. Hokas are the only thing that dont make my feet hurt. I wear with or without insoles & have different pairs & different sizes.",
+        "comment_id": "3161783344016787",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have high arches and also have Hoka, but I prefer Vionic.",
+        "comment_id": "3161792894015832",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I went straight to zero-drop shoes like Dr. Angela Walk recommends and I was healed in 11 weeks.  Altra Paradigm.  I still wear them everyday.",
+        "comment_id": "3162049080656880",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Altra paradigm are the shoes that caused this whole issue for me.",
+        "comment_id": "3162053760656412",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Love my Hokas. Have three pair!",
+        "comment_id": "3162066903988431",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Oofos",
+        "comment_id": "3162096620652126",
+        "parent_comment_id": "3161749790686809",
+        "attachments": []
+      },
+      {
+        "comment_text": "tried those too and the arch kills me.",
+        "comment_id": "3162685537259901",
+        "parent_comment_id": "3161749790686809",
+        "attachments": []
+      },
+      {
+        "comment_text": "Hi ..which type of hokas do people get ..there seem to be a lot of different styles",
+        "comment_id": "3162084920653296",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have high arches and have been wearing Hokas for about a year. I’ve always had to replace my sneakers after about a year or less of wear so these are lasting longer than other brands I’ve tried.",
+        "comment_id": "3162128937315561",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have been wearing Brooks shoes!\nAnd I seem to be doing fine in those!",
+        "comment_id": "3162216490640139",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "No",
+        "comment_id": "3162242937304161",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Altras giving you pain is most likely you are wearing them for too long. Transitioning is important.\nIf you go back to a cushion shoes and non wide toe box you will undo your work you have done.",
+        "comment_id": "3162406647287790",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Love Hokas. Worn 2+ years.\nAnd with high arches I have been told by my podiatrist a high instep thing in a shoe is more ideal. It throws the weight into your hips more than your calf which in turn alleviates your arch stress.",
+        "comment_id": "3162410257287429",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I was a big fan of Hoka's The last 3 to 4 years wore them all the time have multiple pairs different colors. Now I'm convinced the cushingness of them is probably what gave me the plantar fasciitis. I've been wearing the Altras and I find them very comfortable.",
+        "comment_id": "3165747666953688",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "oh dear, do you know if you have high arches?",
+        "comment_id": "3165899366938518",
+        "parent_comment_id": "3165747666953688",
+        "attachments": []
+      },
+      {
+        "comment_text": "Yes I do have high arches.",
+        "comment_id": "3166258333569288",
+        "parent_comment_id": "3165747666953688",
+        "attachments": []
+      },
+      {
+        "comment_text": "oh darn, but thank you for sharing, it is so helpful to know about others' experiences!",
+        "comment_id": "3166882463506875",
+        "parent_comment_id": "3165747666953688",
+        "attachments": []
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 0,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 0,
+      "comment_images": 0,
+      "discovered_count": 0,
+      "saved_count": 0,
+      "failed_count": 0,
+      "saved": 0,
+      "failed": 0,
+      "published": 0,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 22,
+      "captured_count": 22,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:20:13.865837+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 22,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 4,
+      "duration_seconds": 13.06
+    },
+    "search_term_used": "fallen arches",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "plantar fasciitis",
+    "surgery_types_mentioned": "",
+    "products_mentioned": "Hoka, New Balance, Vionic, Altra, Oofos, Brooks",
+    "treatments_mentioned": "",
+    "images": [],
+    "source_group": "Plantar Fasciitis Talk and Tips",
+    "id": 5381
+  },
+  {
+    "body": "I'm looking for a unicorn sandal. I have a wide toe box and am working on strengthening my feet toward barefoot shoes. I like Birkenstocks, but want to try another brand too. \n\nI have tried Oofos- the slide bothered my big toe joint, and the flip flop bothers me from the toe post. \n\nI tried several models of Teva which I like the style and fit except for the toe box- my big toe hangs over the side since it has a slightly tapered toe box. \n\nI'm looking for: healthy, foot shaped toe box, some arch support for walking a lot on vacation; some water resistance. Maybe a \"transitional\" shoe. \n\nDoes such a unicorn exist?\n\nThank you!!",
+    "body_truncated": true,
+    "comment_count_hint": 12,
+    "group_id": "589872944541186",
+    "source_post_id": "3148122462049542",
+    "source_url": "https://www.facebook.com/groups/589872944541186/posts/3148122462049542/",
+    "search_group_id": "589872944541186",
+    "attachments": [],
+    "comments": [
+      {
+        "comment_text": "Topo shoes",
+        "comment_id": "3148127515382370",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "You mentioned all sandals but I love the Flux Adapt Runner. They have a beaded insole that massages your feet as you walk. I was working with a therapist that is a proponent for wide toe box ￼shoes and she recommended these. They are zero drop, wide toe box, and machine washable. I was working with her to strengthen my toes and can wear my toe separators in them too. I wear them barefoot all the time. They even make a waterproof version",
+        "comment_id": "3148130398715415",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Vionics!!",
+        "comment_id": "3148136185381503",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Altra. Or even Hobibear.",
+        "comment_id": "3148137952047993",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Altra and xero",
+        "comment_id": "3148138215381300",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I like Chacos if you are looking for open toe sandals. I prefer the ones with a strap that encircles my big toe as it feels more secure to my foot than the fully open ones.\nThe older pink/blue ones rather than the newer ones shown here.",
+        "comment_id": "3148173095377812",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/54e2d28fccc1ffcc3b9a837602ab5a8b858f94f0ae6aebf12d9a3b9cdbed0c09.webp",
+            "media_id": "98f3f861c7c8668c496eb43b993391a4d98a6b6fb920c99ce8201879f1356776",
+            "width": 720,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "10242257664280755"
+          }
+        ],
+        "images": [
+          "images/captured/54e2d28fccc1ffcc3b9a837602ab5a8b858f94f0ae6aebf12d9a3b9cdbed0c09.webp"
+        ]
+      },
+      {
+        "comment_text": "Kuru! I’ve done Vionic & Oofas. I have Kuru tennis shoe and slides and they’re by far the best! I also agree that Topo are great but Kuru has build in stability in the heel. Go to their website and read about them.",
+        "comment_id": "3148173905377731",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Might want to take a look at Easy Spirit. I think they have several shoes that might fit these requirements. Kuru, Vionic, Altra, and Keen are all other brands to try, too.",
+        "comment_id": "3148183992043389",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have a wide foot and powerstep slides are perfect https://lvnta.com/lv_62mPX2rPyLHQscWgDW",
+        "comment_id": "3148239378704517",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/a9fd3717cff21fb4f0bfea99c67de37143bddf11f2eab6021fdb271fcefdbf7d.webp",
+            "media_id": "ebe78e9bfa17be7cd1abc518b692e1b02b43ac43d37b662c0aaf059c314642c9",
+            "width": 196,
+            "height": 196,
+            "alt": "PowerStep Archwear, Arch Supporting Slide On Sandal, Plantar Fasciitis Relief, Women's Orthotic Slip On Sandal, Casual Dress Slide Sandal, Non Slip, Adjustable Strap"
+          }
+        ],
+        "images": [
+          "images/captured/a9fd3717cff21fb4f0bfea99c67de37143bddf11f2eab6021fdb271fcefdbf7d.webp"
+        ]
+      },
+      {
+        "comment_text": "Check out Revs.\nRevs.life\nI just ordered several more pairs. They have helped me so much.",
+        "comment_id": "3148239428704512",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have these and I love them. They look like they are heavy but they’re really lightweight. WHITIN Women's Hiking Sandals... https://www.amazon.com/dp/B09NBTRGZK...",
+        "comment_id": "3148269602034828",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/6301afb7f1832c116893f19e5ee4f1aa7896a0e2ee618b92812d4c8252ee864c.webp",
+            "media_id": "88c8fa16a6daec0370f38daeb1dad8039a4a89c5ed07d4559d9ebb7cba20f664",
+            "width": 196,
+            "height": 196,
+            "alt": "WHITIN Women’s Hiking Sandals with Arch Support | Adjustable Hook and Loop Straps | Durable Sport Sandals for Outdoor Adventure"
+          }
+        ],
+        "images": [
+          "images/captured/6301afb7f1832c116893f19e5ee4f1aa7896a0e2ee618b92812d4c8252ee864c.webp"
+        ]
+      },
+      {
+        "comment_text": "I love my chacos. They're comfortable, don't both my feet and have a wide open toe box",
+        "comment_id": "3148511038677351",
+        "parent_comment_id": null,
+        "attachments": []
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 3,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 0,
+      "comment_images": 3,
+      "discovered_count": 3,
+      "saved_count": 3,
+      "failed_count": 0,
+      "saved": 3,
+      "failed": 0,
+      "published": 3,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 12,
+      "captured_count": 12,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:20:27.657979+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 12,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 0,
+      "duration_seconds": 12.86
+    },
+    "search_term_used": "fallen arches",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "corn",
+    "surgery_types_mentioned": "",
+    "products_mentioned": "Oofos, Altra, Kuru, Vionic, Powerstep",
+    "treatments_mentioned": "massage, arch support",
+    "images": [],
+    "source_group": "Plantar Fasciitis Talk and Tips",
+    "id": 5382
+  },
+  {
+    "body": "New to the group, but not new to plantar fasciitis  I am in my mid 30s and have had it for over 7 years despite constant physical therapy, orthodic insoles, arch support slippers, ice, heat, rolling my feet with a massage ball, stretching, night boot, expensive shoes, two different surgeries (gastroc recession and plantar fascia release), dry needling, acupuncture, cupping, massages, etc. and the struggle continues. I have an abnormal presentation of PF, my feet do not hurt at all in the morning and the more I stand the more pain I am in, and if I overdo it, I will pay for it for days. I can’t be on my feet for more than an hour at a time without my feet hurting pretty bad. I am also hyper mobile. I am never ever barefoot. I have arch support slippers that I do think help. I have to pick and choose what I can do/what I have the spoons for and have had to give up a lot of activities I used to love doing and felt were part of my identity (hiking, long walks, yoga, generally being active). I would love any words of support from long term PF sufferers who are also in a situation where some things have helped but nothing has ever resolved the issues and allowed me to do more he things I want to be able to do. I tend to oscillate between feeling down/hopeless and accepting that this is my life now and that I have to find ways to make it work for me. Thank you in advance!\n\nI’m also open to suggestions if there are things that have worked on persistent plantar fasciitis that I have not tried.",
+    "body_truncated": true,
+    "comment_count_hint": 89,
+    "group_id": "589872944541186",
+    "source_post_id": "3081192025409253",
+    "source_url": "https://www.facebook.com/groups/589872944541186/posts/3081192025409253/",
+    "search_group_id": "589872944541186",
+    "attachments": [
+      {
+        "type": "image",
+        "path": "images/captured/a7c04d2205065f9a0b3148544423c74672d80c395c7393f26d6e5fb8309efdec.webp",
+        "media_id": "9a656e89e7b3fc244ea962bdb2e2e233d5314c762439e7c437549f71a5b2f20e",
+        "width": 1200,
+        "height": 1600,
+        "alt": "No photo description available.",
+        "photo_id": "10243231374338950"
+      }
+    ],
+    "comments": [
+      {
+        "comment_text": "My orthopedic doctor recommended to use birkenstock sandals or wooden slippers. Eliminate using soft footware. Had my 2 weeks physical therapy sessions with shockwave last March 2020 and been using birkenstock. Glad that it works until now",
+        "comment_id": "3081196065408849",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I been dealing with this since last August  just started out no where .\nI am doing shockwave thrapy low intensity type  usually 8 session and am on my 6th and seems to be helping if this doesnt work I will try high intensity type in few months .\nHave you tried shockwave threapy",
+        "comment_id": "3081197622075360",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Mine is similar… does not hurt in the morning. The pain is only in my heels and pain level is directly related to how many steps I’ve taken in the day. I’ve done cortisone shots and a total of 5 shockwave therapy sessions. I’m considering trying the high intensity shockwave therapy that multiple people have talked about in this group.",
+        "comment_id": "3081204232074699",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I’m so so sorry you have been suffering 7 years I can not even imagine how hard that is for you I’m only 7 months and I have had more than enough of this debilitating condition it’s stopped in my tracks I struggle to walk my dog I can’t go to the gym or hike with my husband just to get through the day is a mental and physical challenge and it’s made me very depressed, so you are amazing to get up and carry on each day with this painful condition.",
+        "comment_id": "3081204428741346",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Did you get gastroc recession the same time as you got the fasciotomy? Or did you do those surgery’s separately?",
+        "comment_id": "3081207272074395",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "You never mentioned nutritional supplements like collagen.  Doctors in the USA know hardly anything about it.",
+        "comment_id": "3081220752073047",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "In my 30s too. It sucks. Only thing I have to say is don’t injury any other part of your body that impacts ability to sit, back, hip etc. Now I have both and have to determine my e which hurts less on a daily basis. It truly ruins your brain to have sore feet.",
+        "comment_id": "3081229455405510",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "& I love to go hiking too , but then once I couldn’t go on long drives without hurting I was pissed. So many good roadtrips out there that are beautiful.",
+        "comment_id": "3081234518738337",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have had cortisone injections, they won’t fix mine because mine is thickened near a spur but they do help for about 4 months. As you are young I was wondering if you have tried a Moon Boot.  I used one for a sprained ankle long before PF. I have seen them recommended for PF. They should take the pressure off the sole of your foot completely for 4 months so it gives your PF time to heal. They can be a bit of a hindrance if it’s your right foot because you would have to remove the boot to drive. Perhaps use one of your better shoes.",
+        "comment_id": "3081237945404661",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Sorry to hear this. I have had it for two years and have tried everything except surgery. I know how you feel. I’m just out of the CAM boot -3 months total did both feet. Still not 💯",
+        "comment_id": "3081257815402674",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I have not! I will look into it. Thank you.",
+        "comment_id": "3081261175402338",
+        "parent_comment_id": "3081197622075360",
+        "attachments": []
+      },
+      {
+        "comment_text": "most insurance doesnt cover it  is the downside .  But maybe worth a try looking into it .\nThis condition is nasty and weird because it seems we dont have any gold standard to fix it . Seems like alot of trial and error to find something . I have spent a sick amount of money on insoles etc and shoes recommend by podiatrist  and it all made things worse  .  I think  more to this than juat poor shoe wear . I been wearing same brand shoes and work boots for 25 years then boom wake up one morning and have this .",
+        "comment_id": "3081285102066612",
+        "parent_comment_id": "3081197622075360",
+        "attachments": []
+      },
+      {
+        "comment_text": "ugh! I’m sorry you’re going through this. have spent so much money too. I even got the custom orthodics made by my podiatrist and they weren’t any better than the ones you can buy online. 😭😭",
+        "comment_id": "3081305538731235",
+        "parent_comment_id": "3081197622075360",
+        "attachments": []
+      },
+      {
+        "comment_text": "did you have ur orthotics modified when it gave you discomfort? my PT said mine can be modified within 6 mos, but we have to do it one at a time, to know which one is working or not.",
+        "comment_id": "3081357512059371",
+        "parent_comment_id": "3081197622075360",
+        "attachments": []
+      },
+      {
+        "comment_text": "ElegantLobster4422 I did not! I wasn’t offered that option.",
+        "comment_id": "3081367712058351",
+        "parent_comment_id": "3081197622075360",
+        "attachments": []
+      },
+      {
+        "comment_text": "same about the steps! Standing still in one place (like a line, parade, concert) also seems to be significantly worse than walking/moving around even though that also makes it worse. There have been times where my feet have been so bad that I couldn’t go grocery shopping or walk the dog. I can do short walks occasionally now, but need to be careful. Thanks for mentioning the shockwave therapy. I will have to look into it. I have done dry needing and acupuncture before.",
+        "comment_id": "3081264845401971",
+        "parent_comment_id": "3081204232074699",
+        "attachments": []
+      },
+      {
+        "comment_text": "I agree on the standing! Sometimes I’ll be standing around a group of people, talking or whatever… and I can’t even think straight because they hurt so bad. I start putting my weight on one foot and then the other. It’s miserable!",
+        "comment_id": "3081540895374366",
+        "parent_comment_id": "3081204232074699",
+        "attachments": []
+      },
+      {
+        "comment_text": "TalentedKangaroo4342 I absolutely understand that feeling. It’s so frustrating to want to do regular things but to be hindered in this way. 😢 I’m on a radical acceptance journey and trying my best to accept the reality that this will likely be something I struggle with for the rest of my life. It’s helped me to follow chronic illness/chronic pain/disability accounts on Instagram to feel less alone in my struggles. I’m sorry you are going through this and hope you improve!",
+        "comment_id": "3081262945402161",
+        "parent_comment_id": "3081204428741346",
+        "attachments": []
+      },
+      {
+        "comment_text": "I got them separately. One only the left and one on the right 1 year apart. I thought the surgeries helped a little but they did not significantly improve my quality of life or ability level sadly.",
+        "comment_id": "3081257585402697",
+        "parent_comment_id": "3081207272074395",
+        "attachments": []
+      },
+      {
+        "comment_text": "But did you do the fasciotomy and recession at the same time?",
+        "comment_id": "3081261415402314",
+        "parent_comment_id": "3081207272074395",
+        "attachments": []
+      },
+      {
+        "comment_text": "no I didn’t. I got the gastroc recession first on the right and then the plantar fasciitis release on the left. Different procedures on each side and both surgeons were *sure* I would not have any issues after having the procedure. It annoys me that they consider both of my surgeries to be successful because I didn’t have pain at my post procedure follow up, but I had not been weight bearing yet, so that seems like a sure way that doctors determine unrealistically high success rates for their procedures.",
+        "comment_id": "3081282948733494",
+        "parent_comment_id": "3081207272074395",
+        "attachments": []
+      },
+      {
+        "comment_text": "I have spoken to two surgeons, they said they would not do the fasciotomy surgery. How was the recovery for the gastroc recession surgery?",
+        "comment_id": "3081935778668211",
+        "parent_comment_id": "3081207272074395",
+        "attachments": []
+      },
+      {
+        "comment_text": "I do make homemade bone broth a lot and make most of my own food. I think I get a fair amount of collagen and gelatin in my diet. I do take magnesium glycinate but I’m thinking about taking reacted magnesium since I have seen other people say it helped improve their persistent plantar fasciitis.",
+        "comment_id": "3081259125402543",
+        "parent_comment_id": "3081220752073047",
+        "attachments": []
+      },
+      {
+        "comment_text": "gosh I’m so sorry to hear that! I am always trying to find ways to stay active despite the challenges. I can still role my bike without significant pain, but my knees also hurt so I have to be careful.",
+        "comment_id": "3081260112069111",
+        "parent_comment_id": "3081229455405510",
+        "attachments": []
+      },
+      {
+        "comment_text": "yes, don’t loose ability to sit down without pain 🙁 workout the arms. I thought my life was horrible with plants facitis u til everything else started hurting.",
+        "comment_id": "3081261752068947",
+        "parent_comment_id": "3081229455405510",
+        "attachments": []
+      },
+      {
+        "comment_text": "ugh so so frustrating!",
+        "comment_id": "3081260605402395",
+        "parent_comment_id": "3081234518738337",
+        "attachments": []
+      },
+      {
+        "comment_text": "I feel so sorry for you - it’s so painful. I suffered from it about 4 mths ago and Everything you’ve done I have read doesn’t do the trick. I subsequently learnt to always be barefoot as much as possible as it makes our toes do their job, I have used toe separators and visited a physiotherapist (not podiatrist) who gave me exercises to strengthen my glutes (yes) and stretches etc. I was told that quite often the opposite hip to the foot that is suffering is weak and causes the alternate side plantar to occur. I found this to be true for me and did my exercises every day resulting in most days now being pain free. I do get flare ups but nothing like before. Sorry you’ve had to go through so much pain and suffering for so long.",
+        "comment_id": "3081286342066488",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "These are what worked for me especially the isometric exercise which works on the hip surprisingly.",
+        "comment_id": "3081290195399436",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/d7f6c17faba15457aaad5b8e0c3dabe633aa658d9d065896e744923837895f8c.webp",
+            "media_id": "14442ca83acfce3c2e38b0fe9e93de2e0bcefe5ed54e0d0c321e7ec89be960fb",
+            "width": 442,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "3319418858259468"
+          }
+        ],
+        "images": [
+          "images/captured/d7f6c17faba15457aaad5b8e0c3dabe633aa658d9d065896e744923837895f8c.webp"
+        ]
+      },
+      {
+        "comment_text": "I’ve had it four years ago : the Lord healed me from that episode 😍but it’s back now in my other foot .\nI am constantly searching for answers : the pain is always there and at times Excruciating. I see where Shock wave therapy is working for some / but not covered by most insurance. 😏\nI just finished a 14 day dose of Meloxicam: it was wonderful … the pain went from a 12 to a 1 . HA - but can’t take that stuff for long . Unfortunately, wreaks havoc on your gut .\nAs least mine -\nPlasma therapy? Not seeing to many great results with that .\nWonder if CBD oil may help ? Probably a joint would but quit that many years ago .😝\nDon’t give up friend ! A breakthrough has gotta be just around the corner ! ! Keep icing - heating- stretching- and booting . One day you’re gonna wake up and it’ll be gone ! ! 🙏🏼🙏🏼🙏🏼",
+        "comment_id": "3081296892065433",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Radio frequency ablation and gabapentin brings pain from my level 8 down to a level 3. Not ideal, but keeps me sane.",
+        "comment_id": "3081300862065036",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I had Radio Frequency Ablation done and have been pain free for over 1.5 years.",
+        "comment_id": "3081322628729526",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "The one and only thing that helped me was toe spacers. Tried everything else. Every exercise, pad, shoe and insert. I kinda know my foot is different feeling now but no pain anymore.",
+        "comment_id": "3081337218728067",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Plantar Fasciitis Embolization. I suffered on/off for 20 yrs, the latest flare lasted 2 yrs. Had PFE done 12/2025. Completely healed.",
+        "comment_id": "3081351455393310",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "We have the same symptoms! mine just started last year, but is now on both feet. Same thoughts as well if I just to accept that this is my new life and try to pick the activities that I really needed, not wanted, to keep my pain to a minimum. Its like fighting which battles I have to win. I started ESWT today, just trying but not really keeping my hopes up, as I do not want to be disappointed. Just trying to live one day at a time.",
+        "comment_id": "3081355182059604",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "The thick toe separator socks helped me. I have tried and done everything as well.",
+        "comment_id": "3081359708725818",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Take Magnesium Glycenate",
+        "comment_id": "3081362595392196",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I know!! With PF, I was able to actually sleep too.",
+        "comment_id": "3081466458715143",
+        "parent_comment_id": "3081234518738337",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you! I will look into it.",
+        "comment_id": "3081260962069026",
+        "parent_comment_id": "3081237945404661",
+        "attachments": []
+      },
+      {
+        "comment_text": "glute and calf strengthening has been helpful for me! As well as balance related exercises.",
+        "comment_id": "3081308052064317",
+        "parent_comment_id": "3081286342066488",
+        "attachments": []
+      },
+      {
+        "comment_text": "thanks for sharing these🤗",
+        "comment_id": "3081637395364716",
+        "parent_comment_id": "3081290195399436",
+        "attachments": []
+      },
+      {
+        "comment_text": "I had to do them for about 3 mths and then one day I saw a big change.",
+        "comment_id": "3081683552026767",
+        "parent_comment_id": "3081290195399436",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you!! I hope yours improves ASAP.",
+        "comment_id": "3081306762064446",
+        "parent_comment_id": "3081296892065433",
+        "attachments": []
+      },
+      {
+        "comment_text": "Meloxicam (Mobic) developed in Germany.  It's the safest NSAID on the market.  I have patients who have been on it for 20 years.  No issues",
+        "comment_id": "3083116558550133",
+        "parent_comment_id": "3081296892065433",
+        "attachments": []
+      },
+      {
+        "comment_text": "yours as well ! ! It  sucks … lol\nBut gotta keep moving 😊",
+        "comment_id": "3082009671994155",
+        "parent_comment_id": "3081296892065433",
+        "attachments": []
+      },
+      {
+        "comment_text": "how often do you wear the toe spacers?",
+        "comment_id": "3081448662050256",
+        "parent_comment_id": "3081337218728067",
+        "attachments": []
+      },
+      {
+        "comment_text": "I still put it in every evening while sitting watching TV. I don’t wear walking with shoes and never to bed. It truly has made a big difference for me.",
+        "comment_id": "3081783358683453",
+        "parent_comment_id": "3081337218728067",
+        "attachments": []
+      },
+      {
+        "comment_text": "what is PFE?",
+        "comment_id": "3081486688713120",
+        "parent_comment_id": "3081351455393310",
+        "attachments": []
+      },
+      {
+        "comment_text": "Wow I’m so sorry you suffered for 20 years off and on. I will look into this.",
+        "comment_id": "3081773525351103",
+        "parent_comment_id": "3081351455393310",
+        "attachments": []
+      },
+      {
+        "comment_text": "can you share where you had this done? Was it covered by insurance and how painful was it??",
+        "comment_id": "3127392307455891",
+        "parent_comment_id": "3081351455393310",
+        "attachments": []
+      },
+      {
+        "comment_text": "Plantar Fasciitis Embolization",
+        "comment_id": "3081721715356284",
+        "parent_comment_id": "3081351455393310",
+        "attachments": []
+      },
+      {
+        "comment_text": "Thank you",
+        "comment_id": "3082231121972010",
+        "parent_comment_id": "3081351455393310",
+        "attachments": []
+      },
+      {
+        "comment_text": "ElegantLobster4422 sending love!! I may consider that treatment too.",
+        "comment_id": "3081357438726045",
+        "parent_comment_id": "3081355182059604",
+        "attachments": []
+      },
+      {
+        "comment_text": "My advice… vitamin d3 +K2. Have your hormones checked. And plz try barefoot for a little bit everyday. Your feet are not strong and that is not helping. Strength training is a must. Build muscle. Also, MSM ( a supplement) helps to alleviate inflammation.",
+        "comment_id": "3081392255389230",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I use toe spacers.. also look up wide toe sneakers.  I have custom orthotics but try not to wear them a lot.  I try to wear a sneaker with medium support.  You want all the muscles in the foot to work.  Too much of a cushion could make it worse in the long run… but because you are having such a flare up (I am so sorry… it is not fun), try wearing oofos around the house…  best of luck to you.",
+        "comment_id": "3081397725388683",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/0abf82fe8c361450399b855a04e7ab3d85b298ff96abeb62ca40c15288ab5e80.webp",
+            "media_id": "e0500cacec76cfa6693d1824ac12a5a40062b262d0dbd395383deb4d85765201",
+            "width": 443,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "10234145807411576"
+          }
+        ],
+        "images": [
+          "images/captured/0abf82fe8c361450399b855a04e7ab3d85b298ff96abeb62ca40c15288ab5e80.webp"
+        ]
+      },
+      {
+        "comment_text": "Oofos recovery sandals",
+        "comment_id": "3081399468721842",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/db11d7270f399b455043eaa41688438a7dda8dc2753b031eca9209b33ed433b8.webp",
+            "media_id": "256f66e2073697bcad9bd7f3185517bd28f6ed215d23b1927490dfe7caa0b5ed",
+            "width": 443,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "10234145826212046"
+          }
+        ],
+        "images": [
+          "images/captured/db11d7270f399b455043eaa41688438a7dda8dc2753b031eca9209b33ed433b8.webp"
+        ]
+      },
+      {
+        "comment_text": "Magnesium supplements or magnesium oil rubbed into your foot     before bedtime.  Birkenstock sandals, but only wear them for a little while and add on each day to break in and get used to.  Oofos might also help while dealing with this terrible flare you are in.  Exercise your toes and walk heel to toes when walking, paying attention to how you may be compensating due to your pain.  Toe raises.  It’s the worst.  I pray for healing for you.",
+        "comment_id": "3081407965387659",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Believe it or not, this helped me too… it hurt at first but helped my overall foot  .  Also made sure to stretch and rotate my ankles.  The foot gets so tight.",
+        "comment_id": "3081418685386587",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/78ff425505c8e175ef2ed4603c5874b691a4e1422baba4cb2ccb2aa4dbfd107c.webp",
+            "media_id": "a357006e4d537a8260c0d92e12d889af46b17eb6ac59cc5c1b5c89fd43d4f8b3",
+            "width": 443,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "10234146023416976"
+          }
+        ],
+        "images": [
+          "images/captured/78ff425505c8e175ef2ed4603c5874b691a4e1422baba4cb2ccb2aa4dbfd107c.webp"
+        ]
+      },
+      {
+        "comment_text": "Carissa, I’m going on two years and seeing this post I felt seen but also it really made me sad to think this could go on as long as you’ve dealt with it. I’m so sorry",
+        "comment_id": "3081428522052270",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "What worked for me !\n1. Got wide fitting runners ( Merrill brand) , my toes have to be able to spread in shoes , so I got rid of any shoes that did not allow this .\n2. Massaged my calf muscle with a rolling pin twice daily .. am /pm .\n3. Used a golf ball to push into my feet .. roll into it as hard as you can to stretch out the plantar fascia\n4.  no barefoot walking .\n5. Massaged my feet with an anti inflammatory cream every night before bed .. ‘voltaren or Physio cream”\nCured in 3 weeks !!! & thankful not returned. Since I made these changes .. main thing was wide fitting shoes/ sandals & stopped orthotics .",
+        "comment_id": "3081594398702349",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "You didn’t mention 30 second isometric loading (which is proven in studies to be the most effective way to heal connective tissue damage).\nIf you want a summary of what it is let me know?",
+        "comment_id": "3081607415367714",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Welcome to the club of plantar fasciitis. I absolutely, know your heart . The last month a few chiropractors, doctors at private pay . I see you haven’t massaged your calves. Try it daily for a week use your favorite ointment. I use Vicks and then place socks . Also , jacuzzi dips at night and morning. 🙌🙏😮😢",
+        "comment_id": "3081927935335662",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Massage this area",
+        "comment_id": "3081929702002152",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/a2c346b3942c1d744bef7a729d879c353162dc9793bf5579d83230a5f607f145.webp",
+            "media_id": "ea134f2d6e2a7a3d39bdf34bac645d284171855fdad959295b61686592561b85",
+            "width": 554,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "35441502748768244"
+          }
+        ],
+        "images": [
+          "images/captured/a2c346b3942c1d744bef7a729d879c353162dc9793bf5579d83230a5f607f145.webp"
+        ]
+      },
+      {
+        "comment_text": "there is someone who posted in the group about focused ESWT in Ohio. Look into it! It looks promising! that one is just a one time treatment with anesthetic. I had the low intensity today and my it hurts at first! but mine will be a few more sessions.",
+        "comment_id": "3081386492056473",
+        "parent_comment_id": "3081355182059604",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you! I wore Birkenstocks for years but had to stop wearing them after getting plantar fasciitis sadly. I also did not have any luck with oofos. I know a lot of people love them but I find them to be too squishy and unsupportive. I also don’t like how thick they are because I struggle with balance and the soft rounded thickness is not my friend. I will definitely try to be more intentional with my steps though and will add toe raises to my routine again. Thank you!",
+        "comment_id": "3081411932053929",
+        "parent_comment_id": "3081407965387659",
+        "attachments": []
+      },
+      {
+        "comment_text": "I get it.  The oofos helped me but once they felt too squishy, I knew I needed to go to a sneaker with a lesser cushion.  I have had a few flare ups in which I’ve been to pt.  It’s so frustrating.  I am barefoot as much as possible. Do you know if you have any back issues?  Sometimes it can radiate to the feet.  So it can be a nerve issue. I so feel your frustration having been there, but not for as long as you’ve been dealing with it.  You are too young.  Someone mentioned checking your hormones.  Might be a good idea, especially if in perimenopause.",
+        "comment_id": "3081421848719604",
+        "parent_comment_id": "3081407965387659",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you. My hormones are impacted because I also have PCOS. I am not sure if that plays a role. I don’t have any persistent back issues thankfully. My feet, knees, hands, and elbows hurt persistently though. I have to assume it is all due to my hyper mobility.",
+        "comment_id": "3081433592051763",
+        "parent_comment_id": "3081407965387659",
+        "attachments": []
+      },
+      {
+        "comment_text": "ugh!! I’m so sorry!  You are a strong woman!!!",
+        "comment_id": "3081441665384289",
+        "parent_comment_id": "3081407965387659",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you for your kind words and suggestions!! I appreciate it.",
+        "comment_id": "3081447452050377",
+        "parent_comment_id": "3081407965387659",
+        "attachments": []
+      },
+      {
+        "comment_text": "this is an excellent stretch! Unfortunately I have bone spurs in my big toe joints and cannot safely do this stretch anymore but I miss it!!! Thanks for sharing though. I think it will help others.",
+        "comment_id": "3081420678719721",
+        "parent_comment_id": "3081418685386587",
+        "attachments": []
+      },
+      {
+        "comment_text": "❤️❤️",
+        "comment_id": "3081433755385080",
+        "parent_comment_id": "3081428522052270",
+        "attachments": []
+      },
+      {
+        "comment_text": "I’d like to know",
+        "comment_id": "3082885195239936",
+        "parent_comment_id": "3081607415367714",
+        "attachments": []
+      },
+      {
+        "comment_text": "hi Cati, here’s a summary and an example…\nProfessor Keith Barr of University of California is the leading edge of this research.\nAnd all top sports teams and athletes rehab their sports stars like this (ie where the money is).\nWe do 30 second isometric holds around the connective tissue (NOT stretches)\nThe 30 second hold is very important to overcome\nStress Shielding (it is why standard eg calf raises don’t fix the injury itself they just make the surrounding area stronger)\nSo the beginner one I show (pinned on my profile) is sitting on the floor with feet against the wall and push the wall away with the toes for 30 seconds for 4 reps with a couple of minutes rest.\nTwice per day, 6 hours apart.\nDoing this consistently got me pain free within 7 weeks of starting it (13 weeks after injury).\nAny questions let me know, good luck 🤞\nHere is a video of one of the basic exercises from my profile...",
+        "comment_id": "3083741571820965",
+        "parent_comment_id": "3081607415367714",
+        "attachments": []
+      },
+      {
+        "comment_text": "No barefoot walking and use wide shoes . With arch support",
+        "comment_id": "3081931755335280",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I had surgery which didn’t help!",
+        "comment_id": "3081950155333440",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Thinking out the box here. Do you any other issues further up your kinetic chain? Pelvic floor? Rib flare? Jaw issues? They are all linked. I read an interesting article about Asian squatting to fix whole body.posture.",
+        "comment_id": "3082213505307105",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Gosh 7 years. I’m so sorry for all that you’ve tried with no success. I’m 9 months into my second bought with this. I’ve been reversing some therapies and finding more mobility and relief. Often it’s mentioned cold now I’ve been doing heat. Also my son who is a PT has given me nerve flossing exercises. I have also used massage with a gua sha tool. Unfortunately I too limit my activities after being very active. I have good and bad days. For mental health, I try to have a gratitude attitude for the things I can do, I journal every morning, and I love this group to see things that work and support. This is an unfortunate journey. 🙏 for you.",
+        "comment_id": "3082262725302183",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Might want to see a neurosurgeon to look at nerve involvement?",
+        "comment_id": "3082360981959024",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Had it for 25 years . Started using castor oil  infused with ginger and I’ve been pain free",
+        "comment_id": "3082391808622608",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "this is my 2nd time with PF. First time I had it for several years. This time, I’ve Been working on it 18 months. All the traditional protocols didn't work. Started praying every night that the Lord would lead me to something that would heal my foot. Then I found Dr Angela and started following her program, which is opposite of what you've been told to do. I'm finally able to start walking now,  easing back into it. A tiny bit of pain sometimes, but nothing like it was.  https://youtu.be/5Hmenrhc8MA?si=2The3FTOm-tjBRSt.                            UPDATE;  I’m walking a mile a day! Praise the Lord!",
+        "comment_id": "3083103291884793",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Agree. I rub magnesium into my feet too.",
+        "comment_id": "3085450694983386",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Wow..you just wrote my story. I just joined this group and haven't read about anyone dealing with this for so long..like myself. I hate feeling like this is my life now..doing so little, not having a life, weight gain due to immobility, and depression. I am doing Shockwave therapy now..2 sessions so far. I have all my eggs in this basket but still feeling hopeless as I've read it didnt work for some. I had a chiropadist tell me there's nothing else that can be done other than surgery. Then after a referral was sent to an orthopedic surgeon, he refused it saying its not a surgical fix. Idk if its because of the area I live in or what but nobody seems to know about it. Im sorry you are suffering so bad. It helps to know im notvthe only one.",
+        "comment_id": "3086225421572580",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Have you had MRI and/or X-ray to rule out tarsal coalition ?",
+        "comment_id": "3090695234458932",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "ugh it’s so frustrating!",
+        "comment_id": "3081971581997964",
+        "parent_comment_id": "3081950155333440",
+        "attachments": []
+      },
+      {
+        "comment_text": "how long ago did you have surgery?",
+        "comment_id": "3272505662944554",
+        "parent_comment_id": "3081950155333440",
+        "attachments": []
+      },
+      {
+        "comment_text": "I don’t! My knees and hands have issues too but nothing as bad as my feet",
+        "comment_id": "3082216275306828",
+        "parent_comment_id": "3082213505307105",
+        "attachments": []
+      },
+      {
+        "comment_text": "sending love!! ❤️ trying to stay positive too.",
+        "comment_id": "3082332711961851",
+        "parent_comment_id": "3082262725302183",
+        "attachments": []
+      },
+      {
+        "comment_text": "OrangeAlligator3357 ginger oil?   I use castor oil by itself",
+        "comment_id": "3082886891906433",
+        "parent_comment_id": "3082391808622608",
+        "attachments": []
+      },
+      {
+        "comment_text": "I’m sorry to hear that, but also glad to connect with others in the same situation. It’s so hard 😭",
+        "comment_id": "3086478618213927",
+        "parent_comment_id": "3086225421572580",
+        "attachments": []
+      },
+      {
+        "comment_text": "6 years for me 😔",
+        "comment_id": "3273378446190609",
+        "parent_comment_id": null,
+        "attachments": []
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 6,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 1,
+      "comment_images": 5,
+      "discovered_count": 6,
+      "saved_count": 6,
+      "failed_count": 0,
+      "saved": 6,
+      "failed": 0,
+      "published": 6,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 89,
+      "captured_count": 89,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:20:42.689244+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 89,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 35,
+      "duration_seconds": 69.29
+    },
+    "search_term_used": "fallen arches",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "plantar fasciitis, bone spur, corn",
+    "surgery_types_mentioned": "",
+    "products_mentioned": "Birkenstock, Oofos, Voltaren, Vicks",
+    "treatments_mentioned": "surgery, physical therapy, cortisone, orthotics, icing, stretching, massage, acupuncture, shockwave therapy, gabapentin, custom orthotics, rolling, arch support, dry needling, ESWT, cupping",
+    "images": [
+      "images/captured/a7c04d2205065f9a0b3148544423c74672d80c395c7393f26d6e5fb8309efdec.webp"
+    ],
+    "source_group": "Plantar Fasciitis Talk and Tips",
+    "id": 5383
+  },
+  {
+    "body": "Just commented on a post here to help someone, and thought I should stop to share what helped me with pictures from previous posts on this page. I tried so many things: therapies, all the stretches and shoes and inserts and medical orthotics and supplements I possibly could. The pain lasted 4.5 years and I used a wheelchair at times like the one pictured at Disneyland, discussed surgery with my podiatrist (and was really hesitant because of how hard it was for my body to bounce back from a recent carpal tunnel surgery, how he said it was possible to not have success, and how much I hated wearing the boot). \n\nPersonally I wouldn’t do softwave therapy again-it’s so expensive and I didn’t see enough impact to justify it. I’m 50-50 on cortisone injections because it helped in one foot and made the other worse.\n\nBut, I would do acupuncture for plantar fasciitis 1000 times over. I would stretch in the swimming pool and workout there for low impact, and I would use a percussion instrument nightly in the arch of my foot, especially digging deep into the painful places to get the tissue to release over time. \n\nI’d find the right shoe for my foot (for me new balance 1080s and oofos at home was the best combo, though I actually can go barefoot now and feel pretty good). I think some weight loss helped too and overall a combination of those things, with nightly percussion massage and acupuncture being at the top of the list. \n\nI am so grateful for this group and the people who shared a little hope with me. I’m mostly pain free now (unless I walk several miles in a day, but it doesn’t flare to the point that percussion massage won’t do the trick to bring the inflammation down. I can even HIKE and enjoy it). \n\nI have other health things I’m working on, but I look at my feet, fully functioning and painless in a way I never fully expected, and it’s a reminder to me that I CAN heal. I hope for the same for all of you!",
+    "body_truncated": true,
+    "comment_count_hint": 40,
+    "group_id": "589872944541186",
+    "source_post_id": "2974857086042748",
+    "source_url": "https://www.facebook.com/groups/589872944541186/posts/2974857086042748/",
+    "search_group_id": "589872944541186",
+    "attachments": [
+      {
+        "type": "image",
+        "path": "images/captured/6adafe9cceb5e80dc5b8aa874d815bf877ed3abea402848aa51dc1bceaeb8536.webp",
+        "media_id": "a1a4e283429d11b45e75c1cc27c2d5ab4f93f460e0f6a7e37e959a66868b5eab",
+        "width": 1108,
+        "height": 1600,
+        "alt": "No photo description available.",
+        "photo_id": "10172962994240363"
+      },
+      {
+        "type": "image",
+        "path": "images/captured/0c72505521106b3cf060f2569c006ae45bf9fd46e81a26a82df9ec8d4ec40e94.webp",
+        "media_id": "a211415428a467fc00142fb535119adfefd4909454953ca3a3b167c837ceb591",
+        "width": 1206,
+        "height": 1408,
+        "alt": "No photo description available.",
+        "photo_id": "10172962994250363"
+      }
+    ],
+    "comments": [
+      {
+        "comment_text": "GIPHY",
+        "comment_id": "2974878499373940",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Whats a percussion instrument please?",
+        "comment_id": "2974891016039355",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Is that a bone spur on the bottom of your heal?",
+        "comment_id": "2974891466039310",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Thanks for sharing what has worked for you, !!!Congratulations on getting relief! That’s a huge accomplishment!! 👏🏼👏🏼\nWould you mind sharing what brand on your percussion massage you use?",
+        "comment_id": "2974897976038659",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Thank you!\nCan I ask what did you use for massage before bed?",
+        "comment_id": "2974961516032305",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "You had surgery already?",
+        "comment_id": "2974992749362515",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Great. How did acupuncture do. Was it in heel or on calf. I see dry needling can really help remove the knots and tightness in calf’s",
+        "comment_id": "2975073049354485",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "What percussion massage instrument did you use please?",
+        "comment_id": "2975097799352010",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "What’s acupuncture?",
+        "comment_id": "2975123699349420",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": ".",
+        "comment_id": "2975147732680350",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "my question too, which one ??",
+        "comment_id": "2974988086029648",
+        "parent_comment_id": "2974891016039355",
+        "attachments": []
+      },
+      {
+        "comment_text": "the Bob and Brad one on Amazon",
+        "comment_id": "2975235899338200",
+        "parent_comment_id": "2974891016039355",
+        "attachments": []
+      },
+      {
+        "comment_text": "it sure is. I have the same",
+        "comment_id": "2975079572687166",
+        "parent_comment_id": "2974891466039310",
+        "attachments": []
+      },
+      {
+        "comment_text": "yeah I have pretty big ones on both feet. Fortunately, the pain has gotten better.",
+        "comment_id": "2975235099338280",
+        "parent_comment_id": "2974891466039310",
+        "attachments": []
+      },
+      {
+        "comment_text": "ouch!",
+        "comment_id": "2975083986020058",
+        "parent_comment_id": "2974891466039310",
+        "attachments": []
+      },
+      {
+        "comment_text": "yeah. It's like walking on a glass spike at times",
+        "comment_id": "2975096869352103",
+        "parent_comment_id": "2974891466039310",
+        "attachments": []
+      },
+      {
+        "comment_text": "we found out through x- rays that my 2 horses have them as well and they are being treated with Osphos...can't they do something like that for humans too?  This looks awful!!",
+        "comment_id": "2975100329351757",
+        "parent_comment_id": "2974891466039310",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you! I use the Bob and Brad one on Amazon. It’s pretty easy to use and is portable.",
+        "comment_id": "2975234319338358",
+        "parent_comment_id": "2974897976038659",
+        "attachments": []
+      },
+      {
+        "comment_text": ", thank you for taking the time to respond. 👍🏼",
+        "comment_id": "2975337792661344",
+        "parent_comment_id": "2974897976038659",
+        "attachments": []
+      },
+      {
+        "comment_text": "Look at this product I found on google.com https://share.google/PVQ09Akeseax1q7e6",
+        "comment_id": "2974992412695882",
+        "parent_comment_id": "2974961516032305",
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/786d1f2cb8125ac8da0e5be4da6c2e4f6859880e3e6525b98aabad6c4eea9d0d.webp",
+            "media_id": "ffd0a917f40adf57b326b3d49d02a7b54d225668ab1fc1d169e1bfc616abcc61",
+            "width": 128,
+            "height": 128,
+            "alt": "Google"
+          }
+        ],
+        "images": [
+          "images/captured/786d1f2cb8125ac8da0e5be4da6c2e4f6859880e3e6525b98aabad6c4eea9d0d.webp"
+        ]
+      },
+      {
+        "comment_text": "I use the Bob and Brad one on Amazon and digging really deep to the painful area for as long as I can handle it",
+        "comment_id": "2975236586004798",
+        "parent_comment_id": "2974961516032305",
+        "attachments": []
+      },
+      {
+        "comment_text": "can you send me a link to which one? There’s al kind and prices, I’m a bit lost:)",
+        "comment_id": "2975415359320254",
+        "parent_comment_id": "2974961516032305",
+        "attachments": []
+      },
+      {
+        "comment_text": "you call it a percussion instrument? Is this a massage gun?",
+        "comment_id": "2978607865667670",
+        "parent_comment_id": "2974961516032305",
+        "attachments": []
+      },
+      {
+        "comment_text": "I didn’t have to do the surgery with the other interventions working well.",
+        "comment_id": "2975234599338330",
+        "parent_comment_id": "2974992749362515",
+        "attachments": []
+      },
+      {
+        "comment_text": "what intervention?",
+        "comment_id": "2975712809290509",
+        "parent_comment_id": "2974992749362515",
+        "attachments": []
+      },
+      {
+        "comment_text": "they placed the needles and my calf and heel areas, as well as on a few other points around my body to balance it. A couple of times it really hurt, but usually it was just relaxing, and I fell asleep on the table when the needles were in.",
+        "comment_id": "2975235749338215",
+        "parent_comment_id": "2975073049354485",
+        "attachments": []
+      },
+      {
+        "comment_text": "Amazing ❤️❤️❤️",
+        "comment_id": "2975183726010084",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Try the oofoOs oh my stride",
+        "comment_id": "2975279182667205",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Thank you for giving me/us hope! I live near Orlando and we go to Disney often. I have my own wheelchair for this reason and my back.\nI'm kinda worried that using the percussion massager on the painful parts will make it hurt more. I guess I'll have to try it and hope for the best.",
+        "comment_id": "2975426765985780",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Link for the massager would be helpful, thanks!",
+        "comment_id": "2975520232643100",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I had to stop running for almost 2 years. Dealing with plantar fasciitis is hard. Cortisone injections didn’t work for me. What worked for me was icing(dipping my foot in bucket of ice water for 15 min) taping and rolling my foot on a golf ball( painful but the relief worth it) my go to shoes are hokas, on cloud and crocs. After 2 years, I was able to run again. I do get flare ups but as soon as that happens, I roll on the golf ball.",
+        "comment_id": "2977318402463283",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "This explains my experience & how I resolved my PF by simply using toe separators and walking barefoot to build up strength and flexibility",
+        "comment_id": "2977831759078614",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Which tip did you use on your foot? I tried it once and it aggravated my foot. Did it hurt at first or have you immediate relief with massager?",
+        "comment_id": "2981571235371333",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Wait, so…what helped you get rid of it then?",
+        "comment_id": "2985223981672725",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "is acupuncture the same as dry needling?",
+        "comment_id": "2975425529319237",
+        "parent_comment_id": "2975073049354485",
+        "attachments": []
+      },
+      {
+        "comment_text": "I have the same question",
+        "comment_id": "2975560629305727",
+        "parent_comment_id": "2975073049354485",
+        "attachments": []
+      },
+      {
+        "comment_text": "I use the BOB and Brad one on Amazon. There are marks expensive options, but that one has worked great for me.",
+        "comment_id": "2975235316004925",
+        "parent_comment_id": "2975097799352010",
+        "attachments": []
+      },
+      {
+        "comment_text": "it’s eastern medicine. I have heard great things about Chinese acupuncture and do Korean acupuncture, which is also great. They use needles to help the body balance and heal and it has been around for thousands of years. I was lucky enough to have my insurance cover part of it.",
+        "comment_id": "2975236999338090",
+        "parent_comment_id": "2975123699349420",
+        "attachments": []
+      },
+      {
+        "comment_text": "it does hurt at first but helps with consistency. I hope you heal and get to enjoy Disney again!",
+        "comment_id": "2982516415276815",
+        "parent_comment_id": "2975426765985780",
+        "attachments": []
+      },
+      {
+        "comment_text": "I used the round tip every night, dig in where it hurt and the consistency helped the pain little by little.",
+        "comment_id": "2982515808610209",
+        "parent_comment_id": "2981571235371333",
+        "attachments": []
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 4,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "partial",
+      "post_images": 2,
+      "comment_images": 2,
+      "discovered_count": 4,
+      "saved_count": 3,
+      "failed_count": 1,
+      "saved": 3,
+      "failed": 1,
+      "published": 3,
+      "publication_failed": 1
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 40,
+      "captured_count": 40,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:21:58.977451+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 40,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 15,
+      "duration_seconds": 28.5
+    },
+    "search_term_used": "fallen arches",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "plantar fasciitis, bone spur",
+    "surgery_types_mentioned": "",
+    "products_mentioned": "New Balance, Oofos, Crocs",
+    "treatments_mentioned": "surgery, cortisone, orthotics, taping, icing, massage, acupuncture, rolling, dry needling",
+    "images": [
+      "images/captured/6adafe9cceb5e80dc5b8aa874d815bf877ed3abea402848aa51dc1bceaeb8536.webp",
+      "images/captured/0c72505521106b3cf060f2569c006ae45bf9fd46e81a26a82df9ec8d4ec40e94.webp"
+    ],
+    "source_group": "Plantar Fasciitis Talk and Tips",
+    "id": 5384
+  },
+  {
+    "body": "Anyone here has/had bunion and Morton’s Neuroma? Did you do surgery to correct both at the same time?",
+    "body_truncated": false,
+    "comment_count_hint": 8,
+    "group_id": "879667705436344",
+    "source_post_id": "5933517136718017",
+    "source_url": "https://www.facebook.com/groups/879667705436344/posts/5933517136718017/",
+    "search_group_id": "879667705436344",
+    "attachments": [],
+    "comments": [
+      {
+        "comment_text": "Hi I had a tailors bunion and Morton neuroma surgery at the same time in August.",
+        "comment_id": "5933618863374511",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "did you have decompression or Neurectomy? What is the result?",
+        "comment_id": "5933620473374350",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      },
+      {
+        "comment_text": "Group member I had a neurectomy. I’m just over 6 months post op and still have swelling and discomfort in as much it’s still tender to walk on.",
+        "comment_id": "5933625486707182",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      },
+      {
+        "comment_text": "are you ultimately happy with the decision to have surgery?",
+        "comment_id": "5933627013373696",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      },
+      {
+        "comment_text": "Group member if I’m truthful I’ve actually been in more discomfort afterwards and at times wished I’d have left well alone. I’m still trying to be positive though. The tailors bunion has been fine though, just tenderness on the scar itself.",
+        "comment_id": "5933634286706302",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      },
+      {
+        "comment_text": "so it sounds like the bunion removal was a good choice but not sure about Neurectomy, does it feel numb? Did they suggest decompression at any point?",
+        "comment_id": "5933676700035394",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      },
+      {
+        "comment_text": "Group member I’m in the UK and only a neurectomy was offered. It’s not numb and the numbness on my two toes is coming back. It’s more over sensitised if that makes sense? It’s more of a burning sensation on my footpad.",
+        "comment_id": "5933762450026819",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      },
+      {
+        "comment_text": "oh I see, is there a chance it’s still can get better? Burning sensation is really hard, sorry you feel this.",
+        "comment_id": "5934159409987123",
+        "parent_comment_id": "5933618863374511",
+        "attachments": []
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 0,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 0,
+      "comment_images": 0,
+      "discovered_count": 0,
+      "saved_count": 0,
+      "failed_count": 0,
+      "saved": 0,
+      "failed": 0,
+      "published": 0,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 8,
+      "captured_count": 8,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:27:44.470363+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 8,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 0,
+      "duration_seconds": 8.69
+    },
+    "search_term_used": "neuroma",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "bunion, neuroma",
+    "surgery_types_mentioned": "",
+    "products_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "images": [],
+    "source_group": "Bunion Surgery / Foot Surgery Support",
+    "id": 5385
+  },
+  {
+    "body": "Hi everyone, im currently on the waiting list for a scarf osteotomy with akin osteotomy. The surgeon has already said this will involve hardware of screws. I have 100% made my mind up that the surgery is right for me, I can no longer continue with the pain. Surgeon has also recommended im a good candidate. \nI've noticed post op guidance seems to differ depending on country or region. Im UK based, Scotland. I've been told once home as a day case, im on strict bed rest for 3 weeks, no walking unless to toilet. Surgeon says this is the best to avoid swelling and minimise pain. After that start toe exercises, use heel and crutches for movement after that period with the usual check ups at 2 and 6 weeks.\nI've read many others have been instructed to move as soon as you can. \n3 weeks in bed is obviously very restrictive, my head is full of how to wash, wash hair etc? \nHow was the pain afterwards?\nI live rural, so do rely on driving.  How long did you have to wait to drive, I've been told expect 6-8 weeks if recovery goes smoothly.\nThanks for reading.",
+    "body_truncated": true,
+    "comment_count_hint": 18,
+    "group_id": "879667705436344",
+    "source_post_id": "26344274271882337",
+    "source_url": "https://www.facebook.com/groups/879667705436344/posts/26344274271882337/",
+    "search_group_id": "879667705436344",
+    "attachments": [
+      {
+        "type": "image",
+        "path": "images/captured/eb4b56563bfe3a4ea034e5ee1ab42cd231774a1c1052ec822711e6646aa1fb64.webp",
+        "media_id": "aa85886b58f6f9ec2d7e9f401e27f19e43eb30bc3dbc62284b371f93b083cdf4",
+        "width": 1200,
+        "height": 1600,
+        "alt": "No photo description available.",
+        "photo_id": "4373619552926720"
+      }
+    ],
+    "comments": [
+      {
+        "comment_text": "I’m now 1yr post-op. I was sent home w/a protective barrier over my incision, followed by a simple wound dressing and in a surgical wedged shoe. I was heel walking on day 1 for toileting purposes, getting food/water and getting up to move around in order to prevent blood clots.\nDue to a nerve block, I initially didn’t have any pain. The block lasted just shy of 3 days. When I did start experiencing pain, it was noticeable but tolerable. Approx days 4-11 were when the pain was bothering me quite a bit.\nBreakthrough pain is where💩 got real for me. Whew! Regardless of taking the prescribed narcotics and OTC meds on an alternating schedule, it still found a way to show up and that’s when the 😭 started flowing. Applying cold therapy behind my knee and directly on the surgical site did help with alleviating the pain. So, be sure to take your pain meds religiously!\nI was able to drive 3wks post-op. I had surgery on my l-foot, so that was a great feeling!\nWill you be sent home in a cast, boot, splint or shoe?\nWishing you a successful procedure and a positive recovery journey.",
+        "comment_id": "26344637345179363",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I’m in the uk, same op. Discharged with crutches and protective shoe. Rested for 2 weeks, did get out of bed and sat in chair downstairs with minimal movement. After 2 weeks bandages and stitches removed and toe splint used. Moved around a lot more. After 6 weeks straight back into my pre op trainers. 12 weeks now and completely back to normal, gym, swimming, 10,000 step and no swelling. Fingers crossed for you, I know I’ve been very lucky.",
+        "comment_id": "26344785245164573",
+        "parent_comment_id": null,
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/5e75a34ebe85a3dec53ad5436c3b6fb20d0eab51ca06deb45e0b033581d2667c.webp",
+            "media_id": "2bc0863b247fa4d2a14e1f99537ed8a72bf1aab55faeb4ffe061fa7c40273030",
+            "width": 720,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "10237267040874506"
+          }
+        ],
+        "images": [
+          "images/captured/5e75a34ebe85a3dec53ad5436c3b6fb20d0eab51ca06deb45e0b033581d2667c.webp"
+        ]
+      },
+      {
+        "comment_text": "I had this exact surgery.  I think for first 2 weeks I was told to do minimal walking, and I was in much pain and ended up using crutches, so couldn't have done much if I wanted other than go to bathroom, etc.  .  After week 2.5/3, I was allowed and did walk in a stiff orthopedic shoe, and after week 4/5 I was instructed I must walk in my sneaker since the healing was going well, as it would create other compensation issues with my feet, which is absolutely true, I began having soreness in my other metatarsals.    I think using crutches after 3 weeks is a little much unless you ahve that much pain.",
+        "comment_id": "26344942965148801",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "I haven’t had much pain since having the nerve blocker which lasted a week for me. I am on day 9. I was really nervous about the pain. I’ve torn my acl so I compared that tear it’s nothing unbearable. Please ask for the nerve blocker if I hadn’t asked for it I wouldn’t have been given it. Good luck!",
+        "comment_id": "26344967348479696",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Hi, I’m based in London and 3 weeks ago I had the Lapidus Arthrodesis procedure. Day surgery (local anaesthetic 😮).\nI was non weight bearing for 2 weeks with aircast boot (when up with crutches) and allowed only bathroom visits in that time with foot elevated either in bed (night) or in living room (day).\nIn theory could have showered with seat and limbo waterproof cover but told easier and safer to strip wash. It’s not that bad.\nFor hair I am paying a local hair dresser to wash and dry it for me once a week (thankfully my hair doesn’t get too greasy). I know it’s an indulgence but it has been money truly well spent!\nAfter 2 week x-ray and check up, healing going well so now in trainer (needed to use a shoe horn at first to help get in it) and can put light weight on foot (25%) slowly increasing this over coming weeks. Wearing a tubular bandage to help with swelling.\nI can now have short baths but told not to get the wound wet for too long. No showers as not allowed to stand but if you have a shower stool that would work.\nThe first few days the pain was bad, I’m not going to lie, but not 100% of the time and I tried to listen to music with headphones to help distract me.\nOverall the first 2 weeks are the worst then it really does get easier.\nYes I have also been told 6-8 weeks for driving. I think it’s going to be nearer to 8 for me. Can’t see me driving in another 3 weeks but you never know!\nGood luck and all the best for your surgery and recovery.",
+        "comment_id": "26349498728026558",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "Where do you experience pain",
+        "comment_id": "26352073451102419",
+        "parent_comment_id": null,
+        "attachments": []
+      },
+      {
+        "comment_text": "thanks for your reply and sharing your experience. From what i was told, a dressing over the site with a space boot. Surgeon has said keep it on as much as possible to prevent bumps etc. Keep foot elevated pretty much 24/7 for the first 3 weeks. In his experience to keep swelling down, which in turn should keep the pain down and keep infection low. I will follow advice just didn't quite realise how restrictive it would be. X",
+        "comment_id": "26345041231805641",
+        "parent_comment_id": "26344637345179363",
+        "attachments": []
+      },
+      {
+        "comment_text": "You’re welcome! Strict bed rest for 3wks does seem a bit extreme but we all receive different post-op instructions from our surgeons. I’d just say be sure to have items close to your bedside to keep you occupied.",
+        "comment_id": "26345343825108715",
+        "parent_comment_id": "26344637345179363",
+        "attachments": []
+      },
+      {
+        "comment_text": "definitely. My husband has arranged with his work to be at home till bed rest is lifted. Then will get kids to/ from school while I hobble around the house till i get back on my feet properly. We live quite rural so we walk locally or drive further afield. Treating myself to some new colouring books and pens which im sadly looking forward to lol x",
+        "comment_id": "26345409941768770",
+        "parent_comment_id": "26344637345179363",
+        "attachments": []
+      },
+      {
+        "comment_text": "It’s great your hubby will be there to assist with your needs while you’re on bed rest.",
+        "comment_id": "26346966804946417",
+        "parent_comment_id": "26344637345179363",
+        "attachments": []
+      },
+      {
+        "comment_text": "thank you, its good to hear your experience x",
+        "comment_id": "26344996371810127",
+        "parent_comment_id": "26344942965148801",
+        "attachments": []
+      },
+      {
+        "comment_text": "glad to hear your recovery has went great. It's good to hear this sort of stuff x",
+        "comment_id": "26344979091811855",
+        "parent_comment_id": "26344785245164573",
+        "attachments": []
+      },
+      {
+        "comment_text": "did you have a lot of pain the first 2 weeks? Did you get pins put in? Thnx",
+        "comment_id": "26373700128939751",
+        "parent_comment_id": "26344785245164573",
+        "attachments": []
+      },
+      {
+        "comment_text": "on only painful first 2 days, no pins and needles.",
+        "comment_id": "26374295892213508",
+        "parent_comment_id": "26344785245164573",
+        "attachments": []
+      },
+      {
+        "comment_text": "yes, I wrote about it also in here.",
+        "comment_id": "26345229878453443",
+        "parent_comment_id": "26344942965148801",
+        "attachments": []
+      },
+      {
+        "comment_text": "",
+        "comment_id": "26344988328477598",
+        "parent_comment_id": "26344967348479696",
+        "attachments": [
+          {
+            "type": "image",
+            "path": "images/captured/10085464821641e5686e996603f38bf3f622d3a64a4832acf5f1dda1f90658b5.webp",
+            "media_id": "cacd0604d32d93f0a8f0e2da4080e5183586b2d75b672e33770d62366e5d3260",
+            "width": 720,
+            "height": 960,
+            "alt": "No photo description available.",
+            "photo_id": "10243249454036791"
+          }
+        ],
+        "images": [
+          "images/captured/10085464821641e5686e996603f38bf3f622d3a64a4832acf5f1dda1f90658b5.webp"
+        ]
+      },
+      {
+        "comment_text": "thank you. He did mention a nerve blocker so hopefully that will help those few days that follow the surgery x",
+        "comment_id": "26345051928471238",
+        "parent_comment_id": "26344967348479696",
+        "attachments": []
+      },
+      {
+        "comment_text": "in the big toe and toe joint itself. Especially with pressure with standing or shoe wearing. The left side of my foot experiences pain as my foot has naturally adjusted especially weight bearing 😐",
+        "comment_id": "26352179861091778",
+        "parent_comment_id": "26352073451102419",
+        "attachments": []
+      }
+    ],
+    "media_capture": {
+      "discovery_status": "complete",
+      "expected_image_count": 3,
+      "remaining_controls": 0,
+      "version": 1,
+      "status": "complete",
+      "post_images": 1,
+      "comment_images": 2,
+      "discovered_count": 3,
+      "saved_count": 3,
+      "failed_count": 0,
+      "saved": 3,
+      "failed": 0,
+      "published": 3,
+      "publication_failed": 0
+    },
+    "capture": {
+      "status": "complete",
+      "reason": "all_visible_comments_verified",
+      "expected_count": 18,
+      "captured_count": 18,
+      "sort_mode": "all_comments",
+      "remaining_controls": 0,
+      "captured_at": "2026-10-23T12:34:37.457078+00:00",
+      "count_relation": "equal",
+      "rendered_comment_nodes_at_end": 18,
+      "empty_comment_nodes_at_end": [],
+      "expansions": 8,
+      "duration_seconds": 27.68
+    },
+    "search_term_used": "revision surgery",
+    "author": null,
+    "url": null,
+    "date": "2026-10-23",
+    "conditions_mentioned": "",
+    "surgery_types_mentioned": "osteotomy, arthrodesis",
+    "products_mentioned": "",
+    "treatments_mentioned": "surgery",
+    "images": [
+      "images/captured/eb4b56563bfe3a4ea034e5ee1ab42cd231774a1c1052ec822711e6646aa1fb64.webp"
+    ],
+    "source_group": "Bunion Surgery / Foot Surgery Support",
+    "id": 5386
   }
 ]

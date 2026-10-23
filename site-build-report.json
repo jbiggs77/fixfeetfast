@@ -1,16 +1,16 @@
 {
   "site": "fixfeetfast",
-  "source_posts": 5367,
-  "usable_posts": 5282,
+  "source_posts": 5374,
+  "usable_posts": 5289,
   "excluded_posts": 84,
   "retired_discussion_routes": 91,
-  "canonical_discussions": 5282,
+  "canonical_discussions": 5289,
   "legacy_aliases": 478,
-  "indexable_pages": 1588,
-  "indexable_discussions": 1567,
+  "indexable_pages": 1595,
+  "indexable_discussions": 1574,
   "noindex_thin_discussions": 3715,
-  "pages_modified_today": 554,
-  "generated_pages": 6438,
+  "pages_modified_today": 527,
+  "generated_pages": 6445,
   "topics": 16,
   "shared_css_bytes": 19005
 }
