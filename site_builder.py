@@ -413,6 +413,26 @@ class ArchiveSite:
         target = self.output / relative; target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text('\n'.join(line.rstrip() for line in markup.splitlines())+'\n', encoding="utf-8")
 
+    def not_found_page(self):
+        # Static hosts (Cloudflare Pages) serve /404.html with a real 404 status
+        # for unknown paths. Without it they fall back to the homepage with a
+        # 200, so removed or mistyped URLs look like duplicate homepages (soft
+        # 404s). Root-relative links only: this page is served at any depth.
+        # Not part of the sitemap, history or pages registry.
+        heading = 'Page not found'
+        lead = 'This page is not in the archive. It may have been moved or removed.'
+        body = ('<div class="wrap"><header class="page-head"><h1>'+heading+'</h1><p>'+lead+'</p>'
+                '<div class="hero-actions"><a class="button" href="/discussions/">Browse discussions</a>'
+                '<a class="button secondary" href="/">Go to the homepage</a></div></header></div>')
+        favicon = "/favicon.ico" if not self.fff else self.assets["favicon"]
+        markup = f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{heading} | {self.name}</title><meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="{'#133e3c' if self.fff else '#102d43'}"><link rel="icon" href="{favicon}">
+<link rel="stylesheet" href="{self.assets['css']}"><script src="{self.assets['js']}" defer></script></head>
+<body data-site="{self.site}"><a class="skip-link" href="#main">Skip to content</a>{self.nav()}<main id="main">{body}</main>{self.footer()}</body></html>'''
+        (self.output/'404.html').write_text('\n'.join(line.rstrip() for line in markup.splitlines())+'\n', encoding="utf-8")
+
     def reply_count(self, post):
         return len(self.comment_map[str(post["id"])])
 
@@ -845,6 +865,7 @@ class ArchiveSite:
             shutil.copy2(self.source/'_redirects',self.output/'_redirects')
         info=f'# {self.name}\n\nA static archive of community discussions about '+('foot health and recovery.' if self.fff else 'insurance market research.')+'\n\n- [About and source limitations]('+self.origin+'/about/)\n- [All discussions]('+self.origin+'/discussions/)\n- [Sitemap]('+self.origin+'/sitemap.xml)\n\nQuestions and replies reflect individual experiences. Mention counts are not recommendations or verified outcomes. The site offers no MCP server or callable agent tools.\n'
         (self.output/'llms.txt').write_text(info)
+        self.not_found_page()
         descriptions={'.well-known/api-catalog':{'name':self.name,'apis':[],'resources':[{'url':self.origin+'/sitemap.xml','type':'sitemap'}]},'.well-known/agent-skills/index.json':{'name':self.name,'skills':[],'url':self.origin+'/'},'.well-known/mcp/server-card.json':{'name':self.name,'type':'static-website','description':'No MCP server or callable tools are provided.','url':self.origin+'/'}}
         for relative,value in descriptions.items():
             path=self.output/relative;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2)+'\n')

@@ -31,6 +31,9 @@ Search-facing behaviour (since 2026-10-02):
 - Each discussion page carries `DiscussionForumPosting` structured data with its
   archived replies as `Comment` nodes. Attribution is the anonymised
   "Community member"; member names are never published.
+- The build writes a `404.html` at the site root (noindex, root-relative links). Cloudflare
+  Pages serves it with a real 404 status for unknown paths; without it the host fell back
+  to the homepage with a 200, so removed or mistyped URLs read as duplicate homepages.
 - A record may carry an editorial `seo_title` in `posts.json`; when present (12–120
   characters) it becomes the page title, H1 and headline. Existing routes never change.
 
